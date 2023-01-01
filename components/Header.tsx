@@ -8,7 +8,7 @@ import NavItem from './NavItem';
 
 const MENU_LIST = [
     { text: "Home", href: "/" },
-    { text: "About", href: "/about" },
+    { text: "Posts", href: "/posts" },
     { text: "Contact", href: "/contact" },
 ];
 
@@ -17,8 +17,8 @@ export const Header = () => {
     const [activeIdx, setActiveIdx] = useState(-1);
 
     return (
-        <header className="px-6 text-black body-font schticky">
-            <div className="container mx-auto flex flex-wrap p-5 md:flex-row items-center justify-between ">
+        <header className="sm:mb-8 px-6 text-black body-font schticky">
+            <div className="container mx-auto flex flex-wrap py-5 md:flex-row items-center justify-between">
                 <a href="/">
                     <span>
                         <Image alt={'Logo'} width={50} height={50} src="../assets/img/logo.png" decoding="async" loader={imageLoader} className="shake" />
