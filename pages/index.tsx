@@ -25,6 +25,69 @@ export default function Home() {
         </div>
       </Bounded>
 
+      <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white pb-0 md:pb-0">
+        <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6">
+          <div className="max-full text-center leading-relaxed mb-8">
+            <h1 className="font-semibold tracking-tighter text-5xl md:text-[5rem] mb-6 last:mb-0">Hello and int<span style={{ "color": "red"}}>ro</span> text.<br/> Only a string here please.</h1>
+          </div>
+        </div> 
+        <div className="w-full mb-8">
+            <Image alt={'holding'} src="https://placedog.net/1200/400/r" width={1200} height={500} loader={imageLoader} layout="responsive" />
+        </div>       
+        <div className="py-8 flex flex-col md:flex-row">
+          {/* <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col p-8">
+            <h4 className="font-medium title-font mt-4 text-gray-900 text-lg">Phoebe Caulfield</h4>
+            <span className="font-semibold title-font text-gray-700">CATEGORY</span>  
+            <span className="text-sm text-gray-500">12 Jun 2019</span>
+          </div> */}
+          
+          <div className="mx-auto w-full max-w-3xl">
+            <div className="leading-relaxed">
+              <h1 style={{ "lineHeight": "3rem", "letterSpacing": "1px", "fontSize": "22px", "display": "flex", "fontWeight": "bold", "textAlign": "justify" }}>Woke master cleanse drinking vinegar</h1>
+              <br />
+              <p style={{ "lineHeight": "3rem", "letterSpacing": "1px", "fontSize": "18px", "display": "flex" }}>
+                Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer. Glossiesr echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.
+              </p>
+              <br />
+              <img alt="content" className="object-cover object-center h-full w-full pb-4" src="https://source.unsplash.com/350x250/?tech" />
+              <br />
+              <p style={{ "lineHeight": "3rem", "letterSpacing": "1px", "fontSize": "18px", "display": "flex" }}>Oh, we're welllll past that, Jerry! I just killed my family! I don’t care who they were! You know who's into dragons, Morty? Nerds who refuse to admit they're Christian. I couldn't hear you over my own screaming. We've talked about this! 5 more minute of this and I'm going to get mad! You know my name, that's disarming. Not today bitch! You look it up, you don't- you don't even know what it means.</p><br />
+              <blockquote className="relative p-4 text-xl italic border-l-4 bg-neutral-100 text-neutral-600 border-neutral-500 quote mb-4">
+                <div className="stylistic-quote-mark" aria-hidden="true">
+                  &ldquo;
+                </div>
+                <p className="mb-6">Oh, we're welllll past that, Jerry! I just killed my family! I don’t care who they were! You know who's into dragons, Morty? Nerds who refuse to admit they're Christian. I couldn't hear you over my own screaming. We've talked about this! 5 more minute of this and I'm going to get mad! You know my name, that's disarming. Not today bitch! You look it up, you don't- you don't even know what it means.</p>
+                <cite className="flex items-center">
+                  <img
+                    alt="Avatar of Dog"
+                    className="w-12 mr-4 rounded-full bg-neutral-500"
+                    src="https://placedog.net/75/75"
+                  />
+                  <div className="flex flex-col items-start">
+                    <span className="mb-1 text-sm italic font-bold">Dog</span>
+                    <a
+                      href="..."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm"
+                    >
+                      Draft
+                    </a>
+                  </div>
+                </cite>
+              </blockquote>
+              <p style={{ "lineHeight": "3rem", "letterSpacing": "1px", "fontSize": "18px", "display": "flex" }}>Listen to your sister Morty; to live is to risk it all; otherwise you're just an inert chunk of randomly assembled molecules drifting wherever the universe blows you. Oh, I'm sorry, Jerry, I didn't see you there, how much of that did you hear? Sorry I didn't listen to you and tried to kill the whole world and stuff. Guess I gotta learn how to live in the moment a little more. Cause he roped me into this! Morty, can you get to the left nipple? You know who's into dragons, Morty? Nerds who refuse to admit they're Christian. I know you're real because i have a ton of bad memories with you. There is no god, in your face! One dot muthafucka! Morty! The principal and I have discussed it, a-a-and we're both insecure enough to agree to a three-way!</p>
+            </div>
+            <section className="text-gray-600 body-font">
+              <div className="container pt-4 pb-12 mx-auto"></div>
+            </section>
+          </div>
+        </div>
+        
+      </Bounded>
+
+
+
       <Bounded collapsible={false} as="section" className="bg-slate-100">
         <div className="grid grid-cols-1 items-end gap-10 md:grid-cols-2 md:gap-10 lg:gap-28">
           <div className="grid grid-cols-1 gap-8">

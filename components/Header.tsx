@@ -8,7 +8,10 @@ import NavItem from './NavItem';
 
 const MENU_LIST = [
     { text: "Home", href: "/" },
-    { text: "Posts", href: "/posts" },
+    { text: "Latest", href: "/posts" },
+    { text: "Tech", href: "/posts" },
+    { text: "Gadgets", href: "/posts" },
+    { text: "Reviews", href: "/contact" },
     { text: "Contact", href: "/contact" },
 ];
 

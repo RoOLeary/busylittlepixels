@@ -10,7 +10,7 @@ const SignUpForm = () => {
         className="grid w-full max-w-xl grid-cols-1 gap-6"
       >
         <div className="text-center tracking-tight text-slate-300">
-        <h2 className="font-semibold tracking-tighter text-4xl md:text-6xl mb-4 text-white last:mb-0">This is a line of text</h2>
+        <h2 className="font-semibold tracking-tighter text-4xl md:text-6xl mb-4 text-white last:mb-0">Sign up for our newsletter</h2>
         <p className="mb-4 last:mb-0">Something something snappy marketing copy yada yada yada blort blort blah</p>
         </div>
     
