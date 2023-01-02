@@ -7,6 +7,7 @@ import styles from '../styles/Home.module.css'
 import { Layout } from '../components/Layout';
 import { Bounded } from "../components/Bounded";
 import { GalleryGrid } from "../components/GalleryGrid";
+import CarouselContainer from "../components/Carousel";
 import imageLoader from '../imageLoader';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -32,6 +33,9 @@ export default function Home() {
           <div className="max-full text-center leading-relaxed mb-8">
             <h1 className="font-semibold tracking-tighter text-5xl md:text-[5rem] mb-6 last:mb-0">Hello and int<span style={{ "color": "red"}}>ro</span> text.<br/> Only a string here please.</h1>
           </div>
+          <div className="max-full text-center leading-relaxed mb-8">
+            <p className="font-semibold tracking-tighter">By <a href="#">Ronan O'Leary</a> | Category: Tech, CMS | Published: 02-01-2023 19:15 CET</p>
+          </div>
         </div> 
         <div className="w-full mb-8">
             <Image alt={'holding'} src="https://placedog.net/1200/400/r" width={1200} height={500} loader={imageLoader} layout="responsive" />
@@ -48,12 +52,12 @@ export default function Home() {
               <br />
               <img alt="content" className="object-cover object-center h-full w-full pb-4" src="https://source.unsplash.com/350x250/?tech" />
               <br />
-              /* eslint-disable-next-line */
+              
               <p style={{ "lineHeight": "2.5rem", "letterSpacing": "1px", "fontSize": "20px", "display": "flex" }}>Oh, we're welllll past that, Jerry! I just killed my family! I don’t care who they were! You know who's into dragons, Morty? Nerds who refuse to admit they're Christian. I couldn't hear you over my own screaming. We've talked about this! 5 more minute of this and I'm going to get mad! You know my name, that's disarming. Not today bitch! You look it up, you don't- you don't even know what it means.</p><br />
               <blockquote className="relative p-4 text-xl italic border-l-4 bg-neutral-100 text-neutral-600 border-red-500 quote mb-8">
-                {/* <div className="stylistic-quote-mark" aria-hidden="true">
+                <div className="stylistic-quote-mark" aria-hidden="true">
                   &ldquo;
-                </div> */}
+                </div>
                 <p className="mb-6 px-6">Oh, we're welllll past that, Jerry! I just killed my family! I don\’t care who they were! You know who's into dragons, Morty? Nerds who refuse to admit they're Christian. I couldn't hear you over my own screaming. We've talked about this! 5 more minute of this and I'm going to get mad! You know my name, that's disarming. Not today bitch! You look it up, you don't- you don't even know what it means.</p>
                 <cite className="flex items-center px-6">
                   <img
@@ -84,7 +88,11 @@ export default function Home() {
         
       </Bounded>
 
+      <CarouselContainer /> 
+
+      {/* <Bounded collapsible={false} as="section" className="bg-slate-100"> */}
       <GalleryGrid />
+      {/* </Bounded> */}
 
       <Bounded collapsible={false} as="section" className="bg-slate-100">
         <div className="grid grid-cols-1 items-end gap-10 md:grid-cols-2 md:gap-10 lg:gap-28">
