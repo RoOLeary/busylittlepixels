@@ -8,11 +8,13 @@ import { Layout } from '../components/Layout';
 import { Bounded } from "../components/Bounded";
 import { GalleryGrid } from "../components/GalleryGrid";
 import CarouselContainer from "../components/Carousel";
+import { Faqs } from "../components/Faq/Faqs";
 import imageLoader from '../imageLoader';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
   return (
     <>
      <Layout>
@@ -89,6 +91,11 @@ export default function Home() {
       </Bounded>
 
       <CarouselContainer /> 
+
+      <Bounded collapsible={false} as="section" className="md:px-6 md:pt-8 bg-white pb-8 md:pb-8">
+        <Faqs />
+      </Bounded>
+
 
       {/* <Bounded collapsible={false} as="section" className="bg-slate-100"> */}
       <GalleryGrid />

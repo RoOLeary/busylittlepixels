@@ -1,9 +1,7 @@
-import { useState } from "react";
+import { CSSProperties, useState } from "react";
 import { Gallery } from "react-grid-gallery";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
-// import { images, CustomImage } from "../../images";
-import { Bounded } from "./Bounded";
 import { Image } from "react-grid-gallery";
 
 // eslint-disable-next-line
@@ -183,6 +181,20 @@ const slides = images.map(({ original, width, height }) => ({
   height,
 }));
 
+const tagItem = (): CSSProperties => ({
+  display: "inline",
+  padding: ".2em .6em .3em",
+  fontSize: "75%",
+  fontWeight: "600",
+  lineHeight: "1",
+  color: "white",
+  background: "rgba(0,0,0,0.65)",
+  textAlign: "center",
+  whiteSpace: "nowrap",
+  verticalAlign: "baseline",
+  borderRadius: ".25em",
+});
+
 export const GalleryGrid = () => {
 
   const [index, setIndex] = useState(-1);
@@ -204,12 +216,14 @@ export const GalleryGrid = () => {
         images={images}
         onClick={handleClick}
         enableImageSelection={false}
+        tagStyle={tagItem}
       />
       {!!currentImage && (
         /* @ts-ignore */
         <Lightbox
           mainSrc={currentImage.original}
           imageTitle={currentImage.caption}
+          imageCaption={currentImage.caption}
           mainSrcThumbnail={currentImage.src}
           nextSrc={nextImage.original}
           nextSrcThumbnail={nextImage.src}
@@ -218,6 +232,10 @@ export const GalleryGrid = () => {
           onCloseRequest={handleClose}
           onMovePrevRequest={handleMovePrev}
           onMoveNextRequest={handleMoveNext}
+          clickOutsideToClose={true}
+          animationOnKeyInput={true}
+          animationDuration={300}
+          
         />
       )}
     </div>
