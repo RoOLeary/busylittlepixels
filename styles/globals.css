@@ -340,9 +340,16 @@ footer,
   }
 }
 
-.ReactModal__Overlay--before-close{
-  pointer-events: none;
+blockquote > p {
+  line-height: 3rem;
 }
+
+.border-red-500 {
+  --tw-border-opacity: 1;
+  /* border-color: rgb(115 115 115 / var(--tw-border-opacity)); */
+  border-color: red;
+}
+
 
 .yarl__slide_image{
   max-width: 100%!important;

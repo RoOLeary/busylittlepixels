@@ -22,14 +22,14 @@ export const Header = () => {
     return (
         <header className="sm:mb-8 px-6 text-black body-font schticky">
             <div className="container mx-auto flex flex-wrap py-5 md:flex-row items-center justify-between">
-                <a href="/">
+                <Link href="/">
                     <span>
                         <Image alt={'Logo'} width={50} height={50} src="../assets/img/logo.png" decoding="async" loader={imageLoader} className="shake" />
                         <noscript>
                             <img srcSet="https://roprismicnxt.cdn.prismic.io/roprismicnxt/8f14afab-6b70-4ac6-a3bc-b7bf0da48f1b_logo.svg?fit=max&amp;w=64 1x, https://roprismicnxt.cdn.prismic.io/roprismicnxt/8f14afab-6b70-4ac6-a3bc-b7bf0da48f1b_logo.svg?fit=max&amp;w=128 2x" src="https://roprismicnxt.cdn.prismic.io/roprismicnxt/8f14afab-6b70-4ac6-a3bc-b7bf0da48f1b_logo.svg?fit=max&amp;w=128" decoding="async" data-nimg="fixed" className="shake" loading="lazy"/>
                         </noscript>
                     </span>
-                </a>
+                </Link>
                 <nav className={`nav`}>
                     <div
                         onClick={() => setNavActive(!navActive)}

@@ -1,5 +1,5 @@
 import { Bounded } from "./Bounded";
-import { Heading } from "./Heading";
+// import { Heading } from "./Heading";
 
 const SignUpForm = () => {
   return (
