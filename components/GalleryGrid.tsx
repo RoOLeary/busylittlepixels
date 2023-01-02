@@ -4,6 +4,8 @@ import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 // import { images, CustomImage } from "../../images";
 import { Bounded } from "./Bounded";
+import { Image } from "react-grid-gallery";
+
 // eslint-disable-next-line
 export interface CustomImage extends Image {
   original: string;

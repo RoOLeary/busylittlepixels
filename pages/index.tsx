@@ -19,7 +19,7 @@ export default function Home() {
         <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust">
           <div className="max-w-2xl text-center leading-relaxed">
             <h1 className="font-semibold tracking-tighter text-5xl md:text-[5rem] mb-6 last:mb-0">Hello and int<span style={{ "color": "red"}}>ro</span> text. Only a string here please.</h1>
-            <p className="mb-6 last:mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec faucibus metus, non aliquet nisi. Aenean fermentum libero nec volutpat semper. Quisque tellus neque, molestie in magna et, lobortis accumsan nisl. Suspendisse lacinia velit et dolor dictum ornare. Pellentesque justo nulla, fermentum vel ante non, condimentum aliquam justo.<br /><br />Okay, I think I\'m starting to grasp it.</p>
+            <p className="mb-6 last:mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec faucibus metus, non aliquet nisi. Aenean fermentum libero nec volutpat semper. Quisque tellus neque, molestie in magna et, lobortis accumsan nisl. Suspendisse lacinia velit et dolor dictum ornare. Pellentesque justo nulla, fermentum vel ante non, condimentum aliquam justo.<br /><br />Okay, I think I'm starting to grasp it.</p>
           </div>
           <div className="w-full mb-6">
             <Image alt={'holding'} src="https://placedog.net/1200/500/r" width={1200} height={500} loader={imageLoader} layout="responsive" />
@@ -49,14 +49,12 @@ export default function Home() {
               <img alt="content" className="object-cover object-center h-full w-full pb-4" src="https://source.unsplash.com/350x250/?tech" />
               <br />
               /* eslint-disable-next-line */
-              <p style={{ "lineHeight": "2.5rem", "letterSpacing": "1px", "fontSize": "20px", "display": "flex" }}>Oh, we\'re welllll past that, Jerry! I just killed my family! I don\’t care who they were! You know who\'s into dragons, Morty? Nerds who refuse to admit they're Christian. I couldn't hear you over my own screaming. We've talked about this! 5 more minute of this and I'm going to get mad! You know my name, that's disarming. Not today bitch! You look it up, you don't- you don't even know what it means.</p><br />
+              <p style={{ "lineHeight": "2.5rem", "letterSpacing": "1px", "fontSize": "20px", "display": "flex" }}>Oh, we're welllll past that, Jerry! I just killed my family! I don’t care who they were! You know who's into dragons, Morty? Nerds who refuse to admit they're Christian. I couldn't hear you over my own screaming. We've talked about this! 5 more minute of this and I'm going to get mad! You know my name, that's disarming. Not today bitch! You look it up, you don't- you don't even know what it means.</p><br />
               <blockquote className="relative p-4 text-xl italic border-l-4 bg-neutral-100 text-neutral-600 border-red-500 quote mb-8">
-              // eslint-disable-next-line
-                <div className="stylistic-quote-mark" aria-hidden="true">
+                {/* <div className="stylistic-quote-mark" aria-hidden="true">
                   &ldquo;
-                </div>
-                // eslint-disable-next-line react/no-unescaped-entities
-                <p className="mb-6 px-6">Oh, we're welllll past that, Jerry! I just killed my family! I don’t care who they were! You know who\'s into dragons, Morty? Nerds who refuse to admit they\'re Christian. I couldn\'t hear you over my own screaming. We've talked about this! 5 more minute of this and I'm going to get mad! You know my name, that's disarming. Not today bitch! You look it up, you don't- you don't even know what it means.</p>
+                </div> */}
+                <p className="mb-6 px-6">Oh, we're welllll past that, Jerry! I just killed my family! I don\’t care who they were! You know who's into dragons, Morty? Nerds who refuse to admit they're Christian. I couldn't hear you over my own screaming. We've talked about this! 5 more minute of this and I'm going to get mad! You know my name, that's disarming. Not today bitch! You look it up, you don't- you don't even know what it means.</p>
                 <cite className="flex items-center px-6">
                   <img
                     alt="Avatar of Dog"

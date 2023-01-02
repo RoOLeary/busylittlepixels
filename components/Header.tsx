@@ -16,7 +16,7 @@ const MENU_LIST = [
 ];
 
 export const Header = () => {
-    const [navActive, setNavActive] = useState(null);
+    const [navActive, setNavActive] = useState(false);
     const [activeIdx, setActiveIdx] = useState(-1);
 
     return (
