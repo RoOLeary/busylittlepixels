@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 
 import { Layout } from '../components/Layout';
 import { Bounded } from "../components/Bounded";
+import { GalleryGrid } from "../components/GalleryGrid";
 import imageLoader from '../imageLoader';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -86,7 +87,7 @@ export default function Home() {
         
       </Bounded>
 
-
+      <GalleryGrid />
 
       <Bounded collapsible={false} as="section" className="bg-slate-100">
         <div className="grid grid-cols-1 items-end gap-10 md:grid-cols-2 md:gap-10 lg:gap-28">

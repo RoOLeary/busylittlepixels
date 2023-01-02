@@ -339,3 +339,12 @@ footer,
     margin-top: 4em;
   }
 }
+
+.ReactModal__Overlay--before-close{
+  pointer-events: none;
+}
+
+.yarl__slide_image{
+  max-width: 100%!important;
+  max-height: 100%!important;
+}
