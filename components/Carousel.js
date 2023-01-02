@@ -12,7 +12,7 @@ const responsive = {
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 3
+    items: 4
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
@@ -28,22 +28,37 @@ const CarouselContainer = () => {
   
     const items = [
         {
-          carousel_image_url: 'https://placedog.net/450/250/r',
+          carousel_image_url: 'https://placedog.net/450/300/r',
           carousel_title: 'One',
           job: 'Tinker'
         },
         {
-          carousel_image_url: 'https://placedog.net/450/250/r',
+          carousel_image_url: 'https://placedog.net/450/300/r',
           carousel_title: 'Two',
           job: 'Tailor'
         },
         {
-          carousel_image_url: 'https://placedog.net/450/250/r',
+          carousel_image_url: 'https://placedog.net/450/300/r',
           carousel_title: 'Three',
           job: 'Coder'
         },
         {
-          carousel_image_url: 'https://placedog.net/450/250/r',
+          carousel_image_url: 'https://placedog.net/450/300/r',
+          carousel_title: 'Four',
+          job: 'Spy'
+        },
+        {
+          carousel_image_url: 'https://placedog.net/450/300/r',
+          carousel_title: 'Two',
+          job: 'Tailor'
+        },
+        {
+          carousel_image_url: 'https://placedog.net/450/300/r',
+          carousel_title: 'Three',
+          job: 'Coder'
+        },
+        {
+          carousel_image_url: 'https://placedog.net/450/300/r',
           carousel_title: 'Four',
           job: 'Spy'
         }
@@ -51,15 +66,15 @@ const CarouselContainer = () => {
 
 
   return(
-    <Bounded as="section" collapsible={false} className="px-6 bg-white">
+    <section className="bg-white mb-2">
       <Carousel responsive={responsive}>
         {
           items.map((item, index) => {
-            return <div className={'mr-2'} key={index}><img src={item.carousel_image_url} height={'250px'} width={'450px'} /></div>
+            return <div className={'mr-2'} key={index}><img src={item.carousel_image_url} height={'300px'} width={'450px'} /></div>
           })
         }
       </Carousel>
-    </Bounded>
+    </section>
   );
 }
 
