@@ -114,7 +114,7 @@ export default function Home() {
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2023</p>
               <h2 className="mb-2 text-xl font-extrabold leading-snug text-gray-800">
-                <a href="#" className="text-gray-900 hover:text-red-500">Process Documents Using Artificial Intelligence For RPA Bots</a>
+                <a href="#" className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500">Process Documents Using Artificial Intelligence For RPA Bots</a>
               </h2>
               <p className="mb-3 text-sm font-normal text-gray-500">
                 Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical
@@ -181,7 +181,7 @@ export default function Home() {
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2023</p>
               <h2 className="mb-2 text-xl font-extrabold leading-snug text-gray-800">
-                <a href="#" className="text-gray-900 hover:text-red-500">Using Webpack with React Typescript</a>
+                <a href="#" className="transition ease-in-out text-gray-900 hover:text-red-500">Using Webpack with React Typescript</a>
               </h2>
               <p className="mb-3 text-sm font-normal text-gray-500">
                 Ever wondered if there is a way to just tie up all your code into one single module for easy usage. If so, in this article I will show you how to bundle all your code into a single
