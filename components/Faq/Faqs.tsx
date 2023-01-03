@@ -31,7 +31,7 @@ export const Faqs = () => {
             className={"flex-auto flex flex-col md:flex-row items-center bg-white md:m-10 "}>
            
             <div className="flex-auto mb-2 w-full p-2">
-                <h1 className="flex-none pl-3 text-3xl py-8 font-black tracking-wide">Frequently Asked Questions</h1>
+                <h1 className="flex-none pl-3 text-3xl py-8 font-black tracking-wide">F<span className={'rd_txt'}>re</span>quently Asked <span className={'rd_txt'}>Que</span>stions</h1>
                 {faqComponents}
             </div>
         </div>

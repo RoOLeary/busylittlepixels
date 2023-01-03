@@ -356,3 +356,15 @@ blockquote > p {
   max-width: 100%!important;
   max-height: 100%!important;
 }
+
+
+
+.btn-red {
+  @apply bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded;
+}
+
+@layer components{
+  .rd_txt{
+    color: red;
+  }
+}
