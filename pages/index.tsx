@@ -8,6 +8,7 @@ import { Layout } from '../components/Layout';
 import { Bounded } from "../components/Bounded";
 import { GalleryGrid } from "../components/GalleryGrid";
 import CarouselContainer from "../components/Carousel";
+import { Video } from "../components/Video";
 import { Faqs } from "../components/Faq/Faqs";
 import imageLoader from '../imageLoader';
 
@@ -287,19 +288,20 @@ export default function Home() {
           </div>
         </div>
       </Bounded> */}
-      <section data-collapsible="true" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-slate-100">
+      <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-slate-100">
         <div className="mx-auto w-full max-w-6xl">
           <div className="relative">
             <div className="absolute -top-4 -left-4 w-1/3">
               <div className="aspect-w-1 aspect-h-1 bg-slate-200/50"></div>
             </div>
             <span className={"bgImgShelf"}>
-              <Image alt={'panel'} src="../assets/img/panel-img.png" width={1200} height={600} loader={imageLoader} unoptimized />
-              
+              {/* <Image alt={'panel'} src="../assets/img/panel-img.png" width={1200} height={600} loader={imageLoader} unoptimized /> */}
+              <Video />
             </span>
+              
             </div>
           </div>
-      </section>
+      </Bounded>
       
     </Layout>
     </>

@@ -2,7 +2,7 @@ import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Bounded } from "./Bounded";
-
+// import { GalleryGrid } from "../components/GalleryGrid";
 
 const responsive = {
   superLargeDesktop: {
@@ -16,7 +16,7 @@ const responsive = {
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 2
+    items: 3
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
@@ -67,10 +67,14 @@ const CarouselContainer = () => {
 
   return(
     <section className="bg-white mb-2">
-      <Carousel showDots={false} responsive={responsive}>
+     
+      <Carousel showDots={false} responsive={responsive}> 
+        {/* <div>
+          <GalleryGrid />
+        </div> */}
         {
           items.map((item, index) => {
-            return <div className={'md:mr-2'} key={index}><img src={item.carousel_image_url} height={'300px'} width={'450px'} /></div>
+            return <div className={'mr-2'} key={index}><img src={item.carousel_image_url} height={'300px'} width={'100%'} /></div>
           })
         }
       </Carousel>
