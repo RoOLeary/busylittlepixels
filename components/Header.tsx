@@ -20,7 +20,7 @@ export const Header = () => {
     const [activeIdx, setActiveIdx] = useState(-1);
 
     return (
-        <header className="sm:mb-8 px-6 text-black body-font schticky">
+        <header className="sm:mb-8 px-6 text-black body-font fixed w-full bg-white">
             <div className="container mx-auto flex flex-wrap py-5 md:flex-row items-center justify-between">
                 <Link href="/">
                     <span>
