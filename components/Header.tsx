@@ -10,7 +10,6 @@ const MENU_LIST = [
     { text: "Home", href: "/" },
     { text: "Latest", href: "/" },
     { text: "CMS", href: "/" },
-    { text: "JS", href: "/posts" },
     { text: "Reviews", href: "/contact" },
     { text: "Rants", href: "/contact" },
     { text: "Contact", href: "/contact" },
