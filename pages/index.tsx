@@ -33,7 +33,7 @@ export default function Home() {
 
       <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white pb-0 md:pb-0">
         <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6">
-          <div className="max-full text-center leading-relaxed mb-8">
+          <div className="max-full text-center leading-relaxed mb-2">
             <h1 className="font-semibold tracking-tighter text-5xl md:text-[5rem] mb-6 last:mb-0">Hello and int<span style={{ "color": "red"}}>ro</span> text.<br/> Only a string here please.</h1>
           </div>
           <div className="max-full text-center leading-relaxed mb-8">
@@ -41,13 +41,13 @@ export default function Home() {
           </div>
         </div> 
         <div className="w-full mb-8">
-            <Image alt={'holding'} src="https://placedog.net/1200/400/r" width={1200} height={500} loader={imageLoader} layout="responsive" />
+            <Image alt={'holding'} src="https://placedog.net/1200/400/r" width={1200} height={500} loader={imageLoader} layout="responsive" className="shadow-xl" />
         </div>       
         <div className="py-8 flex flex-col md:flex-row">
          
           <div className="mx-auto w-full max-w-3xl">
             <div className="leading-relaxed">
-              <h1 style={{ "lineHeight": "2.5rem", "letterSpacing": "1px", "fontSize": "24px", "display": "flex", "fontWeight": "bold", "textAlign": "justify" }}>Woke master cleanse drinking vinegar</h1>
+              <h1 style={{ "lineHeight": "2.5rem", "fontSize": "24px", "display": "flex", "fontWeight": "bold", "textAlign": "justify" }}>Woke master cleanse drinking vinegar</h1>
               <br />
               <p style={{ "lineHeight": "2.5rem", "letterSpacing": "1px", "fontSize": "20px", "display": "flex" }}>
                 Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer. Glossiesr echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.
@@ -57,11 +57,11 @@ export default function Home() {
               <br />
               
               <p style={{ "lineHeight": "2.5rem", "letterSpacing": "1px", "fontSize": "20px", "display": "flex" }}>Oh, we're welllll past that, Jerry! I just killed my family! I don’t care who they were! You know who's into dragons, Morty? Nerds who refuse to admit they're Christian. I couldn't hear you over my own screaming. We've talked about this! 5 more minute of this and I'm going to get mad! You know my name, that's disarming. Not today bitch! You look it up, you don't- you don't even know what it means.</p><br />
-              <blockquote className="relative p-4 text-xl italic border-l-4 bg-neutral-100 text-neutral-600 border-red-500 quote mb-8">
+              <blockquote className="relative p-4 text-xl italic border-l-4 bg-neutral-100 text-neutral-600 border-red-500 quote rounded mb-8">
                 <div className="stylistic-quote-mark" aria-hidden="true">
                   &ldquo;
                 </div>
-                <p className="mb-6 px-6">Oh, we're welllll past that, Jerry! I just killed my family! I don\’t care who they were! You know who's into dragons, Morty? Nerds who refuse to admit they're Christian. I couldn't hear you over my own screaming. We've talked about this! 5 more minute of this and I'm going to get mad! You know my name, that's disarming. Not today bitch! You look it up, you don't- you don't even know what it means.</p>
+                <p className="mb-8 px-6">Oh, we're welllll past that, Jerry! I just killed my family! I don\’t care who they were! You know who's into dragons, Morty? Nerds who refuse to admit they're Christian. I couldn't hear you over my own screaming. We've talked about this! 5 more minute of this and I'm going to get mad! You know my name, that's disarming. Not today bitch! You look it up, you don't- you don't even know what it means.</p>
                 <cite className="flex items-center px-6">
                   <img
                     alt="Avatar of Dog"
@@ -106,9 +106,9 @@ export default function Home() {
       
       
       <h2 className="pb-8 mb-12 text-2xl font-extrabold leading-tight text-gray-900 border-b border-gray-200 md:text-4xl">All <span className={'rd_txt'}>Ar</span>ticles</h2>
-      <div className="w-full xl:w-4/6">
-       
-        <div className="flex flex-col space-y-16">
+      <div className="flex flex-col md:flex-row md:gap-8">
+
+        <div className="w-full xl:w-4/6 flex flex-col space-y-16">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
             <img src="https://placedog.net/175/160/r" className="object-cover w-full h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
             <div className="col-span-1 md:col-span-3">
@@ -189,10 +189,18 @@ export default function Home() {
               </p>
               <a href="#" className="btn btn-light btn-sm">Read More</a>
             </div>
+            <div className="pb-10 lg:mt-10 border-gray-200">
+              <a href="#" className="w-full btn btn-red btn-lg md:w-auto">Load More</a>
+            </div>
           </div>
         </div>
-        <div className="pt-10 mt-10 border-gray-200">
-          <a href="#" className="w-full btn btn-light btn-lg md:w-auto">Load More</a>
+        <div className="w-full md:w-0 xl:w-2/6 flex flex-col space-y-16">
+          <div className="sticky md:visible">
+            <img className="w-full" src="https://place-hold.it/350x1200/black/white.png&text=Advert&bold&fontsize=18" />
+          </div>
+          <div className="sticky">
+            <img className="w-full" src="https://place-hold.it/350x350/black/white.png&text=Advert&bold&fontsize=18" />
+          </div>
         </div>
       </div> 
     </Bounded>

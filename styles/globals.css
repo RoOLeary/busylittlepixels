@@ -45,6 +45,10 @@
   100% { transform: rotate(0); }
 }
 
+.quote {
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 10%), 0 8px 10px -6px rgb(0 0 0 / 10%);
+}
+
 
 .video-container {
   /* width is set as 100% here. any width can be specified as per requirement */
@@ -53,6 +57,9 @@
   height: 0px;
   position: relative;
 }
+
+
+
 
 .video {
   width: 100%;
