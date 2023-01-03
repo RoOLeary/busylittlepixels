@@ -105,7 +105,7 @@ export default function Home() {
       
       
       <h2 className="pb-8 mb-12 text-2xl font-extrabold leading-tight text-gray-900 border-b border-gray-200 md:text-4xl">All <span className={'rd_txt'}>Ar</span>ticles</h2>
-      <div className="w-full">
+      <div className="w-full xl:w-4/6">
        
         <div className="flex flex-col space-y-16">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
@@ -190,13 +190,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="pt-10 mt-10 border-t border-gray-200">
+        <div className="pt-10 mt-10 border-gray-200">
           <a href="#" className="w-full btn btn-light btn-lg md:w-auto">Load More</a>
         </div>
-        
-      </div>
-     
-      
+      </div> 
     </Bounded>
       {/* <Bounded collapsible={false} as="section" className="bg-slate-100">
         <div className="grid grid-cols-1 items-end gap-10 md:grid-cols-2 md:gap-10 lg:gap-28">
