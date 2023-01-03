@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
      <Layout>
-      <Bounded as="section" collapsible={false} className="bg-white pb-0 md:pb-0">
+      {/* <Bounded as="section" collapsible={false} className="bg-white pb-0 md:pb-0">
         <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust">
           <div className="max-w-2xl text-center leading-relaxed">
             <h1 className="font-semibold tracking-tighter text-5xl md:text-[5rem] mb-6 last:mb-0">Hello and int<span style={{ "color": "red"}}>ro</span> text. Only a string here please.</h1>
@@ -28,7 +28,7 @@ export default function Home() {
             <Image alt={'holding'} src="https://placedog.net/1200/500/r" width={1200} height={500} loader={imageLoader} layout="responsive" />
           </div>
         </div>
-      </Bounded>
+      </Bounded> */}
 
       <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white pb-0 md:pb-0">
         <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6">
@@ -105,11 +105,11 @@ export default function Home() {
       
       
       <h2 className="pb-8 mb-12 text-2xl font-extrabold leading-tight text-gray-900 border-b border-gray-200 md:text-4xl">All <span className={'rd_txt'}>Ar</span>ticles</h2>
-      <div className="w-full xl:w-4/6">
+      <div className="w-full">
        
         <div className="flex flex-col space-y-16">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
-            <img src="https://placedog.net/175/160/r" className="object-cover w-full h-40 col-span-1 bg-center" alt="Kutty" loading="lazy" />
+            <img src="https://placedog.net/175/160/r" className="object-cover w-full h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2023</p>
               <h2 className="mb-2 text-xl font-extrabold leading-snug text-gray-800">
@@ -123,7 +123,7 @@ export default function Home() {
             </div>
           </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
-            <img src="https://placedog.net/175/160/r" className="object-cover w-full h-40 col-span-1 bg-center" alt="Kutty" loading="lazy" />
+            <img src="https://placedog.net/175/160/r" className="object-cover w-full h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2023</p>
               <h2 className="mb-2 text-xl font-extrabold leading-snug text-gray-800">
@@ -137,7 +137,7 @@ export default function Home() {
             </div>
           </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
-            <img src="https://placedog.net/175/160/r" className="object-cover w-full h-40 col-span-1 bg-center" alt="Kutty" loading="lazy" />
+            <img src="https://placedog.net/175/160/r" className="object-cover w-full h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2023</p>
               <h2 className="mb-2 text-xl font-extrabold leading-snug text-gray-800">
@@ -151,7 +151,7 @@ export default function Home() {
             </div>
           </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
-            <img src="https://placedog.net/175/160/r" className="object-cover w-full h-40 col-span-1 bg-center" alt="Kutty" loading="lazy" />
+            <img src="https://placedog.net/175/160/r" className="object-cover w-full h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2023</p>
               <h2 className="mb-2 text-xl font-extrabold leading-snug text-gray-800">
@@ -165,7 +165,7 @@ export default function Home() {
             </div>
           </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
-            <img src="https://placedog.net/175/160/r" className="object-cover w-full h-40 col-span-1 bg-center" alt="Kutty" loading="lazy" />
+            <img src="https://placedog.net/175/160/r" className="object-cover w-full h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2023</p>
               <h2 className="mb-2 text-xl font-extrabold leading-snug text-gray-800">
@@ -176,7 +176,7 @@ export default function Home() {
             </div>
           </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
-            <img src="https://placedog.net/175/160/r" className="object-cover w-full h-40 col-span-1 bg-center" alt="Kutty" loading="lazy" />
+            <img src="https://placedog.net/175/160/r" className="object-cover w-full h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2023</p>
               <h2 className="mb-2 text-xl font-extrabold leading-snug text-gray-800">
@@ -228,7 +228,7 @@ export default function Home() {
           </ul>
         </div>
       </Bounded> */}
-      <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white">
+      {/* <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white">
       
         <div className="mx-auto w-full max-w-6xl flex flex-row">
           <div className="flex-col text-center w-full mb-20">
@@ -289,7 +289,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </Bounded>
+      </Bounded> */}
       <section data-collapsible="true" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-slate-100">
         <div className="mx-auto w-full max-w-6xl">
           <div className="relative">
@@ -298,6 +298,7 @@ export default function Home() {
             </div>
             <span className={"bgImgShelf"}>
               <Image alt={'panel'} src="../assets/img/panel-img.png" width={1200} height={600} loader={imageLoader} unoptimized />
+              
             </span>
             </div>
           </div>
