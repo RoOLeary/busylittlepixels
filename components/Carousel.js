@@ -70,7 +70,7 @@ const CarouselContainer = () => {
       <Carousel showDots={false} responsive={responsive}>
         {
           items.map((item, index) => {
-            return <div className={'mr-2'} key={index}><img src={item.carousel_image_url} height={'300px'} width={'450px'} /></div>
+            return <div className={'md:mr-2'} key={index}><img src={item.carousel_image_url} height={'300px'} width={'450px'} /></div>
           })
         }
       </Carousel>

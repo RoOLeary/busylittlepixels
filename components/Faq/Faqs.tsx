@@ -28,7 +28,7 @@ export const Faqs = () => {
 
     return <div className={`mx-auto flex items-center`}>
         <div
-            className={"flex-auto flex flex-col md:flex-row items-center bg-white m-5 p-3 md:m-10 "}>
+            className={"flex-auto flex flex-col md:flex-row items-center bg-white md:m-10 "}>
            
             <div className="flex-auto mb-2 w-full p-2">
                 <h1 className="flex-none pl-3 text-3xl py-8 font-black tracking-wide">Frequently Asked Questions</h1>
