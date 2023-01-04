@@ -23,12 +23,13 @@ export const Header = () => {
         <header className="sm:mb-8 px-6 text-black body-font fixed w-full bg-white">
             <div className="container mx-auto flex flex-wrap py-5 md:flex-row items-center justify-between">
                 <Link href="/">
-                    <span>
+                    <h1 className="pb-8 mb-12 text-xl font-extrabold leading-tight text-gray-900 border-b border-gray-200 md:text-4xl">busy<span className="rd_txt">little</span>pixels<span className="rd_txt"></span></h1>
+                    {/* <span>
                         <Image alt={'Logo'} width={50} height={50} src="../assets/img/logo.png" decoding="async" loader={imageLoader} className="shake" />
                         <noscript>
                             <img srcSet="https://roprismicnxt.cdn.prismic.io/roprismicnxt/8f14afab-6b70-4ac6-a3bc-b7bf0da48f1b_logo.svg?fit=max&amp;w=64 1x, https://roprismicnxt.cdn.prismic.io/roprismicnxt/8f14afab-6b70-4ac6-a3bc-b7bf0da48f1b_logo.svg?fit=max&amp;w=128 2x" src="https://roprismicnxt.cdn.prismic.io/roprismicnxt/8f14afab-6b70-4ac6-a3bc-b7bf0da48f1b_logo.svg?fit=max&amp;w=128" decoding="async" data-nimg="fixed" className="shake" loading="lazy"/>
                         </noscript>
-                    </span>
+                    </span> */}
                 </Link>
                 <nav className={`nav`}>
                     <div
