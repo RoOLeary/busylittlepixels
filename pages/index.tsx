@@ -108,7 +108,7 @@ export default function Home() {
       <h2 className="pb-8 mb-12 text-2xl font-extrabold leading-tight text-gray-900 border-b border-gray-200 md:text-4xl">All <span className={'rd_txt'}>Ar</span>ticles</h2>
       <div className="flex flex-col md:flex-row md:gap-8">
 
-        <div className="w-full xl:w-4/6 flex flex-col space-y-16">
+        <div className="w-full  flex flex-col space-y-16">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
             <img src="https://placedog.net/175/160/r" className="object-cover w-full h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
             <div className="col-span-1 md:col-span-3">
@@ -194,14 +194,14 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="w-full md:w-0 xl:w-2/6 flex flex-col space-y-16">
+        {/* <div className="w-full md:w-0 xl:w-2/6 flex flex-col space-y-16">
           <div className="sticky md:visible">
             <img className="w-full" src="https://place-hold.it/350x1200/black/white.png&text=Advert&bold&fontsize=18" />
           </div>
-          {/* <div className="sticky">
+          <div className="sticky">
             <img className="w-full" src="https://place-hold.it/350x350/black/white.png&text=Advert&bold&fontsize=18" />
-          </div> */}
-        </div>
+          </div>
+        </div> */}
       </div> 
     </Bounded>
       {/* <Bounded collapsible={false} as="section" className="bg-slate-100">
