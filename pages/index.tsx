@@ -53,7 +53,7 @@ export default function Home() {
                 Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer. Glossiesr echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.
               </p>
               <br />
-              <img alt="content" className="object-cover object-center h-full w-full pb-4" src="https://source.unsplash.com/350x250/?tech" />
+              <img alt="content" className="object-cover object-center h-full w-full mb-4 shadow-xl" src="https://source.unsplash.com/350x250/?tech" />
               <br />
               
               <p style={{ "lineHeight": "2.5rem", "letterSpacing": "1px", "fontSize": "20px", "display": "flex" }}>Oh, we're welllll past that, Jerry! I just killed my family! I don’t care who they were! You know who's into dragons, Morty? Nerds who refuse to admit they're Christian. I couldn't hear you over my own screaming. We've talked about this! 5 more minute of this and I'm going to get mad! You know my name, that's disarming. Not today bitch! You look it up, you don't- you don't even know what it means.</p><br />
