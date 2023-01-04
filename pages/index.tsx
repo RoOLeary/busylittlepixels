@@ -198,9 +198,9 @@ export default function Home() {
           <div className="sticky md:visible">
             <img className="w-full" src="https://place-hold.it/350x1200/black/white.png&text=Advert&bold&fontsize=18" />
           </div>
-          <div className="sticky">
+          {/* <div className="sticky">
             <img className="w-full" src="https://place-hold.it/350x350/black/white.png&text=Advert&bold&fontsize=18" />
-          </div>
+          </div> */}
         </div>
       </div> 
     </Bounded>
@@ -296,8 +296,9 @@ export default function Home() {
           </div>
         </div>
       </Bounded> */}
-      <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-slate-100">
-        <div className="mx-auto w-full max-w-6xl">
+      <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white">
+        
+          <h2 className="pb-8 mb-12 text-2xl font-extrabold leading-tight text-gray-900 border-b border-gray-200 md:text-4xl">Feat<span className={'rd_txt'}>ure</span>d V<span className={'rd_txt'}>ide</span>o</h2>
           <div className="relative">
             <div className="absolute -top-4 -left-4 w-1/3">
               <div className="aspect-w-1 aspect-h-1 bg-slate-200/50"></div>
@@ -308,7 +309,7 @@ export default function Home() {
             </span>
               
             </div>
-          </div>
+          
       </Bounded>
       
     </Layout>

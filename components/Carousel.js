@@ -1,8 +1,9 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { Bounded } from "./Bounded";
+// import { Bounded } from "./Bounded";
 // import { GalleryGrid } from "../components/GalleryGrid";
+// import { Video } from "../components/Video";
 
 const responsive = {
   superLargeDesktop: {
@@ -71,6 +72,9 @@ const CarouselContainer = () => {
       <Carousel showDots={false} responsive={responsive}> 
         {/* <div>
           <GalleryGrid />
+        </div>
+        <div>
+          <Video />
         </div> */}
         {
           items.map((item, index) => {
