@@ -3,13 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.logoShadow{
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 10%), 0 8px 10px -6px rgb(0 0 0 / 10%);
+}
 
 .bgImgShelf{
   box-sizing: border-box;
   display: block;
   overflow: hidden;
   width: initial;
-  height: initial;
+  height: initial; 
   background: none;
   opacity: 1;
   border: 0px;
@@ -110,7 +113,7 @@ nav{
   width: 100%;
   row-gap: 24px;
   right: -100%;
-  padding: 24px 32px;
+  padding: 0 32px;
   transition: all 0.2s;
   min-height: calc(100vh - 60px);
 

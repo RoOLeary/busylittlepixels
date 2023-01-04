@@ -20,10 +20,10 @@ export const Header = () => {
     const [activeIdx, setActiveIdx] = useState(-1);
 
     return (
-        <header className="sm:mb-8 px-6 text-black body-font fixed w-full bg-white">
-            <div className="container mx-auto flex flex-wrap py-5 md:flex-row items-center justify-between">
+        <header className="sm:mb-8 px-6 text-black body-font fixed w-full bg-white logoShadow">
+            <div className="container mx-auto flex flex-wrap py-5 md:flex-row items-start justify-between">
                 <Link href="/">
-                    <h1 className="pb-8 mb-12 text-xl font-extrabold leading-tight text-gray-900 border-b border-gray-200 md:text-4xl">busy<span className="rd_txt">little</span>pixels<span className="rd_txt"></span></h1>
+                    <h1 className="text-2xl font-extrabold leading-tight">busy<span className="rd_txt">little</span>pixels<span className="rd_txt"></span></h1>
                     {/* <span>
                         <Image alt={'Logo'} width={50} height={50} src="../assets/img/logo.png" decoding="async" loader={imageLoader} className="shake" />
                         <noscript>
