@@ -1,7 +1,6 @@
 import { Bounded } from "./Bounded";
-// import { Heading } from "./Heading";
 
-const SignUpForm = () => {
+const NewsletterSignUp = () => {
   return (
     <div className="px-4">
       <form
@@ -41,16 +40,11 @@ const SignUpForm = () => {
   );
 };
 
-export const Footer = () => {
+export const CTA = () => {
   return (
-    <Bounded as="footer" className="bg-black pb-12 text-slate-300 md:pb-12">
+    <Bounded as="section" className="bg-black pb-12 text-slate-300 md:pb-12">
       <div className="grid grid-cols-1 justify-items-center gap-20 md:gap-24">
-        {/* <SignUpForm /> */}
-        <div className="mx-auto w-full max-w-3xl text-center text-xs font-semibold tracking-tight">
-          © 2023 Busylittlepixels. Published using{" "}
-          
-            NextJS. 
-        </div>
+        <NewsletterSignUp />
       </div>
     </Bounded>
   );

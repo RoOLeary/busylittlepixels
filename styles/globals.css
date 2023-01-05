@@ -12,6 +12,31 @@
   
 }
 
+.article_text{
+  letter-spacing: -0.5px;
+  font-weight: 300;
+  display: flex;
+  font-size: 1.125rem;
+  line-height: 2.5rem;
+  text-align: justify;
+
+  @media screen and (max-width: 768px) {
+    line-height: 2rem;
+    font-size: 18px;
+  }  
+}
+
+.allArticles_excerpt{
+  display: inline-block;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }  
+}
+
+
+
+
+
 .bgImgShelf{
   box-sizing: border-box;
   display: block;
@@ -354,9 +379,54 @@ footer,
   }
 }
 
+.pixel-block {
+	position: absolute;
+	width: 6em;
+	height: 5em;
+}
+
+.pixelized--heart {
+  display: block;
+  width: 1em;
+  height: 1em;
+  box-shadow:
+	1em 0em #F22613,
+	2em 0em #F22613,
+	4em 0em #F22613,
+	5em 0em #F22613,
+
+	0em 1em #F22613,
+	1em 1em #F22613,
+	2em 1em #F22613,
+	3em 1em #F22613,
+	4em 1em #F22613,
+	5em 1em #F22613,
+	6em 1em #F22613,
+
+	0em 2em #F22613,
+	1em 2em #F22613,
+	2em 2em #F22613,
+	3em 2em #F22613,
+	4em 2em #F22613,
+	5em 2em #F22613,
+	6em 2em #F22613,
+
+	1em 3em #F22613,
+	2em 3em #F22613,
+	3em 3em #F22613,
+	4em 3em #F22613,
+	5em 3em #F22613,
+
+	2em 4em #F22613,
+	3em 4em #F22613,
+	4em 4em #F22613,
+
+	3em 5em #F22613;
+}
+
 blockquote > p {
   line-height: 3rem;
-  margin: 2em 0 3em 0;
+  //margin: 2em 0 3em 0;
 }
 
 .border-red-500 {

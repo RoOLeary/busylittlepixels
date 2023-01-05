@@ -21,9 +21,9 @@ export const Header = () => {
 
     return (
         <header className="px-6 text-black body-font sticky w-full bg-black logoShadow">
-            <div className="container mx-auto flex flex-wrap py-5 md:flex-row items-start justify-between">
+            <div className="mx-auto flex flex-wrap py-5 md:flex-row items-start justify-between">
                 <Link href="/">
-                    <h1 className="text-2xl font-extrabold leading-tight shake">busy<span className="rd_txt">little</span>pixels<span className="rd_txt">.</span></h1>
+                    <h1 className="text-2xl font-extrabold leading-tight shake uppercase">busy<span className="rd_txt">little</span>pixels<span className="rd_txt">.</span></h1>
                     {/* <span>
                         <Image alt={'Logo'} width={50} height={50} src="../assets/img/logo.png" decoding="async" loader={imageLoader} className="shake" />
                         <noscript>

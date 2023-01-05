@@ -8,6 +8,7 @@ import { Layout } from '../components/Layout';
 import { Bounded } from "../components/Bounded";
 import { GalleryGrid } from "../components/GalleryGrid";
 import CarouselContainer from "../components/Carousel";
+import { CTA } from "../components/CTA";
 import { Video } from "../components/Video";
 import { Faqs } from "../components/Faq/Faqs";
 import imageLoader from '../imageLoader';
@@ -30,11 +31,12 @@ export default function Home() {
           </div>
         </div>
       </Bounded> */}
+      <div className="title_container"><div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6"><div className="mx-auto w-full text-start mt-4"><h1 className="px-6 font-black text-4xl md:text-6xl mb-6 last:mb-0 uppercase">WE ARE BUSY<span style={{ "color": "red"}}>LITTLE</span>PIXELS.<br /> WE <span style={{ "color": "red"}}>HEART</span> MAKING AND WRITING ABOUT <span style={{ "color": "red"}}>WEB</span></h1></div></div></div>
       <GalleryGrid />
       <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white pb-0 md:pb-0">
         <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6">
           <div className="max-full text-center leading-relaxed mb-2">
-            <h1 className="font-semibold tracking-tighter text-5xl md:text-[5rem] mb-6 last:mb-0">Hello and int<span style={{ "color": "red"}}>ro</span> text.<br/> Only a string here please.</h1>
+            <h1 className="font-black tracking-tighter text-5xl md:text-[5rem] mb-6 last:mb-0 uppercase">Hello and int<span style={{ "color": "red"}}>ro</span> text. Only a string here please.</h1>
           </div>
           <div className="max-full text-center leading-relaxed mb-8">
             <p className="font-semibold tracking-tighter">By <a href="#">Ronan O'Leary</a> | Category: Tech, CMS | Published: 02-01-2023 19:15 CET</p>
@@ -49,14 +51,13 @@ export default function Home() {
             <div className="leading-relaxed">
               <h1 style={{ "lineHeight": "2.5rem", "fontSize": "24px", "display": "flex", "fontWeight": "bold", "textAlign": "justify" }}>Woke master cleanse drinking vinegar</h1>
               <br />
-              <p style={{ "lineHeight": "2.5rem", "letterSpacing": "1px", "fontSize": "20px", "display": "flex" }}>
-                Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer. Glossiesr echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.
+              <p className="article_text text-md leading-8">So park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer. Glossiesr echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.
               </p>
               <br />
               <img alt="content" className="object-cover object-center h-full w-full mb-4 shadow-xl" src="https://source.unsplash.com/350x250/?tech" />
               <br />
               
-              <p style={{ "lineHeight": "2.5rem", "letterSpacing": "1px", "fontSize": "20px", "display": "flex" }}>Oh, we're welllll past that, Jerry! I just killed my family! I don’t care who they were! You know who's into dragons, Morty? Nerds who refuse to admit they're Christian. I couldn't hear you over my own screaming. We've talked about this! 5 more minute of this and I'm going to get mad! You know my name, that's disarming. Not today bitch! You look it up, you don't- you don't even know what it means.</p><br />
+              <p className="article_text text-md leading-8">Jerry! I just killed my family! I don’t care who they were! You know who's into dragons, Morty? Nerds who refuse to admit they're Christian. I couldn't hear you over my own screaming. We've talked about this! 5 more minute of this and I'm going to get mad! You know my name, that's disarming. Not today bitch! You look it up, you don't- you don't even know what it means.</p><br />
               <blockquote className="relative p-4 text-xl italic border-l-4 bg-neutral-100 text-neutral-600 border-red-500 quote rounded mb-8">
                 <div className="stylistic-quote-mark" aria-hidden="true">
                   &ldquo;
@@ -81,7 +82,7 @@ export default function Home() {
                   </div>
                 </cite>
               </blockquote>
-              <p style={{ "lineHeight": "2.5rem", "letterSpacing": "1px", "fontSize": "20px", "display": "flex" }}>Listen to your sister Morty; to live is to risk it all; otherwise you're just an inert chunk of randomly assembled molecules drifting wherever the universe blows you. Oh, I'm sorry, Jerry, I didn't see you there, how much of that did you hear? Sorry I didn't listen to you and tried to kill the whole world and stuff. Guess I gotta learn how to live in the moment a little more. Cause he roped me into this! Morty, can you get to the left nipple? You know who's into dragons, Morty? Nerds who refuse to admit they're Christian. I know you're real because i have a ton of bad memories with you. There is no god, in your face! One dot muthafucka! Morty! The principal and I have discussed it, a-a-and we're both insecure enough to agree to a three-way!</p>
+              <p className="article_text text-md leading-8">Listen to your sister Morty; to live is to risk it all; otherwise you're just an inert chunk of randomly assembled molecules drifting wherever the universe blows you. Oh, I'm sorry, Jerry, I didn't see you there, how much of that did you hear? Sorry I didn't listen to you and tried to kill the whole world and stuff. Guess I gotta learn how to live in the moment a little more. Cause he roped me into this! Morty, can you get to the left nipple? You know who's into dragons, Morty? Nerds who refuse to admit they're Christian. I know you're real because i have a ton of bad memories with you. There is no god, in your face! One dot muthafucka! Morty! The principal and I have discussed it, a-a-and we're both insecure enough to agree to a three-way!</p>
             </div>
             <section className="text-gray-600 body-font">
               <div className="container pt-4 pb-12 mx-auto"></div>
@@ -102,7 +103,7 @@ export default function Home() {
       <CarouselContainer /> 
       {/* </Bounded> */}
       <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white">
-        <h2 className="pb-8 mb-12 text-2xl font-extrabold leading-tight text-gray-900 border-b border-gray-200 md:text-4xl">Featured <span className={'rd_txt'}>Ar</span>ticle</h2>
+        <h2 className="pb-8 mb-12 text-2xl font-extrabold leading-tight text-gray-900 border-b border-gray-200 md:text-4xl uppercase">Featured <span className={'rd_txt'}>Ar</span>ticles</h2>
         
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 mb-8">
               <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
@@ -111,11 +112,11 @@ export default function Home() {
                 <h1 className="mb-2 text-4xl font-extrabold leading-tight text-gray-800">
                   <a href="#" className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500">Process Documents Using Artificial Intelligence For RPA Bots</a>
                 </h1>
-                <p className="mb-3 text-sm font-normal text-gray-500">
+                <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt">
                   Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical
                   Character Recognition) and Machine Learning, RPA bots are capable of extracting these data …
                 </p>
-                <p className="mb-3 text-sm font-normal text-gray-500">
+                <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt">
                   Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical
                   Character Recognition) and Machine Learning, RPA bots are capable of extracting these data …
                 </p>
@@ -198,85 +199,85 @@ export default function Home() {
       
       
       
-      <h2 className="pb-8 mb-12 text-2xl font-extrabold leading-tight text-gray-900 border-b border-gray-200 md:text-4xl">All <span className={'rd_txt'}>Ar</span>ticles</h2>
+      <h2 className="pb-8 mb-12 text-2xl font-extrabold leading-tight text-gray-900 border-b border-gray-200 md:text-4xl uppercase">All <span className={'rd_txt'}>Ar</span>ticles</h2>
       <div className="flex flex-col md:flex-row md:gap-8">
-
+      
         <div className="w-full  flex flex-col space-y-16">
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
             <img src="https://placedog.net/175/160/r" className="object-cover w-full md:h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2023</p>
-              <h2 className="mb-2 text-2xl font-extrabold leading-snug text-gray-800">
+              <h2 className="mb-2 md:text-2xl font-extrabold leading-snug text-gray-800">
                 <a href="#" className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500">Process Documents Using Artificial Intelligence For RPA Bots</a>
               </h2>
-              <p className="mb-3 text-sm font-normal text-gray-500">
+              <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt ">
                 Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical
                 Character Recognition) and Machine Learning, RPA bots are capable of extracting these data …
               </p>
               <a href="#" className="hidden md:visible btn btn-light btn-sm">Read More</a>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
             <img src="https://placedog.net/175/160/r" className="object-cover w-full md:h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 mt-2 text-sm font-normal text-gray-500">April 16, 2023</p>
-              <h2 className="mb-2 text-2xl font-extrabold leading-snug text-gray-800">
+              <h2 className="mb-2 md:text-2xl font-extrabold leading-snug text-gray-800">
                 <a href="#" className="text-gray-900 hover:text-red-500">Implement Dark Mode in Your Android App</a>
               </h2>
-              <p className="mb-3 text-sm font-normal text-gray-500">
+              <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt">
                 Are you curious to implement the Dark Mode in Android Application? Here’s the perfect guideline to attain the Dark Mode in Android Application. Don’t waste your time; just implement and
                 enjoy Dark Mode.
               </p>
               <a href="#" className="hidden md:visible btn btn-light btn-sm">Read More</a>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
             <img src="https://placedog.net/175/160/r" className="object-cover w-full md:h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2023</p>
-              <h2 className="mb-2 text-2xl font-extrabold leading-snug text-gray-800">
+              <h2 className="mb-2 md:text-2xl font-extrabold leading-snug text-gray-800">
                 <a href="#" className="text-gray-900 hover:text-red-500">Why is Mental Health one of the Important Issues to Address?</a>
               </h2>
-              <p className="mb-3 text-sm font-normal text-gray-500">
+              <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt">
                 Mental health was one of the under spoken topics before this lockdown. After sitting at home for about six months I realized that this is one of the important issues to address not only in
                 the work sector but also in daily living.
               </p>
               <a href="#" className="hidden md:visible btn btn-light btn-sm">Read More</a>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
             <img src="https://placedog.net/175/160/r" className="object-cover w-full md:h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 mt-2 text-sm font-normal text-gray-500">April 16, 2023</p>
-              <h2 className="mb-2 text-2xl font-extrabold leading-snug text-gray-800">
+              <h2 className="mb-2 md:text-2xl font-extrabold leading-snug text-gray-800">
                 <a href="#" className="text-gray-900 hover:text-red-500">Pattern Matching In Elixir</a>
               </h2>
-              <p className="mb-3 text-sm font-normal text-gray-500">
+              <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt">
                 Pattern matching is a great way to write idiomatic functional code. It’s a powerful tenant of functional programming that makes it a joy to write conditional statements. If you don’t want
                 your code to be peppered with deeply nested statements or multiple variations of similar business logic, use pattern matching!
               </p>
               <a href="#" className="hidden md:visible btn btn-light btn-sm">Read More</a>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
             <img src="https://placedog.net/175/160/r" className="object-cover w-full md:h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2023</p>
-              <h2 className="mb-2 text-2xl font-extrabold leading-snug text-gray-800">
+              <h2 className="mb-2 md:text-2xl font-extrabold leading-snug text-gray-800">
                 <a href="#" className="text-gray-900 hover:text-red-500">3 things you should change during your focus group interview</a>
               </h2>
-              <p className="mb-3 text-sm font-normal text-gray-500">We changed three things about our feedback sessions, and it changed everything about running customer feedback sessions.</p>
+              <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt">We changed three things about our feedback sessions, and it changed everything about running customer feedback sessions.</p>
               <a href="#" className="hidden md:visible btn btn-light btn-sm">Read More</a>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
             <img src="https://placedog.net/175/160/r" className="object-cover w-full md:h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2023</p>
-              <h2 className="mb-2 text-2xl font-extrabold leading-snug text-gray-800">
+              <h2 className="mb-2 md:text-2xl font-extrabold leading-snug text-gray-800">
                 <a href="#" className="transition ease-in-out text-gray-900 hover:text-red-500">Using Webpack with React Typescript</a>
               </h2>
-              <p className="mb-3 text-sm font-normal text-gray-500">
+              <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt">
                 Ever wondered if there is a way to just tie up all your code into one single module for easy usage. If so, in this article I will show you how to bundle all your code into a single
                 javascript module that you can easily use in any other project.
               </p>
@@ -297,43 +298,13 @@ export default function Home() {
         </div> */}
       </div> 
       </Bounded>
-      <Bounded collapsible={false} as="section" className="bg-slate-100">
-        <div className="grid grid-cols-1 items-end gap-10 md:grid-cols-1 md:gap-10 lg:gap-28">
-          {/* <div className="grid grid-cols-1 gap-8">
-            <span style={{ "boxSizing": "border-box", "display": "inline-block", "overflow": "hidden", "width": "128px", "height": "128px", "background": "none", "opacity": 1, "border":0 ,"margin":0, "padding":0 , "position":"relative"}}>
-              <Image alt={'folder icon'} src="../assets/img/folder-icon.svg" width={128} height={128} loader={imageLoader}  />
-              <noscript>
-                <img srcSet="../assets/img/folder-icon.svg" src="../assets/img/folder-icon.svg" decoding="async" data-nimg="fixed" style={{ "position":"absolute", "top":0, "left": 0, "bottom":0, "right": 0, "boxSizing": "border-box", "padding":0, "border": "none", "margin": "auto", "display": "block", "width":0, "height":0, "minWidth": "100%", "maxWidth": "100%", "minHeight": "100%", "maxHeight": "100%" }} loading="lazy" />
-              </noscript>
-            </span>
-            <div className="leading-relaxed">
-              <h2 className="font-semibold tracking-tighter text-4xl md:text-6xl mb-4 last:mb-0">Poor Rickless Bastards</h2>
-              <p className="mb-7 last:mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mttis eroas. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non.</p>
-            </div>
-          </div>
-          <ul className="grid gap-10">
-            <li className="leading-relaxed">
-              <h3 className="font-semibold tracking-tighter text-2xl mb-2 last:mb-0">Never worry about forgetting things again</h3>
-              <p className="mb-7 last:mb-0">Let Todoist remember it all for you. You can get tasks out of your head and onto your to-do list anytime, anywhere, on any device – even offline.</p>
-            </li>
-            <li className="leading-relaxed">
-              <h3 className="font-semibold tracking-tighter text-2xl mb-2 last:mb-0">Todoist helps millions of people feel more in control of their lives</h3>
-              <p className="mb-7 last:mb-0">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare.</p>
-            </li>
-            <li className="leading-relaxed">
-              <h3 className="font-semibold tracking-tighter text-2xl mb-2 last:mb-0">Focus your energy on the right things</h3>
-              <p className="mb-7 last:mb-0">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare.</p>
-            </li>
-          </ul> */}
-          <h1 className='text-center'>[ADVERTISEMENT]</h1>
-        </div>
-      </Bounded>
+      <CTA />
       <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white">
 
-        <h2 className="pb-8 mb-12 text-2xl font-extrabold leading-tight text-gray-900 border-b border-gray-200 md:text-4xl">M<span className={'rd_txt'}>erc</span>h</h2> 
+        <h2 className="pb-8 mb-12 text-2xl font-extrabold leading-tight text-gray-900 border-b border-gray-200 md:text-4xl uppercase">M<span className={'rd_txt'}>erc</span>h</h2> 
         <div className="pb-24 mx-auto">
           <div className="flex flex-wrap -m-4">
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <div className="lg:w-1/4 md:w-1/2 p-2 w-full">
               <a className="block relative md:h-48 overflow-hidden">
                 <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260"/>
               </a>
@@ -343,7 +314,7 @@ export default function Home() {
                 <p className="mt-1">€16.00</p>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <div className="lg:w-1/4 md:w-1/2 p-2 w-full">
               <a className="block relative md:h-48 overflow-hidden">
                 <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/421x261" />
               </a>
@@ -353,7 +324,7 @@ export default function Home() {
                 <p className="mt-1">€21.15</p>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <div className="lg:w-1/4 md:w-1/2 p-2 w-full">
               <a className="block relative md:h-48 overflow-hidden">
                 <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/422x262" />
               </a>
@@ -363,7 +334,7 @@ export default function Home() {
                 <p className="mt-1">€12.00</p>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <div className="lg:w-1/4 md:w-1/2 p-2 w-full">
               <a className="block relative md:h-48 overflow-hidden">
                 <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/423x263" />
               </a>
@@ -373,7 +344,7 @@ export default function Home() {
                 <p className="mt-1">€18.40</p>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <div className="lg:w-1/4 md:w-1/2 p-2 w-full">
               <a className="block relative md:h-48 overflow-hidden">
                 <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/424x264" />
               </a>
@@ -383,7 +354,7 @@ export default function Home() {
                 <p className="mt-1">€16.00</p>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <div className="lg:w-1/4 md:w-1/2 p-2 w-full">
               <a className="block relative md:h-48 overflow-hidden">
                 <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/425x265" />
               </a>
@@ -393,7 +364,7 @@ export default function Home() {
                 <p className="mt-1">€21.15</p>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <div className="lg:w-1/4 md:w-1/2 p-2 w-full">
               <a className="block relative md:h-48 overflow-hidden">
                 <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/427x267" />
               </a>
@@ -403,7 +374,7 @@ export default function Home() {
                 <p className="mt-1">€12.00</p>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <div className="lg:w-1/4 md:w-1/2 p-2 w-full">
               <a className="block relative md:h-48 overflow-hidden">
                 <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/428x268" />
               </a>
@@ -417,9 +388,16 @@ export default function Home() {
         </div>
 
       </Bounded>
+
+      <Bounded collapsible={false} as="section" className="bg-slate-100">
+        <div className="grid grid-cols-1 items-end gap-10 md:grid-cols-1 md:gap-10 lg:gap-28">
+          <h1 className='text-center'>[ADVERTISEMENT]</h1>
+        </div>
+      </Bounded>
+
       <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white">
         
-          <h2 className="pb-8 mb-12 text-2xl font-extrabold leading-tight text-gray-900 border-b border-gray-200 md:text-4xl">Feat<span className={'rd_txt'}>ure</span>d V<span className={'rd_txt'}>ide</span>o</h2>
+          <h2 className="pb-8 mb-12 text-2xl font-extrabold leading-tight text-gray-900 border-b border-gray-200 md:text-4xl uppercase">Feat<span className={'rd_txt'}>ure</span>d V<span className={'rd_txt'}>ide</span>o</h2>
           <div className="relative">
             <div className="absolute -top-4 -left-4 w-1/3">
               <div className="aspect-w-1 aspect-h-1 bg-slate-200/50"></div>
