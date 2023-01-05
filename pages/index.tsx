@@ -30,7 +30,7 @@ export default function Home() {
           </div>
         </div>
       </Bounded> */}
-
+      <GalleryGrid />
       <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white pb-0 md:pb-0">
         <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6">
           <div className="max-full text-center leading-relaxed mb-2">
@@ -91,15 +91,15 @@ export default function Home() {
         
       </Bounded>
 
-      <CarouselContainer /> 
-
-      <Bounded collapsible={false} as="section" className="md:px-6 md:pt-8 bg-white pb-8 md:pb-8">
+      
+      {/* <Bounded collapsible={false} as="section" className="md:px-6 md:pt-8 bg-white pb-8 md:pb-8">
         <Faqs />
-      </Bounded>
+      </Bounded> */}
 
 
       {/* <Bounded collapsible={false} as="section" className="bg-slate-100"> */}
-      <GalleryGrid />
+      {/* <GalleryGrid /> */}
+      <CarouselContainer /> 
       {/* </Bounded> */}
       <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white">
         <h2 className="pb-8 mb-12 text-2xl font-extrabold leading-tight text-gray-900 border-b border-gray-200 md:text-4xl">Featured <span className={'rd_txt'}>Ar</span>ticle</h2>

@@ -15,10 +15,10 @@ export const images: CustomImage[] = [
     original: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
     width: 320,
     height: 174,
-    tags: [
-      { value: "Nature", title: "Nature" },
-      { value: "Flora", title: "Flora" },
-    ],
+    // tags: [
+    //   { value: "Nature", title: "Nature" },
+    //   { value: "Flora", title: "Flora" },
+    // ],
     caption: "After Rain (Jeshu John - designerspics.com)",
   },
   {
@@ -26,10 +26,10 @@ export const images: CustomImage[] = [
     original: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
     width: 320,
     height: 212,
-    tags: [
-      { value: "Rick", title: "Rick" },
-      { value: "Morty", title: "Morty" },
-    ],
+    // tags: [
+    //   { value: "Rick", title: "Rick" },
+    //   { value: "Morty", title: "Morty" },
+    // ],
     caption: "Boats (Jeshu John - designerspics.com)",
   },
   {
@@ -58,7 +58,7 @@ export const images: CustomImage[] = [
     original: "https://c5.staticflickr.com/9/8768/28941110956_b05ab588c1_b.jpg",
     width: 240,
     height: 320,
-    tags: [{ value: "Nature", title: "Nature" }],
+    // tags: [{ value: "Nature", title: "Nature" }],
     caption: "8H (gratisography.com)",
   },
   {
@@ -73,7 +73,7 @@ export const images: CustomImage[] = [
     original: "https://c7.staticflickr.com/9/8569/28941134686_d57273d933_b.jpg",
     width: 320,
     height: 148,
-    tags: [{ value: "People", title: "People" }],
+    // tags: [{ value: "People", title: "People" }],
     caption: "315H (gratisography.com)",
   },
   {
@@ -97,7 +97,7 @@ export const images: CustomImage[] = [
     alt: "Red Zone - Paris",
     width: 320,
     height: 113,
-    tags: [{ value: "People", title: "People" }],
+    // tags: [{ value: "People", title: "People" }],
     caption: "Red Zone - Paris (Tom Eversley - isorepublic.com)",
   },
   {
@@ -142,10 +142,10 @@ export const images: CustomImage[] = [
     original: "https://c1.staticflickr.com/9/8330/28941240416_71d2a7af8e_b.jpg",
     width: 320,
     height: 213,
-    tags: [
-      { value: "Nature", title: "Nature" },
-      { value: "People", title: "People" },
-    ],
+    // tags: [
+    //   { value: "Nature", title: "Nature" },
+    //   { value: "People", title: "People" },
+    // ],
     caption: "Surfer Sunset (Tom Eversley - isorepublic.com)",
   },
   {
@@ -153,10 +153,10 @@ export const images: CustomImage[] = [
     original: "https://c1.staticflickr.com/9/8707/28868704912_cba5c6600e_b.jpg",
     width: 320,
     height: 213,
-    tags: [
-      { value: "People", title: "People" },
-      { value: "Sport", title: "Sport" },
-    ],
+    // tags: [
+    //   { value: "People", title: "People" },
+    //   { value: "Sport", title: "Sport" },
+    // ],
     caption: "Man on BMX (Tom Eversley - isorepublic.com)",
   },
   {
