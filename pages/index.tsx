@@ -103,7 +103,7 @@ export default function Home() {
       <CarouselContainer /> 
       {/* </Bounded> */}
       <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white">
-        <h2 className="pb-8 mb-12 text-2xl font-extrabold leading-tight text-gray-900 border-b border-gray-200 md:text-4xl uppercase">Featured <span className={'rd_txt'}>Ar</span>ticles</h2>
+        <h2 className="pb-8 mb-12 text-2xl font-black leading-tight text-gray-900 border-b border-gray-200 md:text-4xl uppercase">Featured <span className={'rd_txt'}>Ar</span>ticles</h2>
         
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 mb-8">
               <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
@@ -199,7 +199,7 @@ export default function Home() {
       
       
       
-      <h2 className="pb-8 mb-12 text-2xl font-extrabold leading-tight text-gray-900 border-b border-gray-200 md:text-4xl uppercase">All <span className={'rd_txt'}>Ar</span>ticles</h2>
+      <h2 className="pb-8 mb-12 text-2xl font-black leading-tight text-gray-900 border-b border-gray-200 md:text-4xl uppercase">All <span className={'rd_txt'}>Ar</span>ticles</h2>
       <div className="flex flex-col md:flex-row md:gap-8">
       
         <div className="w-full  flex flex-col space-y-16">
@@ -301,7 +301,7 @@ export default function Home() {
       <CTA />
       <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white">
 
-        <h2 className="pb-8 mb-12 text-2xl font-extrabold leading-tight text-gray-900 border-b border-gray-200 md:text-4xl uppercase">M<span className={'rd_txt'}>erc</span>h</h2> 
+        <h2 className="pb-8 mb-12 text-2xl font-black leading-tight text-gray-900 border-b border-gray-200 md:text-4xl uppercase">M<span className={'rd_txt'}>erc</span>h</h2> 
         <div className="pb-24 mx-auto">
           <div className="flex flex-wrap -m-4">
             <div className="lg:w-1/4 md:w-1/2 p-2 w-full">
@@ -397,7 +397,7 @@ export default function Home() {
 
       <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white">
         
-          <h2 className="pb-8 mb-12 text-2xl font-extrabold leading-tight text-gray-900 border-b border-gray-200 md:text-4xl uppercase">Feat<span className={'rd_txt'}>ure</span>d V<span className={'rd_txt'}>ide</span>o</h2>
+          <h2 className="pb-8 mb-12 text-2xl font-black leading-tight text-gray-900 border-b border-gray-200 md:text-4xl uppercase">Feat<span className={'rd_txt'}>ure</span>d V<span className={'rd_txt'}>ide</span>o</h2>
           <div className="relative">
             <div className="absolute -top-4 -left-4 w-1/3">
               <div className="aspect-w-1 aspect-h-1 bg-slate-200/50"></div>
