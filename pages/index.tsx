@@ -304,7 +304,7 @@ export default function Home() {
         <h2 className="pb-8 mb-12 text-2xl font-black leading-tight text-gray-900 border-b border-gray-200 md:text-4xl uppercase">St<span className={'rd_txt'}>or</span>e</h2> 
         <div className="pb-24 mx-auto">
           <div className="flex flex-wrap -m-4">
-            <div className="lg:w-1/4 md:w-1/2 p-2 w-full">
+            <div className="lg:w-1/4 md:w-1/2 p-2 w-1/2">
               <a className="block relative md:h-48 overflow-hidden">
                 <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260"/>
               </a>
@@ -314,7 +314,7 @@ export default function Home() {
                 <p className="mt-1">€16.00</p>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-2 w-full">
+            <div className="lg:w-1/4 md:w-1/2 p-2 w-1/2">
               <a className="block relative md:h-48 overflow-hidden">
                 <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/421x261" />
               </a>
@@ -324,7 +324,7 @@ export default function Home() {
                 <p className="mt-1">€21.15</p>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-2 w-full">
+            <div className="lg:w-1/4 md:w-1/2 p-2 w-1/2">
               <a className="block relative md:h-48 overflow-hidden">
                 <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/422x262" />
               </a>
@@ -334,7 +334,7 @@ export default function Home() {
                 <p className="mt-1">€12.00</p>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-2 w-full">
+            <div className="lg:w-1/4 md:w-1/2 p-2 w-1/2">
               <a className="block relative md:h-48 overflow-hidden">
                 <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/423x263" />
               </a>
@@ -344,7 +344,7 @@ export default function Home() {
                 <p className="mt-1">€18.40</p>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-2 w-full">
+            <div className="lg:w-1/4 md:w-1/2 p-2 w-1/2">
               <a className="block relative md:h-48 overflow-hidden">
                 <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/424x264" />
               </a>
@@ -354,7 +354,7 @@ export default function Home() {
                 <p className="mt-1">€16.00</p>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-2 w-full">
+            <div className="lg:w-1/4 md:w-1/2 p-2 w-1/2">
               <a className="block relative md:h-48 overflow-hidden">
                 <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/425x265" />
               </a>
@@ -364,7 +364,7 @@ export default function Home() {
                 <p className="mt-1">€21.15</p>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-2 w-full">
+            <div className="lg:w-1/4 md:w-1/2 p-2 w-1/2">
               <a className="block relative md:h-48 overflow-hidden">
                 <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/427x267" />
               </a>
@@ -374,7 +374,7 @@ export default function Home() {
                 <p className="mt-1">€12.00</p>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-2 w-full">
+            <div className="lg:w-1/4 md:w-1/2 p-2 w-1/2">
               <a className="block relative md:h-48 overflow-hidden">
                 <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/428x268" />
               </a>
