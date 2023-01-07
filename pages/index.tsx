@@ -109,8 +109,8 @@ export default function Home() {
               <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
               <div className="col-span-1">
                 <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2023</p>
-                <h1 className="mb-2 text-4xl font-extrabold leading-tight text-gray-800">
-                  <a href="#" className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500">Process Documents Using Artificial Intelligence For RPA Bots</a>
+                <h1 className="mb-2 text-4xl font-extrabold leading-tightest text-gray-800">
+                  <a href="#" className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500 uppercase">Process Documents Using Artificial Intelligence For RPA Bots</a>
                 </h1>
                 <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt">
                   Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical

@@ -9,7 +9,7 @@ import { Layout } from '../../components/Layout';
 import { Bounded } from "../../components/Bounded";
 import { GalleryGrid } from "../../components/GalleryGrid";
 // import CarouselContainer from "../components/Carousel";
-// import { CTA } from "../components/CTA";
+import { CTA } from "../../components/CTA";
 // import { Video } from "../components/Video";
 // import { Faqs } from "../components/Faq/Faqs";
 import imageLoader from '../../imageLoader';
@@ -38,8 +38,8 @@ export default function Words() {
               <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
               <div className="col-span-1">
                 <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2023</p>
-                <h1 className="mb-2 text-4xl font-extrabold leading-tight text-gray-800">
-                  <Link href="/words/single" className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500">Process Documents Using Artificial Intelligence For RPA Bots</Link>
+                <h1 className="mb-2 text-4xl font-extrabold leading-tightest text-gray-800">
+                  <Link href="/words/single" className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-600 uppercase">Process Documents Using Artificial Intelligence For RPA Bots</Link>
                 </h1>
                 <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt">
                   Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical
@@ -122,6 +122,8 @@ export default function Words() {
             <h1 className='text-center'>[ADVERTISEMENT]</h1>
             </div>
         </Bounded>
+
+        
       <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white">
       
       
@@ -225,7 +227,8 @@ export default function Words() {
         </div> */}
       </div> 
       </Bounded>
-        </Layout>
+      <CTA />
+    </Layout>
 
 
     )

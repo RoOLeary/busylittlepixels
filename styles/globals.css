@@ -177,7 +177,8 @@ nav{
   font-weight: bold;
 }
 
-.nav__link:hover{
+a.nav__link:active,
+a.nav__link:hover{
  color: red;
 }
 
@@ -200,8 +201,8 @@ footer,
     align-items: center;
     background: unset;
    }
-  .nav__link.active,
-  .nav__link::before{
+  
+   .nav__link::before{
     content: '';
     position: absolute;
     width: 0%;
@@ -212,6 +213,7 @@ footer,
     transition: all 0.2s;
   }
   
+  .nav__link.active::before,
   .nav__link:hover:before{
     width: 100%;
   }
