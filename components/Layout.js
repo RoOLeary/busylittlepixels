@@ -6,7 +6,6 @@ export const Layout = ({
 }) => {
   return (
     <>
-        <Header />
         <main className="content text-slate-800">
         {children}
         </main>
