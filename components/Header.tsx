@@ -20,7 +20,7 @@ export const Header = () => {
     const [activeIdx, setActiveIdx] = useState(-1);
 
     return (
-        <header className="px-6 text-black body-font sticky w-full bg-black logoShadow">
+        <header className="px-6 text-black body-font sm:fixed md:sticky w-full bg-black logoShadow">
             <div className="mx-auto flex flex-wrap py-5 md:flex-row items-start justify-between">
                 <Link href="/">
                     <h1 className="text-2xl font-extrabold leading-tight shake uppercase">busy<span className="rd_txt">little</span>pixels<span className="rd_txt">.</span></h1>
@@ -34,13 +34,13 @@ export const Header = () => {
                 <nav className={`nav`}>
                     <div
                         onClick={() => setNavActive(!navActive)}
-                        className={`nav__menu-bar md:hidden menu__icon cursor-pointer ${navActive ? "active" : ""}`}
+                        className={`nav__menu-bar md:hidden menu__icon cursor-pointer ease-linear ${navActive ? "active" : ""}`}
                     >
                         <div></div>
                         <div></div>
                         <div></div>
                     </div>
-                    <div className={`${navActive ? "active" : ""} nav__menu-list`}>
+                    <div className={`nav__menu-list ${navActive ? "active" : ""}`}>
                         {MENU_LIST.map((menu, idx) => (
                             <div
                             onClick={() => {

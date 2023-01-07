@@ -147,21 +147,27 @@ nav{
   right: -100%;
   padding: 0 32px;
   transition: all 0.2s;
+  top: 0em;
   min-height: calc(100vh - 60px);
 
   @media screen and (max-width: 568px) {
     margin-top: 30px;
     padding: 0 1.5em;
+    top: 2em;
   }
 
 
 }
 .nav__menu-list.active{
+  top: 0;
+  @media screen and (max-width: 568px) {
+    top: 2rem;
+    @apply ease-linear;
+  }
+  
   right: 0;
   height: 100%;
-  top: 2rem;
   padding-top: 1em;
-  /* padding-left: 3em; */
 }
 .nav__link{
   /* color: red; */
