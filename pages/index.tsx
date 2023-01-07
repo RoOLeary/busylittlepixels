@@ -42,7 +42,7 @@ export default function Home() {
             <p className="font-semibold tracking-tighter">By <a href="#">Ronan O'Leary</a> | Category: Tech, CMS | Published: 02-01-2023 19:15 CET</p>
           </div>
         </div> 
-        <div className="w-full mb-8">
+        <div className="w-full mb-2">
             <Image alt={'holding'} src="https://placedog.net/1200/400/r" width={1200} height={500} loader={imageLoader} layout="responsive" className="shadow-xl" />
         </div>       
         <div className="py-8 flex flex-col md:flex-row">
