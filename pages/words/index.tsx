@@ -9,7 +9,7 @@ import { Layout } from '../../components/Layout';
 import { Bounded } from "../../components/Bounded";
 import { GalleryGrid } from "../../components/GalleryGrid";
 // import CarouselContainer from "../components/Carousel";
-import { CTABlock } from "../../components/CTA";
+import { CTA } from "../../components/CallToAction";
 // import { Video } from "../components/Video";
 // import { Faqs } from "../components/Faq/Faqs";
 import imageLoader from '../../imageLoader';
@@ -227,7 +227,7 @@ export default function Words() {
         </div> */}
       </div> 
       </Bounded>
-      <CTABlock />
+      <CTA />
     </Layout>
 
 
