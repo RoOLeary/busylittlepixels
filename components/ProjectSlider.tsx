@@ -34,7 +34,7 @@ export default function ProjectSlider() {
     ]
     
     const length = sliderMatrix.length;
-    const elementRef = useRef();
+    const elementRef = useRef<HTMLDivElement>(null);
     const divElement: any = elementRef.current;
 
     const [activeSlide, setActiveSlide] = useState(initialState.activeSlide);
@@ -54,7 +54,7 @@ export default function ProjectSlider() {
             
             // console.log(wrapper);
             currentSlide = document.querySelector('.flex--active');
-            current = document.querySelector('.flex--active') ? document.querySelector('.flex--active').getAttribute('data-slide') : initialState.defaultActive;  
+            current = currentSlide ? currentSlide.getAttribute('data-slide') : initialState.defaultActive;  
             clickToSlide = e.currentTarget.getAttribute('data-slide');
 
             assignActive = clickToSlide ? clickToSlide : current;
@@ -69,17 +69,21 @@ export default function ProjectSlider() {
         if (current === assignActive) {
             return false
         } else {
+            // @ts-ignore
             oldActive.classList.add('flex--active', 'animate--end');
             fadeSl.classList.remove('flex--active', 'animate--end');
             fadeSl.classList.add('animate--start');
             setTimeout(() => {
+                // @ts-ignore
                 setActiveSlide(assignActive);
             }, 900)
         }   
     }
 
     useEffect(() => {
-        const activeElement: any = elementRef.current;
+        
+        const activeElement: any = elementRef.current 
+        // @ts-ignore
         const current = document.querySelector('.flex--active') ? document.querySelector('.flex--active').getAttribute('data-slide') : initialState.defaultActive;    
         const autoFadeSl = activeElement.querySelector('.flex__container[data-slide="' + activeSlide + '"]'); 
         const oldActive = activeElement.querySelector('.flex__container[data-slide="' + current + '"]');
@@ -109,6 +113,8 @@ export default function ProjectSlider() {
     }, [activeSlide, isAutoPlay, transitionSlide, length]);
 
     return(
+        
+
         <>
             <div className="slider__wrapper hidden md:block" ref={elementRef}>
                 {sliderMatrix.map((sl, i) => {
@@ -132,6 +138,7 @@ export default function ProjectSlider() {
                     {sliderMatrix.map((sl, i) => {
                         const current = ++i;
                         return(
+                            // @ts-ignore
                             <a key={++i} href="#" onClick={(e) => transitionSlide(e)} className={`slide-nav ${activeSlide == current ? `active` : '' }`} data-slide={current}>{sl.slideColor}</a>
                         ) 
                     })} 
