@@ -671,3 +671,11 @@ blockquote > p {
 	transform: translate3d(200px,0,0);
 	opacity: 0;
 }
+
+.override{
+  padding-top: 4rem!important;
+  padding-bottom: 0!important;
+  @media (max-width: 760px){
+    padding-top: 8rem!important;
+  }
+}

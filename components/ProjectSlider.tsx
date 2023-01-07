@@ -9,11 +9,6 @@ let initialState = {
     defaultActive: 1,
 }
 
-// interface ISlider{
-//     sliderTitle?: string
-//     sliderMatrix?: Array<any>
-// }
-
 export default function ProjectSlider() {
 
     const sliderMatrix = [
