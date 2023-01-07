@@ -67,7 +67,7 @@ const CarouselContainer = () => {
 
 
   return(
-    <section className="bg-white mb-2">
+    <section className="bg-white mb-2 carouselLeft">
      
       <Carousel showDots={false} responsive={responsive}> 
         {/* <div>
