@@ -32,7 +32,7 @@ export default function Home() {
           </div>
         </div>
       </Bounded> */}
-      <div className="title_container"><div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6"><div className="mx-auto w-full text-start mt-4"><h1 className="px-6 font-black text-4xl md:text-6xl mb-6 last:mb-0 uppercase">WE ARE BUSY<span style={{ "color": "red"}}>LITTLE</span>PIXELS<span style={{ "color": "red"}}>.</span><br /> WE <span style={{ "color": "red"}}>HEART</span> WORDS, <span style={{ "color": "red"}}>WEB</span>, APPS <span style={{ "color": "red"}}>&</span>  DESIGN</h1></div></div></div>
+      <div className="title_container"><div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6"><div className="mx-auto w-full text-start mt-4"><h1 className="px-6 font-black text-4xl md:text-6xl mb-6 last:mb-0 uppercase">WE ARE BUSY<span style={{ "color": "red"}}>LITTLE</span>PIXELS<span style={{ "color": "red"}}>.</span><br /> WE <span style={{ "color": "red"}}>HEART</span> WORDS, <span style={{ "color": "red"}}>TECH</span>, APPS <span style={{ "color": "red"}}>&</span>  DESIGN</h1></div></div></div>
       <GalleryGrid />
       <ProjectSlider />
       <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white pb-0 md:pb-0">
