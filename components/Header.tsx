@@ -7,10 +7,9 @@ import NavItem from './NavItem';
 
 
 const MENU_LIST = [
-    { text: "Latest", href: "/" },
+    { text: "Words", href: "/words" },
     { text: "Web", href: "/" },
-    { text: "Words", href: "/" },
-    { text: "Video", href: "/" },
+    { text: "Design", href: "/" },
     { text: "Merch", href: "/" },
     { text: "Contact", href: "/contact" },
 ];
