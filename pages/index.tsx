@@ -8,7 +8,7 @@ import { Layout } from '../components/Layout';
 import { Bounded } from "../components/Bounded";
 import { GalleryGrid } from "../components/GalleryGrid";
 import CarouselContainer from "../components/Carousel";
-import { CTA } from "../components/Cta";
+import { CTABlock } from "../components/Cta";
 import { Video } from "../components/Video";
 import { Faqs } from "../components/Faq/Faqs";
 import imageLoader from '../imageLoader';
@@ -298,7 +298,7 @@ export default function Home() {
         </div> */}
       </div> 
       </Bounded>
-      <CTA />
+      <CTABlock />
       <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white">
 
         <h2 className="pb-8 mb-12 text-2xl font-black leading-tight text-gray-900 border-b border-gray-200 md:text-4xl uppercase">St<span className={'rd_txt'}>or</span>e</h2> 

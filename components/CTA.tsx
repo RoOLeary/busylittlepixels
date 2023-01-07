@@ -40,7 +40,7 @@ const NewsletterSignUp = () => {
   );
 };
 
-export const CTA = () => {
+export const CTABlock = () => {
   return (
     <Bounded as="section" className="bg-black pb-12 text-slate-300 md:pb-12">
       <div className="grid grid-cols-1 justify-items-center gap-20 md:gap-24">
