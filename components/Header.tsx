@@ -16,6 +16,8 @@ const MENU_LIST = [
 ];
 
 export const Header = () => {
+    const router = useRouter(); 
+    console.log(router); 
     const [navActive, setNavActive] = useState(false);
     const [activeIdx, setActiveIdx] = useState(-1);
     
@@ -39,7 +41,7 @@ export const Header = () => {
                             <div
                                 onClick={() => {
                                     setActiveIdx(idx);
-                                    setNavActive(false);
+                                    // ssetNavActive(false);
                                 }}
                                 key={menu.text}
                             >
