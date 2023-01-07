@@ -8,7 +8,8 @@ import { Layout } from '../components/Layout';
 import { Bounded } from "../components/Bounded";
 import { GalleryGrid } from "../components/GalleryGrid";
 import CarouselContainer from "../components/Carousel";
-import { CTA } from "../components/CallToAction";
+import { CTA } from "../components/CallToAction"
+import ProjectSlider from "../components/ProjectSlider";
 import { Video } from "../components/Video";
 import { Faqs } from "../components/Faq/Faqs";
 import imageLoader from '../imageLoader';
@@ -33,6 +34,7 @@ export default function Home() {
       </Bounded> */}
       <div className="title_container"><div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6"><div className="mx-auto w-full text-start mt-4"><h1 className="px-6 font-black text-4xl md:text-6xl mb-6 last:mb-0 uppercase">WE ARE BUSY<span style={{ "color": "red"}}>LITTLE</span>PIXELS<span style={{ "color": "red"}}>.</span><br /> WE <span style={{ "color": "red"}}>HEART</span> WORDS, <span style={{ "color": "red"}}>CODE</span>, APPS <span style={{ "color": "red"}}>&</span>  DESIGN</h1></div></div></div>
       <GalleryGrid />
+      <ProjectSlider />
       <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white pb-0 md:pb-0">
         <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6">
           <div className="max-full text-center leading-relaxed mb-2">
@@ -374,7 +376,7 @@ export default function Home() {
                 <p className="mt-1">€12.00</p>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/4 p-2 w-1/2">
+            <div className="lg:w-1/4 md:w-1/2 p-2 w-1/2">
               <a className="block relative md:h-48 overflow-hidden">
                 <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/428x268" />
               </a>
