@@ -28,10 +28,10 @@ export const Faqs = () => {
 
     return <div className={`mx-auto flex items-center`}>
         <div
-            className={"flex-auto flex flex-col md:flex-row items-center bg-white md:m-10 "}>
+            className={"flex-auto flex flex-col md:flex-row items-center bg-white"}>
            
-            <div className="flex-auto mb-2 w-full p-2">
-                <h1 className="flex-none pl-3 text-3xl py-8 font-black tracking-wide">F<span className={'rd_txt'}>re</span>quently Asked <span className={'rd_txt'}>Que</span>stions</h1>
+            <div className="flex-auto mb-2 w-full">
+                <h1 className="pb-8 mb-2 text-2xl font-black leading-tight text-gray-900 border-b border-gray-200 md:text-4xl uppercase">F<span className={'rd_txt'}>re</span>quently Asked <span className={'rd_txt'}>Que</span>stions</h1>
                 {faqComponents}
             </div>
         </div>

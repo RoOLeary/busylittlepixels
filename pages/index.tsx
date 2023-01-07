@@ -95,9 +95,9 @@ export default function Home() {
       </Bounded>
 
       
-      {/* <Bounded collapsible={false} as="section" className="md:px-6 md:pt-8 bg-white pb-8 md:pb-8">
+      <Bounded collapsible={false} as="section" className="md:px-6 md:pt-8 bg-white pb-8 md:pb-8">
         <Faqs />
-      </Bounded> */}
+      </Bounded>
 
 
       {/* <Bounded collapsible={false} as="section" className="bg-slate-100"> */}
