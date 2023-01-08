@@ -40,8 +40,8 @@ const Store: NextPage = () => {
         <Layout>
             <Bounded collapsible={true} as="section" className="px-6 py-20 bg-white override">
 
-            <h1 className="pb-8 font-black text-4xl md:text-6xl mb-6 last:mb-0 border-b border-gray-200 uppercase">Me<span className={'rd_txt'}>rch</span> St<span className={'rd_txt'}>or</span>e</h1> 
-            <h3 className="pb-2 font-black text-2xl mb-6 last:mb-0 uppercase">NO. <span className={'rd_txt'}>FUCKING.</span> WAY!!! YOU LIKE <span className={'rd_txt'}>MERCH</span> TOO??? THAT'S <span className={'rd_txt'}>FUCKING AWESOME!!!</span> YOU OUGHT TO CHECK OUT OUR <span className={'rd_txt'}>STORE!</span> BECOME THE <span className={'rd_txt'}>ENVY OF YOUR FRIENDS</span> WITH SOME GENUINE BUSY<span className={'rd_txt'}>LITTLE</span>PIXELS MERCH!</h3> 
+            <h1 className="pb-8 font-black text-4xl md:text-6xl mb-6 last:mb-0 border-b border-gray-200 uppercase">Merch <span className={'rd_txt'}>Store</span></h1> 
+            <h3 className="pb-2 font-black text-2xl mb-6 last:mb-0 uppercase">NO. <span className={'rd_txt'}>FUCKING.</span> WAY!!! YOU LIKE <span className={'rd_txt'}>MERCH</span> TOO??? THAT'S <span className={'rd_txt'}>FUCKING AWESOME!!!</span> YOU OUGHT TO CHECK OUT OUR <span className={'rd_txt'}>STORE!</span> BECOME THE <span className={'rd_txt'}>ENVY OF YOUR FRIENDS</span> WITH SOME GENUINE BUSY<span className={'rd_txt'}>LITTLE</span>PIXELS GOODIES!</h3> 
             <p className="text-lg font-normal text-gray-500">Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical Character Recognition) and Machine Learning, RPA bots are capable of extracting these data …</p>
             <br />
             <div className="py-6 pb-24 mx-auto">
