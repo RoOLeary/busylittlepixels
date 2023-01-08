@@ -11,7 +11,7 @@ const MENU_LIST = [
     { text: "Articles", href: "/articles" },
     { text: "Tech", href: "/tech" },
     { text: "Apps", href: "/apps" },
-    { text: "Design", href: "/design" },
+    { text: "Reviews", href: "/reviews" },
     { text: "Store", href: "/store" },
     { text: "Contact", href: "/contact" },
     { text: "Login/Register", href: "/" },
