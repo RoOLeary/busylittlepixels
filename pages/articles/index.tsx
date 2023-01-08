@@ -22,8 +22,8 @@ export default function Articles() {
 
         <Layout>
        
-        <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-20 bg-white">
-        <h1 className="pb-8 font-black text-4xl md:text-6xl mb-6 last:mb-0 border-b border-gray-200 uppercase">IT IS ACTUALLY <em><span style={{ "color": "red"}}>WE</span></em> WHO HAVE THE<span style={{ "color": "red"}}> BEST</span> WORDS</h1>
+        <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-20 bg-white override">
+        <h1 className="pb-8 font-black text-4xl md:text-6xl mb-6 last:mb-0 border-b border-gray-200 uppercase">LATEST<span style={{ "color": "red"}}> ARTICLES</span></h1>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 mb-8">
               <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
               <div className="col-span-1">
@@ -118,7 +118,7 @@ export default function Articles() {
       
       
       
-      <h2 className="pb-8 mb-12 text-2xl font-black leading-tight text-gray-900 border-b border-gray-200 md:text-4xl uppercase">All <span className={'rd_txt'}>Ar</span>ticles</h2>
+      <h2 className="pb-8 mb-12 text-2xl font-black leading-tight text-gray-900 border-b border-gray-200 md:text-4xl uppercase">All <span className={'rd_txt'}>Articles</span></h2>
       <div className="flex flex-col md:flex-row md:gap-8">
       
         <div className="w-full  flex flex-col space-y-16">

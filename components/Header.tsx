@@ -8,7 +8,7 @@ import { isActiveLink } from '../lib/utils'
 import { useRouter } from 'next/router'
 
 const MENU_LIST = [
-    { text: "Articles", href: "/articles" },
+    { text: "Latest", href: "/articles" },
     { text: "Tech", href: "/tech" },
     { text: "Reviews", href: "/reviews" },
     { text: "Podcasts", href: "/podcasts" },
