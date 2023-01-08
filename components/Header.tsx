@@ -14,7 +14,7 @@ const MENU_LIST = [
     { text: "Reviews", href: "/reviews" },
     { text: "Store", href: "/store" },
     { text: "Contact", href: "/contact" },
-    { text: "Login/Register", href: "/" },
+    { text: "Login", href: "/" },
 ];
 
 export const Header = () => {
