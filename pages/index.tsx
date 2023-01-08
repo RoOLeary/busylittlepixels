@@ -21,6 +21,7 @@ export default function Home() {
 
   return (
     <>
+     
      <Layout>
       {/* <Bounded as="section" collapsible={false} className="bg-white pb-0 md:pb-0">
         <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust">
