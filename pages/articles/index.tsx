@@ -16,30 +16,20 @@ import imageLoader from '../../imageLoader';
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Words() {
+export default function Articles() {
 
     return(
 
         <Layout>
-        {/* <Bounded as="section" collapsible={false} className="bg-white pb-0 md:pb-0">
-            <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust">
-            <div className="max-w-2xl text-center leading-relaxed">
-                <h1 className="font-semibold tracking-tighter text-5xl md:text-[5rem] mb-6 last:mb-0">Hello and int<span style={{ "color": "red"}}>ro</span> text. Only a string here please.</h1>
-                <p className="mb-6 last:mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec faucibus metus, non aliquet nisi. Aenean fermentum libero nec volutpat semper. Quisque tellus neque, molestie in magna et, lobortis accumsan nisl. Suspendisse lacinia velit et dolor dictum ornare. Pellentesque justo nulla, fermentum vel ante non, condimentum aliquam justo.<br /><br />Okay, I think I'm starting to grasp it.</p>
-            </div>
-            <div className="w-full mb-6">
-                <Image alt={'holding'} src="https://placedog.net/1200/500/r" width={1200} height={500} loader={imageLoader} layout="responsive" />
-            </div>
-            </div>
-        </Bounded> */}
+       
         <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-20 bg-white">
-        <h1 className="pb-8 font-black text-4xl md:text-6xl mb-6 last:mb-0 border-b border-gray-200 uppercase">WE ARE BUSY<span style={{ "color": "red"}}>LITTLE</span>PIXELS & <em>WE</em> HAVE THE<span style={{ "color": "red"}}> BEST</span> WORDS</h1>
+        <h1 className="pb-8 font-black text-4xl md:text-6xl mb-6 last:mb-0 border-b border-gray-200 uppercase">IT IS ACTUALLY <em><span style={{ "color": "red"}}>WE</span></em> WHO HAVE THE<span style={{ "color": "red"}}> BEST</span> WORDS</h1>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 mb-8">
               <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
               <div className="col-span-1">
-                <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2023</p>
+                <p className="mb-2 -mt-1 text-sm font-black text-gray-500">April 16, 2023</p>
                 <h1 className="mb-2 text-4xl font-extrabold leading-tightest text-gray-800">
-                  <Link href="/words/single" className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-600 uppercase">Process Documents Using Artificial Intelligence For RPA Bots</Link>
+                  <Link href="/articles/videos/single" className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-600 uppercase">Process Documents Using Artificial Intelligence For RPA Bots</Link>
                 </h1>
                 <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt">
                   Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical

@@ -4,15 +4,15 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
-
-import { Layout } from '../../components/Layout';
-import { Bounded } from "../../components/Bounded";
-import { GalleryGrid } from "../../components/GalleryGrid";
+import { useScroll, useTransform, motion } from 'framer-motion';
+import { Layout } from './../../../components/Layout';
+import { Bounded } from "./../../../components/Bounded";
+import { GalleryGrid } from "../../../components/GalleryGrid";
 // import CarouselContainer from "../components/Carousel";
 // import { CTA } from "../components/CTA";
-// import { Video } from "../components/Video";
+import { Video } from "../../../components/Video";
 // import { Faqs } from "../components/Faq/Faqs";
-import imageLoader from '../../imageLoader';
+import imageLoader from './../../../imageLoader';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -29,10 +29,15 @@ export default function Words() {
           <div className="max-full text-center leading-relaxed mb-8">
             <p className="font-semibold tracking-tighter">By <a href="#">Ronan O'Leary</a> | Category: Tech, CMS | Published: 02-01-2023 19:15 CET</p>
           </div>
-        </div> 
-        <div className="w-full mb-2">
-            <Image alt={'holding'} src="https://placedog.net/1200/400/r" width={1200} height={500} loader={imageLoader} layout="responsive" className="shadow-xl" />
-        </div>       
+        </div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className="w-full mb-2"
+        >
+          <Video />
+            {/* <Image alt={'holding'} src="https://placedog.net/1200/400/r" width={1200} height={500} loader={imageLoader} layout="responsive" className="shadow-xl" /> */}
+        </motion.div>       
         <div className="py-8 flex flex-col md:flex-row">
          
           <div className="mx-auto w-full max-w-3xl">
@@ -42,7 +47,12 @@ export default function Words() {
               <p className="article_text text-md leading-8">So park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer. Glossiesr echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.
               </p>
               <br />
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+              >
               <img alt="content" className="object-cover object-center h-full w-full mb-4 shadow-xl" src="https://source.unsplash.com/350x250/?tech" />
+              </motion.div>
               <br />
               
               <p className="article_text text-md leading-8">Jerry! I just killed my family! I don’t care who they were! You know who's into dragons, Morty? Nerds who refuse to admit they're Christian. I couldn't hear you over my own screaming. We've talked about this! 5 more minute of this and I'm going to get mad! You know my name, that's disarming. Not today bitch! You look it up, you don't- you don't even know what it means.</p><br />

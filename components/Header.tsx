@@ -8,12 +8,13 @@ import { isActiveLink } from '../lib/utils'
 import { useRouter } from 'next/router'
 
 const MENU_LIST = [
-    { text: "Words", href: "/words" },
+    { text: "Articles", href: "/articles" },
     { text: "Tech", href: "/tech" },
     { text: "Apps", href: "/apps" },
     { text: "Design", href: "/design" },
     { text: "Store", href: "/store" },
     { text: "Contact", href: "/contact" },
+    { text: "Login/Register", href: "/" },
 ];
 
 export const Header = () => {
