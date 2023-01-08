@@ -9,8 +9,8 @@ export const useTypingText = (
   maxPauseAmount = 30,
 ) => {
     
-    const [wordIndex, setWordIndex] = useState(0);
-    const [currentWord, setCurrentWord] = useState(words[wordIndex].split(''));
+    const [wordIndex, setWordIndex] = useState<number>(0);
+    const [currentWord, setCurrentWord] = useState<any>(words[wordIndex].split(''));
 
     const direction = useRef(BACKWARD);
     const typingInterval = useRef();
@@ -29,20 +29,24 @@ export const useTypingText = (
           
             const segment = currentWord.slice(0, currentWord.length - 1);
             setCurrentWord(segment);
+            // @ts-ignore
             letterIndex.current = currentWord.length - 1;
         }
 
         const typeLetter = () => {
+            // @ts-ignore
             if (letterIndex.current >= words[wordIndex].length) {
               direction.current = BACKWARD;
               return;
             }
           
             const segment = words[wordIndex].split('');
+            // @ts-ignore
             setCurrentWord(currentWord.concat(segment[letterIndex.current]));
+            // @ts-ignore
             letterIndex.current = letterIndex.current + 1;
         }
-        
+        // @ts-ignore
         typingInterval.current = setInterval(() => {
             if (direction.current === FORWARD) {
               typeLetter();
