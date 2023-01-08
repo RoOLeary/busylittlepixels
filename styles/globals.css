@@ -679,3 +679,19 @@ blockquote > p {
     padding-top: 8rem!important;
   }
 }
+
+.fade:not(.show) {
+    opacity: 0;
+}
+
+.fade {
+    transition: opacity .15s linear;
+}
+
+.tab-content>.tab-pane {
+    display: none;
+}
+
+.tab-content>.active {
+    display: block;
+}
