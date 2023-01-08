@@ -36,7 +36,7 @@ export default function Category() {
             </div>
         </Bounded> */}
         <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-20 bg-white override">
-        <h1 className="pb-8 font-black text-4xl md:text-6xl mb-6 last:mb-0 border-b border-gray-200 uppercase">LATEST <span style={{ "color": "red"}}>{router.query.category}</span> ARTICLES</h1>
+        <h1 className="pb-8 font-black text-4xl md:text-6xl mb-6 last:mb-0 border-b border-gray-200 uppercase">LATEST <span style={{ "color": "red"}}>{router.query.category}</span></h1>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 mb-8">
               <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
               <div className="col-span-1">

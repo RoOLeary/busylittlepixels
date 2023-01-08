@@ -10,9 +10,9 @@ import { useRouter } from 'next/router'
 const MENU_LIST = [
     { text: "Articles", href: "/articles" },
     { text: "Tech", href: "/tech" },
-    { text: "Apps", href: "/apps" },
     { text: "Reviews", href: "/reviews" },
-    { text: "Store", href: "/store" },
+    { text: "Podcasts", href: "/podcasts" },
+    { text: "Merch", href: "/store" },
     { text: "Contact", href: "/contact" },
     { text: "Login", href: "/" },
 ];
