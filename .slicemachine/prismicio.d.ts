@@ -19,6 +19,17 @@ interface HomeDocumentData {
      *
      */
     home_title: prismicT.RichTextField;
+    /**
+     * Home SubTitle field in *home*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: home.home_subtitle
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    home_subtitle: prismicT.RichTextField;
 }
 /**
  * home document from Prismic

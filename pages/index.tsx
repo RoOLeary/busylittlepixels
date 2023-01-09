@@ -44,13 +44,9 @@ const Home = ({ page }) => {
           </div>
         </div>
       </Bounded> */}
-      
-      
-      
-    
       <TitleContainer />
-      
-      <h3>{page.data.home_title[0].text}</h3>
+      {/* <h3>{page.data.home_title[0].text}</h3>
+      <PrismicRichText field={page.data.home_subtitle} /> */}
       <GalleryGrid />
       <ProjectSlider />
       <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white pb-0 md:pb-0">

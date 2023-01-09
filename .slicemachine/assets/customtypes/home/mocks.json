@@ -1,7 +1,7 @@
 {
   "uid": {
     "__TYPE__": "UIDContent",
-    "value": "swam"
+    "value": "ourselves"
   },
   "home_title": {
     "__TYPE__": "StructuredTextContent",
@@ -9,7 +9,18 @@
       {
         "type": "paragraph",
         "content": {
-          "text": "Deserunt Lorem amet cupidatat Lorem labore quis cupidatat deserunt dolore incididunt ex. Dolor sunt elit deserunt incididunt et exercitation."
+          "text": "Laboris exercitation exercitation labore. Exercitation duis sit mollit ipsum ex nisi sint tempor officia ad deserunt dolore. Ad aliqua commodo Lorem dolore enim."
+        }
+      }
+    ]
+  },
+  "home_subtitle": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Incididunt eu enim proident esse ipsum do ut excepteur."
         }
       }
     ]
