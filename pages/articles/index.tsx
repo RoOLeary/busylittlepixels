@@ -31,7 +31,6 @@ const inter = Inter({ subsets: ['latin'] })
 
 const Articles = ({ articles }:any) => {
 
-    console.log(articles)
     return(
 
         <Layout>
@@ -243,6 +242,7 @@ export default Articles;
 
 // @ts-ignore
 export async function getStaticProps({ previewData }) {
+  
   const client = createClient({ previewData });
 
   const articles = await client.getAllByTag("reviews");
