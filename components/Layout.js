@@ -11,7 +11,7 @@ export const Layout = ({
           <title>BUSY LITTLE PIXELS</title>
         </Head>
         <main className="content text-slate-800">
-        {children}
+          {children}
         </main>
         <Footer />
     </>

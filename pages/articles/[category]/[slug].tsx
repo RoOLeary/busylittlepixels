@@ -96,7 +96,7 @@ export default function Words() {
       </Bounded>
 
       <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-20 bg-white">
-        <h3 className="pb-8 font-black text-4xl mb-6 last:mb-0 border-b border-gray-200 uppercase">RELATED <span style={{ "color": "red"}}></span> <span style={{ "color": "red"}}>WORDS.</span></h3>
+        <h3 className="pb-8 font-black text-4xl mb-6 last:mb-0 border-b border-gray-200 uppercase">RELATED <span style={{ "color": "red"}}></span> <span style={{ "color": "red"}}>ARTICLES</span></h3>
             
             <div className="grid grid-cols-1 sm:gap-2 gap-2 md:grid-cols-2">
               <div className="grid grid-cols-2 sm:gap-2 gap-2 md:grid-cols-2">
