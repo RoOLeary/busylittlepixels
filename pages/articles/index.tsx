@@ -29,7 +29,7 @@ import imageLoader from '../../imageLoader';
 
 const inter = Inter({ subsets: ['latin'] })
 
-const Articles = ({ articles }:any) => {
+const Articles = ({ articles, preview }:any) => {
 
     return(
 
@@ -241,7 +241,7 @@ const Articles = ({ articles }:any) => {
 export default Articles; 
 
 // @ts-ignore
-export async function getStaticProps({ previewData }) {
+export async function getStaticProps({ preview = false, previewData }) {
   
   const client = createClient({ previewData });
 
@@ -250,6 +250,7 @@ export async function getStaticProps({ previewData }) {
   return {
     props: {
       articles
+
     },
   };
 }
