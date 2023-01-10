@@ -1,11 +1,19 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-import { Header } from '../components/Header'
-import Link from "next/link";
+import type { AppProps, NextWebVitalsMetric } from 'next/app';
+import { AnimatePresence } from 'framer-motion';
+import Loader from '../components/Loader';
+import { Header } from '../components/Header';
 import { PrismicLink, PrismicProvider } from "@prismicio/react";
 import { PrismicPreview } from "@prismicio/next";
+import { useState, useEffect } from 'react';
+import NProgress from 'nprogress';
+import Router from 'next/router'
+import Link from "next/link";
+
+import '../styles/globals.css'
 
 import { repositoryName, linkResolver } from "../prismicio";
+
+declare const window: any
 
 const NextLinkShim = ({ href, children, locale, ...props }) => {
   return (
@@ -47,7 +55,50 @@ const richTextComponents = {
   ),
 };
 
+// @ts-ignore
 export default function App({ Component, pageProps }) {
+
+  const handleRouteChange = () => {
+    document.body.scrollIntoView();
+  }
+
+  const [isLoading, setIsLoading] = useState(false);
+
+  const router = Router;
+  useEffect(() => {
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (
+        localStorage.theme === 'dark' ||
+        (!('theme' in localStorage) &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+        document.documentElement.classList.add('dark')
+    } else {
+        document.documentElement.classList.remove('dark')
+    }
+  })
+
+  useEffect(() => {
+    Router.events.on("routeChangeStart", (url)=>{
+      setIsLoading(true);
+      NProgress.start();
+      console.log('route changing.')
+    });
+
+    Router.events.on("routeChangeComplete", (url)=>{
+      console.log('route changed')
+      setIsLoading(false);
+      NProgress.done(false);
+      router.events.on('routeChangeComplete', handleRouteChange)
+     
+    });
+
+    Router.events.on("routeChangeError", (url) =>{
+      console.log('something is bollocksed.')
+    });
+
+  }, [router.events])
+
   return (
     <PrismicProvider
       linkResolver={linkResolver}
@@ -56,7 +107,20 @@ export default function App({ Component, pageProps }) {
     >
       <PrismicPreview repositoryName={repositoryName}>
         <Header />
+        <AnimatePresence
+          mode='wait'
+          initial={{ x: 300, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          exit={{ x: 300, opacity: 0 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+          }}
+        > 
+        {isLoading && <Loader /> } 
         <Component {...pageProps} />
+        </AnimatePresence>
       </PrismicPreview>
     </PrismicProvider>
   );

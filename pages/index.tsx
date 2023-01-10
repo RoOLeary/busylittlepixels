@@ -17,18 +17,14 @@ import CarouselContainer from "../components/Carousel";
 import { CTA } from "../components/CallToAction"
 import ProjectSlider from "../components/ProjectSlider";
 import { Video } from "../components/Video";
-import { Faqs } from "../components/Faq/Faqs";
 import imageLoader from '../imageLoader';
 import { TitleContainer } from '../components/TitleContainer';
-
-
-
 
 const inter = Inter({ subsets: ['latin'] })
 
 const Home = ({ page }) => {
 
-  console.log(page.data.home_title[0].text)
+  // console.log(page.data.home_title[0].text)
   return (
     <>
      
@@ -107,12 +103,6 @@ const Home = ({ page }) => {
         </div>
         
       </Bounded>
-
-      
-      <Bounded collapsible={false} as="section" className="md:px-6 md:pt-8 bg-white pb-8 md:pb-8">
-        <Faqs />
-      </Bounded>
-
 
       {/* <Bounded collapsible={false} as="section" className="bg-slate-100"> */}
       {/* <GalleryGrid /> */}
