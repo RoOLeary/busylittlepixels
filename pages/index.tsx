@@ -22,7 +22,7 @@ import { TitleContainer } from '../components/TitleContainer';
 
 const inter = Inter({ subsets: ['latin'] })
 
-const Home = ({ page }) => {
+const Home = ({ page }:any) => {
 
   // console.log(page.data.home_title[0].text)
   return (
@@ -424,10 +424,10 @@ const Home = ({ page }) => {
 
 export default Home;
 
-export async function getStaticProps({ locale, previewData }) {
+export async function getStaticProps({ previewData }:any) {
   const client = createClient({ previewData });
 
-  const page = await client.getSingle("home", { lang: locale });
+  const page = await client.getSingle("home");
   
   return {
     props: {
