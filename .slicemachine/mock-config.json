@@ -1,5 +1,13 @@
 {
   "_cts": {
-    "home": {}
+    "home": {},
+    "articles": {}
+  },
+  "slices": {
+    "ArticleLeadParagraph": {
+      "default": {
+        "primary": {}
+      }
+    }
   }
 }

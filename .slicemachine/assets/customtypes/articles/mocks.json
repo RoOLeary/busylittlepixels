@@ -1,0 +1,22 @@
+{
+  "uid": {
+    "__TYPE__": "UIDContent",
+    "value": "just"
+  },
+  "articletitle": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Mollit et est occaecat labore sit quis voluptate sit nisi laboris reprehenderit est do laborum do."
+        }
+      }
+    ]
+  },
+  "articletype": {
+    "__TYPE__": "FieldContent",
+    "value": "review",
+    "type": "Select"
+  }
+}

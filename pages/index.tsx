@@ -22,12 +22,13 @@ import { TitleContainer } from '../components/TitleContainer';
 
 const inter = Inter({ subsets: ['latin'] })
 
-const Home = ({ page }:any) => {
+const Home = ({ homepage, preview }:any) => {
 
   return (
     <>
      
      <Layout>
+     {preview ? <div className={'text-center uppercase bg-red-500 text-white py-6 fixed bottom-0 w-full z-10'}><h3>You are in Preview Mode</h3></div> : null}     
       {/* <Bounded as="section" collapsible={false} className="bg-white pb-0 md:pb-0">
         <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust">
           <div className="max-w-2xl text-center leading-relaxed">
@@ -407,14 +408,15 @@ const Home = ({ page }:any) => {
 
 export default Home;
 
-export async function getStaticProps({ previewData }:any) {
+export async function getStaticProps({ preview = false, previewData }:any) {
   const client = createClient({ previewData });
 
-  const page = await client.getSingle("home");
+  const homepage = await client.getSingle("home");
   
   return {
     props: {
-      page
+      homepage,
+      preview
     },
   };
 }

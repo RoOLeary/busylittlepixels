@@ -6,6 +6,42 @@ import type * as prismic from "@prismicio/client";
 type Simplify<T> = {
     [KeyType in keyof T]: T[KeyType];
 };
+/** Content for Articles documents */
+interface ArticlesDocumentData {
+    /**
+     * articleTitle field in *Articles*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: articles.articletitle
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    articletitle: prismicT.RichTextField;
+    /**
+     * articleType field in *Articles*
+     *
+     * - **Field Type**: Select
+     * - **Placeholder**: Select Article Type
+     * - **Default Value**: text
+     * - **API ID Path**: articles.articletype
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/select
+     *
+     */
+    articletype: prismicT.SelectField<"text" | "video" | "podcast" | "review", "filled">;
+}
+/**
+ * Articles document from Prismic
+ *
+ * - **API ID**: `articles`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type ArticlesDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<ArticlesDocumentData>, "articles", Lang>;
 /** Content for home documents */
 interface HomeDocumentData {
     /**
@@ -41,12 +77,51 @@ interface HomeDocumentData {
  * @typeParam Lang - Language API ID of the document.
  */
 export type HomeDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<HomeDocumentData>, "home", Lang>;
-export type AllDocumentTypes = HomeDocument;
+export type AllDocumentTypes = ArticlesDocument | HomeDocument;
+/**
+ * Primary content in ArticleLeadParagraph → Primary
+ *
+ */
+interface ArticleLeadParagraphSliceDefaultPrimary {
+    /**
+     * Title field in *ArticleLeadParagraph → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: article_lead_paragraph.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+}
+/**
+ * Default variation for ArticleLeadParagraph Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `ArticleLeadParagraph`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ArticleLeadParagraphSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<ArticleLeadParagraphSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *ArticleLeadParagraph*
+ *
+ */
+type ArticleLeadParagraphSliceVariation = ArticleLeadParagraphSliceDefault;
+/**
+ * ArticleLeadParagraph Shared Slice
+ *
+ * - **API ID**: `article_lead_paragraph`
+ * - **Description**: `ArticleLeadParagraph`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ArticleLeadParagraphSlice = prismicT.SharedSlice<"article_lead_paragraph", ArticleLeadParagraphSliceVariation>;
 declare module "@prismicio/client" {
     interface CreateClient {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { HomeDocumentData, HomeDocument, AllDocumentTypes };
+        export type { ArticlesDocumentData, ArticlesDocument, HomeDocumentData, HomeDocument, AllDocumentTypes, ArticleLeadParagraphSliceDefaultPrimary, ArticleLeadParagraphSliceDefault, ArticleLeadParagraphSliceVariation, ArticleLeadParagraphSlice };
     }
 }

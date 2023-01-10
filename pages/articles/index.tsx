@@ -33,7 +33,7 @@ const Articles = ({ articles, preview }:any) => {
 
     return(
         <Layout>
-        {preview ? <div className={'text-center uppercase bg-blue-600 text-white py-6 fixed bottom-0 w-full z-10'}><h3>You are in Preview Mode</h3></div> : null}     
+        {preview ? <div className={'text-center uppercase bg-red-500 text-white py-6 fixed bottom-0 w-full z-10'}><h3>You are in Preview Mode</h3></div> : null}     
         <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-20 bg-white override">
         <h1 className="pb-8 font-black text-4xl md:text-6xl mb-6 last:mb-0 border-b border-gray-200 uppercase">LATEST<span style={{ "color": "red"}}> ARTICLES</span></h1>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 mb-8">
