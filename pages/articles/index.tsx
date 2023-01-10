@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Inter } from '@next/font/google'
+import imageLoader from '../../imageLoader'
 import styles from '../styles/Home.module.css'
 
 import { PrismicLink, PrismicText } from "@prismicio/react";
@@ -25,7 +26,6 @@ import { GalleryGrid } from "../../components/GalleryGrid";
 import { CTA } from "../../components/CallToAction";
 // import { Video } from "../components/Video";
 // import { Faqs } from "../components/Faq/Faqs";
-import imageLoader from '../../imageLoader';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -37,7 +37,7 @@ const Articles = ({ articles, preview }:any) => {
         <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-20 bg-white override">
         <h1 className="pb-8 font-black text-4xl md:text-6xl mb-6 last:mb-0 border-b border-gray-200 uppercase">LATEST<span style={{ "color": "red"}}> ARTICLES</span></h1>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 mb-8">
-              <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
+              <Image src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" width={650} height={450} loader={imageLoader}/>
               <div className="col-span-1">
                 <p className="mb-2 -mt-1 text-sm font-black text-gray-500">April 16, 2023</p>
                 <h1 className="mb-2 text-4xl font-extrabold leading-tightest text-gray-800">
@@ -58,7 +58,7 @@ const Articles = ({ articles, preview }:any) => {
             <div className="grid grid-cols-1 sm:gap-2 gap-2 md:grid-cols-2">
               <div className="grid grid-cols-2 sm:gap-2 gap-2 md:grid-cols-2">
                   <div>
-                    <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
+                    <Image src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" width={650} height={450} loader={imageLoader}/>
                     <div className="col-span-1">
                       <p className="mb-2 mt-2 text-sm font-normal text-gray-500">April 16, 2023</p>
                       <h1 className="mb-2 md:text-xl font-extrabold leading-snug text-gray-800">
@@ -72,7 +72,7 @@ const Articles = ({ articles, preview }:any) => {
                     </div>
                   </div>
                   <div>
-                    <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
+                    <Image src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" width={650} height={450} loader={imageLoader}/>
                     <div className="col-span-1">
                       <p className="mb-2 mt-2 text-sm font-normal text-gray-500">April 16, 2023</p>
                       <h1 className="mb-2 md:text-xl font-extrabold leading-snug text-gray-800">
@@ -88,7 +88,7 @@ const Articles = ({ articles, preview }:any) => {
               </div>
               <div className="grid grid-cols-2 sm:gap-2 gap-2 md:grid-cols-2">
                   <div>
-                    <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
+                    <Image src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" width={650} height={450} loader={imageLoader}/>
                     <div className="col-span-1">
                       <p className="mb-2 mt-2 text-sm font-normal text-gray-500">April 16, 2023</p>
                       <h1 className="mb-2 md:text-xl font-extrabold leading-snug text-gray-800">
@@ -102,7 +102,7 @@ const Articles = ({ articles, preview }:any) => {
                     </div>
                   </div>
                   <div>
-                    <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
+                    <Image src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" width={650} height={450} loader={imageLoader}/>
                     <div className="col-span-1">
                       <p className="mb-2 mt-2 text-sm font-normal text-gray-500">April 16, 2023</p>
                       <h1 className="mb-2 md:text-xl font-extrabold leading-snug text-gray-800">

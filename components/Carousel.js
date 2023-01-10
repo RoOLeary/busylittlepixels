@@ -1,4 +1,6 @@
 import React from 'react'
+import Image from 'next/image'
+import imageLoader from '../imageLoader';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 // import { Bounded } from "./Bounded";
@@ -78,7 +80,7 @@ const CarouselContainer = () => {
         </div> */}
         {
           items.map((item, index) => {
-            return <div className={'mr-2'} key={index}><img src={item.carousel_image_url} height={'300px'} width={'100%'} /></div>
+            return <div className={'mr-2'} key={index}><Image src={item.carousel_image_url} height={300} width={450} loader={imageLoader} alt={`Carousel Image number #${index}`} /></div>
           })
         }
       </Carousel>
