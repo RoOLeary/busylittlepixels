@@ -24,7 +24,6 @@ const inter = Inter({ subsets: ['latin'] })
 
 const Home = ({ page }:any) => {
 
-  // console.log(page.data.home_title[0].text)
   return (
     <>
      
@@ -399,21 +398,7 @@ const Home = ({ page }:any) => {
         </div>
       </Bounded>
 
-      <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white">
-        
-          <h2 className="pb-8 mb-12 text-2xl font-black leading-tight text-gray-900 border-b border-gray-200 md:text-4xl uppercase">Feat<span className={'rd_txt'}>ure</span>d V<span className={'rd_txt'}>ide</span>o</h2>
-          <div className="relative">
-            <div className="absolute -top-4 -left-4 w-1/3">
-              <div className="aspect-w-1 aspect-h-1 bg-slate-200/50"></div>
-            </div>
-            <span className={"bgImgShelf"}>
-              {/* <Image alt={'panel'} src="../assets/img/panel-img.png" width={1200} height={600} loader={imageLoader} unoptimized /> */}
-              <Video />
-            </span>
-              
-            </div>
-          
-      </Bounded>
+     
       
     </Layout>
     </>

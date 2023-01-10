@@ -35,8 +35,8 @@ export default function Words() {
           whileInView={{ opacity: 1 }}
           className="w-full mb-2"
         >
-          <Video />
-            {/* <Image alt={'holding'} src="https://placedog.net/1200/400/r" width={1200} height={500} loader={imageLoader} layout="responsive" className="shadow-xl" /> */}
+          {/* <Video /> */}
+            <Image alt={'holding'} src="https://placedog.net/1200/400/r" width={1200} height={500} loader={imageLoader} layout="responsive" className="shadow-xl" />
         </motion.div>       
         <div className="py-8 flex flex-col md:flex-row">
          

@@ -1,9 +1,9 @@
 import { useTypingText } from '../hooks/useTypingText';
 
 
-export const TitleContainer = ({title}:any) => {
+export const TitleContainer = () => {
 
-    console.log(title);
+   
     const { word } = useTypingText([`WORDS...`, 'TECH...', 'REVIEWS...', 'PODCASTS...', 'MERCH...', 'CODE...',], 250, 20);
 
     return (
