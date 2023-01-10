@@ -135,7 +135,7 @@ const Articles = ({ articles, preview }:any) => {
       
         <div className="w-full  flex flex-col space-y-16">
           <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
-            <img src="https://placedog.net/175/160/r" className="object-cover w-full md:h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
+            <Image src="https://placedog.net/175/160/r" alt={'article featured image'} width={160} height={175} className="object-cover w-full md:h-40 col-span-1 bg-center" loading="lazy" loader={imageLoader} />
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2023</p>
               <h2 className="mb-2 md:text-2xl font-extrabold leading-snug text-gray-800">
@@ -149,7 +149,7 @@ const Articles = ({ articles, preview }:any) => {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
-            <img src="https://placedog.net/175/160/r" className="object-cover w-full md:h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
+            <Image src="https://placedog.net/175/160/r" alt={'article featured image'} width={160} height={175} className="object-cover w-full md:h-40 col-span-1 bg-center" loading="lazy" loader={imageLoader} />
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 mt-2 text-sm font-normal text-gray-500">April 16, 2023</p>
               <h2 className="mb-2 md:text-2xl font-extrabold leading-snug text-gray-800">
@@ -163,7 +163,7 @@ const Articles = ({ articles, preview }:any) => {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
-            <img src="https://placedog.net/175/160/r" className="object-cover w-full md:h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
+            <Image src="https://placedog.net/175/160/r" alt={'article featured image'} width={160} height={175} className="object-cover w-full md:h-40 col-span-1 bg-center" loading="lazy" loader={imageLoader} />
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2023</p>
               <h2 className="mb-2 md:text-2xl font-extrabold leading-snug text-gray-800">
@@ -177,7 +177,7 @@ const Articles = ({ articles, preview }:any) => {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
-            <img src="https://placedog.net/175/160/r" className="object-cover w-full md:h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
+            <Image src="https://placedog.net/175/160/r" alt={'article featured image'} width={160} height={175} className="object-cover w-full md:h-40 col-span-1 bg-center" loading="lazy" loader={imageLoader} />
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 mt-2 text-sm font-normal text-gray-500">April 16, 2023</p>
               <h2 className="mb-2 md:text-2xl font-extrabold leading-snug text-gray-800">
@@ -191,7 +191,7 @@ const Articles = ({ articles, preview }:any) => {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
-            <img src="https://placedog.net/175/160/r" className="object-cover w-full md:h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
+            <Image src="https://placedog.net/175/160/r" alt={'article featured image'} width={160} height={175} className="object-cover w-full md:h-40 col-span-1 bg-center" loading="lazy" loader={imageLoader} />
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2023</p>
               <h2 className="mb-2 md:text-2xl font-extrabold leading-snug text-gray-800">
@@ -202,7 +202,7 @@ const Articles = ({ articles, preview }:any) => {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
-            <img src="https://placedog.net/175/160/r" className="object-cover w-full md:h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
+            <Image src="https://placedog.net/175/160/r" alt={'article featured image'} width={160} height={175} className="object-cover w-full md:h-40 col-span-1 bg-center" loading="lazy" loader={imageLoader} />
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2023</p>
               <h2 className="mb-2 md:text-2xl font-extrabold leading-snug text-gray-800">

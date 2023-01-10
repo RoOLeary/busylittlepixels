@@ -36,7 +36,7 @@ const Home = ({ homepage, preview }:any) => {
             <p className="mb-6 last:mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec faucibus metus, non aliquet nisi. Aenean fermentum libero nec volutpat semper. Quisque tellus neque, molestie in magna et, lobortis accumsan nisl. Suspendisse lacinia velit et dolor dictum ornare. Pellentesque justo nulla, fermentum vel ante non, condimentum aliquam justo.<br /><br />Okay, I think I'm starting to grasp it.</p>
           </div>
           <div className="w-full mb-6">
-            <Image alt={'holding'} src="https://placedog.net/1200/500/r" width={1200} height={500} loader={imageLoader} layout="responsive" />
+            <Image alt={'holding'} src="https://placedog.net/1200/500/r" width={1200} height={500} loader={imageLoader} />
           </div>
         </div>
       </Bounded> */}
@@ -53,7 +53,7 @@ const Home = ({ homepage, preview }:any) => {
           </div>
         </div> 
         <div className="w-full mb-2">
-            <Image alt={'holding'} src="https://placedog.net/1200/400/r" width={1200} height={500} loader={imageLoader} layout="responsive" className="shadow-xl" />
+            <Image alt={'holding'} src="https://placedog.net/1200/400/r" width={1200} height={500} loader={imageLoader} className="shadow-xl" />
         </div>       
         <div className="py-8 flex flex-col md:flex-row">
          
