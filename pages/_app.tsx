@@ -14,7 +14,7 @@ import '../styles/globals.css'
 import { repositoryName, linkResolver } from "../prismicio";
 
 declare const window: any
-
+// @ts-ignore
 const NextLinkShim = ({ href, children, locale, ...props }) => {
   return (
     <Link href={href} locale={locale}>
