@@ -5,6 +5,19 @@ import Link from 'next/link'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 
+import { PrismicLink, PrismicText } from "@prismicio/react";
+import { PrismicNextImage } from "@prismicio/next";
+import * as prismicH from "@prismicio/helpers";
+
+import { createClient } from "../../prismicio";
+
+const dateFormatter = new Intl.DateTimeFormat("en-US", {
+  month: "short",
+  day: "numeric",
+  year: "numeric",
+});
+
+
 import { Layout } from '../../components/Layout';
 import { Bounded } from "../../components/Bounded";
 import { GalleryGrid } from "../../components/GalleryGrid";
@@ -16,7 +29,7 @@ import imageLoader from '../../imageLoader';
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Articles() {
+const Articles = ({ articles }:any) => {
 
     return(
 
@@ -223,4 +236,20 @@ export default function Articles() {
 
     )
 
+}
+
+export default Articles; 
+
+// @ts-ignore
+export async function getStaticProps({ previewData }) {
+  
+  const client = createClient({ previewData });
+
+  const articles = await client.getAllByTag("reviews");
+  
+  return {
+    props: {
+      articles
+    },
+  };
 }

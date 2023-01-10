@@ -1,5 +1,6 @@
 import { Layout } from '../components/Layout'
 import { Bounded } from '../components/Bounded'
+import { Faqs } from '../components/Faq/Faqs'
 import type { NextPage } from 'next';
 import {FormEvent, useState} from "react";
 
@@ -43,6 +44,9 @@ const Contact: NextPage = () => {
             <Bounded collapsible={true} as="section" className="bg-white override">
                 <h1 className="pb-8 font-black text-4xl md:text-6xl mb-6 last:mb-0 border-b border-gray-200 uppercase">WE <span style={{ "color": "red"}}>HEART</span> HEARING FROM <span style={{ "color": "red"}}>YOU</span></h1>
                 <p className="mb-3 text-lg font-normal text-gray-500">Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical Character Recognition) and Machine Learning, RPA bots are capable of extracting these data …</p>
+            </Bounded>
+            <Bounded collapsible={false} as="section" className="md:px-6 md:pt-8 bg-white pb-8 md:pb-8">
+                <Faqs />
             </Bounded>
             <br />
             <div className="text-black mt-2 body-font relative">

@@ -41,15 +41,13 @@ const Store: NextPage = () => {
             <Bounded collapsible={true} as="section" className="px-6 py-20 bg-white override">
 
             <h1 className="pb-8 font-black text-4xl md:text-6xl mb-6 last:mb-0 border-b border-gray-200 uppercase">Merch <span className={'rd_txt'}>Store</span></h1> 
-            <h3 className="pb-2 font-black text-2xl mb-6 last:mb-0 uppercase">NO. <span className={'rd_txt'}>FUCKING.</span> WAY!!! YOU LIKE <span className={'rd_txt'}>MERCH</span> TOO??? THAT'S <span className={'rd_txt'}>FUCKING AWESOME!!!</span> YOU OUGHT TO CHECK OUT OUR <span className={'rd_txt'}>STORE!</span> BECOME THE <span className={'rd_txt'}>ENVY OF YOUR FRIENDS</span> WITH SOME GENUINE BUSY<span className={'rd_txt'}>LITTLE</span>PIXELS GOODIES!</h3> 
+            <h3 className="pb-2 font-black text-2xl mb-6 last:mb-0 uppercase">NO. <span className={'rd_txt'}>F@#CKING.</span> WAY!!! YOU LIKE <span className={'rd_txt'}>MERCH</span> TOO??? THAT'S <span className={'rd_txt'}>F@#KING AWESOME!!!</span> YOU OUGHT TO CHECK OUT OUR <span className={'rd_txt'}>STORE!</span> BECOME THE <span className={'rd_txt'}>ENVY OF YOUR FRIENDS</span> WITH SOME GENUINE BUSY<span className={'rd_txt'}>LITTLE</span>PIXELS GOODIES!</h3> 
             <p className="text-lg font-normal text-gray-500">Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical Character Recognition) and Machine Learning, RPA bots are capable of extracting these data …</p>
             <br />
             <div className="py-6 pb-24 mx-auto">
             <div className="flex flex-wrap -m-4">
                 <div className="lg:w-1/4 md:w-1/4 p-2 w-1/2">
-                <a className="block relative md:h-48 overflow-hidden">
-                    <Link href={'/store/product'}><img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260"/></Link>
-                </a>
+                    <Link className="block relative md:h-48 overflow-hidden" href={'/store/product'}><img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260"/></Link>
                 <div className="mt-4">
                     <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
                     <h2 className="text-gray-900 title-font text-lg font-medium">T-Shirt</h2>

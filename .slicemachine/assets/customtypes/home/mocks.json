@@ -1,0 +1,28 @@
+{
+  "uid": {
+    "__TYPE__": "UIDContent",
+    "value": "ourselves"
+  },
+  "home_title": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Laboris exercitation exercitation labore. Exercitation duis sit mollit ipsum ex nisi sint tempor officia ad deserunt dolore. Ad aliqua commodo Lorem dolore enim."
+        }
+      }
+    ]
+  },
+  "home_subtitle": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Incididunt eu enim proident esse ipsum do ut excepteur."
+        }
+      }
+    ]
+  }
+}

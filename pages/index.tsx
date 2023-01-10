@@ -1,3 +1,9 @@
+import { SliceZone } from "@prismicio/react";
+import * as prismicH from "@prismicio/helpers";
+
+import { createClient } from "../prismicio";
+
+import { PrismicRichText } from '@prismicio/react'
 /* eslint-disable react/jsx-no-comment-textnodes */
 import Head from 'next/head'
 import Image from 'next/image'
@@ -11,14 +17,14 @@ import CarouselContainer from "../components/Carousel";
 import { CTA } from "../components/CallToAction"
 import ProjectSlider from "../components/ProjectSlider";
 import { Video } from "../components/Video";
-import { Faqs } from "../components/Faq/Faqs";
 import imageLoader from '../imageLoader';
 import { TitleContainer } from '../components/TitleContainer';
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+const Home = ({ page }) => {
 
+  // console.log(page.data.home_title[0].text)
   return (
     <>
      
@@ -34,11 +40,9 @@ export default function Home() {
           </div>
         </div>
       </Bounded> */}
-      
-      
       <TitleContainer />
-      
-      
+      <h3>{page.data.home_title[0].text}</h3>
+      <PrismicRichText field={page.data.home_subtitle} />
       <GalleryGrid />
       <ProjectSlider />
       <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white pb-0 md:pb-0">
@@ -99,12 +103,6 @@ export default function Home() {
         </div>
         
       </Bounded>
-
-      
-      <Bounded collapsible={false} as="section" className="md:px-6 md:pt-8 bg-white pb-8 md:pb-8">
-        <Faqs />
-      </Bounded>
-
 
       {/* <Bounded collapsible={false} as="section" className="bg-slate-100"> */}
       {/* <GalleryGrid /> */}
@@ -422,4 +420,18 @@ export default function Home() {
     </Layout>
     </>
   )
+}
+
+export default Home;
+
+export async function getStaticProps({ locale, previewData }) {
+  const client = createClient({ previewData });
+
+  const page = await client.getSingle("home", { lang: locale });
+  
+  return {
+    props: {
+      page
+    },
+  };
 }
