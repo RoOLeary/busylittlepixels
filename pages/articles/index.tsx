@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Inter } from '@next/font/google'
 import imageLoader from '../../imageLoader'
+import { motion } from 'framer-motion';
 import styles from '../styles/Home.module.css'
 
 import { PrismicLink, PrismicText } from "@prismicio/react";

@@ -9,7 +9,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
-
+import { motion } from 'framer-motion';
 import { Layout } from '../components/Layout';
 import { Bounded } from "../components/Bounded";
 import { GalleryGrid } from "../components/GalleryGrid";
@@ -52,9 +52,13 @@ const Home = ({ homepage, preview }:any) => {
             <p className="font-semibold tracking-tighter">By <a href="#">Ronan O'Leary</a> | Category: Tech, CMS | Published: 02-01-2023 19:15 CET</p>
           </div>
         </div> 
-        <div className="w-full mb-2">
+        <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                className="w-full mb-2"
+              > 
             <Image alt={'holding'} src="https://placedog.net/1200/400/r" width={1200} height={500} loader={imageLoader} className="shadow-xl" />
-        </div>       
+        </motion.div>       
         <div className="py-8 flex flex-col md:flex-row">
          
           <div className="mx-auto w-full max-w-3xl">
