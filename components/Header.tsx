@@ -19,10 +19,10 @@ const MENU_LIST = [
 
 export const Header = () => {
     const router = useRouter(); 
-    
+    const currentRoute = router.asPath; 
     const [navActive, setNavActive] = useState(false);
-    const [activeIdx, setActiveIdx] = useState(-1);
-    
+    const [activeIdx, setActiveIdx] = useState(0);
+    console.log(router);
     return (
         <header className="px-6 text-black body-font fixed md:sticky w-full bg-black logoShadow">
             <div className="mx-auto flex flex-wrap py-5 md:flex-row items-start justify-between">
@@ -48,7 +48,7 @@ export const Header = () => {
                                 }}
                                 key={menu.text}
                             >
-                                <NavItem active={activeIdx === idx} {...menu} />
+                                <Link href={menu.href} className={`nav__link text-white font-black uppercase ${currentRoute === menu.href ? "active" : ""}`}>{menu.text}</Link>
                             </div>
                         ))}
                     </div>

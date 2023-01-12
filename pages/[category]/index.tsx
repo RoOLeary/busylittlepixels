@@ -50,7 +50,7 @@ export default function Category() {
           
           <main>
             <div className="relative px-6 lg:px-8">
-              <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
+              <div className="mx-auto max-w-3xl pt-20 pb-2 sm:pt-48 md:pb-20">
                 <div>
                   {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                     <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
@@ -87,7 +87,7 @@ export default function Category() {
           </main>
         </div>
 
-        <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-20 bg-white override">
+        <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-20 bg-white md:override">
         <h1 className="pb-8 font-black text-4xl md:text-6xl mb-6 last:mb-0 border-b border-gray-200 uppercase">LATEST <span style={{ "color": "red"}}>{router.query.category}</span></h1>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 mb-8">
               <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
