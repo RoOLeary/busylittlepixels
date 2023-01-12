@@ -22,7 +22,7 @@ export const Header = () => {
     const currentRoute = router.asPath; 
     const [navActive, setNavActive] = useState(false);
     const [activeIdx, setActiveIdx] = useState(0);
-    console.log(router);
+    
     return (
         <header className="px-6 text-black body-font fixed md:sticky w-full bg-black logoShadow">
             <div className="mx-auto flex flex-wrap py-5 md:flex-row items-start justify-between">
