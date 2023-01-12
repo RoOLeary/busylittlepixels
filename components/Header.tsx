@@ -7,26 +7,25 @@ import NavItem from './NavItem';
 import { isActiveLink } from '../lib/utils'
 import { useRouter } from 'next/router'
 
-const MENU_LIST = [
+const links = [
     { text: "Latest", href: "/articles" },
     { text: "Tech", href: "/tech" },
     { text: "Reviews", href: "/reviews" },
     { text: "Podcasts", href: "/podcasts" },
     { text: "Merch", href: "/store" },
     { text: "Contact", href: "/contact" },
-    { text: "Login", href: "/" },
+    { text: "Login", href: "/login" },
 ];
 
 export const Header = () => {
     const router = useRouter(); 
     const currentRoute = router.asPath; 
     const [navActive, setNavActive] = useState(false);
-    const [activeIdx, setActiveIdx] = useState(0);
     
     return (
         <header className="px-6 text-black body-font fixed md:sticky w-full bg-black logoShadow">
             <div className="mx-auto flex flex-wrap py-5 md:flex-row items-start justify-between">
-                <Link href="/" onClick={() => setActiveIdx(-1)}>
+                <Link href="/">
                     <h1 className="text-2xl font-extrabold leading-tight shake uppercase">busy<span className="rd_txt">little</span>pixels<span className="rd_txt">.</span></h1>
                 </Link>
                 <nav className={`nav`}>
@@ -39,17 +38,10 @@ export const Header = () => {
                         <div></div>
                     </div>
                     <div className={`nav__menu-list ${navActive ? "active" : ""}`}>
-                        {MENU_LIST.map((menu, idx) => (
-
-                            <div
-                                onClick={() => {
-                                    setActiveIdx(idx);
-                                    setNavActive(false);
-                                }}
-                                key={menu.text}
-                            >
-                                <Link href={menu.href} className={`nav__link text-white font-black uppercase ${currentRoute === menu.href ? "active" : ""}`}>{menu.text}</Link>
-                            </div>
+                        {links.map((link) => (
+                            
+                            <Link href={link.href} className={`nav__link text-white font-black uppercase ${currentRoute === link.href ? "active" : ""}`}>{link.text}</Link>
+                            // </div>
                         ))}
                     </div>
                 </nav>

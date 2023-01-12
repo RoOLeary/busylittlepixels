@@ -182,7 +182,6 @@ a.nav__link:hover{
  color: red;
 }
 
-footer,
 .nav__menu-list{
   background: #000000;
   /* color: #E40613  */
@@ -396,7 +395,7 @@ footer,
 }
 
 blockquote > p {
-  line-height: 3rem;
+  line-height: 2rem;
   //margin: 2em 0 3em 0;
 }
 
@@ -694,4 +693,18 @@ blockquote > p {
 
 .tab-content>.active {
     display: block;
+}
+
+.composedHeading{
+  @apply font-black tracking-tighter text-5xl md:text-[5rem] mb-6 last:mb-0 uppercase;
+}
+
+.footer{
+  @apply bg-black pb-12 text-white md:pb-12;
+}
+
+.nav__link .text-white .font-black .uppercase .active{
+  @media (max-width: 650px) {
+  color: red;
+  }
 }

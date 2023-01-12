@@ -132,7 +132,7 @@ export default function Category() {
       <div className="flex flex-col md:flex-row md:gap-8">
       
         <div className="w-full  flex flex-col space-y-16">
-          <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
             <img src="https://placedog.net/175/160/r" className="object-cover w-full md:h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2023</p>

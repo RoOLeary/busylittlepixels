@@ -89,7 +89,7 @@ export default function Category() {
 
         <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-20 bg-white md:override">
         <h1 className="pb-8 font-black text-4xl md:text-6xl mb-6 last:mb-0 border-b border-gray-200 uppercase">LATEST <span style={{ "color": "red"}}>{router.query.category}</span></h1>
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 mb-8">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 mb-8">
               <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
               <div className="col-span-1">
                 <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2023</p>
@@ -187,7 +187,7 @@ export default function Category() {
       <div className="flex flex-col md:flex-row md:gap-8">
       
         <div className="w-full  flex flex-col space-y-16">
-          <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
             <img src="https://placedog.net/175/160/r" className="object-cover w-full md:h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2023</p>
@@ -201,7 +201,7 @@ export default function Category() {
               <a href="#" className="hidden md:visible btn btn-light btn-sm">Read More</a>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
             <img src="https://placedog.net/175/160/r" className="object-cover w-full md:h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 mt-2 text-sm font-normal text-gray-500">April 16, 2023</p>
@@ -215,7 +215,7 @@ export default function Category() {
               <a href="#" className="hidden md:visible btn btn-light btn-sm">Read More</a>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
             <img src="https://placedog.net/175/160/r" className="object-cover w-full md:h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2023</p>
@@ -229,7 +229,7 @@ export default function Category() {
               <a href="#" className="hidden md:visible btn btn-light btn-sm">Read More</a>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
             <img src="https://placedog.net/175/160/r" className="object-cover w-full md:h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 mt-2 text-sm font-normal text-gray-500">April 16, 2023</p>
@@ -243,7 +243,7 @@ export default function Category() {
               <a href="#" className="hidden md:visible btn btn-light btn-sm">Read More</a>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
             <img src="https://placedog.net/175/160/r" className="object-cover w-full md:h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2023</p>
@@ -254,7 +254,7 @@ export default function Category() {
               <a href="#" className="hidden md:visible btn btn-light btn-sm">Read More</a>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
             <img src="https://placedog.net/175/160/r" className="object-cover w-full md:h-40 col-span-1 bg-center" alt="Doggo" loading="lazy" />
             <div className="col-span-1 md:col-span-3">
               <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2023</p>
