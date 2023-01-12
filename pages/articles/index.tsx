@@ -56,7 +56,7 @@ const Articles = ({ articles, preview }:any) => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:gap-2 gap-2 md:grid-cols-2">
+            <div className="grid grid-cols-1 sm:gap-2 gap-2 md:grid-cols-2 mb-8">
               <div className="grid grid-cols-2 sm:gap-2 gap-2 md:grid-cols-2">
                   <div>
                     <Image src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" width={650} height={450} loader={imageLoader}/>
