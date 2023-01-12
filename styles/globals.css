@@ -170,14 +170,15 @@ nav{
   padding-top: 1em;
 }
 .nav__link{
-  /* color: red; */
   font-size: 18px; 
   position: relative;
   transition: all 0.2s;
   font-weight: bold;
 }
 
-a.nav__link:active,
+a.nav__link.active{
+ color: red;
+}
 a.nav__link:hover{
  color: red;
 }
@@ -206,7 +207,7 @@ a.nav__link:hover{
     position: absolute;
     width: 0%;
     height: 6px;
-    bottom: -16px;
+    bottom: -8px;
     left: 0;
     background-color: red;
     transition: all 0.2s;
@@ -704,7 +705,5 @@ blockquote > p {
 }
 
 .nav__link .text-white .font-black .uppercase .active{
-  @media (max-width: 650px) {
-  color: red;
-  }
+  color: red!important;
 }

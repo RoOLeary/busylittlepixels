@@ -21,6 +21,13 @@ export const Header = () => {
     const router = useRouter(); 
     const currentRoute = router.asPath; 
     const [navActive, setNavActive] = useState(false);
+
+    const closeOnClick = (e) => {
+        console.log(navActive);
+        setTimeout((e) => {
+            setNavActive(!navActive);
+        }, 500)
+    }
     
     return (
         <header className="px-6 text-black body-font fixed md:sticky w-full bg-black logoShadow">
