@@ -39,9 +39,7 @@ export const Header = () => {
                     </div>
                     <div className={`nav__menu-list ${navActive ? "active" : ""}`}>
                         {links.map((link) => (
-                            
-                            <Link href={link.href} className={`nav__link text-white font-black uppercase ${currentRoute === link.href ? "active" : ""}`}>{link.text}</Link>
-                            // </div>
+                            <Link key={link.text} href={link.href} className={`nav__link text-white font-black uppercase ${currentRoute === link.href ? "active" : ""}`}>{link.text}</Link>
                         ))}
                     </div>
                 </nav>
