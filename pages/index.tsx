@@ -94,7 +94,7 @@ const Home = ({ homepage, preview }:any) => {
         <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
           <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
             <div className="sm:max-w-lg">
-              <h1 className="font text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">BEHOLD!! </h1>
+              <h1 className="font text-4xl font-black tracking-tight text-gray-900 sm:text-6xl">BEHOLD!! </h1>
               <p className="mt-4 text-xl text-gray-500">Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
             </div>
             <div>
