@@ -20,11 +20,12 @@ const links = [
 export const Header = () => {
     const router = useRouter(); 
     const currentRoute = router.asPath; 
+    const [panelActive, setPanelActive] = useState(false);
     const [navActive, setNavActive] = useState(false);
 
-    const closeOnClick = (e) => {
+    const closeOnClick = () => {
         console.log(navActive);
-        setTimeout((e) => {
+        setTimeout(() => {
             setNavActive(!navActive);
         }, 500)
     }
