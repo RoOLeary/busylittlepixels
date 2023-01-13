@@ -34,7 +34,7 @@ export const Header = () => {
         <header className="px-6 text-black body-font fixed md:sticky w-full bg-black logoShadow">
             <div className="mx-auto flex flex-wrap py-5 md:flex-row items-start justify-between">
                 <Link href="/">
-                    <h1 className="text-2xl font-extrabold leading-tight shake uppercase">busy<span className="rd_txt">little</span>pixels<span className="rd_txt">.</span></h1>
+                    <h1 className="text-2xl font-extrabold leading-tight shake">busy<span className="rd_txt">little</span>pixels<span className="rd_txt">.</span></h1>
                 </Link>
                 <nav className={`nav`}>
                     <div
