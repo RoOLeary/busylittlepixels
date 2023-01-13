@@ -5,7 +5,7 @@ import { Bounded } from "./Bounded";
 import imageLoader from './../imageLoader';
 import NavItem from './NavItem';
 import { isActiveLink } from '../lib/utils'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
 
 const links = [
     { text: "Latest", href: "/articles" },
