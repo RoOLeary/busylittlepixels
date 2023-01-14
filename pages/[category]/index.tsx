@@ -62,13 +62,13 @@ export default function Category() {
                   <div>
                     <h1 className="text-4xl font-black tracking-tightest sm:text-center sm:text-6xl uppercase">Snappy <span style={{ "color": "red"}}>{router.query.category}</span><br />Intro Here</h1>
                     <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
-                    <div className="mt-8 flex gap-x-4 sm:justify-center">
+                    {/* <div className="mt-8 flex gap-x-4 sm:justify-center">
                       <a href="#" className="inline-block rounded-lg bg-red-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-red-600 hover:bg-black hover:ring-black">
                         Get started 
                         <span className="text-white-200" aria-hidden="true"> &rarr;</span>
                       </a>
                       
-                    </div>
+                    </div> */}
                   </div>
                   <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
                     <svg className="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678" fill="none" xmlns="http://www.w3.org/2000/svg">
