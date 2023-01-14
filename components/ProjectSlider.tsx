@@ -120,6 +120,7 @@ export default function ProjectSlider() {
                             <div className="flex__content">
                                 <p className="text--sub">{sl.textSub}</p>
                                 <h1 className="text--big font-serif">{sl.textHeading}</h1>
+                                <p className="pt-4">Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical Character Recognition) and Machine Learning, RPA bots are capable of extracting these data</p>
                             </div>
                             <p className="text__background font-serif">{sl.textBackground}</p>
                             </div>

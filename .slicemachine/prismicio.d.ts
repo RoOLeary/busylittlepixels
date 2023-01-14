@@ -42,6 +42,68 @@ interface ArticlesDocumentData {
  * @typeParam Lang - Language API ID of the document.
  */
 export type ArticlesDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<ArticlesDocumentData>, "articles", Lang>;
+/** Content for Contact documents */
+interface ContactDocumentData {
+    /**
+     * Contact Title field in *Contact*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: contact.contact_title
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    contact_title: prismicT.RichTextField;
+    /**
+     * Contact Intro field in *Contact*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: contact.contact_intro
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    contact_intro: prismicT.RichTextField;
+    /**
+     * Map URL field in *Contact*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: contact.map_url
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    map_url: prismicT.RichTextField;
+    /**
+     * Slice Zone field in *Contact*
+     *
+     * - **Field Type**: Slice Zone
+     * - **Placeholder**: *None*
+     * - **API ID Path**: contact.slices[]
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+     *
+     */
+    slices: prismicT.SliceZone<ContactDocumentDataSlicesSlice>;
+}
+/**
+ * Slice for *Contact → Slice Zone*
+ *
+ */
+type ContactDocumentDataSlicesSlice = FaqSlice;
+/**
+ * Contact document from Prismic
+ *
+ * - **API ID**: `contact`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type ContactDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<ContactDocumentData>, "contact", Lang>;
 /** Content for home documents */
 interface HomeDocumentData {
     /**
@@ -77,7 +139,7 @@ interface HomeDocumentData {
  * @typeParam Lang - Language API ID of the document.
  */
 export type HomeDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<HomeDocumentData>, "home", Lang>;
-export type AllDocumentTypes = ArticlesDocument | HomeDocument;
+export type AllDocumentTypes = ArticlesDocument | ContactDocument | HomeDocument;
 /**
  * Primary content in ArticleLeadParagraph → Primary
  *
@@ -117,11 +179,76 @@ type ArticleLeadParagraphSliceVariation = ArticleLeadParagraphSliceDefault;
  *
  */
 export type ArticleLeadParagraphSlice = prismicT.SharedSlice<"article_lead_paragraph", ArticleLeadParagraphSliceVariation>;
+/**
+ * Primary content in Faq → Primary
+ *
+ */
+interface FaqSliceDefaultPrimary {
+    /**
+     * FAQ Title field in *Faq → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: faq.primary.faq_title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    faq_title: prismicT.RichTextField;
+}
+/**
+ * Item in Faq → Items
+ *
+ */
+export interface FaqSliceDefaultItem {
+    /**
+     * Question field in *Faq → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: faq.items[].question
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    question: prismicT.RichTextField;
+    /**
+     * Answer field in *Faq → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: faq.items[].answer
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    answer: prismicT.RichTextField;
+}
+/**
+ * Default variation for Faq Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Faq`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type FaqSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<FaqSliceDefaultPrimary>, Simplify<FaqSliceDefaultItem>>;
+/**
+ * Slice variation for *Faq*
+ *
+ */
+type FaqSliceVariation = FaqSliceDefault;
+/**
+ * Faq Shared Slice
+ *
+ * - **API ID**: `faq`
+ * - **Description**: `Faq`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type FaqSlice = prismicT.SharedSlice<"faq", FaqSliceVariation>;
 declare module "@prismicio/client" {
     interface CreateClient {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { ArticlesDocumentData, ArticlesDocument, HomeDocumentData, HomeDocument, AllDocumentTypes, ArticleLeadParagraphSliceDefaultPrimary, ArticleLeadParagraphSliceDefault, ArticleLeadParagraphSliceVariation, ArticleLeadParagraphSlice };
+        export type { ArticlesDocumentData, ArticlesDocument, ContactDocumentData, ContactDocumentDataSlicesSlice, ContactDocument, HomeDocumentData, HomeDocument, AllDocumentTypes, ArticleLeadParagraphSliceDefaultPrimary, ArticleLeadParagraphSliceDefault, ArticleLeadParagraphSliceVariation, ArticleLeadParagraphSlice, FaqSliceDefaultPrimary, FaqSliceDefaultItem, FaqSliceDefault, FaqSliceVariation, FaqSlice };
     }
 }

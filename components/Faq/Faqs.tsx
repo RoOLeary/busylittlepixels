@@ -5,25 +5,25 @@ export const Faqs = () => {
     const faqs = [
         {
             key: 0,
-            title: "How many team members can I invite?",
-            description: "You can invite as many team members as you like"
+            question: "How many team members can I invite?",
+            answer: "You can invite as many team members as you like"
         },
         {
             key: 1,
-            title: "What is the maximum file upload size?",
-            description: "No more than 2GB. All files in your account must fit your alloted storage space"
+            question: "What is the maximum file upload size?",
+            answer: "No more than 2GB. All files in your account must fit your alloted storage space"
         },
         {
             key: 2,
-            title: "How do I reset my password?",
-            description: "You can use the reset password function from the settings menu"
+            question: "How do I reset my password?",
+            answer: "You can use the reset password function from the settings menu"
         },
-        {key: 2, title: "Can I cancel my subscription?", description: "You can, but there is no money-back guarantee"},
-        {key: 2, title: "Do you provide additional support?", description: "Yes, please get in touch via e-mail!"},
+        {key: 2, question: "Can I cancel my subscription?", answer: "You can, but there is no money-back guarantee"},
+        {key: 2, question: "Do you provide additional support?", answer: "Yes, please get in touch via e-mail!"},
     ];
 
     const faqComponents = faqs.map((faq, i) => {
-        return <FaqComponent key={i} title={faq.title} description={faq.description}/>
+        return <FaqComponent key={i} question={faq.question} answer={faq.answer}/>
     });
 
     return <div className={`mx-auto flex items-center`}>

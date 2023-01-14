@@ -1,10 +1,16 @@
 {
   "_cts": {
     "home": {},
-    "articles": {}
+    "articles": {},
+    "contact": {}
   },
   "slices": {
     "ArticleLeadParagraph": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Faq": {
       "default": {
         "primary": {}
       }
