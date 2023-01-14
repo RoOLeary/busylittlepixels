@@ -45,7 +45,7 @@ export const Header = () => {
                 <nav className={`nav`}>
                     <div
                         onClick={() => setNavActive(!navActive)}
-                        className={`nav__menu-bar md:hidden menu__icon cursor-pointer ease-linear ${navActive ? "active" : ""}`}
+                        className={`nav__menu-bar md:hidden menu__icon cursor-pointer duration-150 ease-linear ${navActive ? "active" : ""}`}
                     >
                         <div></div>
                         <div></div>
