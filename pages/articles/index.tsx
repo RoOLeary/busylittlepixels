@@ -42,7 +42,7 @@ const Articles = ({ articles, preview }:any) => {
               <div className="col-span-1">
                 <p className="mb-2 -mt-1 text-sm font-black text-gray-500">April 16, 2023</p>
                 <h1 className="mb-2 text-4xl font-extrabold leading-tightest text-gray-800">
-                  <Link href="/articles/videos/single" className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-600 uppercase">Process Documents Using Artificial Intelligence For RPA Bots</Link>
+                  <Link href="/articles/videos/single" className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-600 uppercase tracking-tighter">Process Documents Using Artificial Intelligence For RPA Bots</Link>
                 </h1>
                 <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt">
                   Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical
@@ -211,12 +211,12 @@ const Articles = ({ articles, preview }:any) => {
               </h2>
               <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt">
                 Ever wondered if there is a way to just tie up all your code into one single module for easy usage. If so, in this article I will show you how to bundle all your code into a single
-                javascript module that you can easily use in any other project.
+                javascript module that you can easily use in any other projects.
               </p>
               <a href="#" className="hidden md:visible btn btn-light btn-sm">Read More</a>
             </div>
             <div className="pb-10 lg:mt-10 border-gray-200">
-              <a href="#" className="w-full btn btn-red btn-lg md:w-auto">Load More</a>
+              <a href="#" className="inline-block rounded-md bg-red-600 px-4 py-1.5 text-base font-bold leading-7 text-white shadow-sm ring-1 ring-red-600 hover:bg-red-400 hover:ring-red-400 uppercase">Load More</a>
             </div>
           </div>
         </div>

@@ -390,7 +390,7 @@ const Home = ({ homepage, preview }:any) => {
               <a href="#" className="hidden md:visible btn btn-light btn-sm">Read More</a>
             </div>
             <div className="pb-10 lg:mt-10 border-gray-200">
-              <a href="#" className="w-full btn btn-red btn-lg md:w-auto">Load More</a>
+              <a href="#" className="inline-block rounded-md bg-red-600 px-4 py-1.5 text-base font-bold leading-7 text-white shadow-sm ring-1 ring-red-600 hover:bg-red-400 hover:ring-red-400 uppercase">Load More</a>
             </div>
           </div>
         </div>
