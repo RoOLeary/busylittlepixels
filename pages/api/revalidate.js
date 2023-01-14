@@ -4,7 +4,7 @@ import * as prismic from '@prismicio/client'
 import * as prismicH from '@prismicio/helpers'
 
 // Import your app's Link Resolver (if your app uses one)
-import { linkResolver } from '../prismicio'
+import { linkResolver } from '../../prismicio'
 
 /**
  * This API endpoint will be called by a Prismic webhook. The webhook
