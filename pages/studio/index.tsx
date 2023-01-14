@@ -67,7 +67,7 @@ export default function Studio() {
             <Bounded collapsible={true} as="section" className="px-6 py-32 md:py-20 md:override">
                 <h1 className="px-0 md:px-6 font-black text-4xl md:text-6xl mb-6 last:mb-0 text-left md:text-center uppercase">busy <span style={{ "color": "red" }}>little</span> pixels<span style={{ "color": "red" }}>.</span><span style={{ "color": "red" }}>STUDIO</span></h1>
                 <h3 className="px-0 md:px-6 mt-6 text-2xl leading-8 text-gray-600 text-left md:text-center">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</h3>
-                <div className="mt-8 flex gap-x-4 sm:justify-center"><a href="#" className="inline-block rounded-lg bg-red-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-red-600 hover:bg-black hover:ring-black uppercase">View Showcase</a></div>
+                <div className="mt-8 flex gap-x-4 justify-start md:justify-center"><a href="#" className="inline-block rounded-md bg-red-600 px-4 py-1.5 text-base font-bold leading-7 text-white shadow-sm ring-1 ring-red-600 hover:bg-red-400 hover:ring-red-400 uppercase">View Showcase</a></div>
             </Bounded>
             <GalleryGrid />
            
