@@ -12,7 +12,7 @@ const links = [
     { text: "Latest", href: "/articles" },
     { text: "Tech", href: "/tech" },
     { text: "Studio", href: "/studio" },
-    { text: "Stores", href: "/store" },
+    { text: "Store", href: "/store" },
     { text: "Contact", href: "/contact" },
     { text: "Login", href: "/login" },
 ];
