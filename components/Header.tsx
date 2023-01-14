@@ -6,6 +6,7 @@ import imageLoader from './../imageLoader';
 import NavItem from './NavItem';
 import { isActiveLink } from '../lib/utils'
 import { useRouter } from 'next/router';
+import {isMobile} from 'react-device-detect';
 
 const links = [
     { text: "Latest", href: "/articles" },
@@ -23,11 +24,15 @@ export const Header = () => {
     const [panelActive, setPanelActive] = useState(false);
     const [navActive, setNavActive] = useState(false);
 
+    console.log(isMobile); 
+
     const closeOnClick = () => {
-        console.log(navActive);
-        setTimeout(() => {
+        if(isMobile){
+            console.log(isMobile, navActive);
+            setTimeout(() => {
             setNavActive(!navActive);
-        }, 500)
+            }, 500)
+        }
     }
     
     return (
@@ -47,7 +52,7 @@ export const Header = () => {
                     </div>
                     <div className={`nav__menu-list ${navActive ? "active" : ""}`}>
                         {links.map((link) => (
-                            <Link key={link.text} href={link.href} className={`nav__link text-white font-black uppercase ${currentRoute === link.href ? "active" : ""}`}>{link.text}</Link>
+                            <Link key={link.text} href={link.href} className={`nav__link text-white font-black uppercase ${currentRoute === link.href ? "active" : ""}`} onClick={closeOnClick}>{link.text}</Link>
                         ))}
                     </div>
                 </nav>
