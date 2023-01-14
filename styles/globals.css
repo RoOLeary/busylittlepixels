@@ -710,5 +710,5 @@ blockquote > p {
 
 
 .mobileSearch{
-  @apply w-full rounded border border-slate-500 bg-slate-600 py-3 pl-3 pr-10 text-white placeholder-slate-400
+  @apply w-full rounded-l rounded-r-none border border-slate-500 bg-slate-600 py-3 pl-3 pr-10 text-white placeholder-slate-400
 }

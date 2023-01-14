@@ -4,7 +4,7 @@ import { useTypingText } from '../hooks/useTypingText';
 export const TitleContainer = () => {
 
    
-    const { word } = useTypingText(['WORDS...', 'TECH...', 'CODE...', 'DEALS...', 'DINOSAURS...'], 250, 20);
+    const { word } = useTypingText(['WORDS...', 'APPS...', 'TECH...', 'CODE...', 'DEALS...', 'DINOSAURS...'], 250, 20);
 
     return (
         <div className="title_container">
