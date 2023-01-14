@@ -90,11 +90,11 @@ export default function App({ Component, pageProps }) {
     Router.events.on("routeChangeStart", (url)=>{
       setIsLoading(true);
       NProgress.start();
-      console.log('route changing.')
+      // console.log('route changing.')
     });
 
     Router.events.on("routeChangeComplete", (url)=>{
-      console.log('route changed')
+      // console.log('route changed')
       setIsLoading(false);
       NProgress.done(false);
       router.events.on('routeChangeComplete', handleRouteChange)
@@ -102,7 +102,7 @@ export default function App({ Component, pageProps }) {
     });
 
     Router.events.on("routeChangeError", (url) =>{
-      console.log('something is bollocksed.')
+      // console.log('something is bollocksed.')
     });
 
   }, [router.events])
