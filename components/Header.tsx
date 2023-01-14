@@ -52,10 +52,10 @@ export const Header = () => {
                         <div></div>
                     </div>
                     <ul className={`nav__menu-list px-6 ${navActive ? "active" : ""}`}>
-                       {links.map((link) => (
+                        {isMobile ? <div><input className={'mobileSearch'} type={'text'} name={'search'} placeholder={'Search...'} /></div> : ''}
+                        {links.map((link) => (
                             <li key={link.text}><Link href={link.href} className={`nav__link text-white font-black uppercase ${currentRoute === link.href ? "active" : ""}`} onClick={closeMobileNavOnClick}>{link.text}</Link></li>
                         ))}
-                        {isMobile ? <div><input className={'mobileSearch'} type={'text'} name={'search'} placeholder={'Search...'} /></div> : ''}
                     </ul>
                 </nav>
             </div>
