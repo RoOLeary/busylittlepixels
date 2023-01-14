@@ -127,8 +127,10 @@ export default function App({ Component, pageProps }) {
             damping: 20,
           }}
         > 
+        <>
         {isLoading && <Loader /> } 
         <Component {...pageProps} />
+        </>
         </AnimatePresence>
       </PrismicPreview>
     </PrismicProvider>

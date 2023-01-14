@@ -146,28 +146,27 @@ nav{
   row-gap: 24px;
   right: -100%;
   padding: 0 32px;
-  transition: all 0.2s;
+  transition: all 0.2s ease-out;
   top: 0em;
   min-height: calc(100vh - 60px);
 
-  @media screen and (max-width: 568px) {
+  @media screen and (max-width: 768px) {
     margin-top: 30px;
-    padding: 0 1.5em;
+    padding: 1em 1.5em;
     top: 2em;
   }
 
 
 }
 .nav__menu-list.active{
-  top: 0;
-  @media screen and (max-width: 568px) {
+  
+  @media screen and (max-width: 768px) {
     top: 2rem;
     @apply ease-linear;
+    padding-left: 1.5em;
   }
-  
   right: 0;
   height: 100%;
-  padding-top: 1em;
 }
 .nav__link{
   font-size: 18px; 
@@ -272,6 +271,7 @@ a.nav__link:hover{
   width: 40px;
   display: flex;
   flex-direction: column;
+  transition: all 0.3s ease-out;
 }
 .menu__icon div {
   border-radius: 2px;
@@ -279,7 +279,7 @@ a.nav__link:hover{
 }
 .menu__mobile {
   height: calc(100vh - 176px);
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav.active .menu__mobile {
@@ -706,4 +706,9 @@ blockquote > p {
 
 .nav__link .text-white .font-black .uppercase .active{
   color: red!important;
+}
+
+
+.mobileSearch{
+  @apply w-full rounded border border-slate-500 bg-slate-600 py-3 pl-3 pr-10 text-white placeholder-slate-400
 }

@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import React, { useState } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import { Bounded } from "./Bounded";
 import imageLoader from './../imageLoader';
 import NavItem from './NavItem';
 import { isActiveLink } from '../lib/utils'
 import { useRouter } from 'next/router';
-import {isMobile} from 'react-device-detect';
+import { useMediaQuery } from '../hooks/useMediaQuery';
 
 const links = [
     { text: "Latest", href: "/articles" },
@@ -18,22 +18,23 @@ const links = [
     { text: "Login", href: "/login" },
 ];
 
+
 export const Header = () => {
+    const isMobile = useMediaQuery(768)
     const router = useRouter(); 
     const currentRoute = router.asPath; 
-    const [panelActive, setPanelActive] = useState(false);
     const [navActive, setNavActive] = useState(false);
 
-    console.log(isMobile); 
-
-    const closeOnClick = () => {
+    const closeMobileNavOnClick = () => {
         if(isMobile){
-            console.log(isMobile, navActive);
             setTimeout(() => {
             setNavActive(!navActive);
             }, 500)
         }
+        return;
     }
+
+   
     
     return (
         <header className="px-6 text-black body-font fixed md:sticky w-full bg-black logoShadow">
@@ -50,11 +51,12 @@ export const Header = () => {
                         <div></div>
                         <div></div>
                     </div>
-                    <div className={`nav__menu-list ${navActive ? "active" : ""}`}>
-                        {links.map((link) => (
-                            <Link key={link.text} href={link.href} className={`nav__link text-white font-black uppercase ${currentRoute === link.href ? "active" : ""}`} onClick={closeOnClick}>{link.text}</Link>
+                    <ul className={`nav__menu-list px-6 ${navActive ? "active" : ""}`}>
+                       {links.map((link) => (
+                            <li key={link.text}><Link href={link.href} className={`nav__link text-white font-black uppercase ${currentRoute === link.href ? "active" : ""}`} onClick={closeMobileNavOnClick}>{link.text}</Link></li>
                         ))}
-                    </div>
+                        {isMobile ? <div><input className={'mobileSearch'} type={'text'} name={'search'} placeholder={'Search...'} /></div> : ''}
+                    </ul>
                 </nav>
             </div>
         </header>
