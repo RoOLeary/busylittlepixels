@@ -106,5 +106,6 @@ export async function getStaticProps({ preview = false, previewData }:any) {
         contact,
         preview
       },
+      revalidate: 30
     };
   }
