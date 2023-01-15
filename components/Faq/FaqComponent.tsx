@@ -12,7 +12,7 @@ export const FaqComponent = (props: FaqProps) => {
         <div className="flex flex-row items-center">
             <p className={`flex-auto active:text-red-600 hover:text-red-600 py-4 ${expanded ? "text-red-600 font-black" : "font-black"} uppercase`}>{props.question}</p>
         </div>
-        <div className={`transition-max-height duration-700 ease-in-out overflow-hidden ${expanded ? "max-h-20" : "max-h-0"}`}>
+        <div className={`transition-max-height duration-700 ease-linear overflow-hidden ${expanded ? "max-h-32" : "max-h-0"}`}>
             <p>{props.answer}</p>
         </div>
     </div>

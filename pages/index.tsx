@@ -51,32 +51,32 @@ const Home = ({ homepage, preview }:any) => {
 
             <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
               <div className="border-t border-gray-200 pt-4">
-                <dt className="font-medium text-gray-900">Origin</dt>
+                <dt className="font-medium text-gray-900">Headless CMS/web solutions</dt>
                 <dd className="mt-2 text-sm text-gray-500">Designed by Good Goods, Inc.</dd>
               </div>
 
               <div className="border-t border-gray-200 pt-4">
-                <dt className="font-medium text-gray-900">Material</dt>
+                <dt className="font-medium text-gray-900">Mobile Development</dt>
                 <dd className="mt-2 text-sm text-gray-500">Solid walnut base with rare earth magnets and powder coated steel card cover</dd>
               </div>
 
               <div className="border-t border-gray-200 pt-4">
-                <dt className="font-medium text-gray-900">Dimensions</dt>
+                <dt className="font-medium text-gray-900">Cloud Infrastructure</dt>
                 <dd className="mt-2 text-sm text-gray-500">6.25" x 3.55" x 1.15"</dd>
               </div>
 
               <div className="border-t border-gray-200 pt-4">
-                <dt className="font-medium text-gray-900">Finish</dt>
+                <dt className="font-medium text-gray-900">Building the web of the future</dt>
                 <dd className="mt-2 text-sm text-gray-500">Hand sanded and finished with natural oil</dd>
               </div>
 
               <div className="border-t border-gray-200 pt-4">
-                <dt className="font-medium text-gray-900">Includes</dt>
+                <dt className="font-medium text-gray-900">Solutions Architecture</dt>
                 <dd className="mt-2 text-sm text-gray-500">Wood card tray and 3 refill packs</dd>
               </div>
 
               <div className="border-t border-gray-200 pt-4">
-                <dt className="font-medium text-gray-900">Considerations</dt>
+                <dt className="font-medium text-gray-900">Consultancy</dt>
                 <dd className="mt-2 text-sm text-gray-500">Made from natural materials. Grain and color vary with each item.</dd>
               </div>
             </dl>
@@ -520,5 +520,6 @@ export async function getStaticProps({ preview = false, previewData }:any) {
       homepage,
       preview
     },
+    revalidate: 900
   };
 }
