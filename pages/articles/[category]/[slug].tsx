@@ -103,8 +103,9 @@ export default function Words() {
                   <div>
                     <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
                     <div className="col-span-1">
-                      <p className="mb-2 mt-2 text-sm font-normal text-gray-500">April 16, 2023</p>
-                      <h1 className="mb-2 md:text-xl font-extrabold leading-snug text-gray-800">
+                      
+                      
+                      <h1 className="pt-2 mb-2 md:text-xl font-extrabold leading-snug text-gray-800">
                         <Link href="/words/plerp" className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500">Process Documents Using Artificial Intelligence For RPA Bots</Link>
                       </h1>
                       <p className="mb-3 text-sm hidden md:visible font-normal text-gray-500">
@@ -117,8 +118,9 @@ export default function Words() {
                   <div>
                     <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
                     <div className="col-span-1">
-                      <p className="mb-2 mt-2 text-sm font-normal text-gray-500">April 16, 2023</p>
-                      <h1 className="mb-2 md:text-xl font-extrabold leading-snug text-gray-800">
+                      
+                      
+                      <h1 className="pt-2 mb-2 md:text-xl font-extrabold leading-snug text-gray-800">
                         <a href="#" className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500">Process Documents Using Artificial Intelligence For RPA Bots</a>
                       </h1>
                       <p className="mb-3 text-sm hidden md:visible font-normal text-gray-500">
@@ -133,8 +135,9 @@ export default function Words() {
                   <div>
                     <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
                     <div className="col-span-1">
-                      <p className="mb-2 mt-2 text-sm font-normal text-gray-500">April 16, 2023</p>
-                      <h1 className="mb-2 md:text-xl font-extrabold leading-snug text-gray-800">
+                      
+                      
+                      <h1 className="pt-2 mb-2 md:text-xl font-extrabold leading-snug text-gray-800">
                         <a href="#" className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500">Process Documents Using Artificial Intelligence For RPA Bots</a>
                       </h1>
                       <p className="mb-3 text-sm hidden md:visible font-normal text-gray-500">
@@ -147,8 +150,9 @@ export default function Words() {
                   <div>
                     <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
                     <div className="col-span-1">
-                      <p className="mb-2 mt-2 text-sm font-normal text-gray-500">April 16, 2023</p>
-                      <h1 className="mb-2 md:text-xl font-extrabold leading-snug text-gray-800">
+                      
+                      
+                      <h1 className="pt-2 mb-2 md:text-xl font-extrabold leading-snug text-gray-800">
                         <a href="#" className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500">Process Documents Using Artificial Intelligence For RPA Bots</a>
                       </h1>
                       <p className="mb-3 text-sm hidden md:visible font-normal text-gray-500">
