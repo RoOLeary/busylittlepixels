@@ -11,14 +11,14 @@ import { GalleryGrid } from "../../components/GalleryGrid";
 import CarouselContainer from "../../components/Carousel";
 import { CTA } from "../../components/CallToAction";
 import imageLoader from '../../imageLoader';
-// import { useTypingText } from '../../hooks/useTypingText';
+import { useTypingText } from '../../hooks/useTypingText';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Studio() {
 
     const router = useRouter(); 
-    // const { word } = useTypingText(['WEB ', 'APP ', 'DESIGN '], 300, 20);
+    const { word } = useTypingText(['WEB, ', 'APPS, ', 'MEDIA, '], 250, 20);
 
     return(
 
@@ -42,44 +42,63 @@ export default function Studio() {
             <Bounded collapsible={true} as="section" className="px-6 py-32 md:py-20 md:override">
                 <h1 className="px-0 md:px-6 font-black text-3xl md:text-6xl mb-6 last:mb-0 text-left md:text-center">busy<span style={{ "color": "red" }}>little</span>pixels<span style={{ "color": "red"}}>:</span><span style={{ "color": "red" }}>studio</span></h1>
                 <h3 className="px-0 md:px-6 mt-6 text-2xl leading-8 text-left md:text-center font-light tracking-wide">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</h3>
-                <div className="mt-8 flex gap-x-4 justify-start md:justify-center"><a href="#" className="inline-block rounded-md bg-red-600 px-4 py-1.5 text-base font-bold leading-7 text-white shadow-sm ring-1 ring-red-600 hover:bg-red-400 hover:ring-red-400 uppercase">View Showcase</a></div>
+                <div className="mt-8 flex gap-x-4 justify-start md:justify-center">
+                    <a href="#moreinfo" className="inline-block rounded-md bg-red-600 px-4 py-1.5 text-base font-bold leading-7 text-white shadow-sm ring-1 ring-red-600 hover:bg-red-400 hover:ring-red-400 uppercase">Tell me more</a>
+                </div>
             </Bounded>
             <GalleryGrid />
+            <span id={"moreinfo"}></span>
+            <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white pb-0 md:pb-0">
+                <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6">
+                    <div className="max-full text-center leading-relaxed mb-2">
+                        <h1 className="font-black tracking-tighter text-5xl md:text-[5rem] mb-6 last:mb-0 uppercase">the future of <span style={{ "color": "red"}}>{word}</span> today. </h1>
+                    </div>
+                </div>
+                <div className="py-8 flex flex-col md:flex-row">
+                    <div className="mx-auto w-full max-w-3xl border-b">
+                        <div className="leading-relaxed">
+                            <p className="article_text text-md leading-8">So park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer. Glossiesr echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
+                        </div>
+                        <section className="text-gray-600 body-font">
+                            <div className="container pt-4 pb-12 mx-auto"></div>
+                        </section>
+                    </div>
+                </div>
+            </Bounded>
            
             <div className="bg-white">
                 <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 py-24 px-4 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
                     <div>
-                        <h2 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">Technical Expertise</h2>
+                        <h2 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">Technical <span style={{ "color": "red"}}>Expertise</span></h2>
                         <p className="mt-4 text-gray-500">You know who's into dragons, Morty? Nerds who refuse to admit they're Christian. I couldn't hear you over my own screaming. We've talked about this! 5 more minute of this and I'm going to get mad! You know my name, that's disarming. Not today bitch! You look it up, you don't- you don't even know what it means.</p>
 
                         <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
                             <div className="border-t border-gray-200 pt-4">
-                                <dt className="font-medium text-gray-900">Origin</dt>
+                                <dt className="font-medium text-gray-900">Planning/Strategy</dt>
                                 <dd className="mt-2 text-sm text-gray-500">Designed by Good Goods, Inc.</dd>
                             </div>
 
                             <div className="border-t border-gray-200 pt-4">
-                                <dt className="font-medium text-gray-900">Material</dt>
+                                <dt className="font-medium text-gray-900">End-to-End Application Development</dt>
                                 <dd className="mt-2 text-sm text-gray-500">Solid walnut base with rare earth magnets and powder coated steel card cover</dd>
                             </div>
-
                             <div className="border-t border-gray-200 pt-4">
-                                <dt className="font-medium text-gray-900">Dimensions</dt>
+                                <dt className="font-medium text-gray-900">Devops/Infrastucture</dt>
                                 <dd className="mt-2 text-sm text-gray-500">6.25" x 3.55" x 1.15"</dd>
                             </div>
 
                             <div className="border-t border-gray-200 pt-4">
-                                <dt className="font-medium text-gray-900">Finish</dt>
+                                <dt className="font-medium text-gray-900">Data/Web Migrations</dt>
                                 <dd className="mt-2 text-sm text-gray-500">Hand sanded and finished with natural oil</dd>
                             </div>
 
                             <div className="border-t border-gray-200 pt-4">
-                                <dt className="font-medium text-gray-900">Includes</dt>
+                                <dt className="font-medium text-gray-900">Solution Architecture</dt>
                                 <dd className="mt-2 text-sm text-gray-500">Wood card tray and 3 refill packs</dd>
                             </div>
 
                             <div className="border-t border-gray-200 pt-4">
-                                <dt className="font-medium text-gray-900">Considerations</dt>
+                                <dt className="font-medium text-gray-900">Strategic Partnership</dt>
                                 <dd className="mt-2 text-sm text-gray-500">Made from natural materials. Grain and color vary with each item.</dd>
                             </div>
                         </dl>
@@ -100,7 +119,7 @@ export default function Studio() {
                 <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
                     <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
                         <div className="sm:max-w-lg">
-                            <h1 className="font text-4xl font-black tracking-tight text-gray-900 sm:text-6xl">Solutions, Consultancy </h1>
+                            <h1 className="font text-4xl font-black tracking-tight text-gray-900 sm:text-6xl">Engineering Solutions</h1>
                             <p className="mt-4 text-xl text-gray-500">Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
                         </div>
                         <div>
