@@ -61,7 +61,7 @@ export const Header = () => {
                             </button>
                         </div> : ''}
                         {links.map((link) => (
-                            <li key={link.text}><Link href={link.href} className={`nav__link text-white font-black uppercase ${currentRoute === link.href ? "active" : ""}`} onClick={closeMobileNavOnClick}>{link.text}</Link></li>
+                            <li key={link.text}><Link href={link.href} className={`nav__link text-white font-black ${currentRoute === link.href ? "active" : ""}`} onClick={closeMobileNavOnClick}>{link.text}</Link></li>
                         ))}
                         {isMobile ? 
                             <>
