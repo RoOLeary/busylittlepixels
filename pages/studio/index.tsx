@@ -83,11 +83,11 @@ export default function Studio() {
                 </div>
             </Bounded>
             <section className="boundedContainer">
-                <div className="container px-2 py-24 mx-auto border-b">
+                <div className="container py-24 mx-auto border-b">
                     <div className="flex flex-wrap w-full mb-20">
                     <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
                         <h1 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">Pitchfork Kickstarter Taxidermy</h1>
-                        <div className="h-1 w-20 bg-red-500 rounded"></div>
+                        <div className="header__underline"></div>
                     </div>
                     <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
                     </div>
@@ -96,7 +96,7 @@ export default function Studio() {
                         <div className="bg-gray-100 p-6 rounded-lg">
                         {/* <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content" /> */}
                         <h3 className="tracking-widest text-red-500 text-xs font-bold title-font">SUBTITLE</h3>
-                        <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
+                        <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Media</h2>
                         <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
                         </div>
                     </div>
@@ -104,7 +104,7 @@ export default function Studio() {
                         <div className="bg-gray-100 p-6 rounded-lg">
                         {/* <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401" alt="content" /> */}
                         <h3 className="tracking-widest text-red-500 text-xs font-bold title-font">SUBTITLE</h3>
-                        <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Colosseum Roma</h2>
+                        <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Events</h2>
                         <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
                         </div>
                     </div>
@@ -112,7 +112,7 @@ export default function Studio() {
                         <div className="bg-gray-100 p-6 rounded-lg">
                         {/* <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402" alt="content" /> */}
                         <h3 className="tracking-widest text-red-500 text-xs font-bold title-font">SUBTITLE</h3>
-                        <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza</h2>
+                        <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Headless CMS Development</h2>
                         <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
                         </div>
                     </div>
@@ -120,7 +120,7 @@ export default function Studio() {
                         <div className="bg-gray-100 p-6 rounded-lg">
                         {/* <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content" /> */}
                         <h3 className="tracking-widest text-red-500 text-xs font-bold title-font">SUBTITLE</h3>
-                        <h2 className="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
+                        <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Scaling Consultancy</h2>
                         <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
                         </div>
                     </div>
