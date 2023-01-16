@@ -82,7 +82,7 @@ const Studio = ({ studio, preview }:any) => {
                 <div className="py-8 flex flex-col md:flex-row">
                     <div className="mx-auto w-full max-w-3xl border-b">
                         <div className="leading-relaxed">
-                            <p className="article_text text-md leading-8">So park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer. Glossiesr echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
+                            <p className="article_text text-md leading-8">{studio.data.cta_body_content[0].text}</p>
                         </div>
                         <section className="text-gray-600 body-font">
                             <div className="container pt-4 pb-12 mx-auto"></div>
@@ -91,7 +91,7 @@ const Studio = ({ studio, preview }:any) => {
                 </div>
             </Bounded>
             <section className="boundedContainer">
-                <div className="container py-24 mx-auto border-b">
+                <div className="container py-8 mx-auto border-b">
                     <div className="flex flex-wrap w-full mb-20">
                     <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
                         <h1 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">Industry <span style={{ "color": "red"}}>Experience</span></h1>

@@ -153,6 +153,28 @@ interface StudioDocumentData {
      */
     studio_intro: prismicT.RichTextField;
     /**
+     * CTA String One field in *Studio*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: studio.cta_string_one
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    cta_string_one: prismicT.RichTextField;
+    /**
+     * CTA Body Content field in *Studio*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: studio.cta_body_content
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    cta_body_content: prismicT.RichTextField;
+    /**
      * Slice Zone field in *Studio*
      *
      * - **Field Type**: Slice Zone

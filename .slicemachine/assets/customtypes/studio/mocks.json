@@ -1,7 +1,7 @@
 {
   "uid": {
     "__TYPE__": "UIDContent",
-    "value": "did"
+    "value": "talk"
   },
   "studio_intro": {
     "__TYPE__": "StructuredTextContent",
@@ -9,7 +9,29 @@
       {
         "type": "paragraph",
         "content": {
-          "text": "Sint ullamco anim ipsum amet est officia et sit laborum aliqua esse officia dolore laborum."
+          "text": "Laboris magna ex in amet ipsum minim cupidatat aliquip dolore consequat minim. Eiusmod culpa laborum duis Lorem occaecat quis esse officia. Tempor duis aliquip in ad eiusmod."
+        }
+      }
+    ]
+  },
+  "cta_string_one": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Lorem dolore deserunt quis anim occaecat laboris enim commodo adipisicing dolor mollit non esse. Aliqua sint voluptate culpa sit nulla laboris anim eu irure esse."
+        }
+      }
+    ]
+  },
+  "cta_body_content": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Fugiat cillum enim velit eiusmod amet qui in enim veniam eiusmod sint esse. Culpa consectetur ipsum quis nisi proident voluptate minim dolore pariatur cillum duis dolor dolore."
         }
       }
     ]
@@ -18,7 +40,7 @@
     "__TYPE__": "SliceContentType",
     "value": [
       {
-        "key": "article_lead_paragraph$10d9eb2c-0d98-4609-afc0-cf30880d5e6c",
+        "key": "article_lead_paragraph$8a109329-7b51-4848-8353-519929d261cc",
         "name": "article_lead_paragraph",
         "widget": {
           "__TYPE__": "SharedSliceContent",
@@ -30,7 +52,7 @@
                 {
                   "type": "heading1",
                   "content": {
-                    "text": "Lucky"
+                    "text": "Upper"
                   }
                 }
               ]
@@ -52,7 +74,7 @@
       {
         "type": "paragraph",
         "content": {
-          "text": "Velit est velit consectetur commodo id."
+          "text": "Magna magna deserunt ea officia consequat id aliquip culpa ea exercitation do veniam. Magna occaecat anim consequat incididunt consectetur qui ut dolore nulla incididunt exercitation laborum dolore est ad. In labore esse amet ex fugiat anim ipsum ut incididunt voluptate commodo ipsum pariatur laboris."
         }
       }
     ]
@@ -63,7 +85,7 @@
       {
         "type": "paragraph",
         "content": {
-          "text": "Commodo et est irure velit Lorem do ipsum do exercitation quis proident esse Lorem."
+          "text": "Velit officia deserunt nostrud proident laboris esse veniam veniam tempor consectetur. Esse excepteur tempor deserunt est ad nulla nulla elit dolor fugiat."
         }
       }
     ]
@@ -83,7 +105,7 @@
     "__TYPE__": "LinkContent",
     "value": {
       "__TYPE__": "ExternalLink",
-      "url": "https://slicemachine.dev"
+      "url": "http://twitter.com"
     }
   }
 }
