@@ -42,3 +42,7 @@
   + [data-collapsible="true"].bg-slate-100 {
   @apply pt-0 md:pt-0;
 }
+
+.studio_intro{
+  @apply article_text leading-8 mx-auto w-full max-w-3xl;
+}
