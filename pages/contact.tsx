@@ -50,7 +50,7 @@ const Contact: NextPage = ({ contact, preview }:any) => {
         <Layout>
             
             
-            <Bounded collapsible={true} as="section" className="bg-white override">
+            <Bounded collapsible={true} as="section" className="override">
                 <h1 className="pb-8 font-black text-4xl md:text-6xl mb-6 last:mb-0 border-b border-gray-200 uppercase">WE <span style={{ "color": "red"}}>{contact.data.contact_title[0].text}</span> HEARING FROM <span style={{ "color": "red"}}>YOU</span></h1>
                 <p className="mb-3 text-lg font-normal text-gray-500">{contact.data.contact_intro[0].text}</p>
             </Bounded>

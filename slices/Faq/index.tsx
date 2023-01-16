@@ -15,7 +15,7 @@ const Faqs = ({ slice }:any) => {
     });
 
     return(
-        <Bounded collapsible={false} as="section" className="px-2 py-20 md:py-32 bg-white override">
+        <Bounded collapsible={false} as="section" className="px-6 py-8 md:py-10">
             <div className={`mx-auto flex items-center`}>
                 <div
                     className={"flex-auto flex flex-col md:flex-row items-center bg-white"}>
