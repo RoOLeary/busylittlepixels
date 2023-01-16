@@ -86,10 +86,10 @@ export default function Studio() {
                 <div className="container py-24 mx-auto border-b">
                     <div className="flex flex-wrap w-full mb-20">
                     <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-                        <h1 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">Pitchfork Kickstarter Taxidermy</h1>
+                        <h1 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">Industry <span style={{ "color": "red"}}>Experience</span></h1>
                         <div className="header__underline"></div>
                     </div>
-                    <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+                    <p className="lg:w-1/2 w-full leading-relaxed text-gray-500 md:px-2">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
                     </div>
                     <div className="flex flex-wrap -m-4">
                     <div className="xl:w-1/4 md:w-1/2 p-2">
