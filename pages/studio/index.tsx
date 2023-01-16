@@ -82,8 +82,8 @@ export default function Studio() {
                     </div>
                 </div>
             </Bounded>
-            <section className="text-gray-600 body-font">
-                <div className="container px-5 py-24 mx-auto">
+            <section className="boundedContainer">
+                <div className="container px-2 py-24 mx-auto border-b">
                     <div className="flex flex-wrap w-full mb-20">
                     <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
                         <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Pitchfork Kickstarter Taxidermy</h1>
@@ -95,7 +95,7 @@ export default function Studio() {
                     <div className="xl:w-1/4 md:w-1/2 p-2">
                         <div className="bg-gray-100 p-6 rounded-lg">
                         {/* <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content" /> */}
-                        <h3 className="tracking-widest text-red-500 text-xs font-medium title-font">SUBTITLE</h3>
+                        <h3 className="tracking-widest text-red-500 text-xs font-bold title-font">SUBTITLE</h3>
                         <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
                         <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
                         </div>
@@ -103,7 +103,7 @@ export default function Studio() {
                     <div className="xl:w-1/4 md:w-1/2 p-2">
                         <div className="bg-gray-100 p-6 rounded-lg">
                         {/* <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401" alt="content" /> */}
-                        <h3 className="tracking-widest text-red-500 text-xs font-medium title-font">SUBTITLE</h3>
+                        <h3 className="tracking-widest text-red-500 text-xs font-bold title-font">SUBTITLE</h3>
                         <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Colosseum Roma</h2>
                         <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
                         </div>
@@ -111,7 +111,7 @@ export default function Studio() {
                     <div className="xl:w-1/4 md:w-1/2 p-2">
                         <div className="bg-gray-100 p-6 rounded-lg">
                         {/* <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402" alt="content" /> */}
-                        <h3 className="tracking-widest text-red-500 text-xs font-medium title-font">SUBTITLE</h3>
+                        <h3 className="tracking-widest text-red-500 text-xs font-bold title-font">SUBTITLE</h3>
                         <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza</h2>
                         <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
                         </div>
@@ -119,7 +119,7 @@ export default function Studio() {
                     <div className="xl:w-1/4 md:w-1/2 p-2">
                         <div className="bg-gray-100 p-6 rounded-lg">
                         {/* <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content" /> */}
-                        <h3 className="tracking-widest text-red-500 text-xs font-medium title-font">SUBTITLE</h3>
+                        <h3 className="tracking-widest text-red-500 text-xs font-bold title-font">SUBTITLE</h3>
                         <h2 className="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
                         <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
                         </div>
@@ -127,7 +127,7 @@ export default function Studio() {
                     </div>
                 </div>
             </section>
-            <div className="bg-white">
+            <section className="bg-white">
                 <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 py-24 px-4 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
                     <div>
                         <h2 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">Technical <span style={{ "color": "red"}}>Expertise</span></h2>
@@ -171,7 +171,7 @@ export default function Studio() {
                         <img src="https://source.unsplash.com/640x640/?app" alt="Walnut card tray filled with cards and card angled in dedicated groove." className="rounded-lg bg-gray-100" />
                     </div>
                 </div>
-            </div>
+            </section>
             
             <CarouselContainer />
 
@@ -181,7 +181,7 @@ export default function Studio() {
                     <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
                         <div className="sm:max-w-lg">
                             <h1 className="font text-4xl font-black tracking-tight text-gray-900 sm:text-6xl">Engineering Solutions</h1>
-                            <p className="mt-4 text-xl text-gray-500">Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
+                            <p className="mt-4 text-xl text-bold00">Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
                         </div>
                         <div>
                             <div className="mt-10">
