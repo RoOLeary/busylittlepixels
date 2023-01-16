@@ -18,6 +18,7 @@ import CarouselContainer from "../../components/Carousel";
 import { CTA } from "../../components/CallToAction";
 import imageLoader from '../../imageLoader';
 import { useTypingText } from '../../hooks/useTypingText';
+import { motion } from 'framer-motion';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -47,16 +48,33 @@ const Studio = ({ studio, preview }:any) => {
             
             
 
-
+           
             <section className="px-6 py-24 md:py-32">
-                <h1 className="px-0 md:px-6 font-black text-3xl md:text-6xl mb-6 last:mb-0 text-left md:text-center">busy<span style={{ "color": "red" }}>little</span>pixels<span style={{ "color": "red"}}>:</span><span style={{ "color": "red" }}>studio</span></h1>
+                <motion.div initial="hidden" animate="visible" variants={{
+                    hidden: {
+                        scale: .8,
+                        opacity: 0
+                    },
+                    visible: {
+                        scale: 1,
+                        opacity: 1,
+                        transition: {
+                        delay: .5
+                        }
+                    },
+                }}>
+                    <h1 className="px-0 md:px-6 font-black text-3xl md:text-6xl mb-8 last:mb-0 text-left md:text-center">busy<span style={{ "color": "red" }}>little</span>pixels<span style={{ "color": "red"}}>:</span><span style={{ "color": "red" }}>studio</span></h1>
+                                
+                       
                 <p className="studio_intro">
                     {studio.data.studio_intro[0].text}
                 </p>
+
                 <div className="mt-8 flex gap-x-4 justify-start md:justify-center">
                     {/* @ts-ignore */}
                     <a href="#moreinfo" className="inline-block rounded-md bg-red-600 px-4 py-1.5 text-base font-bold leading-7 text-white shadow-sm ring-1 ring-red-600 hover:bg-red-400 hover:ring-red-400 uppercase" data-scrollto="moreinfo" scrollto="moreinfo" onClick={onScrollClick}>Tell me more</a>
                 </div>
+                </motion.div>   
             </section>
             <GalleryGrid />
             <span id={"moreinfo"}></span>
