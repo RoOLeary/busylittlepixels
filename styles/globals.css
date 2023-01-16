@@ -1,7 +1,10 @@
+@import './effects/logo-effects.css';
+@import './article-text/article-text.css';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 .logoShadow{
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 10%), 0 8px 10px -6px rgb(0 0 0 / 10%);
@@ -12,19 +15,7 @@
   
 }
 
-.article_text{
-  letter-spacing: -0.5px;
-  font-weight: 300;
-  display: flex;
-  font-size: 1.125rem;
-  line-height: 2.5rem;
-  text-align: justify;
 
-  @media screen and (max-width: 768px) {
-    line-height: 2rem;
-    font-size: 18px;
-  }  
-}
 
 .allArticles_excerpt{
   display: inline-block;
@@ -32,12 +23,6 @@
     display: none;
   }  
 }
-
-
-.carouselLeft{
-  margin-left: 5px; 
-}
-
 
 .bgImgShelf{
   box-sizing: border-box;
@@ -59,26 +44,7 @@
   @apply pt-0 md:pt-0;
 }
 
-.shake{
-  border-radius: 5px; 
-  &:hover, &:focus {
-      animation: logoshake .5s cubic-bezier(.36,.07,.19,.97) both;
-      backface-visibility: hidden;
-      transform-origin: center;
-  }
-}
 
-@keyframes logoshake {
-  0% { transform: rotate(0); }
-  15% { transform: rotate(5deg); }
-  30% { transform: rotate(-5deg); }
-  45% { transform: rotate(4deg); }
-  60% { transform: rotate(-4deg); }
-  75% { transform: rotate(2deg); }
-  85% { transform: rotate(-2deg); }
-  92% { transform: rotate(1deg); }
-  100% { transform: rotate(0); }
-}
 
 .quote {
     box-shadow: 0 20px 25px -5px rgb(0 0 0 / 10%), 0 8px 10px -6px rgb(0 0 0 / 10%);
