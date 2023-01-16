@@ -1,11 +1,7 @@
 import { useTypingText } from '../hooks/useTypingText';
-
-
 export const TitleContainer = () => {
 
-   
-    const { word } = useTypingText(['CODE...', 'APPS...', 'MEDIA...', 'TECH...', 'GAMES...', 'PUPPIES...', 'MATÉ...'], 250, 20);
-    
+    const { word } = useTypingText(['CODE...', 'APPS...', 'MEDIA...', 'TECH...', 'GAMES...', 'PUPPIES...', 'MATÉ...'], 250, 20);    
     return (
         <div className="title_container">
             <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6">

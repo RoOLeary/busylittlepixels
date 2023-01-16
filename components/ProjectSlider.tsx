@@ -15,16 +15,26 @@ export default function ProjectSlider() {
         {
             "textSub": "One",
             "textHeading": "One",
+            "textContent": "Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical Character Recognition) and Machine Learning, RPA bots are capable of extracting these data",
             "textBackground": "One",
-            "slideImage": "https://source.unsplash.com/450x750/?ai,tech",
+            "slideImage": "https://source.unsplash.com/500x750/?ai,tech",
             "sliderColor": "blue"
         },
         {
             "textSub": "Two",
             "textHeading": "Two",
+            "textContent": "Earlier RPA ballbags used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical Character Recognition) and Machine Learning, RPA bots are capable of extracting these data",
             "textBackground": "Two",
-            "slideImage": "https://source.unsplash.com/450x750/?code",
+            "slideImage": "https://source.unsplash.com/500x750/?code",
             "sliderColor": "red"
+        },
+        {
+            "textSub": "Three",
+            "textHeading": "Three",
+            "textContent": "Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical Character Recognition) and Machine Learning, RPA bots are capable of extracting these data",
+            "textBackground": "Three",
+            "slideImage": "https://source.unsplash.com/500x750/?code",
+            "sliderColor": "yellow"
         }
     ]
     
@@ -120,7 +130,7 @@ export default function ProjectSlider() {
                             <div className="flex__content">
                                 <p className="text--sub">{sl.textSub}</p>
                                 <h1 className="text--big font-serif">{sl.textHeading}</h1>
-                                <p className="pt-4">Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical Character Recognition) and Machine Learning, RPA bots are capable of extracting these data</p>
+                                <p className="pt-4">{sl.textContent}</p>
                             </div>
                             <p className="text__background font-serif">{sl.textBackground}</p>
                             </div>

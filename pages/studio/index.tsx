@@ -46,7 +46,7 @@ const Studio = ({ studio, preview }:any) => {
         <Layout>
             
             <span id={"moreinfo"}></span>
-            <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white pb-0 md:pb-0">
+            <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32 bg-white pb-0 md:pb-0">
                 {/* <div className="isolate bg-white">
                     <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
                         <svg className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -79,7 +79,7 @@ const Studio = ({ studio, preview }:any) => {
 
 
 
-            <Bounded collapsible={true} as="section" className="px-6 py-32 md:py-20 md:override">
+            <section className="px-6 py-8 md:py-20">
                 <h1 className="px-0 md:px-6 font-black text-3xl md:text-6xl mb-6 last:mb-0 text-left md:text-center">busy<span style={{ "color": "red" }}>little</span>pixels<span style={{ "color": "red"}}>:</span><span style={{ "color": "red" }}>studio</span></h1>
                 <p className="studio_intro">
                     {studio.data.studio_intro[0].text}
@@ -88,11 +88,11 @@ const Studio = ({ studio, preview }:any) => {
                     {/* @ts-ignore */}
                     <a href="#moreinfo" className="inline-block rounded-md bg-red-600 px-4 py-1.5 text-base font-bold leading-7 text-white shadow-sm ring-1 ring-red-600 hover:bg-red-400 hover:ring-red-400 uppercase" data-scrollto="moreinfo" scrollto="moreinfo" onClick={onScrollClick}>Tell me more</a>
                 </div>
-            </Bounded>
+            </section>
             <GalleryGrid />
             
             <section className="boundedContainer">
-                <div className="container py-8 mx-auto border-b">
+                <div className="container pt-20 mx-auto">
                     <div className="flex flex-wrap w-full mb-20">
                     <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
                         <h1 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">Industry <span style={{ "color": "red"}}>Experience</span></h1>
@@ -140,6 +140,7 @@ const Studio = ({ studio, preview }:any) => {
                 <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 py-24 px-4 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
                     <div>
                         <h2 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">Technical <span style={{ "color": "red"}}>Expertise</span></h2>
+                        <div className="header__underline"></div>
                         <p className="mt-4 text-gray-500">You know who's into dragons, Morty? Nerds who refuse to admit they're Christian. I couldn't hear you over my own screaming. We've talked about this! 5 more minute of this and I'm going to get mad! You know my name, that's disarming. Not today bitch! You look it up, you don't- you don't even know what it means.</p>
 
                         <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
@@ -184,7 +185,7 @@ const Studio = ({ studio, preview }:any) => {
             
             <CarouselContainer />
 
-            <section className="boundedContainer py-20 md:py-32">
+            <section className="boundedContainer px-0 md:px-6 py-20 md:py-32">
             <div className="relative overflow-hidden bg-white">
                 <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
                     <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
