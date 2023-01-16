@@ -48,7 +48,7 @@ const Studio = ({ studio, preview }:any) => {
             
 
 
-            <section className="px-6 py-8 md:py-20">
+            <section className="px-6 py-24 md:py-32">
                 <h1 className="px-0 md:px-6 font-black text-3xl md:text-6xl mb-6 last:mb-0 text-left md:text-center">busy<span style={{ "color": "red" }}>little</span>pixels<span style={{ "color": "red"}}>:</span><span style={{ "color": "red" }}>studio</span></h1>
                 <p className="studio_intro">
                     {studio.data.studio_intro[0].text}
@@ -90,38 +90,7 @@ const Studio = ({ studio, preview }:any) => {
                     </div>
                 </div>
             </Bounded>
-            <span id={"moreinfo"}></span>
-            <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32 bg-white pb-0 md:pb-0">
-                {/* <div className="isolate bg-white">
-                    <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
-                        <svg className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="url(#45de2b6b-92d5-4d68-a6a0-9b9b2abad533)" fillOpacity=".3" d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />
-                            <defs>
-                                <linearGradient id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533" x1="1155.49" x2="-78.208" y1=".177" y2="474.645" gradientUnits="userSpaceOnUse">
-                                    <stop stopColor="#9089FC"></stop>
-                                    <stop offset="1" stopColor="#FF80B5"></stop>
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </div>
-                </div> */}
-                <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6">
-                    <div className="max-full text-center leading-relaxed mb-2">
-                        <h1 className="font-black tracking-tighter text-5xl md:text-[5rem] mb-6 last:mb-0 uppercase">the future of <span style={{ "color": "red"}}>{word}</span> today. </h1>
-                    </div>
-                </div>
-                <div className="py-8 flex flex-col md:flex-row">
-                    <div className="mx-auto w-full max-w-3xl border-b">
-                        <div className="leading-relaxed">
-                            <p className="studio_intro">{studio.data.cta_body_content[0].text}</p>
-                        </div>
-                        <section className="text-gray-600 body-font">
-                            <div className="container pt-4 pb-12 mx-auto"></div>
-                        </section>
-                    </div>
-                </div>
-            </Bounded>
-
+            
             <section className="boundedContainer">
                 <div className="container pt-20 mx-auto">
                     <div className="flex flex-wrap w-full mb-20">
@@ -129,7 +98,7 @@ const Studio = ({ studio, preview }:any) => {
                         <h1 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">Industry <span style={{ "color": "red"}}>Experience</span></h1>
                         <div className="header__underline"></div>
                     </div>
-                    <p className="lg:w-1/2 w-full leading-relaxed text-gray-500 md:px-2">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+                    <p className="lg:w-1/2 w-full leading-relaxed md:px-2 studio_intro">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
                     </div>
                     <div className="flex flex-wrap -m-4">
                     <div className="xl:w-1/4 md:w-1/2 p-2">
@@ -172,7 +141,7 @@ const Studio = ({ studio, preview }:any) => {
                     <div>
                         <h2 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">Technical <span style={{ "color": "red"}}>Expertise</span></h2>
                         <div className="header__underline"></div>
-                        <p className="mt-4 text-gray-500">You know who's into dragons, Morty? Nerds who refuse to admit they're Christian. I couldn't hear you over my own screaming. We've talked about this! 5 more minute of this and I'm going to get mad! You know my name, that's disarming. Not today bitch! You look it up, you don't- you don't even know what it means.</p>
+                        <p className="mt-4 text-gray-500 studio_intro">You know who's into dragons, Morty? Nerds who refuse to admit they're Christian. I couldn't hear you over my own screaming. We've talked about this! 5 more minute of this and I'm going to get mad! You know my name, that's disarming. Not today bitch! You look it up, you don't- you don't even know what it means.</p>
 
                         <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
                             <div className="border-t border-gray-200 pt-4">

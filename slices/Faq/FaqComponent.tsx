@@ -13,7 +13,7 @@ export const FaqComponent = (props: FaqProps) => {
             <p className={`flex-auto active:text-red-500 hover:text-red-500 py-4 easing-linear ${expanded ? "text-red-500 font-black" : "font-black"} uppercase`}>{props.question}</p>
         </div>
         <div className={`transition-max-height duration-150 easing-linear overflow-hidden ${expanded ? "max-h-20" : "max-h-0"}`}>
-            <p>{props.answer}</p>
+            <p className={'contact_intro'}>{props.answer}</p>
         </div>
     </div>
 }

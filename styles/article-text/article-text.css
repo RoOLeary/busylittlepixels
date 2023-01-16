@@ -46,3 +46,7 @@
 .studio_intro{
   @apply article_text leading-8 mx-auto w-full max-w-3xl;
 }
+
+.contact_intro{
+  @apply article_text leading-8 mx-auto w-full;
+}
