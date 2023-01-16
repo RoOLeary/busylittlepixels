@@ -9,9 +9,36 @@
     @media screen and (max-width: 768px) {
       line-height: 2rem;
       font-size: 18px;
-    }  
-  }
+  }  
+}
 
-  .carouselLeft{
-    margin-left: 5px; 
-  }
+.carouselLeft{
+  margin-left: 5px; 
+}
+
+.allArticles_excerpt{
+  display: inline-block;
+  @media screen and (max-width: 960px) {
+    display: none;
+  }  
+}
+
+.bgImgShelf{
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  width: initial;
+  height: initial; 
+  background: none;
+  opacity: 1;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+[data-collapsible="true"].bg-white + [data-collapsible="true"].bg-white,
+[data-collapsible="true"].bg-slate-100
+  + [data-collapsible="true"].bg-slate-100 {
+  @apply pt-0 md:pt-0;
+}
