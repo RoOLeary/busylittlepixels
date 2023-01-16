@@ -45,6 +45,51 @@ const Studio = ({ studio, preview }:any) => {
 
         <Layout>
             
+            
+
+
+            <section className="px-6 py-8 md:py-20">
+                <h1 className="px-0 md:px-6 font-black text-3xl md:text-6xl mb-6 last:mb-0 text-left md:text-center">busy<span style={{ "color": "red" }}>little</span>pixels<span style={{ "color": "red"}}>:</span><span style={{ "color": "red" }}>studio</span></h1>
+                <p className="studio_intro">
+                    {studio.data.studio_intro[0].text}
+                </p>
+                <div className="mt-8 flex gap-x-4 justify-start md:justify-center">
+                    {/* @ts-ignore */}
+                    <a href="#moreinfo" className="inline-block rounded-md bg-red-600 px-4 py-1.5 text-base font-bold leading-7 text-white shadow-sm ring-1 ring-red-600 hover:bg-red-400 hover:ring-red-400 uppercase" data-scrollto="moreinfo" scrollto="moreinfo" onClick={onScrollClick}>Tell me more</a>
+                </div>
+            </section>
+            <GalleryGrid />
+            <span id={"moreinfo"}></span>
+            <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32 bg-white pb-0 md:pb-0">
+                {/* <div className="isolate bg-white">
+                    <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
+                        <svg className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="url(#45de2b6b-92d5-4d68-a6a0-9b9b2abad533)" fillOpacity=".3" d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />
+                            <defs>
+                                <linearGradient id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533" x1="1155.49" x2="-78.208" y1=".177" y2="474.645" gradientUnits="userSpaceOnUse">
+                                    <stop stopColor="#9089FC"></stop>
+                                    <stop offset="1" stopColor="#FF80B5"></stop>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div> */}
+                <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6">
+                    <div className="max-full text-center leading-relaxed mb-2">
+                        <h1 className="font-black tracking-tighter text-5xl md:text-[5rem] mb-6 last:mb-0 uppercase">the future of <span style={{ "color": "red"}}>{word}</span> today. </h1>
+                    </div>
+                </div>
+                <div className="py-8 flex flex-col md:flex-row">
+                    <div className="mx-auto w-full max-w-3xl border-b">
+                        <div className="leading-relaxed">
+                            <p className="studio_intro">{studio.data.cta_body_content[0].text}</p>
+                        </div>
+                        <section className="text-gray-600 body-font">
+                            <div className="container pt-4 pb-12 mx-auto"></div>
+                        </section>
+                    </div>
+                </div>
+            </Bounded>
             <span id={"moreinfo"}></span>
             <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32 bg-white pb-0 md:pb-0">
                 {/* <div className="isolate bg-white">
@@ -77,20 +122,6 @@ const Studio = ({ studio, preview }:any) => {
                 </div>
             </Bounded>
 
-
-
-            <section className="px-6 py-8 md:py-20">
-                <h1 className="px-0 md:px-6 font-black text-3xl md:text-6xl mb-6 last:mb-0 text-left md:text-center">busy<span style={{ "color": "red" }}>little</span>pixels<span style={{ "color": "red"}}>:</span><span style={{ "color": "red" }}>studio</span></h1>
-                <p className="studio_intro">
-                    {studio.data.studio_intro[0].text}
-                </p>
-                <div className="mt-8 flex gap-x-4 justify-start md:justify-center">
-                    {/* @ts-ignore */}
-                    <a href="#moreinfo" className="inline-block rounded-md bg-red-600 px-4 py-1.5 text-base font-bold leading-7 text-white shadow-sm ring-1 ring-red-600 hover:bg-red-400 hover:ring-red-400 uppercase" data-scrollto="moreinfo" scrollto="moreinfo" onClick={onScrollClick}>Tell me more</a>
-                </div>
-            </section>
-            <GalleryGrid />
-            
             <section className="boundedContainer">
                 <div className="container pt-20 mx-auto">
                     <div className="flex flex-wrap w-full mb-20">
