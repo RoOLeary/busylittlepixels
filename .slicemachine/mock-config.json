@@ -2,7 +2,15 @@
   "_cts": {
     "home": {},
     "articles": {},
-    "contact": {}
+    "contact": {},
+    "studio": {
+      "studio_intro": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
   },
   "slices": {
     "ArticleLeadParagraph": {

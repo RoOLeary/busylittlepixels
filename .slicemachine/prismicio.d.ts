@@ -104,10 +104,10 @@ type ContactDocumentDataSlicesSlice = FaqSlice;
  * @typeParam Lang - Language API ID of the document.
  */
 export type ContactDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<ContactDocumentData>, "contact", Lang>;
-/** Content for home documents */
+/** Content for Home documents */
 interface HomeDocumentData {
     /**
-     * Home Title field in *home*
+     * Home Title field in *Home*
      *
      * - **Field Type**: Rich Text
      * - **Placeholder**: *None*
@@ -118,7 +118,7 @@ interface HomeDocumentData {
      */
     home_title: prismicT.RichTextField;
     /**
-     * Home SubTitle field in *home*
+     * Home SubTitle field in *Home*
      *
      * - **Field Type**: Rich Text
      * - **Placeholder**: *None*
@@ -130,7 +130,7 @@ interface HomeDocumentData {
     home_subtitle: prismicT.RichTextField;
 }
 /**
- * home document from Prismic
+ * Home document from Prismic
  *
  * - **API ID**: `home`
  * - **Repeatable**: `false`
@@ -139,7 +139,91 @@ interface HomeDocumentData {
  * @typeParam Lang - Language API ID of the document.
  */
 export type HomeDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<HomeDocumentData>, "home", Lang>;
-export type AllDocumentTypes = ArticlesDocument | ContactDocument | HomeDocument;
+/** Content for Studio documents */
+interface StudioDocumentData {
+    /**
+     * Studio Intro field in *Studio*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: studio.studio_intro
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    studio_intro: prismicT.RichTextField;
+    /**
+     * Slice Zone field in *Studio*
+     *
+     * - **Field Type**: Slice Zone
+     * - **Placeholder**: *None*
+     * - **API ID Path**: studio.slices[]
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+     *
+     */
+    slices: prismicT.SliceZone<StudioDocumentDataSlicesSlice>;
+    /**
+     * og title field in *Studio*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: studio.og_title
+     * - **Tab**: Meta
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    og_title: prismicT.RichTextField;
+    /**
+     * og description field in *Studio*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: studio.og_description
+     * - **Tab**: Meta
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    og_description: prismicT.RichTextField;
+    /**
+     * og image field in *Studio*
+     *
+     * - **Field Type**: Link to Media
+     * - **Placeholder**: *None*
+     * - **API ID Path**: studio.og_image
+     * - **Tab**: Meta
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    og_image: prismicT.LinkToMediaField;
+    /**
+     * og url field in *Studio*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: studio.og_url
+     * - **Tab**: Meta
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    og_url: prismicT.LinkField;
+}
+/**
+ * Slice for *Studio → Slice Zone*
+ *
+ */
+type StudioDocumentDataSlicesSlice = ArticleLeadParagraphSlice;
+/**
+ * Studio document from Prismic
+ *
+ * - **API ID**: `studio`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type StudioDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<StudioDocumentData>, "studio", Lang>;
+export type AllDocumentTypes = ArticlesDocument | ContactDocument | HomeDocument | StudioDocument;
 /**
  * Primary content in ArticleLeadParagraph → Primary
  *
@@ -249,6 +333,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { ArticlesDocumentData, ArticlesDocument, ContactDocumentData, ContactDocumentDataSlicesSlice, ContactDocument, HomeDocumentData, HomeDocument, AllDocumentTypes, ArticleLeadParagraphSliceDefaultPrimary, ArticleLeadParagraphSliceDefault, ArticleLeadParagraphSliceVariation, ArticleLeadParagraphSlice, FaqSliceDefaultPrimary, FaqSliceDefaultItem, FaqSliceDefault, FaqSliceVariation, FaqSlice };
+        export type { ArticlesDocumentData, ArticlesDocument, ContactDocumentData, ContactDocumentDataSlicesSlice, ContactDocument, HomeDocumentData, HomeDocument, StudioDocumentData, StudioDocumentDataSlicesSlice, StudioDocument, AllDocumentTypes, ArticleLeadParagraphSliceDefaultPrimary, ArticleLeadParagraphSliceDefault, ArticleLeadParagraphSliceVariation, ArticleLeadParagraphSlice, FaqSliceDefaultPrimary, FaqSliceDefaultItem, FaqSliceDefault, FaqSliceVariation, FaqSlice };
     }
 }

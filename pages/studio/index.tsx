@@ -1,3 +1,9 @@
+import { SliceZone } from "@prismicio/react";
+import * as prismicH from "@prismicio/helpers";
+
+import { createClient } from "../../prismicio";
+
+import { PrismicRichText } from '@prismicio/react'
 /* eslint-disable react/jsx-no-comment-textnodes */
 import Head from 'next/head'
 import Image from 'next/image'
@@ -15,8 +21,7 @@ import { useTypingText } from '../../hooks/useTypingText';
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Studio() {
-
+const Studio = ({ studio, preview }:any) => {
     const router = useRouter(); 
     const { word } = useTypingText(['WEB, ', 'APPS, ', 'MEDIA, '], 250, 20);
 
@@ -57,7 +62,9 @@ export default function Studio() {
 
             <Bounded collapsible={true} as="section" className="px-6 py-32 md:py-20 md:override">
                 <h1 className="px-0 md:px-6 font-black text-3xl md:text-6xl mb-6 last:mb-0 text-left md:text-center">busy<span style={{ "color": "red" }}>little</span>pixels<span style={{ "color": "red"}}>:</span><span style={{ "color": "red" }}>studio</span></h1>
-                <h3 className="px-0 md:px-6 mt-6 text-2xl leading-8 text-left md:text-center font-light tracking-wide">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</h3>
+                <h3 className="px-0 md:px-6 mt-6 text-2xl leading-8 text-left md:text-center font-light tracking-wide">
+                    <PrismicRichText field={studio.data.studio_intro} />
+                </h3>
                 <div className="mt-8 flex gap-x-4 justify-start md:justify-center">
                     {/* @ts-ignore */}
                     <a href="#moreinfo" className="inline-block rounded-md bg-red-600 px-4 py-1.5 text-base font-bold leading-7 text-white shadow-sm ring-1 ring-red-600 hover:bg-red-400 hover:ring-red-400 uppercase" data-scrollto="moreinfo" scrollto="moreinfo" onClick={onScrollClick}>Tell me more</a>
@@ -234,8 +241,22 @@ export default function Studio() {
             </Bounded>
             <CTA />
     </Layout>
-
-
     )
-
 }
+
+export default Studio; 
+
+export async function getStaticProps({ preview = false, previewData }:any) {
+    const client = createClient({ previewData });
+  
+    const studio = await client.getSingle("studio");
+    
+    return {
+      props: {
+        studio,
+        preview
+      },
+      revalidate: 900
+    };
+}
+    
