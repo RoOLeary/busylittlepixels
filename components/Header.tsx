@@ -12,7 +12,6 @@ const links = [
     { text: "Studio", href: "/studio" },
     { text: "Media", href: "/articles" },
     { text: "Tech", href: "/tech" },
-    { text: "Brand/Consulting", href: "/consulting" },
     { text: "Store", href: "/store" },
     { text: "Contact", href: "/contact" },
     { text: "Login", href: "/login" },
