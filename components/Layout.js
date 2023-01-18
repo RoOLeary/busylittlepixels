@@ -9,7 +9,7 @@ export const Layout = ({
     <>
         <Head>
           <title>Busy Little Pixels | Digital Media, Technology and Publishing</title>
-          <meta property="og:title" content="Busy Little Pixels | Digital Media and Technology" />
+          <meta property="og:title" content="Busy Little Pixels | Headless Web/App Development, Technology and Digital Media" />
           <meta property="og:description" content="Experts in headless web and app development, devops, project management, digital strategy, media and events." />
         </Head>
         <main className="content text-slate-800">
