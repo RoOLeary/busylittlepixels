@@ -123,7 +123,7 @@ const Studio = ({ studio, preview }:any) => {
             </Bounded>
             
             <section className="boundedContainer">
-                <div className="container pt-20 mx-auto">
+                <div className="container pt-20 mx-auto w-full max-w-7xl">
                     <div className="flex flex-wrap w-full mb-20">
                     <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
                         <h1 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">Industry <span style={{ "color": "red"}}>Experience</span></h1>
