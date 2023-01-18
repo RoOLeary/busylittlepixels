@@ -76,8 +76,8 @@ const Studio = ({ studio, preview }:any) => {
                         }
                     },
                 }}>
-                    <h1 className="font-black tracking-tight text-3xl md:text-[5rem] mb-6 md:pb-8 last:mb-0 text-left md:text-center">busy<span style={{ "color": "red" }}>little</span>pixels<span style={{ "color": "red"}}>:</span><span style={{ "color": "red" }}>studio</span></h1>
-                                
+                    <h1 className="font-black tracking-tight text-2xl md:text-[3rem] mb-6 md:pb-8 last:mb-0 text-left md:text-center">busy<span style={{ "color": "red" }}>little</span>pixels<span style={{ "color": "red"}}>:</span><span style={{ "color": "red" }}>studio</span></h1>
+                    <h1 className="font-black tracking-tighter text-5xl md:text-[5rem] mb-6 last:mb-0 uppercase text-left md:text-center">the future of <span style={{ "color": "red"}}>{word}</span> today. </h1>
                        
                 <p className="studio_intro">
                     {studio.data.studio_intro[0].text}
@@ -107,7 +107,7 @@ const Studio = ({ studio, preview }:any) => {
                 </div> */}
                 <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6">
                     <div className="max-full text-center leading-relaxed mb-2">
-                        <h1 className="font-black tracking-tighter text-5xl md:text-[5rem] mb-6 last:mb-0 uppercase">the future of <span style={{ "color": "red"}}>{word}</span> today. </h1>
+                        <h2 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-6 last:mb-0 uppercase">A little more <span style={{ "color": "red"}}>about us</span></h2>
                     </div>
                 </div>
                 <div className="py-8 flex flex-col md:flex-row">
