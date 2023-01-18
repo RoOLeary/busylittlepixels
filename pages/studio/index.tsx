@@ -107,7 +107,7 @@ const Studio = ({ studio, preview }:any) => {
                 </div> */}
                 <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6">
                     <div className="max-full text-center leading-relaxed mb-2">
-                        <h2 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-6 last:mb-0 uppercase">A little more <span style={{ "color": "red"}}>about us</span></h2>
+                        <h2 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-6 last:mb-0 uppercase">A little bit more <span style={{ "color": "red"}}>about us</span></h2>
                     </div>
                 </div>
                 <div className="py-8 flex flex-col md:flex-row">
