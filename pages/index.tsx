@@ -7,6 +7,7 @@ import { PrismicRichText } from '@prismicio/react'
 /* eslint-disable react/jsx-no-comment-textnodes */
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import { motion } from 'framer-motion';
@@ -135,7 +136,7 @@ const Home = ({ homepage, preview }:any) => {
                   </div>
                 </div>
 
-                <a href="#" className="inline-block rounded-md border border-transparent bg-red-600 py-3 px-8 text-center font-medium text-white hover:bg-black">Shop Collection</a>
+                <Link href="/contact" className="inline-block rounded-md border border-transparent bg-red-600 py-3 px-8 text-center font-medium text-white hover:bg-red-500">Get in touch</Link>
               </div>
             </div>
           </div>

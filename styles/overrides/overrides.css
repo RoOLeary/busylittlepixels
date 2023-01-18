@@ -90,3 +90,10 @@
   .header__underline{
     @apply mt-2 h-1 w-20 bg-red-500 rounded
   }
+
+  .studio-override{
+    @media screen and (max-width: 650px){
+      font-size: 4.75rem;
+    }
+    
+  }

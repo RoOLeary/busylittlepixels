@@ -76,7 +76,7 @@ const Studio = ({ studio, preview }:any) => {
                         }
                     },
                 }}>
-                    <h1 className="px-0 md:px-6 font-black text-3xl md:text-6xl mb-8 last:mb-0 text-left md:text-center">busy<span style={{ "color": "red" }}>little</span>pixels<span style={{ "color": "red"}}>:</span><span style={{ "color": "red" }}>studio</span></h1>
+                    <h1 className="font-black tracking-tight text-4xl md:text-[5rem] mb-6 md:pb-8 last:mb-0 text-left md:text-center">busy<span style={{ "color": "red" }}>little</span>pixels<span style={{ "color": "red"}}>:</span><span style={{ "color": "red" }}>studio</span></h1>
                                 
                        
                 <p className="studio_intro">
