@@ -85,7 +85,7 @@ const Studio = ({ studio, preview }:any) => {
 
                 <div className="mt-8 flex gap-x-4 justify-start md:justify-center">
                     {/* @ts-ignore */}
-                    <a href="#moreinfo" className="inline-block rounded-md bg-red-600 px-4 py-1.5 text-base font-bold leading-7 text-white shadow-sm ring-1 ring-red-600 hover:bg-red-400 hover:ring-red-400 uppercase" data-scrollto="moreinfo" scrollto="moreinfo" onClick={onScrollClick}>Tell me more</a>
+                    <a href="#moreinfo" className="inline-block rounded-md bg-red-600 px-4 py-1.5 text-base font-bold leading-7 text-white shadow-sm ring-1 ring-red-600 hover:bg-red-400 hover:ring-red-400" data-scrollto="moreinfo" scrollto="moreinfo" onClick={onScrollClick}>Tell me more</a>
                 </div>
                 </motion.div>   
             </section>
