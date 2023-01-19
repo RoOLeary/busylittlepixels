@@ -44,7 +44,7 @@ const Home = ({ homepage, preview }:any) => {
       <TitleContainer />
       <GalleryGrid />
       <ProjectSlider />
-      <div className="bg-white">
+      <div className="container pt-20 mx-auto w-full max-w-7xl px-3 md:px-8 bg-white">
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 py-24 px-4 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
           <div>
             <h2 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">Technical <span style={{ "color": "red"}}>Expertise</span></h2>
@@ -92,7 +92,7 @@ const Home = ({ homepage, preview }:any) => {
         </div>
       </div>
 
-      <div className="relative overflow-hidden bg-white">
+      <section className="container pt-20 mx-auto w-full max-w-7xl px-3 md:px-8 relative overflow-hidden bg-white">
         <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
           <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
             <div className="sm:max-w-lg">
@@ -141,7 +141,7 @@ const Home = ({ homepage, preview }:any) => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white pb-0 md:pb-0">
         <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6">

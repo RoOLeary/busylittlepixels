@@ -90,8 +90,9 @@ const Studio = ({ studio, preview }:any) => {
                 </motion.div>   
             </section>
             <GalleryGrid />
-            <span id={"moreinfo"}></span>
+           
             <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32 bg-white pb-0 md:pb-0">
+                <span id={"moreinfo"} className={'mt-8'}></span>
                 {/* <div className="isolate bg-white">
                     <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
                         <svg className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678" fill="none" xmlns="http://www.w3.org/2000/svg">
