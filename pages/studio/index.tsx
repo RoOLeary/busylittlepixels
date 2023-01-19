@@ -77,7 +77,7 @@ const Studio = ({ studio, preview }:any) => {
                     },
                 }}>
                     <h1 className="font-black tracking-tight text-2xl md:text-[3rem] mb-6 md:pb-8 last:mb-0 text-left md:text-center">busy<span style={{ "color": "red" }}>little</span>pixels<span style={{ "color": "red"}}>:</span><span style={{ "color": "red" }}>studio</span></h1>
-                    <h1 className="font-black tracking-tighter text-5xl md:text-[5rem] mb-6 last:mb-0 uppercase text-left md:text-center">the future of <span style={{ "color": "red"}}>{word}</span> today. </h1>
+                    <h1 className="font-black tracking-tighter text-5xl md:text-[5rem] mb-6 last:mb-0 uppercase text-left md:text-center">building the future of <span style={{ "color": "red"}}>{word}</span> today. </h1>
                        
                 <p className="studio_intro">
                     {studio.data.studio_intro[0].text}
@@ -167,7 +167,7 @@ const Studio = ({ studio, preview }:any) => {
                     </div>
                 </div>
             </section>
-            <section className="bg-white">
+            <section className="px-3 container pt-20 mx-auto w-full max-w-7xl md:px-8 bg-white">
                 <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 py-24 px-4 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
                     <div>
                         <h2 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">Technical <span style={{ "color": "red"}}>Expertise</span></h2>
@@ -215,8 +215,8 @@ const Studio = ({ studio, preview }:any) => {
             </section>
             
             <CarouselContainer />
-
-            <section className="boundedContainer px-0 md:px-6 py-20 md:py-32">
+        
+            <section className="boundedContainer px-3 md:px-6 py-20 md:py-32 mx-auto w-full max-w-7xl">
             <div className="relative overflow-hidden bg-white">
                 <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
                     <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
