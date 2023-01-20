@@ -2,13 +2,16 @@
 
 import ArticleLeadParagraph from './ArticleLeadParagraph';
 import Faq from './Faq';
+import Video from './Video';
 
 export {
 	ArticleLeadParagraph,
 	Faq,
+	Video,
 };
 
 export const components = {
 	article_lead_paragraph: ArticleLeadParagraph,
 	faq: Faq,
+	video: Video,
 };

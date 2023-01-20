@@ -22,6 +22,11 @@
       "default": {
         "primary": {}
       }
+    },
+    "Video": {
+      "default": {
+        "primary": {}
+      }
     }
   }
 }

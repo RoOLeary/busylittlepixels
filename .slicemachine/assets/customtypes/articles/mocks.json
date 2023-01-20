@@ -1,7 +1,7 @@
 {
   "uid": {
     "__TYPE__": "UIDContent",
-    "value": "just"
+    "value": "owner"
   },
   "articletitle": {
     "__TYPE__": "StructuredTextContent",
@@ -9,14 +9,159 @@
       {
         "type": "paragraph",
         "content": {
-          "text": "Mollit et est occaecat labore sit quis voluptate sit nisi laboris reprehenderit est do laborum do."
+          "text": "Eu aliquip culpa commodo magna eu in mollit est consequat consequat laboris. Dolore magna commodo labore laboris tempor est voluptate reprehenderit esse velit magna."
         }
       }
     ]
   },
   "articletype": {
     "__TYPE__": "FieldContent",
-    "value": "review",
+    "value": "text",
     "type": "Select"
+  },
+  "author": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Incididunt irure ullamco minim id. Nulla exercitation amet laboris ullamco labore irure anim. Excepteur incididunt reprehenderit do duis proident proident do."
+        }
+      }
+    ]
+  },
+  "publish_date": {
+    "__TYPE__": "FieldContent",
+    "type": "Date",
+    "value": "2012-06-26"
+  },
+  "category": {
+    "__TYPE__": "FieldContent",
+    "value": "2",
+    "type": "Select"
+  },
+  "slices": {
+    "__TYPE__": "SliceContentType",
+    "value": [
+      {
+        "key": "article_lead_paragraph$b67a6d64-3e9f-4b41-9eb6-8a4a6e4014c4",
+        "name": "article_lead_paragraph",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Trade"
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "video$8ad2eed7-80bf-4428-9fa4-9c645bb9a6df",
+        "name": "video",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Element"
+                  }
+                }
+              ]
+            },
+            "video_embed_code": {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "https://slicemachine.dev"
+              }
+            },
+            "is_full_width": {
+              "__TYPE__": "BooleanContent",
+              "value": true
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "meta_title": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Ad magna incididunt velit tempor esse eiusmod sunt Lorem officia cupidatat elit sit fugiat."
+        }
+      }
+    ]
+  },
+  "meta_description": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Ullamco sunt ex voluptate ut proident. Excepteur dolore non elit laboris qui tempor anim ut."
+        }
+      }
+    ]
+  },
+  "meta_url": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Consequat aute aliquip nostrud culpa mollit ullamco exercitation exercitation voluptate pariatur sit."
+        }
+      }
+    ]
+  },
+  "meta_image": {
+    "__TYPE__": "ImageContent",
+    "origin": {
+      "id": "main",
+      "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88",
+      "width": 3168,
+      "height": 4752
+    },
+    "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88",
+    "width": 3168,
+    "height": 4752,
+    "edit": {
+      "zoom": 1,
+      "crop": {
+        "x": 0,
+        "y": 0
+      },
+      "background": "transparent"
+    },
+    "thumbnails": {}
   }
 }
