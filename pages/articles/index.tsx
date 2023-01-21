@@ -41,7 +41,7 @@ const Articles = ({ articles, preview }:any) => {
       
       
       
-        <h1 className="pb-8 font-black text-4xl md:text-6xl mb-6 last:mb-0 border-b border-gray-200 uppercase">ALL<span style={{ "color": "red"}}> ARTICLES</span></h1>
+        <h1 className="pb-8 font-black text-4xl md:text-6xl mb-6 last:mb-0 border-b border-gray-200 uppercase">BUSY<span style={{ "color": "red"}}>LITTLE</span>ARTICLES<span style={{ "color": "red"}}>.</span></h1>
         <div className="flex flex-col md:flex-row md:gap-8">
       
         <div className="w-full  flex flex-col space-y-16">

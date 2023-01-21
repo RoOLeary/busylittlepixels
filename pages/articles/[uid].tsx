@@ -14,7 +14,7 @@ import { PrismicRichText } from '@prismicio/react'
 const inter = Inter({ subsets: ['latin'] })
 
 const Article = ({ article, preview }:any) => {
-    console.log(article);
+    // console.log(article);
     // let bodyContent = Object.entries(article.data.article_body).map((p, i) => {
     //   let idx:number = 1; // console.log(p[1].text)
     //   return p[idx].text

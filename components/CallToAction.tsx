@@ -9,7 +9,7 @@ const NewsletterSignUp = () => {
         className="grid w-full max-w-xl grid-cols-1 gap-6"
       >
         <div className="text-center tracking-tight text-slate-300">
-        <h2 className="font-black tracking-tighter text-4xl md:text-6xl mb-4 text-white last:mb-0 uppercase">Sign up for our newsletter</h2>
+        <h3 className="text-center font-black tracking-tighter text-4xl md:text-6xl mb-4 text-white last:mb-0 uppercase">Sign up for our busy<span style={{ "color": "red"}}>little</span>updates</h3>
         <p className="mb-4 last:mb-0">Something something snappy marketing copy yada yada yada blort blort blah</p>
         </div>
     

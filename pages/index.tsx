@@ -81,7 +81,7 @@ const Home = ({ homepage, preview }:any) => {
         </div>
       </div>
 
-      <section className="container pt-20 mx-auto w-full max-w-7xl px-3 md:px-8 relative overflow-hidden bg-white">
+      <section className="container pt-20 mx-auto w-full max-w-7xl px-3 md:px-8 relative overflow-hidden bg-white mb-12">
         <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
           <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
             <div className="sm:max-w-lg">
@@ -135,7 +135,7 @@ const Home = ({ homepage, preview }:any) => {
       <br className={`h-40`} />
       <CarouselContainer /> 
       
-      <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white">
+      {/* <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white">
         <h2 className="pb-8 mb-12 text-2xl font-black leading-tight text-gray-900 border-b border-gray-200 md:text-4xl uppercase">Featured <span className={'rd_txt'}>Ar</span>ticles</h2>
         
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 mb-8">
@@ -220,7 +220,7 @@ const Home = ({ homepage, preview }:any) => {
               </div>
             </div>
         
-      </Bounded>
+      </Bounded> */}
 
       <Bounded collapsible={false} as="section" className="bg-slate-100">
         <div className="grid grid-cols-1 items-end gap-10 md:grid-cols-1 md:gap-10 lg:gap-28">
