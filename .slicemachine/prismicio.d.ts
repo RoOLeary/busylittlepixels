@@ -76,6 +76,17 @@ interface ArticlesDocumentData {
      */
     article_featured_image: prismicT.ImageField<never>;
     /**
+     * Article Excerpt field in *Articles*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: articles.article_excerpt
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    article_excerpt: prismicT.RichTextField;
+    /**
      * Article Body field in *Articles*
      *
      * - **Field Type**: Rich Text

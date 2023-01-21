@@ -81,7 +81,7 @@ const Home = ({ homepage, preview }:any) => {
         </div>
       </div>
 
-      <section className="container pt-20 mx-auto w-full max-w-7xl px-3 md:px-8 relative overflow-hidden bg-white mb-12">
+      <section className="container pt-20 mx-auto w-full max-w-7xl px-6 md:px-8 relative overflow-hidden bg-white mb-12">
         <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
           <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
             <div className="sm:max-w-lg">

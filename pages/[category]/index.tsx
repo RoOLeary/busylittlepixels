@@ -48,7 +48,7 @@ const Category = ({ articles, preview }:any) => {
         <div className="w-full  flex flex-col space-y-16">
          
           {articles.map((article:any, i:number) => {
-            console.log(article);
+            
             return(
               <div key={i} className="grid grid-cols-2 gap-6 md:grid-cols-4">
                 <Image src={article.data.article_featured_image.url} alt={'article featured image'} width={160} height={175} className="object-cover w-full md:h-40 col-span-1 bg-center" loading="lazy" loader={imageLoader} />
@@ -58,7 +58,7 @@ const Category = ({ articles, preview }:any) => {
                     <Link href={`/articles/${article.uid}`} className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500">{article.data.articletitle[0].text}</Link>
                   </h2>
                   <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt ">
-                    {article.data.article_body[0].text}
+                  {article.data.article_excerpt[0].text}
                   </p>
                   <Link href={`/articles/${article.uid}`} className="hidden md:visible btn btn-light btn-sm">Read More</Link>
                 </div>

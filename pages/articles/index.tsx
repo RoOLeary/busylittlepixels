@@ -10,6 +10,7 @@ import styles from '../styles/Home.module.css'
 import { PrismicLink, PrismicText } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
 import * as prismicH from "@prismicio/helpers";
+import { PrismicRichText } from '@prismicio/react';
 
 import { createClient } from "../../prismicio";
 
@@ -47,7 +48,7 @@ const Articles = ({ articles, preview }:any) => {
         <div className="w-full  flex flex-col space-y-16">
          
           {articles.map((article:any, i:number) => {
-            // console.log(article.data.category);
+            console.log(article.data.article_excerpt)
             return(
               <div key={i} className="grid grid-cols-2 gap-6 md:grid-cols-4">
                 <Image src={article.data.article_featured_image.url} alt={'article featured image'} width={160} height={200} className="object-cover w-full md:h-40 col-span-1 bg-center" loading="lazy" loader={imageLoader} />
@@ -57,7 +58,7 @@ const Articles = ({ articles, preview }:any) => {
                     <Link href={`/articles/${article.uid}`} className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500">{article.data.articletitle[0].text}</Link>
                   </h2>
                   <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt ">
-                    {article.data.article_body[0].text}
+                      <PrismicRichText field={article.data.article_excerpt} />
                   </p>
                   <Link href={`/articles/${article.uid}`} className="hidden md:visible btn btn-light btn-sm">Read More</Link>
                 </div>
