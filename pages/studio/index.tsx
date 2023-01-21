@@ -90,22 +90,8 @@ const Studio = ({ studio, preview }:any) => {
                 </motion.div>   
             </section>
             <GalleryGrid />
-           
+            <span id={"moreinfo"} className={'mt-8'}></span>
             <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32 bg-white pb-0 md:pb-0">
-                <span id={"moreinfo"} className={'mt-8'}></span>
-                {/* <div className="isolate bg-white">
-                    <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
-                        <svg className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="url(#45de2b6b-92d5-4d68-a6a0-9b9b2abad533)" fillOpacity=".3" d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />
-                            <defs>
-                                <linearGradient id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533" x1="1155.49" x2="-78.208" y1=".177" y2="474.645" gradientUnits="userSpaceOnUse">
-                                    <stop stopColor="#9089FC"></stop>
-                                    <stop offset="1" stopColor="#FF80B5"></stop>
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </div>
-                </div> */}
                 <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6">
                     <div className="max-full text-center leading-relaxed mb-2">
                         <h2 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-6 last:mb-0 uppercase">A bit more <span style={{ "color": "red"}}>about us</span></h2>
@@ -135,7 +121,6 @@ const Studio = ({ studio, preview }:any) => {
                     <div className="flex flex-wrap -m-4">
                     <div className="xl:w-1/4 md:w-1/2 p-2">
                         <div className="bg-gray-100 p-6 rounded-lg">
-                        {/* <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content" /> */}
                         <h3 className="tracking-widest text-red-500 text-xs font-bold title-font">SUBTITLE</h3>
                         <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Media</h2>
                         <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>

@@ -19,7 +19,7 @@ export const images: CustomImage[] = [
     //   { value: "Rick", title: "Rick" },
     //   { value: "Morty", title: "Morty" },
     // ],
-    caption: "Boats (Jeshu John - designerspics.com)",
+    caption: "We get busy about Tech",
   },
   {
     src: "/assets/img/devs.jpeg",

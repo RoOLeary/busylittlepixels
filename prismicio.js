@@ -9,27 +9,49 @@ import sm from "./sm.json";
  */
 export const repositoryName = prismic.getRepositoryName(sm.apiEndpoint);
 
+
+export const routes = [
+  {
+    type: 'articles',
+    resolvers: {
+      category: 'category',
+    },
+    path: '/tech/:uid',
+  },
+]
+
+
 /**
  * The project's Prismic Link Resolver. This function determines the URL for a given Prismic document.
  *
  * @type {prismicH.LinkResolverFunction}
  */
 export const linkResolver = (doc) => {
+  
   if (doc.type === "page") {
     if (doc.uid === "home") {
       return "/";
     } 
     
-    if (doc.uid === "posts") {
-      return "/posts";
+    if (doc.uid === "articles") {
+      return "/articles";
+    } 
+
+    if (doc.uid === "tech") {
+      return "/tech";
+    } 
+
+    if (doc.uid === "store") {
+      return "/stores";
     } 
   
     return `/${doc.uid}`;
-  
+
   }
 
-  if (doc.type === "blog") {
-    return `/posts/${doc.uid}`;
+  if (doc.type === "articles") {
+    
+    return `/articles/${doc.uid}`;
   }
 
   return "/";

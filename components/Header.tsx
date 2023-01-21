@@ -10,9 +10,9 @@ import { useMediaQuery } from '../hooks/useMediaQuery';
 
 const links = [
     { text: "Studio", href: "/studio" },
-    { text: "Media", href: "/media" },
     { text: "Articles", href: "/articles" },
     { text: "Tech", href: "/tech" },
+    { text: "Media", href: "/media" },
     { text: "Store", href: "/store" },
     { text: "Contact", href: "/contact" },
     { text: "Login", href: "/login" },

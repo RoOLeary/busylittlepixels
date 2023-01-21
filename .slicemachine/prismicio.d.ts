@@ -63,7 +63,29 @@ interface ArticlesDocumentData {
      * - **Documentation**: https://prismic.io/docs/core-concepts/select
      *
      */
-    category: prismicT.SelectField<"1" | "2">;
+    category: prismicT.SelectField<"tech" | "media">;
+    /**
+     * Article Featured Image field in *Articles*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: articles.article_featured_image
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    article_featured_image: prismicT.ImageField<never>;
+    /**
+     * Article Body field in *Articles*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: articles.article_body
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    article_body: prismicT.RichTextField;
     /**
      * Slice Zone field in *Articles*
      *
@@ -124,7 +146,7 @@ interface ArticlesDocumentData {
  * Slice for *Articles → Slice Zone*
  *
  */
-type ArticlesDocumentDataSlicesSlice = ArticleLeadParagraphSlice | VideoSlice;
+type ArticlesDocumentDataSlicesSlice = never;
 /**
  * Articles document from Prismic
  *

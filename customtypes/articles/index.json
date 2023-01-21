@@ -57,23 +57,33 @@
           "label": "Category",
           "placeholder": "",
           "options": [
-            "1",
-            "2"
+            "tech",
+            "media"
           ]
+        }
+      },
+      "article_featured_image": {
+        "type": "Image",
+        "config": {
+          "label": "Article Featured Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "article_body": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Article Body",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
         "config": {
-          "choices": {
-            "article_lead_paragraph": {
-              "type": "SharedSlice"
-            },
-            "video": {
-              "type": "SharedSlice"
-            }
-          }
+          "choices": {}
         }
       }
     },

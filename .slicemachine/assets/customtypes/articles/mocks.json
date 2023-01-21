@@ -1,7 +1,7 @@
 {
   "uid": {
     "__TYPE__": "UIDContent",
-    "value": "owner"
+    "value": "toward"
   },
   "articletitle": {
     "__TYPE__": "StructuredTextContent",
@@ -9,14 +9,14 @@
       {
         "type": "paragraph",
         "content": {
-          "text": "Eu aliquip culpa commodo magna eu in mollit est consequat consequat laboris. Dolore magna commodo labore laboris tempor est voluptate reprehenderit esse velit magna."
+          "text": "Commodo laboris ipsum anim consectetur ex deserunt tempor tempor est cupidatat tempor. Consequat ex est deserunt exercitation exercitation nulla."
         }
       }
     ]
   },
   "articletype": {
     "__TYPE__": "FieldContent",
-    "value": "text",
+    "value": "video",
     "type": "Select"
   },
   "author": {
@@ -25,7 +25,7 @@
       {
         "type": "paragraph",
         "content": {
-          "text": "Incididunt irure ullamco minim id. Nulla exercitation amet laboris ullamco labore irure anim. Excepteur incididunt reprehenderit do duis proident proident do."
+          "text": "Est aliqua aliqua consequat sint aliquip do eiusmod. Aliqua officia aute labore deserunt quis nostrud magna laborum minim sit commodo nulla. Nostrud dolor reprehenderit minim ut nostrud cillum eiusmod aliqua aute veniam laborum dolore officia."
         }
       }
     ]
@@ -33,82 +33,48 @@
   "publish_date": {
     "__TYPE__": "FieldContent",
     "type": "Date",
-    "value": "2012-06-26"
+    "value": "2013-06-22"
   },
   "category": {
     "__TYPE__": "FieldContent",
-    "value": "2",
+    "value": "tech",
     "type": "Select"
   },
-  "slices": {
-    "__TYPE__": "SliceContentType",
+  "article_featured_image": {
+    "__TYPE__": "ImageContent",
+    "origin": {
+      "id": "main",
+      "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f",
+      "width": 6597,
+      "height": 4398
+    },
+    "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f",
+    "width": 6597,
+    "height": 4398,
+    "edit": {
+      "zoom": 1,
+      "crop": {
+        "x": 0,
+        "y": 0
+      },
+      "background": "transparent"
+    },
+    "thumbnails": {}
+  },
+  "article_body": {
+    "__TYPE__": "StructuredTextContent",
     "value": [
       {
-        "key": "article_lead_paragraph$b67a6d64-3e9f-4b41-9eb6-8a4a6e4014c4",
-        "name": "article_lead_paragraph",
-        "widget": {
-          "__TYPE__": "SharedSliceContent",
-          "variation": "default",
-          "primary": {
-            "title": {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "heading1",
-                  "content": {
-                    "text": "Trade"
-                  }
-                }
-              ]
-            }
-          },
-          "items": [
-            {
-              "__TYPE__": "GroupItemContent",
-              "value": []
-            }
-          ]
-        }
-      },
-      {
-        "key": "video$8ad2eed7-80bf-4428-9fa4-9c645bb9a6df",
-        "name": "video",
-        "widget": {
-          "__TYPE__": "SharedSliceContent",
-          "variation": "default",
-          "primary": {
-            "title": {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "heading1",
-                  "content": {
-                    "text": "Element"
-                  }
-                }
-              ]
-            },
-            "video_embed_code": {
-              "__TYPE__": "LinkContent",
-              "value": {
-                "__TYPE__": "ExternalLink",
-                "url": "https://slicemachine.dev"
-              }
-            },
-            "is_full_width": {
-              "__TYPE__": "BooleanContent",
-              "value": true
-            }
-          },
-          "items": [
-            {
-              "__TYPE__": "GroupItemContent",
-              "value": []
-            }
-          ]
+        "type": "paragraph",
+        "content": {
+          "text": "Ut reprehenderit amet in elit magna Lorem ipsum excepteur. Aliquip elit reprehenderit duis ut sunt occaecat aute enim proident voluptate dolor nisi id aliquip et. Proident occaecat aute nisi irure ut proident aliquip id aute quis consectetur ut esse tempor elit."
         }
       }
     ]
+  },
+  "slices": {
+    "__TYPE__": "SliceContentType",
+    "value": []
   },
   "meta_title": {
     "__TYPE__": "StructuredTextContent",
@@ -116,7 +82,7 @@
       {
         "type": "paragraph",
         "content": {
-          "text": "Ad magna incididunt velit tempor esse eiusmod sunt Lorem officia cupidatat elit sit fugiat."
+          "text": "Officia tempor consectetur dolore dolor fugiat esse fugiat laborum consequat sit et ex. Id sint nisi eiusmod Lorem non."
         }
       }
     ]
@@ -127,7 +93,7 @@
       {
         "type": "paragraph",
         "content": {
-          "text": "Ullamco sunt ex voluptate ut proident. Excepteur dolore non elit laboris qui tempor anim ut."
+          "text": "Sint voluptate sint amet aliquip non adipisicing nulla ipsum et amet Lorem labore amet pariatur est."
         }
       }
     ]
@@ -138,7 +104,7 @@
       {
         "type": "paragraph",
         "content": {
-          "text": "Consequat aute aliquip nostrud culpa mollit ullamco exercitation exercitation voluptate pariatur sit."
+          "text": "Officia nulla minim sint eiusmod qui ad in officia pariatur laborum non. Veniam mollit laborum in est in. Dolore culpa nostrud et fugiat minim aute labore occaecat sint ad Lorem eiusmod."
         }
       }
     ]
@@ -147,13 +113,13 @@
     "__TYPE__": "ImageContent",
     "origin": {
       "id": "main",
-      "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88",
-      "width": 3168,
-      "height": 4752
+      "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72",
+      "width": 4010,
+      "height": 4010
     },
-    "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88",
-    "width": 3168,
-    "height": 4752,
+    "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72",
+    "width": 4010,
+    "height": 4010,
     "edit": {
       "zoom": 1,
       "crop": {
