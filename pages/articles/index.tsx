@@ -51,7 +51,7 @@ const Articles = ({ articles, preview }:any) => {
             // console.log(article.data.article_excerpt)
             return(
               <div key={i} className="grid grid-cols-2 gap-6 md:grid-cols-4">
-                <Image src={article.data.article_featured_image.url} alt={'article featured image'} width={160} height={200} className="object-cover w-full md:h-40 col-span-1 bg-center" loading="lazy" loader={imageLoader} />
+                <Image src={article.data.article_featured_image.url} alt={'article featured image'} width={160} height={200} className="h-full object-cover w-full md:h-40 col-span-1 bg-center" loading="lazy" loader={imageLoader} />
                 <div className="col-span-1 md:col-span-3">
                   <><p className="mb-2 -mt-1 text-sm font-normal text-gray-500">{article.data.publish_date}, <Link href={`/${article.data.category}`}>{article.data.category}</Link></p></>
                   <h2 className="mb-2 md:text-2xl font-extrabold leading-snug text-gray-800">
