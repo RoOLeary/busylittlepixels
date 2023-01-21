@@ -42,7 +42,7 @@ const Category = ({ articles, preview }:any) => {
       
       
       
-        <h1 className="pb-8 font-black text-4xl md:text-6xl mb-6 last:mb-0 border-b border-gray-200 uppercase">Tagged in: <span style={{ "color": "red"}}>{router.query.category}</span></h1>
+        <h1 className="pb-8 font-black text-4xl md:text-6xl mb-6 last:mb-0 border-b border-gray-200 uppercase">Tagged in: <span style={{ "color": "red"}}>Tech</span></h1>
         <div className="flex flex-col md:flex-row md:gap-8">
       
         <div className="w-full  flex flex-col space-y-16">
@@ -95,7 +95,7 @@ export async function getServerSideProps({ params, preview = false, previewData 
   const client = createClient({ previewData });
 // console.log(params.category)
  
-  const articles = await client.getAllByTag(params.category);
+  const articles = await client.getAllByTag("tech");
  
   return {
     props: {
