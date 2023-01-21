@@ -22,6 +22,7 @@ export const Header = () => {
     const isMobile = useMediaQuery(768)
     const router = useRouter(); 
     const currentRoute = router.asPath; 
+    // console.log(currentRoute);
     const [navActive, setNavActive] = useState(false);
 
     const closeMobileNavOnClick = () => {
@@ -61,7 +62,7 @@ export const Header = () => {
                             </button>
                         </div> : ''}
                         {links.map((link) => (
-                            <li key={link.text}><Link href={link.href} className={`nav__link text-white font-black ${currentRoute === link.href ? "active" : ""}`} onClick={closeMobileNavOnClick}>{link.text}</Link></li>
+                            <li key={link.text}><Link href={link.href} className={`nav__link text-white font-black ${currentRoute.includes(link.href) ? "active" : ""}`} onClick={closeMobileNavOnClick}>{link.text}</Link></li>
                         ))}
                         {isMobile ? 
                             <>

@@ -48,7 +48,7 @@ const Articles = ({ articles, preview }:any) => {
         <div className="w-full  flex flex-col space-y-16">
          
           {articles.map((article:any, i:number) => {
-            console.log(article.data.article_excerpt)
+            // console.log(article.data.article_excerpt)
             return(
               <div key={i} className="grid grid-cols-2 gap-6 md:grid-cols-4">
                 <Image src={article.data.article_featured_image.url} alt={'article featured image'} width={160} height={200} className="object-cover w-full md:h-40 col-span-1 bg-center" loading="lazy" loader={imageLoader} />
