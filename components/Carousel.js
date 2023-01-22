@@ -70,7 +70,7 @@ const CarouselContainer = () => {
 
   return(
     <>
-    <h2 class="px-6 md:px-0 mt-8 mb-12 text-2xl font-black leading-tight text-gray-900 md:border-b border-gray-200 md:text-4xl uppercase mx-auto w-full max-w-6xl pb-2">Sliding <span class="rd_txt">Things</span></h2>  
+    <h2 class="px-6 md:px-0 mt-8 mb-12 text-2xl font-black leading-tight text-gray-900 md:border-b border-gray-200 md:text-4xl uppercase mx-auto w-full max-w-6xl pb-2">We'll Let it <span class="rd_txt">Slide</span></h2>  
     <section className="bg-white mb-2 carouselLeft">
       <Carousel showDots={false} responsive={responsive}> 
         {/* <div>
