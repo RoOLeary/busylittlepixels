@@ -14,17 +14,20 @@ import ProjectSlider from "../components/ProjectSlider";
 import { Video } from "../components/Video";
 import imageLoader from '../imageLoader';
 import { TitleContainer } from '../components/TitleContainer';
+import { GetStaticProps } from 'next'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const Home = ({ homepage, preview }:any) => {
+const Home = ({ entry, preview }:any) => {
+
+  console.log(entry);
 
   return (
     <>
      
      <Layout>
      {preview ? <div className={'text-center uppercase bg-red-500 text-white py-6 fixed bottom-0 w-full z-10'}><h3>You are in Preview Mode</h3></div> : null}     
-      <TitleContainer />
+      <TitleContainer title={entry.data[0].homeTitle} subtitle={entry.data[0].homeSubTitle}/>
       <GalleryGrid />
       <ProjectSlider />
       <div className="container pt-20 mx-auto w-full max-w-7xl px-3 md:px-8 bg-white">
@@ -228,3 +231,33 @@ const Home = ({ homepage, preview }:any) => {
 }
 
 export default Home;
+
+export const getStaticProps: GetStaticProps = async ({ params, preview = false, previewData }) => {
+
+  const res = await fetch('https://craft-ezhk.frb.io/api/homepage.json',{
+      credentials: "include",
+      headers: {
+          "Access-Control-Allow-Origin" : "*", 
+          "Access-Control-Allow-Credentials" : true
+      },
+  });
+
+  let entry = await res.json();
+  let prevData; 
+
+  if(preview){
+    
+      const prevResponse = await fetch(`https://craft-ezhk.frb.io/api/homepage.json?token=${previewData['token']}`);
+      prevData = await prevResponse.json();
+      
+  } 
+
+  let data = preview ? previewData : entry;
+
+  return {
+    props: {
+        entry: data
+    },
+    revalidate: 500
+  }
+}
