@@ -232,10 +232,11 @@ const Home = ({ entry, preview }:any) => {
 
 export default Home;
 
-export const getStaticProps: GetStaticProps = async ({ params, preview = false, previewData }) => {
-
+export const getStaticProps: GetStaticProps = async ({ params, preview = false, previewData }:any) => {
+  
   const res = await fetch('https://craft-ezhk.frb.io/api/homepage.json',{
       credentials: "include",
+      // @ts-ignore
       headers: {
           "Access-Control-Allow-Origin" : "*", 
           "Access-Control-Allow-Credentials" : true
