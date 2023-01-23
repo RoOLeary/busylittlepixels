@@ -1,5 +1,3 @@
-import * as prismicH from "@prismicio/helpers";
-import { createClient, linkResolver } from "../../prismicio";
 /* eslint-disable react/jsx-no-comment-textnodes */
 import Head from 'next/head'
 import Image from 'next/image'
@@ -9,7 +7,6 @@ import { motion } from 'framer-motion';
 import { Layout } from '../../components/Layout';
 import { Bounded } from "../../components/Bounded";
 import imageLoader from '../../imageLoader';
-import { PrismicRichText } from '@prismicio/react' 
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,7 +25,7 @@ const Article = ({ article, preview }:any) => {
           <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white pb-0 md:pb-0">
           <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6">
             <div className="max-full text-center leading-relaxed mb-2">
-              <h1 className="composedHeading">{article.data.articletitle[0].text}</h1>
+              <h1 className="composedHeading">ARTICLE TEXT</h1>
             </div>
             <div className="max-full text-center leading-relaxed mb-8">
               <p className="font-semibold tracking-tighter">By <a href="#">Ronan O'Leary</a> | Category: Tech, CMS | Published: {article.data.publish_date}</p>
@@ -39,14 +36,14 @@ const Article = ({ article, preview }:any) => {
             whileInView={{ opacity: 1 }}
             className="w-full mb-2"
           >
-              {/* <Video slice={undefined} index={0} slices={[]} context={undefined} /> */}
-              <Image alt={'holding'} src={article.data.article_featured_image.url} width={1200} height={500} loader={imageLoader} className="shadow-xl" />
+              <Video slice={undefined} index={0} slices={[]} context={undefined} />
+              {/* <Image alt={'holding'} src={article.data.article_featured_image.url} width={1200} height={500} loader={imageLoader} className="shadow-xl" /> */}
           </motion.div>       
           <div className="py-8 flex flex-col md:flex-row">
           
             <div className="mx-auto w-full max-w-3xl">
               <div className="leading-relaxed">
-                <PrismicRichText field={article.data.article_body} />
+                Headless eCommerce is the way the world is moving. It’s a logical concept that any business can get behind, regardless of size, industry, or platform needs. But to really illustrate the value of a headless commerce integration, we’ll need to review the benefits one by one.
               </div>
             </div>
           </div>

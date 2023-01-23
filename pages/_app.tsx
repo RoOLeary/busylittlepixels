@@ -2,8 +2,6 @@ import type { AppProps, NextWebVitalsMetric } from 'next/app';
 import { AnimatePresence } from 'framer-motion';
 import Loader from '../components/Loader';
 import { Header } from '../components/Header';
-import { PrismicLink, PrismicProvider } from "@prismicio/react";
-import { PrismicPreview } from "@prismicio/next";
 import { useState, useEffect } from 'react';
 import NProgress from 'nprogress';
 import Router from 'next/router'
@@ -11,7 +9,6 @@ import Link from "next/link";
 
 import '../styles/globals.css'
 
-import { repositoryName, linkResolver } from "../prismicio";
 
 declare const window: any
 // @ts-ignore
@@ -108,12 +105,7 @@ export default function App({ Component, pageProps }) {
   }, [router.events])
 
   return (
-    <PrismicProvider
-      linkResolver={linkResolver}
-      internalLinkComponent={NextLinkShim}
-      richTextComponents={richTextComponents}
-    >
-      <PrismicPreview repositoryName={repositoryName}>
+    <>
         <Header />
         <AnimatePresence
           mode='wait'
@@ -132,7 +124,6 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
         </>
         </AnimatePresence>
-      </PrismicPreview>
-    </PrismicProvider>
+    </>
   );
 }

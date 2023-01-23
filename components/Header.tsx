@@ -11,7 +11,7 @@ import { useMediaQuery } from '../hooks/useMediaQuery';
 const links = [
     { text: "Studio", href: "/studio" },
     { text: "Articles", href: "/articles" },
-    { text: "Work", href: "/work" },
+    // { text: "Work", href: "/work" },
     // { text: "Store", href: "/store" },
     { text: "Contact", href: "/contact" },
     { text: "Login", href: "/login" },
