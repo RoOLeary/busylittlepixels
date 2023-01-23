@@ -7,11 +7,6 @@ import imageLoader from '../../imageLoader'
 import { useRouter } from 'next/router';
 import styles from '../styles/Home.module.css'
 
-import { PrismicLink, PrismicText } from "@prismicio/react";
-import { PrismicNextImage } from "@prismicio/next";
-import * as prismicH from "@prismicio/helpers";
-
-import { createClient } from "../../prismicio";
 
 const dateFormatter = new Intl.DateTimeFormat("en-US", {
   month: "short",
@@ -30,14 +25,14 @@ import { CTA } from "../../components/CallToAction";
 
 const inter = Inter({ subsets: ['latin'] })
 
-const Category = ({ articles, preview }:any) => {
+const Category = () => {
 
     const router = useRouter(); 
     console.log(router.query.category)
 
     return(
         <Layout>
-        {preview ? <div className={'text-center uppercase bg-red-500 text-white py-6 fixed bottom-0 w-full z-10'}><h3>You are in Preview Mode</h3></div> : null}     
+        {/* {preview ? <div className={'text-center uppercase bg-red-500 text-white py-6 fixed bottom-0 w-full z-10'}><h3>You are in Preview Mode</h3></div> : null}      */}
           <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white">
       
       
@@ -47,7 +42,7 @@ const Category = ({ articles, preview }:any) => {
       
         <div className="w-full  flex flex-col space-y-16">
          
-          {articles.map((article:any, i:number) => {
+          {/* {articles.map((article:any, i:number) => {
             
             return(
               <div key={i} className="grid grid-cols-2 gap-6 md:grid-cols-4">
@@ -64,7 +59,7 @@ const Category = ({ articles, preview }:any) => {
                 </div>
               </div>
             )
-          })}
+          })} */}
           
           
           
@@ -89,18 +84,3 @@ const Category = ({ articles, preview }:any) => {
 
 export default Category; 
 
-// @ts-ignore
-export async function getServerSideProps({ params, preview = false, previewData }) {
-  
-  const client = createClient({ previewData });
-// console.log(params.category)
- 
-  const articles = await client.getAllByTag("tech");
- 
-  return {
-    props: {
-      articles,
-      preview
-    },
-  };
-}

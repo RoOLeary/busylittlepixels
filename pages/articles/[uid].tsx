@@ -6,6 +6,7 @@ import { Inter } from '@next/font/google'
 import { motion } from 'framer-motion';
 import { Layout } from '../../components/Layout';
 import { Bounded } from "../../components/Bounded";
+import { Video } from "../../components/Video";
 import imageLoader from '../../imageLoader';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -28,7 +29,7 @@ const Article = ({ article, preview }:any) => {
               <h1 className="composedHeading">ARTICLE TEXT</h1>
             </div>
             <div className="max-full text-center leading-relaxed mb-8">
-              <p className="font-semibold tracking-tighter">By <a href="#">Ronan O'Leary</a> | Category: Tech, CMS | Published: {article.data.publish_date}</p>
+              <p className="font-semibold tracking-tighter">By <a href="#">Ronan O'Leary</a> | Category: Tech, CMS | Published: </p>
             </div>
           </div>
           <motion.div
@@ -36,7 +37,7 @@ const Article = ({ article, preview }:any) => {
             whileInView={{ opacity: 1 }}
             className="w-full mb-2"
           >
-              <Video slice={undefined} index={0} slices={[]} context={undefined} />
+              <Video />
               {/* <Image alt={'holding'} src={article.data.article_featured_image.url} width={1200} height={500} loader={imageLoader} className="shadow-xl" /> */}
           </motion.div>       
           <div className="py-8 flex flex-col md:flex-row">
@@ -134,28 +135,3 @@ const Article = ({ article, preview }:any) => {
 }
 
 export default Article
-
-// @ts-ignore
-export async function getStaticProps({ params, previewData }) {
-  const client = createClient({ previewData });
-
-  const article = await client.getByUID("articles", params.uid);
-  
-
-  return {
-    props: {
-      article,
-    },
-  };
-}
-
-export async function getStaticPaths() {
-  const client = createClient();
-
-  const articles = await client.getAllByType("articles");
-
-  return {
-    paths: articles.map((article) => prismicH.asLink(article, linkResolver)),
-    fallback: false,
-  };
-}

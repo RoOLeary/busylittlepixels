@@ -19,7 +19,7 @@ import { Bounded } from "../../components/Bounded";
 import { GalleryGrid } from "../../components/GalleryGrid";
 // import CarouselContainer from "../components/Carousel";
 import { CTA } from "../../components/CallToAction";
-// import { Video } from "../components/Video";
+import { Video } from "../../components/Video";
 // import { Faqs } from "../components/Faq/Faqs";
 
 const inter = Inter({ subsets: ['latin'] })

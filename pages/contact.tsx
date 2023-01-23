@@ -1,7 +1,3 @@
-import { SliceZone } from "@prismicio/react";
-import { components } from "../slices/";
-import { createClient } from "../prismicio";
-
 import { Layout } from '../components/Layout'
 import { Bounded } from '../components/Bounded'
 import { Faqs } from '../components/Faq/Faqs'
@@ -9,7 +5,7 @@ import type { NextPage } from 'next';
 import {FormEvent, useState} from "react";
 
 
-const Contact: NextPage = ({ contact, preview }:any) => {
+const Contact: NextPage = () => {
 
     // console.log(contact);
     const [name, setName] = useState('');
@@ -51,15 +47,16 @@ const Contact: NextPage = ({ contact, preview }:any) => {
             
             
             <Bounded collapsible={true} as="section" className="override">
-                <h1 className="pb-8 font-black text-4xl md:text-6xl mb-6 last:mb-0 border-b border-gray-200 uppercase">WE <span style={{ "color": "red"}}>{contact.data.contact_title[0].text}</span> HEARING FROM <span style={{ "color": "red"}}>YOU</span></h1>
-                <p className="contact_intro">{contact.data.contact_intro[0].text}</p>
+                <h1 className="pb-8 font-black text-4xl md:text-6xl mb-6 last:mb-0 border-b border-gray-200 uppercase">WE <span style={{ "color": "red"}}>:heart:</span> HEARING FROM <span style={{ "color": "red"}}>YOU</span></h1>
+                <p className="contact_intro">WE HEART HEARING FROM YOU</p>
             </Bounded>
-            
-            <SliceZone slices={contact.data.slices} components={components} />
+            <Bounded collapsible={true} as="section" className="override">
+                <Faqs />
+            </Bounded>
             <br />
             <div className="text-black mt-2 body-font relative">
                 <div className="absolute inset-0 bg-gray-300">
-                    <iframe width="100%" height="100%" frameBorder="0" marginHeight={0} marginWidth={0} title="map" scrolling="no" src={contact.data.map_url[0].text} style={{ "filter": "grayscale(1) contrast(1.2) opacity(0.4)" }} ></iframe>
+                    <iframe width="100%" height="100%" frameBorder="0" marginHeight={0} marginWidth={0} title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77979.83662249324!2d4.833920986955999!3d52.35464494712458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam!5e0!3m2!1sen!2snl!4v1673131081468!5m2!1sen!2snl" style={{ "filter": "grayscale(1) contrast(1.2) opacity(0.4)" }} ></iframe>
                 </div>
                 <div className="container px-5 py-24 mx-auto flex">
                     <div className="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
@@ -95,17 +92,3 @@ const Contact: NextPage = ({ contact, preview }:any) => {
 
 
 export default Contact
-
-export async function getStaticProps({ preview = false, previewData }:any) {
-    const client = createClient({ previewData });
-  
-    const contact = await client.getSingle("contact");
-    
-    return {
-      props: {
-        contact,
-        preview
-      },
-      revalidate: 30
-    };
-  }
