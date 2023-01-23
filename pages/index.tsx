@@ -1,9 +1,3 @@
-import { SliceZone } from "@prismicio/react";
-import * as prismicH from "@prismicio/helpers";
-
-import { createClient } from "../prismicio";
-
-import { PrismicRichText } from '@prismicio/react'
 /* eslint-disable react/jsx-no-comment-textnodes */
 import Head from 'next/head'
 import Image from 'next/image'
@@ -234,17 +228,3 @@ const Home = ({ homepage, preview }:any) => {
 }
 
 export default Home;
-
-export async function getStaticProps({ preview = false, previewData }:any) {
-  const client = createClient({ previewData });
-
-  const homepage = await client.getSingle("home");
-  
-  return {
-    props: {
-      homepage,
-      preview
-    },
-    revalidate: 900
-  };
-}

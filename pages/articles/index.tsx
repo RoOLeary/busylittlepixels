@@ -7,13 +7,6 @@ import imageLoader from '../../imageLoader'
 import { motion } from 'framer-motion';
 import styles from '../styles/Home.module.css'
 
-import { PrismicLink, PrismicText } from "@prismicio/react";
-import { PrismicNextImage } from "@prismicio/next";
-import * as prismicH from "@prismicio/helpers";
-import { PrismicRichText } from '@prismicio/react';
-
-import { createClient } from "../../prismicio";
-
 const dateFormatter = new Intl.DateTimeFormat("en-US", {
   month: "short",
   day: "numeric",
@@ -31,13 +24,12 @@ import { CTA } from "../../components/CallToAction";
 
 const inter = Inter({ subsets: ['latin'] })
 
-const Articles = ({ articles, preview }:any) => {
+const Articles = () => {
 
     
 
     return(
         <Layout>
-        {preview ? <div className={'text-center uppercase bg-red-500 text-white py-6 fixed bottom-0 w-full z-10'}><h3>You are in Preview Mode</h3></div> : null}     
           <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white override mb-12">
       
       
@@ -45,7 +37,7 @@ const Articles = ({ articles, preview }:any) => {
         <h1 className="font-black tracking-tight text-3xl md:text-[3rem] mb-6 md:pb-8 last:mb-0 text-left">busy<span style={{ "color": "red"}}>little</span>pixels<span style={{ "color": "red"}}>:articles</span></h1>
         <div className="flex flex-col md:flex-row md:gap-8">
       
-        <div className="w-full  flex flex-col space-y-16">
+        {/* <div className="w-full  flex flex-col space-y-16">
          
           {articles.map((article:any, i:number) => {
             // console.log(article.data.article_excerpt)
@@ -66,10 +58,9 @@ const Articles = ({ articles, preview }:any) => {
             )
           })}
           
+          */}
           
-          
-      
-        </div>
+       </div> 
         {/* <div className="w-full md:w-0 xl:w-2/6 flex flex-col space-y-16">
           <div className="sticky md:visible">
             <img className="w-full" src="https://place-hold.it/350x1200/black/white.png&text=Advert&bold&fontsize=18" />
@@ -77,8 +68,8 @@ const Articles = ({ articles, preview }:any) => {
           <div className="sticky">
             <img className="w-full" src="https://place-hold.it/350x350/black/white.png&text=Advert&bold&fontsize=18" />
           </div>
-        </div> */}
-      </div> 
+        </div>
+      </div>   */}
       </Bounded>
       <CTA />
     </Layout>
@@ -88,24 +79,3 @@ const Articles = ({ articles, preview }:any) => {
 }
 
 export default Articles; 
-
-// @ts-ignore
-export async function getStaticProps({ preview = false, previewData }) {
-  
-  const client = createClient({ previewData });
-
-  const articles = await client.getAllByType("articles", {
-    limit: 5,
-    orderings: [
-      { field: "article.first_publication_date", direction: "asc" }
-    ],
-  });
-  
-  return {
-    props: {
-      articles,
-      preview
-    },
-    revalidate: 900
-  };
-}

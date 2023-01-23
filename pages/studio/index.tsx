@@ -1,9 +1,3 @@
-import { SliceZone } from "@prismicio/react";
-import * as prismicH from "@prismicio/helpers";
-
-import { createClient } from "../../prismicio";
-
-import { PrismicRichText } from '@prismicio/react'
 /* eslint-disable react/jsx-no-comment-textnodes */
 import Head from 'next/head'
 import Image from 'next/image'
@@ -22,7 +16,7 @@ import { motion } from 'framer-motion';
 
 const inter = Inter({ subsets: ['latin'] })
 
-const Studio = ({ studio, preview }:any) => {
+const Studio = () => {
     const router = useRouter(); 
     const { word } = useTypingText(['WEB, ', 'APPS, ', 'MEDIA, '], 250, 20);
 
@@ -80,7 +74,7 @@ const Studio = ({ studio, preview }:any) => {
                     <h1 className="font-black tracking-tighter text-5xl md:text-[5rem] mb-6 last:mb-0 uppercase text-left md:text-center">building the future of <span style={{ "color": "red"}}>{word}</span> today. </h1>
                        
                 <p className="studio_intro">
-                    {studio.data.studio_intro[0].text}
+                    We are experienced and seasoned experts in the development and release of large scale, headless web, CMS and mobile applications. We build on and for the future. Utilising the latest in web and backend technologies, we create not only digital experiences, but powerful and engaging marketing, commerce, media and live event tools and software.
                 </p>
 
                 <div className="mt-8 flex gap-x-4 justify-start md:justify-center">
@@ -100,7 +94,7 @@ const Studio = ({ studio, preview }:any) => {
                 <div className="py-8 flex flex-col md:flex-row">
                     <div className="mx-auto w-full max-w-3xl border-b">
                         <div className="leading-relaxed">
-                            <p className="studio_intro">{studio.data.cta_body_content[0].text}</p>
+                            <p className="studio_intro">So park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer. Glossiesr echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer ballsack.</p>
                         </div>
                         <section className="text-gray-600 body-font">
                             <div className="container pt-4 pb-12 mx-auto"></div>
@@ -266,17 +260,17 @@ const Studio = ({ studio, preview }:any) => {
 
 export default Studio; 
 
-export async function getStaticProps({ preview = false, previewData }:any) {
-    const client = createClient({ previewData });
+// export async function getStaticProps({ preview = false, previewData }:any) {
+//     const client = createClient({ previewData });
   
-    const studio = await client.getSingle("studio");
+//     const studio = await client.getSingle("studio");
     
-    return {
-      props: {
-        studio,
-        preview
-      },
-      revalidate: 900
-    };
-}
+//     return {
+//       props: {
+//         studio,
+//         preview
+//       },
+//       revalidate: 900
+//     };
+// }
     
