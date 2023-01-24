@@ -20,7 +20,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 const Home = ({ entry, preview }:any) => {
 
-  // console.log(entry);
+  // console.log(entry.data);
 
   return (
     <>
@@ -232,22 +232,15 @@ const Home = ({ entry, preview }:any) => {
 
 export default Home;
 
-export const getStaticProps: GetStaticProps = async ({ preview = false, context, previewData }:any) => {
+export const getStaticProps: GetStaticProps = async ({ preview = false, previewData }:any) => {
   
-  const res = await fetch('https://craft-ezhk.frb.io/api/homepage.json',{
-      credentials: "include",
-      // @ts-ignore
-      headers: {
-          "Access-Control-Allow-Origin" : "*", 
-          "Access-Control-Allow-Credentials" : true
-      },
-  });
+  const res = await fetch('https://craft-ezhk.frb.io/api/homepage.json');
 
   let entry = await res.json();
   let prevData; 
   
-  if(context?.preview){
-      const prevResponse = await fetch(`https://craft-ezhk.frb.io/api/homepage.json?token=${context.previewData['token']}`);
+  if(preview){
+      const prevResponse = await fetch(`https://craft-ezhk.frb.io/api/homepage.json?token=${previewData['token']}`);
       prevData = await prevResponse.json();  
   } 
 
@@ -255,9 +248,9 @@ export const getStaticProps: GetStaticProps = async ({ preview = false, context,
 
   return {
     props: {
-        entry: data,
-        preview: preview ? true : false
-    },
+        preview: preview ? true : false,
+        entry: data
+      },
     revalidate: 500
   }
 }
