@@ -20,14 +20,14 @@ const inter = Inter({ subsets: ['latin'] })
 
 const Home = ({ entry, preview }:any) => {
 
-  // console.log(entry.data);
+  console.log(entry.data[0].homeSubTitle);
 
   return (
     <>
      
      <Layout>
-     {preview ? <div className={'text-center uppercase bg-red-500 text-white py-6 fixed bottom-0 w-full z-10'}><h3>You are in Preview Mode</h3></div> : null}     
-      <TitleContainer title={entry.data ? entry.data[0].homeTitle : 'title'} subtitle={entry.data ? entry.data[0].homeSubTitle : ''}/>
+      {preview ? <div className={'text-center uppercase bg-red-500 text-white py-6 fixed bottom-0 w-full z-10'}><h3>You are in Preview Mode</h3></div> : null}     
+      <TitleContainer title={entry.data[0].homeTitle} subtitle={entry.data[0].homeSubTitle} />
       <GalleryGrid />
       <ProjectSlider />
       <div className="container pt-20 mx-auto w-full max-w-7xl px-3 md:px-8 bg-white">
@@ -232,23 +232,26 @@ const Home = ({ entry, preview }:any) => {
 
 export default Home;
 
-export const getStaticProps: GetStaticProps = async ({ params, preview = false, previewData }) => {
+export const getStaticProps: GetStaticProps = async ({ preview = false, previewData }) => {
 
   
   const res = await fetch('https://craft-ezhk.frb.io/api/homepage.json');
-
   let entry = await res.json();
+
   let prevData;
   if(preview && previewData){
-    const prevResponse = await fetch(`https://craft-ezhk.frb.io/api/homepage.json?token=${previewData['token']}`);
+    // console.log(previewData)
+    const prevResponse = await fetch(`https://craft-ezhk.frb.io/api/homepage.json?token=${previewData["token"]}`);
     prevData = await prevResponse.json()
+
+    console.log(prevData);
   } 
-  let pageData = preview ? prevData : entry;
+  let page = preview ? prevData : entry;
   
   return {
     props: {
         preview: preview ? true : false,
-        entry: pageData
+        entry: page
       },
     revalidate: 10
   }
