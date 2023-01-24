@@ -256,7 +256,7 @@ export const getStaticProps: GetStaticProps = async ({ preview = false, context,
   return {
     props: {
         entry: data,
-        preview
+        preview: preview ? true : false
     },
     revalidate: 500
   }
