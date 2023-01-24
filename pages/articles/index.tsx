@@ -50,7 +50,6 @@ const Articles = () => {
                     <Link href={`/articles/${article.uid}`} className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500">{article.data.articletitle[0].text}</Link>
                   </h2>
                   <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt ">
-                      <PrismicRichText field={article.data.article_excerpt} />
                   </p>
                   <Link href={`/articles/${article.uid}`} className="hidden md:visible btn btn-light btn-sm">Read More</Link>
                 </div>
