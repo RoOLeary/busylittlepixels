@@ -18,16 +18,14 @@ import { GetStaticProps } from 'next'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const Home = ({ entry, preview }:any) => {
-
-  console.log(entry.data[0].homeSubTitle);
+const Home = ({ page, preview }:any) => {
 
   return (
     <>
      
      <Layout>
       {preview ? <div className={'text-center uppercase bg-red-500 text-white py-6 fixed bottom-0 w-full z-10'}><h3>You are in Preview Mode</h3></div> : null}     
-      <TitleContainer title={entry.data[0].homeTitle} subtitle={entry.data[0].homeSubTitle} />
+      <TitleContainer title={page.data[0].homeTitle} subtitle={page.data[0].homeSubTitle} />
       <GalleryGrid />
       <ProjectSlider />
       <div className="container pt-20 mx-auto w-full max-w-7xl px-3 md:px-8 bg-white">
@@ -239,21 +237,18 @@ export const getStaticProps: GetStaticProps = async ({ preview = false, previewD
   let entry = await res.json();
 
   let prevData;
-  if(preview && previewData){
-    // console.log(previewData)
+  if(preview){
     // @ts-ignore
     const prevResponse = await fetch(`https://craft-ezhk.frb.io/api/homepage.json?token=${previewData["token"]}`);
     prevData = await prevResponse.json()
-
-    console.log(prevData);
   } 
   let page = preview ? prevData : entry;
   
   return {
     props: {
         preview: preview ? true : false,
-        entry: page
+        page: page
       },
-    revalidate: 10
+    revalidate: 30
   }
 }
