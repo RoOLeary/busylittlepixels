@@ -28,7 +28,7 @@ const Article = ({ page, preview }:any) => {
           <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white pb-0 md:pb-0">
           <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6">
             <div className="max-full text-center leading-relaxed mb-2">
-              <h1 className="composedHeading">{page.articleTitle ? page.articleTitle : ''}</h1>
+              <h1 className="composedHeading">{page ? page.articleTitle : ''}</h1>
             </div>
             <div className="max-full text-center leading-relaxed mb-8">
               <p className="font-semibold tracking-tighter">By <a href="#">Ronan O'Leary</a> | Category: Tech, CMS | Published: </p>
@@ -46,7 +46,7 @@ const Article = ({ page, preview }:any) => {
           
             <div className="mx-auto w-full max-w-3xl">
                 <div className="leading-relaxed">
-                  {page.articleExcerpt ? <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt">{page.articleExcerpt}</p>: '' }
+                  {page ? <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt">{page.articleExcerpt}</p>: '' }
                 </div>
             </div>
           </div>
