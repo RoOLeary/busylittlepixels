@@ -39,14 +39,14 @@ const Article = ({ page, preview }:any) => {
             whileInView={{ opacity: 1 }}
             className="w-full mb-2"
           >
-              <Video />
-              {/* <Image alt={'holding'} src={article.data.article_featured_image.url} width={1200} height={500} loader={imageLoader} className="shadow-xl" /> */}
+              {/* <Video /> */}
+              <Image alt={'holding'} src={'../assets/img/dodge.jpeg'} width={1200} height={500} loader={imageLoader} className="shadow-xl" />
           </motion.div>       
           <div className="py-8 flex flex-col md:flex-row">
           
             <div className="mx-auto w-full max-w-3xl">
                 <div className="leading-relaxed">
-                  {page ? <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt">{page.articleExcerpt}</p>: '' }
+                  {page ? <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt">{page.articleExcerpt.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "")}</p>: '' }
                 </div>
             </div>
           </div>
