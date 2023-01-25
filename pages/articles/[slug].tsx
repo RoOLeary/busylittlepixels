@@ -14,13 +14,11 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 const inter = Inter({ subsets: ['latin'] })
 
 const Article = ({ article, preview }:any) => {
-    // console.log(article.articleType.value);
-    // let bodyContent = Object.entries(article.data.article_body).map((p, i) => {
+   
+  // let bodyContent = Object.entries(article.data.article_body).map((p, i) => {
     //   let idx:number = 1; // console.log(p[1].text)
     //   return p[idx].text
     // });
-
-
 
     return(
 
@@ -40,8 +38,7 @@ const Article = ({ article, preview }:any) => {
             whileInView={{ opacity: 1 }}
             className="w-full mb-2"
           >
-            {/* <Video /> */}
-          {(article && article.articleType.value == "text") ? <Image alt={'holding'} src={'../assets/img/dodge.jpeg'} width={1200} height={500} loader={imageLoader} className="shadow-xl" /> : <Video />}
+          {(article && article.articleType.value == "text") ? <Image alt={article ? article.articleImageAlt : null} src={article ? article.articleImageUrl : null} width={1200} height={500} loader={imageLoader} className="shadow-xl" /> : <Video videoEmbedCode={article ? article.articleVideoEmbed : null} />}
           </motion.div>       
           <div className="py-8 flex flex-col md:flex-row">
           
