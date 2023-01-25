@@ -20,15 +20,15 @@ const inter = Inter({ subsets: ['latin'] })
 
 const Home = ({ page, preview }:any) => {
 
-  // console.log(page.data[0].homeSliderTitle)
-
+  let title = page ? page.data[0].homeTitle : null;
+  let subtitle = page ? page.data[0].homeSubTitle : null;
 
   return (
     <>
      
      <Layout>
       {preview ? <div className={'text-center uppercase bg-red-500 text-white py-6 fixed bottom-0 w-full z-10'}><h3>You are in Preview Mode</h3></div> : null}     
-      <TitleContainer title={page ? page.data[0].homeTitle : null} subtitle={page ? page.data[0].homeSubTitle : null} />
+      <TitleContainer title={title} subtitle={subtitle} />
       <GalleryGrid />
       <ProjectSlider />
       <div className="container pt-20 mx-auto w-full max-w-7xl px-3 md:px-8 bg-white">
@@ -131,94 +131,8 @@ const Home = ({ page, preview }:any) => {
       </section>
 
       <br className={`h-40`} />
-      <CarouselContainer title={page.data[0].homeSliderTitle}/> 
+      <CarouselContainer title={page ? page.data[0].homeSliderTitle : null}/> 
       
-      {/* <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white">
-        <h2 className="pb-8 mb-12 text-2xl font-black leading-tight text-gray-900 border-b border-gray-200 md:text-4xl uppercase">Featured <span className={'rd_txt'}>Ar</span>ticles</h2>
-        
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 mb-8">
-              <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
-              <div className="col-span-1">
-                <p className="mb-2 -mt-1 text-sm font-normal text-gray-500">April 16, 2023</p>
-                <h1 className="mb-2 text-4xl font-extrabold leading-tightest text-gray-800">
-                  <a href="#" className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500 uppercase">Process Documents Using Artificial Intelligence For RPA Bots</a>
-                </h1>
-                <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt">
-                  Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical
-                  Character Recognition) and Machine Learning, RPA bots are capable of extracting these data …
-                </p>
-                <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt">
-                  Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical
-                  Character Recognition) and Machine Learning, RPA bots are capable of extracting these data …
-                </p>
-                <a href="#" className="hidden md:visible btn btn-light btn-sm">Read More</a>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 sm:gap-2 gap-2 md:grid-cols-2">
-              <div className="grid grid-cols-2 sm:gap-2 gap-2 md:grid-cols-2">
-                  <div>
-                    <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
-                    <div className="col-span-1">
-                      <p className="mb-2 mt-2 text-sm font-normal text-gray-500">April 16, 2023</p>
-                      <h1 className="mb-2 md:text-xl font-extrabold leading-snug text-gray-800">
-                        <a href="#" className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500">Process Documents Using Artificial Intelligence For RPA Bots</a>
-                      </h1>
-                      <p className="mb-3 text-sm hidden md:visible font-normal text-gray-500">
-                        Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical
-                        Character Recognition) and Machine Learning, RPA bots are capable of extracting these data …
-                      </p>
-                      <a href="#" className="hidden md:visible btn btn-light btn-sm">Read More</a>
-                    </div>
-                  </div>
-                  <div>
-                    <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
-                    <div className="col-span-1">
-                      <p className="mb-2 mt-2 text-sm font-normal text-gray-500">April 16, 2023</p>
-                      <h1 className="mb-2 md:text-xl font-extrabold leading-snug text-gray-800">
-                        <a href="#" className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500">Process Documents Using Artificial Intelligence For RPA Bots</a>
-                      </h1>
-                      <p className="mb-3 text-sm hidden md:visible font-normal text-gray-500">
-                        Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical
-                        Character Recognition) and Machine Learning, RPA bots are capable of extracting these data …
-                      </p>
-                      <a href="#" className="hidden md:visible btn btn-light btn-sm">Read More</a>
-                    </div>
-                  </div> 
-              </div>
-              <div className="grid grid-cols-2 sm:gap-2 gap-2 md:grid-cols-2">
-                  <div>
-                    <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
-                    <div className="col-span-1">
-                      <p className="mb-2 mt-2 text-sm font-normal text-gray-500">April 16, 2023</p>
-                      <h1 className="mb-2 md:text-xl font-extrabold leading-snug text-gray-800">
-                        <a href="#" className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500">Process Documents Using Artificial Intelligence For RPA Bots</a>
-                      </h1>
-                      <p className="mb-3 text-sm hidden md:visible font-normal text-gray-500">
-                        Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical
-                        Character Recognition) and Machine Learning, RPA bots are capable of extracting these data …
-                      </p>
-                      <a href="#" className="hidden md:visible btn btn-light btn-sm">Read More</a>
-                    </div>
-                  </div>
-                  <div>
-                    <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
-                    <div className="col-span-1">
-                      <p className="mb-2 mt-2 text-sm font-normal text-gray-500">April 16, 2023</p>
-                      <h1 className="mb-2 md:text-xl font-extrabold leading-snug text-gray-800">
-                        <a href="#" className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500">Process Documents Using Artificial Intelligence For RPA Bots</a>
-                      </h1>
-                      <p className="mb-3 text-sm hidden md:visible font-normal text-gray-500">
-                        Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical
-                        Character Recognition) and Machine Learning, RPA bots are capable of extracting these data …
-                      </p>
-                      <a href="#" className="hidden md:visible btn btn-light btn-sm">Read More</a>
-                    </div>
-                  </div> 
-              </div>
-            </div>
-        
-      </Bounded> */}
 
       <Bounded collapsible={false} as="section" className="bg-slate-100">
         <div className="grid grid-cols-1 items-end gap-10 md:grid-cols-1 md:gap-10 lg:gap-28">
