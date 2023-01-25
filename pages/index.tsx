@@ -28,7 +28,7 @@ const Home = ({ page, preview }:any) => {
      
      <Layout>
       {preview ? <div className={'text-center uppercase bg-red-500 text-white py-6 fixed bottom-0 w-full z-10'}><h3>You are in Preview Mode</h3></div> : null}     
-      <TitleContainer title={page.data[0].homeTitle} subtitle={page.data[0].homeSubTitle} />
+      <TitleContainer title={page ? page.data[0].homeTitle : null} subtitle={page ? page.data[0].homeSubTitle : null} />
       <GalleryGrid />
       <ProjectSlider />
       <div className="container pt-20 mx-auto w-full max-w-7xl px-3 md:px-8 bg-white">
