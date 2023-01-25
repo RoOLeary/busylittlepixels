@@ -152,7 +152,7 @@ export const getStaticProps = async ({ preview = false, previewData }:any) => {
   let url = `https://craft-ezhk.frb.io/api/homepage.json`;
   
   const res = await fetch(url)
-  const page = await res.json()
+  const homepage = await res.json()
   let prevData;
 
   if(preview){
@@ -160,7 +160,7 @@ export const getStaticProps = async ({ preview = false, previewData }:any) => {
       prevData = await prevResponse.json(); 
   } 
 
-  let data = preview ? prevData : page;
+  let data = preview ? prevData : homepage;
 
   return {
       props: {
