@@ -85,7 +85,7 @@ const Studio = () => {
             </section>
             <GalleryGrid />
             <span id={"moreinfo"} className={'mt-8'}></span>
-            <section collapsible={false} as="section" className="px-6 md:py-32 bg-white pb-0 md:pb-0">
+            <section className="px-6 md:py-32 bg-white pb-0 md:pb-0">
                 <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6">
                     <div className="max-full text-center leading-relaxed mb-2">
                         <h2 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-6 last:mb-0 uppercase">A bit more <span style={{ "color": "red"}}>about us</span></h2>
