@@ -194,7 +194,7 @@ const Studio = () => {
                 </div>
             </section>
             
-            <CarouselContainer />
+            <CarouselContainer title={'Stu Stu Studio'} />
         
             <section className="boundedContainer px-3 md:px-6 py-20 md:py-32 mx-auto w-full max-w-7xl">
             <div className="relative overflow-hidden bg-white">

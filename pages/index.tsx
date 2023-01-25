@@ -20,6 +20,9 @@ const inter = Inter({ subsets: ['latin'] })
 
 const Home = ({ page, preview }:any) => {
 
+  // console.log(page.data[0].homeSliderTitle)
+
+
   return (
     <>
      
@@ -128,7 +131,7 @@ const Home = ({ page, preview }:any) => {
       </section>
 
       <br className={`h-40`} />
-      <CarouselContainer /> 
+      <CarouselContainer title={page.data[0].homeSliderTitle}/> 
       
       {/* <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white">
         <h2 className="pb-8 mb-12 text-2xl font-black leading-tight text-gray-900 border-b border-gray-200 md:text-4xl uppercase">Featured <span className={'rd_txt'}>Ar</span>ticles</h2>
@@ -241,6 +244,7 @@ export const getStaticProps: GetStaticProps = async ({ preview = false, previewD
     // @ts-ignore
     const prevResponse = await fetch(`https://craft-ezhk.frb.io/api/homepage.json?token=${previewData["token"]}`);
     prevData = await prevResponse.json()
+    
   } 
   let page = preview ? prevData : entry;
   
@@ -249,6 +253,6 @@ export const getStaticProps: GetStaticProps = async ({ preview = false, previewD
         preview: preview ? true : false,
         page: page
       },
-    revalidate: 30
+    revalidate: 10
   }
 }
