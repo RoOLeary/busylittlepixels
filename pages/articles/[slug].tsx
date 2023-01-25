@@ -8,12 +8,13 @@ import { Layout } from '../../components/Layout';
 import { Bounded } from "../../components/Bounded";
 import { Video } from "../../components/Video";
 import imageLoader from '../../imageLoader';
+import { ParsedUrlQuery } from 'querystring'
 import { GetStaticPaths, GetStaticProps } from 'next'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const Article = ({ article, preview }:any) => {
-    console.log(article);
+const Article = ({ page, preview }:any) => {
+    console.log(page);
     // let bodyContent = Object.entries(article.data.article_body).map((p, i) => {
     //   let idx:number = 1; // console.log(p[1].text)
     //   return p[idx].text
@@ -27,7 +28,7 @@ const Article = ({ article, preview }:any) => {
           <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white pb-0 md:pb-0">
           <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6">
             <div className="max-full text-center leading-relaxed mb-2">
-              <h1 className="composedHeading">{article.title}</h1>
+              <h1 className="composedHeading">{page.articleTitle}</h1>
             </div>
             <div className="max-full text-center leading-relaxed mb-8">
               <p className="font-semibold tracking-tighter">By <a href="#">Ronan O'Leary</a> | Category: Tech, CMS | Published: </p>
@@ -44,9 +45,9 @@ const Article = ({ article, preview }:any) => {
           <div className="py-8 flex flex-col md:flex-row">
           
             <div className="mx-auto w-full max-w-3xl">
-              <div className="leading-relaxed">
-                Headless eCommerce is the way the world is moving. It’s a logical concept that any business can get behind, regardless of size, industry, or platform needs. But to really illustrate the value of a headless commerce integration, we’ll need to review the benefits one by one.
-              </div>
+                <div className="leading-relaxed">
+                  <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt" dangerouslySetInnerHTML={{__html: page.articleExcerpt}} />
+                </div>
             </div>
           </div>
           
@@ -135,17 +136,18 @@ const Article = ({ article, preview }:any) => {
 
 }
 
-export default Article
+
+interface IParams extends ParsedUrlQuery {
+  slug: string
+}
 
 export async function getStaticPaths() {
-  // Call an external API endpoint to get posts
   
   const res = await fetch('https://craft-ezhk.frb.io/api/articles.json');
-  const articles = await res.json()
+  const posts = await res.json()
   // Get the paths we want to pre-render based on posts
-  // @ts-ignore
-  const paths = articles && articles.data.map((article) => ({
-      params: { slug: article.slug },
+  const paths = posts && posts.data.map((post: { slug: any; }) => ({
+      params: { slug: post.slug },
   }));
 
   // We'll pre-render only these paths at build time.
@@ -153,11 +155,9 @@ export async function getStaticPaths() {
   return { paths, fallback: true }
 }
 
-export const getStaticProps: GetStaticProps = async ({ params, preview = false, previewData }) => {
+export const getStaticProps = async ({ params, preview = false, previewData }:any) => {
   
-  // console.log(locale);
-  // console.log('locale', locale);
-
+  // @ts-ignore
   let url = `https://craft-ezhk.frb.io/api/articles/${params.slug}.json`;
   
   const res = await fetch(url)
@@ -165,7 +165,7 @@ export const getStaticProps: GetStaticProps = async ({ params, preview = false, 
   let prevData; 
 
   if(preview){
-     
+      // @ts-ignore
       const prevResponse = await fetch(`https://craft-ezhk.frb.io/api/articles/${params.slug}.json?token=${previewData['token']}`);
       prevData = await prevResponse.json();
       
@@ -176,8 +176,11 @@ export const getStaticProps: GetStaticProps = async ({ params, preview = false, 
   return {
       props: {
           preview: preview ? true : false,
-          article: data
+          page: data
       },
       revalidate: 10, // In seconds
     };
 }
+
+export default Article; 
+

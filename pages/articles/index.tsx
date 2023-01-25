@@ -42,14 +42,14 @@ const Articles = ({ page, preview }:any) => {
         <div className="w-full  flex flex-col space-y-16">
          
           {articles.map((article:any, i:number) => {
-            console.log(article.title)
+           
             return(
               <div key={i} className="grid grid-cols-2 gap-6 md:grid-cols-4">
                 <Image src={`assets/img/dodge.jpeg`} alt={'article featured image'} width={160} height={200} className="h-full object-cover w-full md:h-40 col-span-1 bg-center" loading="lazy" loader={imageLoader} />
                 <div className="col-span-1 md:col-span-3">
                   <><p className="mb-2 -mt-1 text-sm font-normal text-gray-500"></p></>
                   <h2 className="mb-2 md:text-2xl font-extrabold leading-snug text-gray-800">
-                    <Link href={`/articles/${article.slug}`} className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500">{article.title}</Link>
+                    <Link href={{ pathname: `articles/${article.slug}` }} className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500">{article.title}</Link>
                   </h2>
                   <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt" dangerouslySetInnerHTML={{__html: article.articleExcerpt}} />
                   
@@ -79,38 +79,18 @@ const Articles = ({ page, preview }:any) => {
     )
 }
 
-// export async function getStaticPaths() {
-//   // Call an external API endpoint to get posts
+
+export const getStaticProps: GetStaticProps = async ({ preview = false, previewData }:any) => {
   
-
-//   const res = await fetch('https://craft-ezhk.frb.io/api/articles.json');
-//   const posts = await res.json()
-//   // Get the paths we want to pre-render based on posts
-//   const paths = posts && posts.data.map((post:any) => ({
-//       params: { slug: post.slug },
-//   }));
-
-//   // We'll pre-render only these paths at build time.
-//   // { fallback: false } means other routes should 404.
-//   return { paths, fallback: true }
-// }
-
-export const getStaticProps: GetStaticProps = async ({ preview = false, previewData }) => {
-  
-  // console.log(locale);
-  // console.log('locale', locale);
-
   let url = `https://craft-ezhk.frb.io/api/articles.json`;
   
   const res = await fetch(url)
   const page = await res.json()
-  let prevData; 
+  let prevData;
 
-  if(preview){
-     
+  if(preview && previewData){
       const prevResponse = await fetch(`https://craft-ezhk.frb.io/api/articles.json?token=${previewData['token']}`);
-      prevData = await prevResponse.json();
-      
+      prevData = await prevResponse.json(); 
   } 
 
   let data = preview ? previewData : page;
