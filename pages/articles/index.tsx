@@ -74,7 +74,52 @@ const Articles = () => {
     </Layout>
 
     )
-
 }
+
+// export async function getStaticPaths() {
+//   // Call an external API endpoint to get posts
+  
+
+//   const res = await fetch('https://servd-test-staging.cl-eu-west-3.servd.dev/api/en/recipes.json');
+//   const posts = await res.json()
+//   // Get the paths we want to pre-render based on posts
+//   const paths = posts && posts.data.map((post) => ({
+//       params: { slug: post.slug },
+//   }));
+
+//   // We'll pre-render only these paths at build time.
+//   // { fallback: false } means other routes should 404.
+//   return { paths, fallback: true }
+// }
+
+// export const getStaticProps: GetStaticProps = async ({ locale, params, preview = false, previewData }) => {
+  
+//   // console.log(locale);
+//   // console.log('locale', locale);
+
+//   let url = `https://servd-test-staging.cl-eu-west-3.servd.dev/api/${locale}/recipes/${params.slug}.json`;
+  
+//   const res = await fetch(url)
+//   const page = await res.json()
+//   let prevData; 
+
+//   if(preview){
+     
+//       const prevResponse = await fetch(`https://servd-test-staging.cl-eu-west-3.servd.dev/api/${locale}/recipes/${params.slug}.json?token=${previewData['token']}`);
+//       prevData = await prevResponse.json();
+      
+//   } 
+
+//   let data = preview ? previewData : page;
+
+//   return {
+//       props: {
+//           preview: preview ? true : false,
+//           page: data
+//       },
+//       revalidate: 10, // In seconds
+//     };
+// }
+
 
 export default Articles; 

@@ -233,8 +233,8 @@ const Home = ({ page, preview }:any) => {
 
 export default Home;
 
-// export const getStaticProps: GetStaticProps = async ({ preview = false, previewData }) => {
-export const getServerSideProps: GetServerSideProps = async ({ preview = false, previewData }) => {
+export const getStaticProps: GetStaticProps = async ({ preview = false, previewData }) => {
+// export const getServerSideProps: GetServerSideProps = async ({ preview = false, previewData }) => {
   
   const res = await fetch('https://craft-ezhk.frb.io/api/homepage.json');
   let entry = await res.json();
