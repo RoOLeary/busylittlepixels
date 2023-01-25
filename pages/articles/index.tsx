@@ -88,12 +88,12 @@ export const getStaticProps: GetStaticProps = async ({ preview = false, previewD
   const page = await res.json()
   let prevData;
 
-  if(preview && previewData){
+  if(preview){
       const prevResponse = await fetch(`https://craft-ezhk.frb.io/api/articles.json?token=${previewData['token']}`);
       prevData = await prevResponse.json(); 
   } 
 
-  let data = preview ? previewData : page;
+  let data = preview ? prevData : page;
 
   return {
       props: {

@@ -160,7 +160,7 @@ export const getStaticProps = async ({ preview = false, previewData }:any) => {
       prevData = await prevResponse.json(); 
   } 
 
-  let data = preview ? previewData : page;
+  let data = preview ? prevData : page;
 
   return {
       props: {
