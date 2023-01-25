@@ -147,7 +147,7 @@ const Home = ({ page, preview }:any) => {
 
 export default Home;
 
-export const getServerSideProps = async ({ preview = false, previewData }:any) => {
+export const getStaticProps = async ({ preview = false, previewData }:any) => {
   
   let url = `https://craft-ezhk.frb.io/api/homepage.json`;
   
