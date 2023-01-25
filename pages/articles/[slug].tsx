@@ -46,7 +46,7 @@ const Article = ({ page, preview }:any) => {
           
             <div className="mx-auto w-full max-w-3xl">
                 <div className="leading-relaxed">
-                  {page.articleExcerpt ? <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt">{page.articleExcerp}</p>: '' }
+                  {page.articleExcerpt ? <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt">{page.articleExcerpt}</p>: '' }
                 </div>
             </div>
           </div>
