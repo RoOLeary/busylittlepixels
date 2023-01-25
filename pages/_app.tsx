@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import NProgress from 'nprogress';
 import Router from 'next/router'
 import Link from "next/link";
+import { DefaultSeo } from 'next-seo';
 
 import '../styles/globals.css'
 
@@ -66,7 +67,22 @@ export default function App({ Component, pageProps }) {
   }, [router.events])
 
   return (
-    <>
+    <>  
+    <DefaultSeo
+        title="Busy Little Pixels"
+        description="Busy Little Pixels is a Digital Media and Technology company based in Amsterdam and specialising in the development of headless CMS and applications."
+        openGraph={{
+            type: 'website',
+            locale: 'en_IE',
+            url: 'https://busylittlepixels.com/',
+            siteName: 'Busy Little Pixels',
+        }}
+        twitter={{
+            handle: '@handle',
+            site: '@site',
+            cardType: 'summary_large_image',
+        }}
+    />
         <Header />
         <AnimatePresence
           mode='wait'
