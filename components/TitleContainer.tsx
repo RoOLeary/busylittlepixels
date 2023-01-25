@@ -8,7 +8,6 @@ interface ITitle {
 
 export const TitleContainer = ({ title, subtitle }:ITitle) => {
 
-   
     const { word } = useTypingText(['CODE...', 'APPS...', 'TECH...', 'DESIGN...', 'GAMES...', 'PUPPIES...', 'MATÉ...'], 250, 20);
     
     return (

@@ -13,5 +13,6 @@ export default async (req, res) => {
       maxAge: 60,
     }
   )
+  // console.log(req.query.token)
   res.redirect(`/${req.query.uri}`)
 }
