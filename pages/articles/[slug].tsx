@@ -48,7 +48,7 @@ const Article = ({ article, preview }:any) => {
                   {article ? <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt">{article.articleExcerpt.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "")}</p>: '' }
                 </div>
 
-                <div className={'bodyContent'} dangerouslySetInnerHTML={{__html: article ? article.articleContent : null }} className={'content'} />
+                <div dangerouslySetInnerHTML={{__html: article ? article.articleContent : null }} className={'content'} />
                 
             </div>
           </div>
