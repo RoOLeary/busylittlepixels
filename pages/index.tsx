@@ -233,7 +233,7 @@ const Home = ({ page, preview }:any) => {
 
 export default Home;
 
-export const getStaticProps: GetStaticProps = async ({ preview = false, previewData }:any) => {
+export const getServerSideProps = async ({ preview = false, previewData }:any) => {
   
   let url = `https://craft-ezhk.frb.io/api/homepage.json`;
   
@@ -253,6 +253,5 @@ export const getStaticProps: GetStaticProps = async ({ preview = false, previewD
           preview: preview ? true : false,
           page: data
       },
-      revalidate: 10, // In seconds
     };
 }
