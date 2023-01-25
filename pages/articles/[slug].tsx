@@ -171,7 +171,7 @@ export const getStaticProps = async ({ params, preview = false, previewData }:an
       
   } 
 
-  let data = preview ? previewData : page;
+  let data = preview ? prevData : page;
 
   return {
       props: {
