@@ -15,11 +15,9 @@ const inter = Inter({ subsets: ['latin'] })
 
 const Article = ({ article, preview }:any) => {
    
-    console.log(article);
-    // let bodyContent = Object.entries(article.data.article_body).map((p, i) => {
-    //   let idx:number = 1; // console.log(p[1].text)
-    //   return p[idx].text
-    // });
+    // let splitContent = article.articleContent.split("\n\n");
+    
+    // console.log(splitContent);
 
     return(
 
@@ -48,7 +46,7 @@ const Article = ({ article, preview }:any) => {
                   {article ? <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt">{article.articleExcerpt.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "")}</p>: '' }
                 </div>
 
-                <div dangerouslySetInnerHTML={{__html: article ? article.articleContent : null }} className={'content'} />
+                <div dangerouslySetInnerHTML={{__html: article ? article.splitContent : null }} className={'content'} />
                 
             </div>
           </div>

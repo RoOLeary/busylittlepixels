@@ -85,7 +85,7 @@ const Studio = () => {
             </section>
             <GalleryGrid />
             <span id={"moreinfo"} className={'mt-8'}></span>
-            <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32 bg-white pb-0 md:pb-0">
+            <section collapsible={false} as="section" className="px-6 md:py-32 bg-white pb-0 md:pb-0">
                 <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6">
                     <div className="max-full text-center leading-relaxed mb-2">
                         <h2 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-6 last:mb-0 uppercase">A bit more <span style={{ "color": "red"}}>about us</span></h2>
@@ -101,9 +101,9 @@ const Studio = () => {
                         </section>
                     </div>
                 </div>
-            </Bounded>
+            </section>
             
-            <section className="boundedContainer">
+            <section className="px-6 md:py-32 bg-white pb-0 md:pb-0">
                 <div className="container pt-20 mx-auto w-full max-w-7xl md:px-8">
                     <div className="flex flex-wrap w-full mb-20">
                     <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
@@ -194,7 +194,7 @@ const Studio = () => {
                 </div>
             </section>
             
-            <CarouselContainer title={'Stu Stu Studio'} />
+            <CarouselContainer title={'Let this one slide'} />
         
             <section className="boundedContainer px-3 md:px-6 py-20 md:py-32 mx-auto w-full max-w-7xl">
             <div className="relative overflow-hidden bg-white">
