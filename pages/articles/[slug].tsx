@@ -15,7 +15,8 @@ const inter = Inter({ subsets: ['latin'] })
 
 const Article = ({ article, preview }:any) => {
    
-  // let bodyContent = Object.entries(article.data.article_body).map((p, i) => {
+    console.log(article);
+    // let bodyContent = Object.entries(article.data.article_body).map((p, i) => {
     //   let idx:number = 1; // console.log(p[1].text)
     //   return p[idx].text
     // });
@@ -46,6 +47,9 @@ const Article = ({ article, preview }:any) => {
                 <div className="leading-relaxed">
                   {article ? <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt">{article.articleExcerpt.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "")}</p>: '' }
                 </div>
+
+                <div className={'bodyContent'} dangerouslySetInnerHTML={{__html: article ? article.articleContent : null }} className={'content'} />
+                
             </div>
           </div>
           
