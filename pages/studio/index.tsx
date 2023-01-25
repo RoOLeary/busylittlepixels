@@ -103,7 +103,7 @@ const Studio = () => {
                 </div>
             </section>
             
-            <section className="px-6 md:py-32 bg-white pb-0 md:pb-0">
+            <section className="px-6 md:py-20 bg-white pb-0 md:pb-0">
                 <div className="container pt-20 mx-auto w-full max-w-7xl md:px-8">
                     <div className="flex flex-wrap w-full mb-20">
                     <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
