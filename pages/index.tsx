@@ -14,7 +14,7 @@ import ProjectSlider from "../components/ProjectSlider";
 import { Video } from "../components/Video";
 import imageLoader from '../imageLoader';
 import { TitleContainer } from '../components/TitleContainer';
-import { GetStaticProps } from 'next'
+import { GetStaticProps, GetServerSideProps } from 'next'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -233,8 +233,8 @@ const Home = ({ page, preview }:any) => {
 
 export default Home;
 
-export const getStaticProps: GetStaticProps = async ({ preview = false, previewData }) => {
-
+// export const getStaticProps: GetStaticProps = async ({ preview = false, previewData }) => {
+export const getServerSideProps: GetServerSideProps = async ({ preview = false, previewData }) => {
   
   const res = await fetch('https://craft-ezhk.frb.io/api/homepage.json');
   let entry = await res.json();
@@ -252,7 +252,6 @@ export const getStaticProps: GetStaticProps = async ({ preview = false, previewD
     props: {
         preview: preview ? true : false,
         page: page
-      },
-    revalidate: 10
+      }
   }
 }
