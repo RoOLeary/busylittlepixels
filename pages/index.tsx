@@ -167,5 +167,6 @@ export const getStaticProps = async ({ preview = false, previewData }:any) => {
           preview: preview ? true : false,
           page: data
       },
+      revalidate: 30
     };
 }
