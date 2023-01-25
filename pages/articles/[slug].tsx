@@ -13,8 +13,8 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const Article = ({ page, preview }:any) => {
-    console.log(page);
+const Article = ({ article, preview }:any) => {
+    // console.log(article.articleType.value);
     // let bodyContent = Object.entries(article.data.article_body).map((p, i) => {
     //   let idx:number = 1; // console.log(p[1].text)
     //   return p[idx].text
@@ -25,10 +25,11 @@ const Article = ({ page, preview }:any) => {
     return(
 
         <Layout>
+          {preview ? <div className={'text-center uppercase bg-red-500 text-white py-6 fixed bottom-0 w-full z-10'}><h3>You are in Preview Mode</h3></div> : null} 
           <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white pb-0 md:pb-0">
           <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6">
             <div className="max-full text-center leading-relaxed mb-2">
-              <h1 className="composedHeading">{page ? page.articleTitle : ''}</h1>
+              <h1 className="composedHeading">{article ? article.articleTitle : ''}</h1>
             </div>
             <div className="max-full text-center leading-relaxed mb-8">
               <p className="font-semibold tracking-tighter">By <a href="#">Ronan O'Leary</a> | Category: Tech, CMS | Published: </p>
@@ -40,13 +41,13 @@ const Article = ({ page, preview }:any) => {
             className="w-full mb-2"
           >
               {/* <Video /> */}
-              <Image alt={'holding'} src={'../assets/img/dodge.jpeg'} width={1200} height={500} loader={imageLoader} className="shadow-xl" />
+              {article.articleType.value == "text" ? <Image alt={'holding'} src={'../assets/img/dodge.jpeg'} width={1200} height={500} loader={imageLoader} className="shadow-xl" /> : <Video />}
           </motion.div>       
           <div className="py-8 flex flex-col md:flex-row">
           
             <div className="mx-auto w-full max-w-3xl">
                 <div className="leading-relaxed">
-                  {page ? <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt">{page.articleExcerpt.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "")}</p>: '' }
+                  {article ? <p className="mb-3 text-sm font-normal text-gray-500 allArticles_excerpt">{article.articleExcerpt.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "")}</p>: '' }
                 </div>
             </div>
           </div>
@@ -161,7 +162,7 @@ export const getStaticProps = async ({ params, preview = false, previewData }:an
   let url = `https://craft-ezhk.frb.io/api/articles/${params.slug}.json`;
   
   const res = await fetch(url)
-  const page = await res.json()
+  const article = await res.json()
   let prevData; 
 
   if(preview){
@@ -171,12 +172,12 @@ export const getStaticProps = async ({ params, preview = false, previewData }:an
       
   } 
 
-  let data = preview ? prevData : page;
+  let data = preview ? prevData : article;
 
   return {
       props: {
           preview: preview ? true : false,
-          page: data
+          article: data
       },
       revalidate: 10, // In seconds
     };

@@ -233,26 +233,26 @@ const Home = ({ page, preview }:any) => {
 
 export default Home;
 
-export const getStaticProps: GetStaticProps = async ({ preview = false, previewData }) => {
-// export const getServerSideProps: GetServerSideProps = async ({ preview = false, previewData }) => {
+export const getStaticProps: GetStaticProps = async ({ preview = false, previewData }:any) => {
   
-  const res = await fetch('https://craft-ezhk.frb.io/api/homepage.json');
-  let entry = await res.json();
-
+  let url = `https://craft-ezhk.frb.io/api/homepage.json`;
+  
+  const res = await fetch(url)
+  const page = await res.json()
   let prevData;
-  if(preview){
-    // @ts-ignore
-    const prevResponse = await fetch(`https://craft-ezhk.frb.io/api/homepage.json?token=${previewData["token"]}`);
-    prevData = await prevResponse.json()
-    
+
+  if(preview && previewData){
+      const prevResponse = await fetch(`https://craft-ezhk.frb.io/api/homepage.json?token=${previewData['token']}`);
+      prevData = await prevResponse.json(); 
   } 
-  let page = preview ? prevData : entry;
-  
+
+  let data = preview ? previewData : page;
+
   return {
-    props: {
-        preview: preview ? true : false,
-        page: page
+      props: {
+          preview: preview ? true : false,
+          page: data
       },
-    revalidate: 10
-  }
+      revalidate: 10, // In seconds
+    };
 }
