@@ -7,20 +7,8 @@ import NProgress from 'nprogress';
 import Router from 'next/router'
 import Link from "next/link";
 import { DefaultSeo } from 'next-seo';
-
 import '../styles/globals.css'
-
-
 declare const window: any
-// @ts-ignore
-const NextLinkShim = ({ href, children, ...props }:any) => {
-  return (
-    <Link href={href}>
-      <a {...props}>{children}</a>
-    </Link>
-  );
-};
-
 
 // @ts-ignore
 export default function App({ Component, pageProps }) {
