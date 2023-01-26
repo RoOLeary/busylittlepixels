@@ -194,8 +194,7 @@ const Studio = () => {
                 </div>
             </section>
             
-            <CarouselContainer title={'Let this one slide'} />
-        
+            
             <section className="boundedContainer px-3 md:px-6 py-20 md:py-32 mx-auto w-full max-w-7xl">
             <div className="relative overflow-hidden bg-white">
                 <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
