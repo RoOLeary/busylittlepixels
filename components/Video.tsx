@@ -1,10 +1,11 @@
 
 
 interface IVideo {
+    videoTitle?:string,
     videoEmbedCode?: string,
 }
 
-export const Video = ({ videoEmbedCode }: IVideo ) => {
+export const Video = ({ videoTitle, videoEmbedCode }: IVideo ) => {
 
     return(
         <section className="mx-auto flex items-center">
