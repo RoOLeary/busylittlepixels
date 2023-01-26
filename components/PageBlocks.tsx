@@ -3,9 +3,12 @@ import React, { Children, PropsWithChildren } from 'react';
 // import {Hero} from './Hero';
 // import {TitleContainer} from './TitleContainer';
 // import {TextVisual} from './TextVisual';
-// import {Slider} from './Slider';
+import { ProjectSlider } from './ProjectSlider';
+import { CarouselContainer } from "../components/Carousel";
+import { GalleryGrid } from "../components/GalleryGrid";
+import { Expertise } from '../components/Expertise';
 import { Faqs } from './Faq/Faqs';
-// import { Video } from './Video';
+import { Video } from './Video';
 // import { Signup } from './Signup';
 // import IBlocks from './../interfaces/IBlocks'
 
@@ -27,16 +30,18 @@ function renderContent(content: IBlocks[]) {
             //     return <Hero key={block[1]['uid']} eyebrow={blockContent['eyebrow']} heading={blockContent['heading']} subHeading={blockContent['subHeading']} />;
             // case 'text':
             //     return <Text key={block[1]['uid']} heading={blockContent['heading']} column1={blockContent['column1']} column2={blockContent['column2']}/>;
-            // case 'textVisual':
-            //     return (
-            //         <TextVisual 
-            //             key={block[1]['uid']}
-            //             textVisualHeading={blockContent['textVisualHeading']}
-            //             textVisualContent={blockContent['textVisualContent']}
-            //             textVisualImage={blockContent['textVisualImage']} />
-            //     );
-            // case 'imageSlider':
-            //     return <Slider key={block[1]['uid']} sliderTitle={blockContent['sliderTitle']} sliderMatrix={blockContent['sliderMatrix']} />;
+            case 'gallerygrid':
+                return (
+                    <GalleryGrid 
+                        key={block[1]['uid']}
+                        title={blockContent['galleryGridTitle']}
+                        gallery={blockContent['gallery']}
+                     />
+                );
+            case 'imageSlider':
+                return <ProjectSlider key={block[1]['uid']} sliderTitle={blockContent['sliderTitle']} sliderStage={blockContent['sliderStage']} />;
+            case 'expertise':
+                return <Expertise key={block[1]['uid']}  />;
             // case 'faq':
             //     return <Faq key={block[1]['uid']} content={blockContent} />;
             // case 'video':
@@ -83,8 +88,8 @@ function renderContent(content: IBlocks[]) {
                 //         image2={blockContent['image2']}
                 //     />
                 // ); 
-            // case 'tickets':
-            //     return <Tickets key={block[1]['uid']} content={blockContent} />
+            case 'carousel':
+                return <CarouselContainer key={block[1]['uid']} title={blockContent['carouselTitle']} items={blockContent['carouselItems']}/>
             default:
                 return (
                     <>

@@ -10,16 +10,19 @@ import { Bounded } from "../components/Bounded";
 import { GalleryGrid } from "../components/GalleryGrid";
 import CarouselContainer from "../components/Carousel";
 import { CTA } from "../components/CallToAction"
-import ProjectSlider from "../components/ProjectSlider";
+// import { ProjectSlider } from "../components/ProjectSlider";
 import { Video } from "../components/Video";
 import imageLoader from '../imageLoader';
 import { TitleContainer } from '../components/TitleContainer';
+
+import PageBlocks from "../components/PageBlocks";
 import { GetStaticProps, GetServerSideProps } from 'next'
 
 const inter = Inter({ subsets: ['latin'] })
 
 const Home = ({ page, preview }:any) => {
 
+  console.log(page);
   let title = page ? page.data[0].homeTitle : null;
   let subtitle = page ? page.data[0].homeSubTitle : null;
 
@@ -29,9 +32,8 @@ const Home = ({ page, preview }:any) => {
      <Layout>
       {preview ? <div className={'text-center uppercase bg-red-500 text-white py-6 fixed bottom-0 w-full z-10'}><h3>You are in Preview Mode</h3></div> : null}     
       <TitleContainer title={title} subtitle={subtitle} />
-      <GalleryGrid />
-      <ProjectSlider />
-      <div className="container pt-20 mx-auto w-full max-w-7xl px-3 md:px-8 bg-white">
+      <PageBlocks content={page['data'][0]['pageBlocks']} />
+      {/* <div className="container pt-20 mx-auto w-full max-w-7xl px-3 md:px-8 bg-white">
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 py-24 px-4 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
           <div>
             <h2 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">Technical <span style={{ "color": "red"}}>Expertise</span></h2>
@@ -126,11 +128,7 @@ const Home = ({ page, preview }:any) => {
             </div>
           </div>
         </div>
-      </section>
-
-      <br className={`h-40`} />
-      <CarouselContainer title={page ? page.data[0].homeSliderTitle : null}/> 
-      
+      </section> */}
 
       <Bounded collapsible={false} as="section" className="bg-slate-100">
         <div className="grid grid-cols-1 items-end gap-10 md:grid-cols-1 md:gap-10 lg:gap-28">

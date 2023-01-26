@@ -27,63 +27,25 @@ const responsive = {
   }
 };
 
-const CarouselContainer = ({ title }) => {
+export const CarouselContainer = ({ title, items }) => {
   
-    const items = [
-        {
-          carousel_image_url: 'https://placedog.net/450/300/r',
-          carousel_title: 'One',
-          job: 'Tinker'
-        },
-        {
-          carousel_image_url: 'https://placedog.net/450/300/r',
-          carousel_title: 'Two',
-          job: 'Tailor'
-        },
-        {
-          carousel_image_url: 'https://placedog.net/450/300/r',
-          carousel_title: 'Three',
-          job: 'Coder'
-        },
-        {
-          carousel_image_url: 'https://placedog.net/450/300/r',
-          carousel_title: 'Four',
-          job: 'Spy'
-        },
-        {
-          carousel_image_url: 'https://placedog.net/450/300/r',
-          carousel_title: 'Two',
-          job: 'Tailor'
-        },
-        {
-          carousel_image_url: 'https://placedog.net/450/300/r',
-          carousel_title: 'Three',
-          job: 'Coder'
-        },
-        {
-          carousel_image_url: 'https://placedog.net/450/300/r',
-          carousel_title: 'Four',
-          job: 'Spy'
-        }
-      ]
-
+  
+  
+  const carouselPanels = items ? items.map((item, index) => {
+    return (
+        <div className={'mr-2'} key={index}>
+          <Image src={item.carouselImageUrl} height={300} width={450} loader={imageLoader} alt={item.carouselTitle} />
+        </div>
+      )
+  }) : null;
 
   return(
     <>
-    <h2 className="px-6 md:px-0 mt-8 mb-12 text-2xl font-black leading-tight text-gray-900 md:border-b border-gray-200 md:text-4xl uppercase mx-auto w-full max-w-6xl pb-2">We'll <span className="rd_txt">{title}</span></h2>  
+    <h2 className="px-6 md:px-0 mt-8 mb-12 text-2xl font-black leading-tight text-gray-900 md:border-b border-gray-200 md:text-4xl uppercase mx-auto w-full max-w-6xl pb-2">We'll <span className="rd_txt">{title ? title : 'SLides'}</span></h2>  
     <section className="bg-white mb-2 carouselLeft">
       <Carousel showDots={false} responsive={responsive}> 
-        {/* <div>
-          <GalleryGrid />
-        </div>
-        <div>
-          <Video />
-        </div> */}
-        {
-          items.map((item, index) => {
-            return <div className={'mr-2'} key={index}><Image src={item.carousel_image_url} height={300} width={450} loader={imageLoader} alt={`Carousel Image number #${index}`} /></div>
-          })
-        }
+        {carouselPanels}
+        <div></div>
       </Carousel>
     </section>
     </>

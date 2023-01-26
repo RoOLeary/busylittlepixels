@@ -9,36 +9,10 @@ let initialState = {
     defaultActive: 1,
 }
 
-export default function ProjectSlider() {
+export const ProjectSlider = ({ sliderTitle, sliderStage }:any) => {
 
-    const sliderMatrix = [
-        {
-            "textSub": "One",
-            "textHeading": "One",
-            "textContent": "Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical Character Recognition) and Machine Learning, RPA bots are capable of extracting these data",
-            "textBackground": "One",
-            "slideImage": "https://source.unsplash.com/500x750/?ai,tech",
-            "sliderColor": "blue"
-        },
-        {
-            "textSub": "Two",
-            "textHeading": "Two",
-            "textContent": "Earlier RPA ballbags used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical Character Recognition) and Machine Learning, RPA bots are capable of extracting these data",
-            "textBackground": "Two",
-            "slideImage": "https://source.unsplash.com/500x750/?code",
-            "sliderColor": "red"
-        },
-        {
-            "textSub": "Three",
-            "textHeading": "Three",
-            "textContent": "Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical Character Recognition) and Machine Learning, RPA bots are capable of extracting these data",
-            "textBackground": "Three",
-            "slideImage": "https://source.unsplash.com/500x750/?code",
-            "sliderColor": "yellow"
-        }
-    ]
     
-    const length = sliderMatrix.length;
+    const length = sliderStage.length;
     const elementRef = useRef<HTMLDivElement>(null);
     const divElement: any = elementRef.current;
 
@@ -118,14 +92,14 @@ export default function ProjectSlider() {
     }, [activeSlide, isAutoPlay, transitionSlide, length]);
 
     return(
-        
 
         <>
             <div className="slider__wrapper hidden md:block" ref={elementRef}>
-                {sliderMatrix.map((sl, i) => {
+                
+                {sliderStage.map((sl: { slideColor: string; textSub: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; textHeading: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; textContent: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; textBackground: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; slideImage: string | undefined; }, i: number) => {
                     const current = ++i;
                     return(
-                        <div key={++i} className={`flex__container flex--${sl.sliderColor.replace(/\s/g, '')} ${activeSlide == current ? `flex--active` : 'animate--start' }`} data-slide={current}>
+                        <div key={++i} className={`flex__container flex--${sl.slideColor.replace(/\s/g, '')} ${activeSlide == current ? `flex--active` : 'animate--start' }`} data-slide={current}>
                             <div className="flex__item flex__item--left">
                             <div className="flex__content">
                                 <p className="text--sub">{sl.textSub}</p>
@@ -141,7 +115,7 @@ export default function ProjectSlider() {
                 })}
                 
                 <div className="slider__navi">
-                    {sliderMatrix.map((sl, i) => {
+                    {sliderStage.map((sl: { slideColor: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; }, i: number) => {
                         const current = ++i;
                         return(
                             // @ts-ignore
