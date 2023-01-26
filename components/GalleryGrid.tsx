@@ -196,16 +196,16 @@ const tagItem = (): CSSProperties => ({
   borderRadius: ".25em",
 });
 
-export const GalleryGrid = ({ title, gallery }:any) => {
+// @ts-ignore
+export const GalleryGrid = ({ gallery }) => {
 
-  console.log(gallery);
   const [index, setIndex] = useState(-1);
 
-  const currentImage = gallery && gallery[index];
-  const nextIndex = (index + 1) % gallery && gallery.length;
-  const nextImage = gallery && gallery[nextIndex] || currentImage;
-  const prevIndex = (index + gallery && gallery.length - 1) % gallery && gallery.length;
-  const prevImage = gallery && gallery[prevIndex] || currentImage;
+  const currentImage = gallery[index];
+  const nextIndex = (index + 1) % gallery.length;
+  const nextImage = gallery[nextIndex] || currentImage;
+  const prevIndex = (index + gallery.length - 1) % gallery.length;
+  const prevImage = gallery[prevIndex] || currentImage;
 
   const handleClick = (index: number, item: CustomImage) => setIndex(index);
   const handleClose = () => setIndex(-1);

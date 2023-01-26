@@ -34,7 +34,6 @@ function renderContent(content: IBlocks[]) {
                 return (
                     <GalleryGrid 
                         key={block[1]['uid']}
-                        title={blockContent['galleryGridTitle']}
                         gallery={blockContent['gallery']}
                      />
                 );

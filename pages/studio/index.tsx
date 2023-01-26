@@ -7,7 +7,6 @@ import styles from '../styles/Home.module.css'
 import { useRouter } from 'next/router';
 import { Layout } from '../../components/Layout';
 import { Bounded } from "../../components/Bounded";
-import { GalleryGrid } from "../../components/GalleryGrid";
 import CarouselContainer from "../../components/Carousel";
 import { CTA } from "../../components/CallToAction";
 import imageLoader from '../../imageLoader';
@@ -83,7 +82,7 @@ const Studio = () => {
                 </div>
                 </motion.div>   
             </section>
-            <GalleryGrid />
+
             <span id={"moreinfo"} className={'mt-8'}></span>
             <section className="px-6 md:py-32 bg-white pb-0 md:pb-0">
                 <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6">
