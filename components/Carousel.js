@@ -45,7 +45,6 @@ export const CarouselContainer = ({ title, items }) => {
     <section className="bg-white mb-2 carouselLeft">
       <Carousel showDots={false} responsive={responsive}> 
         {carouselPanels}
-        <div></div>
       </Carousel>
     </section>
     </>
