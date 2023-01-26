@@ -8,7 +8,7 @@ import { CarouselContainer } from "../components/Carousel";
 import { GalleryGrid } from "../components/GalleryGrid";
 import { Expertise } from '../components/Expertise';
 import { Faqs } from './Faq/Faqs';
-import { Video } from './Video';
+import { VideoComponent } from './VideoComponent';
 // import { Signup } from './Signup';
 // import IBlocks from './../interfaces/IBlocks'
 
@@ -23,13 +23,6 @@ function renderContent(content: IBlocks[]) {
         const blockContent = block[1];
 
         switch (blockContent['blockType']) {
-            // case 'header':
-                
-            //     return <Header key={block[1]['uid']} headline={blockContent['headline']} />;
-            // case 'hero':
-            //     return <Hero key={block[1]['uid']} eyebrow={blockContent['eyebrow']} heading={blockContent['heading']} subHeading={blockContent['subHeading']} />;
-            // case 'text':
-            //     return <Text key={block[1]['uid']} heading={blockContent['heading']} column1={blockContent['column1']} column2={blockContent['column2']}/>;
             case 'gallerygrid':
                 return (
                     <GalleryGrid 
@@ -41,48 +34,13 @@ function renderContent(content: IBlocks[]) {
                 return <ProjectSlider key={block[1]['uid']} sliderTitle={blockContent['sliderTitle']} sliderStage={blockContent['sliderStage']} />;
             case 'expertise':
                 return <Expertise key={block[1]['uid']}  />;
-            // case 'faq':
-            //     return <Faq key={block[1]['uid']} content={blockContent} />;
             case 'video':
-                return (<Video 
+                return (<VideoComponent 
                     key={block[1]['uid']} 
                     videoTitle={blockContent['videoTitle']}
                     videoEmbedCode={blockContent['videoEmbedCode']} 
                 />
                 );
-            // case 'speakers':
-            //     return (
-            //         <Speakers 
-            //             key={block[1]['uid']} 
-            //             heading={blockContent['heading']} 
-            //             speakersIntro={blockContent['speakersIntro']} 
-            //             speakers={blockContent['speakers']} 
-            //         />
-            //     );
-            // case 'signup':
-            //     return (
-            //         <Signup 
-            //             key={block[1]['uid']}
-            //             signupHeading={blockContent['signupHeading']} 
-            //             signupText={blockContent['signupText']} 
-            //             hubspotEmbed={blockContent['hubspotEmbed']} 
-            //         />
-            //     );
-            // case 'blocks':
-                // return (
-                //     <Blocks 
-                //         key={block[1]['uid']} 
-                //         // uid={blockContent['uid']} 
-                //         text1={blockContent['text1']}
-                //         text2={blockContent['text2']}
-                //         heading1={blockContent['heading1']}
-                //         heading2={blockContent['heading2']}
-                //         ctas1={blockContent['ctas1']}
-                //         ctas2={blockContent['ctas2']}
-                //         image1={blockContent['image1']}
-                //         image2={blockContent['image2']}
-                //     />
-                // ); 
             case 'carousel':
                 return <CarouselContainer key={block[1]['uid']} title={blockContent['carouselTitle']} items={blockContent['carouselItems']}/>
             default:

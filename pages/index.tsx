@@ -84,8 +84,8 @@ const Home = ({ page, preview }:any) => {
         </div>
       </section> */}
 
-      <Advert />
-      <CTA />
+      {/* <Advert />
+      <CTA /> */}
     </Layout>
     </>
   )
