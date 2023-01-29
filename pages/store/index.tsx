@@ -188,32 +188,32 @@ const Store: NextPage = () => {
                 <div className="space-y-6">
                   <div className="flex items-center">
                     <input id="filter-mobile-color-0" name="color[]" value="white" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-mobile-color-0" className="ml-3 min-w-0 flex-1 text-gray-500">White</label>
+                    <label htmlFor="filter-mobile-color-0" className="ml-3 min-w-0 flex-1 text-gray-500">White</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-mobile-color-1" name="color[]" value="beige" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-mobile-color-1" className="ml-3 min-w-0 flex-1 text-gray-500">Beige</label>
+                    <label htmlFor="filter-mobile-color-1" className="ml-3 min-w-0 flex-1 text-gray-500">Beige</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-mobile-color-2" name="color[]" value="blue" type="checkbox" checked className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-mobile-color-2" className="ml-3 min-w-0 flex-1 text-gray-500">Blue</label>
+                    <label htmlFor="filter-mobile-color-2" className="ml-3 min-w-0 flex-1 text-gray-500">Blue</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-mobile-color-3" name="color[]" value="brown" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-mobile-color-3" className="ml-3 min-w-0 flex-1 text-gray-500">Brown</label>
+                    <label htmlFor="filter-mobile-color-3" className="ml-3 min-w-0 flex-1 text-gray-500">Brown</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-mobile-color-4" name="color[]" value="green" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-mobile-color-4" className="ml-3 min-w-0 flex-1 text-gray-500">Green</label>
+                    <label htmlFor="filter-mobile-color-4" className="ml-3 min-w-0 flex-1 text-gray-500">Green</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-mobile-color-5" name="color[]" value="purple" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-mobile-color-5" className="ml-3 min-w-0 flex-1 text-gray-500">Purple</label>
+                    <label htmlFor="filter-mobile-color-5" className="ml-3 min-w-0 flex-1 text-gray-500">Purple</label>
                   </div>
                 </div>
               </div>
@@ -241,27 +241,27 @@ const Store: NextPage = () => {
                 <div className="space-y-6">
                   <div className="flex items-center">
                     <input id="filter-mobile-category-0" name="category[]" value="new-arrivals" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-mobile-category-0" className="ml-3 min-w-0 flex-1 text-gray-500">New Arrivals</label>
+                    <label htmlFor="filter-mobile-category-0" className="ml-3 min-w-0 flex-1 text-gray-500">New Arrivals</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-mobile-category-1" name="category[]" value="sale" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-mobile-category-1" className="ml-3 min-w-0 flex-1 text-gray-500">Sale</label>
+                    <label htmlFor="filter-mobile-category-1" className="ml-3 min-w-0 flex-1 text-gray-500">Sale</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-mobile-category-2" name="category[]" value="travel" type="checkbox" checked className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-mobile-category-2" className="ml-3 min-w-0 flex-1 text-gray-500">Travel</label>
+                    <label htmlFor="filter-mobile-category-2" className="ml-3 min-w-0 flex-1 text-gray-500">Travel</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-mobile-category-3" name="category[]" value="organization" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-mobile-category-3" className="ml-3 min-w-0 flex-1 text-gray-500">Organization</label>
+                    <label htmlFor="filter-mobile-category-3" className="ml-3 min-w-0 flex-1 text-gray-500">Organization</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-mobile-category-4" name="category[]" value="accessories" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-mobile-category-4" className="ml-3 min-w-0 flex-1 text-gray-500">Accessories</label>
+                    <label htmlFor="filter-mobile-category-4" className="ml-3 min-w-0 flex-1 text-gray-500">Accessories</label>
                   </div>
                 </div>
               </div>
@@ -289,32 +289,32 @@ const Store: NextPage = () => {
                 <div className="space-y-6">
                   <div className="flex items-center">
                     <input id="filter-mobile-size-0" name="size[]" value="2l" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-mobile-size-0" className="ml-3 min-w-0 flex-1 text-gray-500">2L</label>
+                    <label htmlFor="filter-mobile-size-0" className="ml-3 min-w-0 flex-1 text-gray-500">2L</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-mobile-size-1" name="size[]" value="6l" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-mobile-size-1" className="ml-3 min-w-0 flex-1 text-gray-500">6L</label>
+                    <label htmlFor="filter-mobile-size-1" className="ml-3 min-w-0 flex-1 text-gray-500">6L</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-mobile-size-2" name="size[]" value="12l" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-mobile-size-2" className="ml-3 min-w-0 flex-1 text-gray-500">12L</label>
+                    <label htmlFor="filter-mobile-size-2" className="ml-3 min-w-0 flex-1 text-gray-500">12L</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-mobile-size-3" name="size[]" value="18l" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-mobile-size-3" className="ml-3 min-w-0 flex-1 text-gray-500">18L</label>
+                    <label htmlFor="filter-mobile-size-3" className="ml-3 min-w-0 flex-1 text-gray-500">18L</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-mobile-size-4" name="size[]" value="20l" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-mobile-size-4" className="ml-3 min-w-0 flex-1 text-gray-500">20L</label>
+                    <label htmlFor="filter-mobile-size-4" className="ml-3 min-w-0 flex-1 text-gray-500">20L</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-mobile-size-5" name="size[]" value="40l" type="checkbox" checked className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-mobile-size-5" className="ml-3 min-w-0 flex-1 text-gray-500">40L</label>
+                    <label htmlFor="filter-mobile-size-5" className="ml-3 min-w-0 flex-1 text-gray-500">40L</label>
                   </div>
                 </div>
               </div>
@@ -338,22 +338,6 @@ const Store: NextPage = () => {
                   <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
                 </svg>
               </button>
-            </div>
-
-           
-            <div className="absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md bg-white shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-              <div className="py-1" role="none">
-                
-                <a href="#" className="font-medium text-gray-900 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Most Popular</a>
-
-                <a href="#" className="text-gray-500 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Best Rating</a>
-
-                <a href="#" className="text-gray-500 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Newest</a>
-
-                <a href="#" className="text-gray-500 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Price: Low to High</a>
-
-                <a href="#" className="text-gray-500 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-4">Price: High to Low</a>
-              </div>
             </div>
           </div>
 
@@ -425,32 +409,32 @@ const Store: NextPage = () => {
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <input id="filter-color-0" name="color[]" value="white" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-color-0" className="ml-3 text-sm text-gray-600">White</label>
+                    <label htmlFor="filter-color-0" className="ml-3 text-sm text-gray-600">White</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-color-1" name="color[]" value="beige" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-color-1" className="ml-3 text-sm text-gray-600">Beige</label>
+                    <label htmlFor="filter-color-1" className="ml-3 text-sm text-gray-600">Beige</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-color-2" name="color[]" value="blue" type="checkbox" checked className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-color-2" className="ml-3 text-sm text-gray-600">Blue</label>
+                    <label htmlFor="filter-color-2" className="ml-3 text-sm text-gray-600">Blue</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-color-3" name="color[]" value="brown" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-color-3" className="ml-3 text-sm text-gray-600">Brown</label>
+                    <label htmlFor="filter-color-3" className="ml-3 text-sm text-gray-600">Brown</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-color-4" name="color[]" value="green" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-color-4" className="ml-3 text-sm text-gray-600">Green</label>
+                    <label htmlFor="filter-color-4" className="ml-3 text-sm text-gray-600">Green</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-color-5" name="color[]" value="purple" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-color-5" className="ml-3 text-sm text-gray-600">Purple</label>
+                    <label htmlFor="filter-color-5" className="ml-3 text-sm text-gray-600">Purple</label>
                   </div>
                 </div>
               </div>
@@ -478,27 +462,27 @@ const Store: NextPage = () => {
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <input id="filter-category-0" name="category[]" value="new-arrivals" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-category-0" className="ml-3 text-sm text-gray-600">New Arrivals</label>
+                    <label htmlFor="filter-category-0" className="ml-3 text-sm text-gray-600">New Arrivals</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-category-1" name="category[]" value="sale" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-category-1" className="ml-3 text-sm text-gray-600">Sale</label>
+                    <label htmlFor="filter-category-1" className="ml-3 text-sm text-gray-600">Sale</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-category-2" name="category[]" value="travel" type="checkbox" checked className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-category-2" className="ml-3 text-sm text-gray-600">Travel</label>
+                    <label htmlFor="filter-category-2" className="ml-3 text-sm text-gray-600">Travel</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-category-3" name="category[]" value="organization" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-category-3" className="ml-3 text-sm text-gray-600">Organization</label>
+                    <label htmlFor="filter-category-3" className="ml-3 text-sm text-gray-600">Organization</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-category-4" name="category[]" value="accessories" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-category-4" className="ml-3 text-sm text-gray-600">Accessories</label>
+                    <label htmlFor="filter-category-4" className="ml-3 text-sm text-gray-600">Accessories</label>
                   </div>
                 </div>
               </div>
@@ -525,32 +509,32 @@ const Store: NextPage = () => {
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <input id="filter-size-0" name="size[]" value="2l" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-size-0" className="ml-3 text-sm text-gray-600">2L</label>
+                    <label htmlFor="filter-size-0" className="ml-3 text-sm text-gray-600">2L</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-size-1" name="size[]" value="6l" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-size-1" className="ml-3 text-sm text-gray-600">6L</label>
+                    <label htmlFor="filter-size-1" className="ml-3 text-sm text-gray-600">6L</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-size-2" name="size[]" value="12l" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-size-2" className="ml-3 text-sm text-gray-600">12L</label>
+                    <label htmlFor="filter-size-2" className="ml-3 text-sm text-gray-600">12L</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-size-3" name="size[]" value="18l" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-size-3" className="ml-3 text-sm text-gray-600">18L</label>
+                    <label htmlFor="filter-size-3" className="ml-3 text-sm text-gray-600">18L</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-size-4" name="size[]" value="20l" type="checkbox" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-size-4" className="ml-3 text-sm text-gray-600">20L</label>
+                    <label htmlFor="filter-size-4" className="ml-3 text-sm text-gray-600">20L</label>
                   </div>
 
                   <div className="flex items-center">
                     <input id="filter-size-5" name="size[]" value="40l" type="checkbox" checked className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label for="filter-size-5" className="ml-3 text-sm text-gray-600">40L</label>
+                    <label htmlFor="filter-size-5" className="ml-3 text-sm text-gray-600">40L</label>
                   </div>
                 </div>
               </div>
