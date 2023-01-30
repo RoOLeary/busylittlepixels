@@ -105,42 +105,42 @@ const Studio = () => {
             <section className="px-6 md:py-20 bg-white pb-0 md:pb-0">
                 <div className="container pt-20 mx-auto w-full max-w-7xl md:px-8">
                     <div className="flex flex-wrap w-full mb-20">
-                    <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-                        <h1 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">Industry <span style={{ "color": "red"}}>Experience</span></h1>
-                        <div className="header__underline"></div>
-                    </div>
-                    <p className="lg:w-1/2 w-full leading-relaxed md:px-2 studio_intro">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+                        <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
+                            <h1 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">Industry <span style={{ "color": "red"}}>Experience</span></h1>
+                            <div className="header__underline"></div>
+                        </div>
+                        <p className="lg:w-1/2 w-full leading-relaxed md:px-2 studio_intro">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
                     </div>
                     <div className="flex flex-wrap -m-4">
                     <div className="xl:w-1/4 md:w-1/2 p-2">
                         <div className="bg-gray-100 p-6 rounded-lg">
-                        <h3 className="tracking-widest text-red-500 text-xs font-bold title-font">SUBTITLE</h3>
-                        <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Media</h2>
-                        <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                            <h3 className="tracking-widest text-red-500 text-xs font-bold title-font">SUBTITLE</h3>
+                            <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Media</h2>
+                            <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
                         </div>
                     </div>
                     <div className="xl:w-1/4 md:w-1/2 p-2">
                         <div className="bg-gray-100 p-6 rounded-lg">
-                        {/* <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401" alt="content" /> */}
-                        <h3 className="tracking-widest text-red-500 text-xs font-bold title-font">SUBTITLE</h3>
-                        <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Events</h2>
-                        <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                            {/* <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401" alt="content" /> */}
+                            <h3 className="tracking-widest text-red-500 text-xs font-bold title-font">SUBTITLE</h3>
+                            <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Events</h2>
+                            <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
                         </div>
                     </div>
                     <div className="xl:w-1/4 md:w-1/2 p-2">
                         <div className="bg-gray-100 p-6 rounded-lg">
-                        {/* <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402" alt="content" /> */}
-                        <h3 className="tracking-widest text-red-500 text-xs font-bold title-font">SUBTITLE</h3>
-                        <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Headless CMS Development</h2>
-                        <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                            {/* <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402" alt="content" /> */}
+                            <h3 className="tracking-widest text-red-500 text-xs font-bold title-font">SUBTITLE</h3>
+                            <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Headless CMS Development</h2>
+                            <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
                         </div>
                     </div>
                     <div className="xl:w-1/4 md:w-1/2 p-2">
                         <div className="bg-gray-100 p-6 rounded-lg">
-                        {/* <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content" /> */}
-                        <h3 className="tracking-widest text-red-500 text-xs font-bold title-font">SUBTITLE</h3>
-                        <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Scaling Consultancy</h2>
-                        <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                            {/* <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content" /> */}
+                            <h3 className="tracking-widest text-red-500 text-xs font-bold title-font">SUBTITLE</h3>
+                            <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Scaling Consultancy</h2>
+                            <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
                         </div>
                     </div>
                     </div>
@@ -195,56 +195,54 @@ const Studio = () => {
             
             
             <section className="boundedContainer px-3 md:px-6 py-20 md:py-32 mx-auto w-full max-w-7xl">
-            <div className="relative overflow-hidden bg-white">
-                <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
-                    <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
-                        <div className="sm:max-w-lg">
-                            <h1 className="font text-4xl font-black tracking-tight text-gray-900 sm:text-6xl">Engineering Solutions</h1>
-                            <p className="mt-4 text-xl text-bold00">Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                        </div>
-                        <div>
-                            <div className="mt-10">
-
-                                <div aria-hidden="true" className="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl">
-                                    <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
-                                        <div className="flex items-center space-x-6 lg:space-x-8">
-                                            <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                                                <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
-                                                    <img src="https://placedog.net/200/375/r" alt="" className="h-full w-full object-cover object-center" />
+                <div className="relative overflow-hidden bg-white">
+                    <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
+                        <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+                            <div className="sm:max-w-lg">
+                                <h1 className="font text-4xl font-black tracking-tight text-gray-900 sm:text-6xl">Engineering Elastic Solutions</h1>
+                                <p className="mt-4 text-xl text-bold00">Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
+                            </div>
+                            <div>
+                                <div className="mt-10">
+                                    <div aria-hidden="true" className="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl">
+                                        <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
+                                            <div className="flex items-center space-x-6 lg:space-x-8">
+                                                <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                                                    <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
+                                                        <img src="https://placedog.net/200/375/r" alt="" className="h-full w-full object-cover object-center" />
+                                                    </div>
+                                                    <div className="h-64 w-44 overflow-hidden rounded-lg">
+                                                        <img src="https://placedog.net/350/500/r" alt="" className="h-full w-full object-cover object-center" />
+                                                    </div>
                                                 </div>
-                                                <div className="h-64 w-44 overflow-hidden rounded-lg">
-                                                    <img src="https://placedog.net/350/500/r" alt="" className="h-full w-full object-cover object-center" />
+                                                <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                                                    <div className="h-64 w-44 overflow-hidden rounded-lg">
+                                                        <img src="https://placedog.net/200/375/r" alt="" className="h-full w-full object-cover object-center" />
+                                                    </div>
+                                                    <div className="h-64 w-44 overflow-hidden rounded-lg">
+                                                        <img src="https://placedog.net/352/512/r" alt="" className="h-full w-full object-cover object-center" />
+                                                    </div>
+                                                    <div className="h-64 w-44 overflow-hidden rounded-lg">
+                                                        <img src="https://placedog.net/200/375/r" alt="" className="h-full w-full object-cover object-center" />
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                                                <div className="h-64 w-44 overflow-hidden rounded-lg">
-                                                    <img src="https://placedog.net/200/375/r" alt="" className="h-full w-full object-cover object-center" />
-                                                </div>
-                                                <div className="h-64 w-44 overflow-hidden rounded-lg">
-                                                    <img src="https://placedog.net/352/512/r" alt="" className="h-full w-full object-cover object-center" />
-                                                </div>
-                                                <div className="h-64 w-44 overflow-hidden rounded-lg">
-                                                    <img src="https://placedog.net/200/375/r" alt="" className="h-full w-full object-cover object-center" />
-                                                </div>
-                                            </div>
-                                            <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                                                <div className="h-64 w-44 overflow-hidden rounded-lg">
-                                                    <img src="https://placedog.net/352/512/r" alt="" className="h-full w-full object-cover object-center" />
-                                                </div>
-                                                <div className="h-64 w-44 overflow-hidden rounded-lg">
-                                                    <img src="https://placedog.net/200/375/r" alt="" className="h-full w-full object-cover object-center" />
+                                                <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                                                    <div className="h-64 w-44 overflow-hidden rounded-lg">
+                                                        <img src="https://placedog.net/352/512/r" alt="" className="h-full w-full object-cover object-center" />
+                                                    </div>
+                                                    <div className="h-64 w-44 overflow-hidden rounded-lg">
+                                                        <img src="https://placedog.net/200/375/r" alt="" className="h-full w-full object-cover object-center" />
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <Link href="/contact" className="inline-block rounded-md border border-transparent bg-red-600 py-3 px-8 text-center font-medium text-white hover:bg-red-400">Get In Touch</Link>
                                 </div>
-
-                                <Link href="/contact" className="inline-block rounded-md border border-transparent bg-red-600 py-3 px-8 text-center font-medium text-white hover:bg-red-400">Get In Touch</Link>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
             </section>
             <Bounded collapsible={false} as="section" className="bg-slate-100 mt-8">
                 <div className="grid grid-cols-1 items-end gap-10 md:grid-cols-1 md:gap-10 lg:gap-28">
