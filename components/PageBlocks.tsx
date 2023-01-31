@@ -8,7 +8,7 @@ import { CarouselContainer } from "./Carousel";
 import { GalleryGrid } from "./GalleryGrid";
 import { Expertise } from './Expertise';
 import { Faqs } from './Faq/Faqs';
-import { Video } from './Video';
+import { Quote } from './Quote'; 
 import { TextBlock } from './TextBlock';
 import { VideoComponent } from './VideoComponent';
 // import { Signup } from './Signup';
@@ -54,6 +54,8 @@ function renderContent(content: IBlocks[]) {
                 );
             case 'carousel':
                 return <CarouselContainer key={block[1]['uid']} title={blockContent['carouselTitle']} items={blockContent['carouselItems']}/>
+            case 'quote':
+                return <Quote />    
             default:
                 return (
                     <>
