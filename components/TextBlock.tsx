@@ -13,7 +13,7 @@ export const TextBlock = ({ textTitle, textBoldTitle, textContent, displayBorder
     return(
         <Bounded collapsible={false} as="section" className="bg-white">
             <div className="relative overflow-hidden bg-white py-16">
-            <div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">
+            {/* <div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">
                 <div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
                 
                 <svg className="absolute top-1/2 right-full -translate-y-1/2 -translate-x-32 transform" width="404" height="384" fill="none" viewBox="0 0 404 384">
@@ -33,8 +33,8 @@ export const TextBlock = ({ textTitle, textBoldTitle, textContent, displayBorder
                     <rect width="400" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
                 </svg>
                 </div>
-            </div>
-            <section className="relative lg:px-8">
+            </div> */}
+            <div className="relative lg:px-8">
                 <div className="mx-auto max-w-prose text-lg">
                 <h1 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-6 last:mb-0 uppercase">
                     {textTitle} <span style={{ "color": "red"}}>{textBoldTitle}</span>
@@ -43,7 +43,7 @@ export const TextBlock = ({ textTitle, textBoldTitle, textContent, displayBorder
                 
                 </div>
                 
-            </section>
+            </div>
             </div>
         </Bounded>
 
