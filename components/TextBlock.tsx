@@ -39,7 +39,7 @@ export const TextBlock = ({ textTitle, textBoldTitle, textContent, displayBorder
                 <h1 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-6 last:mb-0 uppercase">
                     {textTitle ? textTitle : "TEXT COMP"}{textBoldTitle ? <span style={{ "color": "red"}}> {textBoldTitle}</span> : null}
                 </h1>
-                <div class="header__underline"></div>
+                <div className="header__underline"></div>
                 <p className="mt-8 text-xl leading-8 text-gray-500" dangerouslySetInnerHTML={{__html: textContent ? textContent.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "") : null}} />
                 </div>
                 
