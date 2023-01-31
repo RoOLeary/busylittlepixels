@@ -186,7 +186,7 @@ const Studio = ({ page, preview }:any) => {
             </section>
             
             
-            <section className="boundedContainer px-3 md:px-6 py-20 md:py-32 mx-auto w-full max-w-7xl">
+            {/* <section className="boundedContainer px-3 md:px-6 py-20 md:py-32 mx-auto w-full max-w-7xl">
                 <div className="relative overflow-hidden bg-white">
                     <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
                         <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
@@ -240,7 +240,7 @@ const Studio = ({ page, preview }:any) => {
                 <div className="grid grid-cols-1 items-end gap-10 md:grid-cols-1 md:gap-10 lg:gap-28">
                     <h1 className='text-center'>[ADVERTISEMENT]</h1>
                 </div>
-            </Bounded>
+            </Bounded> */}
             <CTA />
     </Layout>
     )

@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 
 interface IQuote {
     quoteBackgroundColor?: string,
