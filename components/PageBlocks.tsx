@@ -55,7 +55,17 @@ function renderContent(content: IBlocks[]) {
             case 'carousel':
                 return <CarouselContainer key={block[1]['uid']} title={blockContent['carouselTitle']} items={blockContent['carouselItems']}/>
             case 'quote':
-                return <Quote key={block[1]['uid']} />    
+                return (
+                    <Quote 
+                        key={block[1]['uid']}
+                        //@ts-ignore
+                        quoteBackgroundColor={blockContent['quoteBackgroundColor']}
+                        quoteTitle={blockContent['quoteTitle']}
+                        quoteImageUrl={blockContent['quoteImageUrl']}
+                        quoter={blockContent['quoter']}
+                        company={blockContent['company']}
+                    />
+                );    
             default:
                 return (
                     <>

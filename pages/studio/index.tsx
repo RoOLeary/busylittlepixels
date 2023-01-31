@@ -12,10 +12,14 @@ import { CTA } from "../../components/CallToAction";
 import imageLoader from '../../imageLoader';
 import { useTypingText } from '../../hooks/useTypingText';
 import { motion } from 'framer-motion';
+import { Key } from 'react'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
-const Studio = () => {
+const Studio = ({ page, preview }:any) => {
+
+    // console.log(page.data[0]);
     const router = useRouter(); 
     const { word } = useTypingText(['WEB, ', 'APPS, ', 'MEDIA, '], 250, 20);
 
@@ -70,10 +74,10 @@ const Studio = () => {
                     },
                 }}>
                     <h1 className="font-black tracking-tight text-2xl md:text-[3rem] mb-6 md:pb-8 last:mb-0 text-left md:text-center">busy<span style={{ "color": "red" }}>little</span>pixels<span style={{ "color": "red"}}>:</span><span style={{ "color": "red" }}>studio</span></h1>
-                    <h1 className="font-black tracking-tighter text-5xl md:text-[5rem] mb-6 last:mb-0 uppercase text-left md:text-center">building the future of <span style={{ "color": "red"}}>{word}</span> today. </h1>
+                    <h1 className="font-black tracking-tighter text-5xl md:text-[5rem] mb-6 last:mb-0 uppercase text-left md:text-center">{page.data[0].studioTitle} <span style={{ "color": "red"}}>{word}</span></h1>
                        
                 <p className="studio_intro">
-                    We are experienced and seasoned experts in the development and release of large scale, headless web, CMS and mobile applications. We build on and for the future. Utilising the latest in web and backend technologies, we create not only digital experiences, but powerful and engaging marketing, commerce, media and live event tools and software.
+                    {page ? page.data[0].studioIntro.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "") : null}
                 </p>
 
                 <div className="mt-8 flex gap-x-4 justify-start md:justify-center">
@@ -87,13 +91,13 @@ const Studio = () => {
             <section className="px-6 md:py-32 bg-white pb-0 md:pb-0">
                 <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6">
                     <div className="max-full text-center leading-relaxed mb-2">
-                        <h2 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-6 last:mb-0 uppercase">A bit more <span style={{ "color": "red"}}>about us</span></h2>
+                        <h2 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-6 last:mb-0 uppercase">A bit <span style={{ "color": "red"}}>more </span>{page.data[0].studioMoreAbout}</h2>
                     </div>
                 </div>
                 <div className="py-8 flex flex-col md:flex-row">
                     <div className="mx-auto w-full max-w-3xl border-b">
                         <div className="leading-relaxed">
-                            <p className="studio_intro">So park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer. Glossiesr echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer ballsack.</p>
+                            <p className="studio_intro">{page.data[0].studioMoreAboutText.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "")}.</p>
                         </div>
                         <section className="text-gray-600 body-font">
                             <div className="container pt-4 pb-12 mx-auto"></div>
@@ -106,43 +110,31 @@ const Studio = () => {
                 <div className="container pt-20 mx-auto w-full max-w-7xl md:px-8">
                     <div className="flex flex-wrap w-full mb-20">
                         <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-                            <h1 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">Industry <span style={{ "color": "red"}}>Experience</span></h1>
+                            <h1 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">{page.data[0].studioIndustryExpTitle} <span style={{ "color": "red"}}>Experience</span></h1>
                             <div className="header__underline"></div>
                         </div>
-                        <p className="lg:w-1/2 w-full leading-relaxed md:px-2 studio_intro">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+                        <p className="lg:w-1/2 w-full leading-relaxed md:px-2 studio_intro">{page.data[0].studioIndustryExpIntro.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "")}</p>
                     </div>
                     <div className="flex flex-wrap -m-4">
-                    <div className="xl:w-1/4 md:w-1/2 p-2">
-                        <div className="bg-gray-100 p-6 rounded-lg">
-                            <h3 className="tracking-widest text-red-500 text-xs font-bold title-font">SUBTITLE</h3>
-                            <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Media</h2>
-                            <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-                        </div>
-                    </div>
-                    <div className="xl:w-1/4 md:w-1/2 p-2">
-                        <div className="bg-gray-100 p-6 rounded-lg">
-                            {/* <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401" alt="content" /> */}
-                            <h3 className="tracking-widest text-red-500 text-xs font-bold title-font">SUBTITLE</h3>
-                            <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Events</h2>
-                            <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-                        </div>
-                    </div>
-                    <div className="xl:w-1/4 md:w-1/2 p-2">
-                        <div className="bg-gray-100 p-6 rounded-lg">
-                            {/* <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402" alt="content" /> */}
-                            <h3 className="tracking-widest text-red-500 text-xs font-bold title-font">SUBTITLE</h3>
-                            <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Headless CMS Development</h2>
-                            <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-                        </div>
-                    </div>
-                    <div className="xl:w-1/4 md:w-1/2 p-2">
-                        <div className="bg-gray-100 p-6 rounded-lg">
-                            {/* <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content" /> */}
-                            <h3 className="tracking-widest text-red-500 text-xs font-bold title-font">SUBTITLE</h3>
-                            <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Scaling Consultancy</h2>
-                            <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-                        </div>
-                    </div>
+                        {page.data[0].studioIndustryExpPanels.map((panel: 
+                            { 
+                                subTitle: Key | null | undefined, 
+                                industryTitle: string | null | undefined, 
+                                industryBody: string | null | undefined,
+                            }):any => {
+                            
+                            return(
+                                <div key={panel.subTitle} className="xl:w-1/4 md:w-1/2 p-2">
+                                    <div className="bg-gray-100 p-6 rounded-lg">
+                                        <h3 className="tracking-widest text-red-500 text-xs font-bold title-font">{panel.subTitle}</h3>
+                                        <h2 className="text-lg text-gray-900 font-medium title-font mb-4">{panel.industryTitle}</h2>
+                                        {/* @ts-ignore */}
+                                        <p className="leading-relaxed text-base">{panel.industryBody.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "")}</p>
+                                    </div>
+                                </div>
+                            )
+                        })}
+                        
                     </div>
                 </div>
             </section>
@@ -254,19 +246,28 @@ const Studio = () => {
     )
 }
 
-export default Studio; 
+export default Studio;
 
-// export async function getStaticProps({ preview = false, previewData }:any) {
-//     const client = createClient({ previewData });
+export const getStaticProps = async ({ preview = false, previewData }:any) => {
   
-//     const studio = await client.getSingle("studio");
-    
-//     return {
-//       props: {
-//         studio,
-//         preview
-//       },
-//       revalidate: 900
-//     };
-// }
-    
+  let url = `https://craft-ezhk.frb.io/api/studio.json`;
+  
+  const res = await fetch(url)
+  const studiopage = await res.json()
+  let prevData;
+
+  if(preview){
+      const prevResponse = await fetch(`${url}?token=${previewData['token']}`);
+      prevData = await prevResponse.json(); 
+  } 
+
+  let data = preview ? prevData : studiopage;
+
+  return {
+      props: {
+          preview: preview ? true : false,
+          page: data
+      },
+      revalidate: 30
+    };
+}
