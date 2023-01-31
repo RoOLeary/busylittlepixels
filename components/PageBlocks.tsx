@@ -4,11 +4,12 @@ import React, { Children, PropsWithChildren } from 'react';
 // import {TitleContainer} from './TitleContainer';
 // import {TextVisual} from './TextVisual';
 import { ProjectSlider } from './ProjectSlider';
-import { CarouselContainer } from "../components/Carousel";
-import { GalleryGrid } from "../components/GalleryGrid";
-import { Expertise } from '../components/Expertise';
+import { CarouselContainer } from "./Carousel";
+import { GalleryGrid } from "./GalleryGrid";
+import { Expertise } from './Expertise';
 import { Faqs } from './Faq/Faqs';
-import { VideoComponent } from './VideoComponent';
+import { Video } from './Video';
+import { TextBlock } from './TextBlock';
 // import { Signup } from './Signup';
 // import IBlocks from './../interfaces/IBlocks'
 
@@ -35,12 +36,18 @@ function renderContent(content: IBlocks[]) {
             case 'expertise':
                 return <Expertise key={block[1]['uid']}  />;
             case 'video':
-                return (<VideoComponent 
+                return (<Video 
                     key={block[1]['uid']} 
                     videoTitle={blockContent['videoTitle']}
                     videoEmbedCode={blockContent['videoEmbedCode']} 
                 />
                 );
+            case 'textBlock':
+                return(
+                    <TextBlock 
+                        key={block[1]['uid']}
+                    />
+                )
             case 'carousel':
                 return <CarouselContainer key={block[1]['uid']} title={blockContent['carouselTitle']} items={blockContent['carouselItems']}/>
             default:
