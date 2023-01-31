@@ -55,7 +55,7 @@ function renderContent(content: IBlocks[]) {
             case 'carousel':
                 return <CarouselContainer key={block[1]['uid']} title={blockContent['carouselTitle']} items={blockContent['carouselItems']}/>
             case 'quote':
-                return <Quote />    
+                return <Quote key={block[1]['uid']} />    
             default:
                 return (
                     <>

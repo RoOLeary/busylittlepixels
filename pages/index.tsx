@@ -22,8 +22,6 @@ const Home = ({ page, preview }:any) => {
       {preview ? <div className={'text-center uppercase bg-red-500 text-white py-6 fixed bottom-0 w-full z-10'}><h3>You are in Preview Mode</h3></div> : null}     
       <TitleContainer title={title} subtitle={subtitle} />
       <PageBlocks content={page['data'][0]['pageBlocks']} />
-  
-      <Advert />
       <CTA />
     </Layout>
     </>
