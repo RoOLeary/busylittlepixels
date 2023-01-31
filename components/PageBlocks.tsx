@@ -50,7 +50,7 @@ function renderContent(content: IBlocks[]) {
                         textBoldTitle={block['textBoldTitle']}
                         textContent={block['textContent']}
                     />
-                )
+                );
             case 'carousel':
                 return <CarouselContainer key={block[1]['uid']} title={blockContent['carouselTitle']} items={blockContent['carouselItems']}/>
             default:

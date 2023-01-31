@@ -3,12 +3,10 @@ import { Bounded } from "./Bounded"
 interface ITextBlock {
     textTitle?: string,
     textBoldTitle?: string,
-    textContent?: string,
-    displayBorderImage?: boolean,
-    selectBorderDisplay?: string
+    textContent?: string
 }
 
-export const TextBlock = ({ textTitle, textBoldTitle, textContent, displayBorderImage, selectBorderDisplay }:ITextBlock) => {
+export const TextBlock = ({ textTitle, textBoldTitle, textContent }:ITextBlock) => {
     
     return(
         <Bounded collapsible={false} as="section" className="bg-white">
