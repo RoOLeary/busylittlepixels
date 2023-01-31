@@ -109,7 +109,7 @@ const Home = ({ page, preview }:any) => {
           <div className="relative mx-auto max-w-md px-6 sm:max-w-3xl lg:px-0">
            
             <div className="pt-12 sm:pt-16 lg:pt-20">
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Specialising in Technical Discovery</h2>
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Specialising in Technical Discovery and <strong>modern</strong> web development.</h2>
               <div className="mt-6 space-y-6 text-gray-500">
                 <p className="text-base leading-7">Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra.</p>
               </div>
@@ -134,10 +134,7 @@ const Home = ({ page, preview }:any) => {
                     <dd className="text-3xl font-bold tracking-tight text-gray-900">521</dd>
                   </div>
                 
-                  <div className="border-t-2 border-gray-100 pt-6">
-                    <dt className="text-base font-medium text-gray-500">Raised</dt>
-                    <dd className="text-3xl font-bold tracking-tight text-gray-900">$25M</dd>
-                  </div>
+                  
                 
               </dl>
               {/* <div className="mt-10">
