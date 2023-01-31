@@ -15,7 +15,6 @@ const Home = ({ page, preview }:any) => {
   let title = page ? page.data[0].homeTitle : null;
   let subtitle = page ? page.data[0].homeSubTitle : null;
 
-  console.log(page['data'][0]['pageBlocks']);
   return (
     <>
      
@@ -24,22 +23,6 @@ const Home = ({ page, preview }:any) => {
       <TitleContainer title={title} subtitle={subtitle} />
       <PageBlocks content={page['data'][0]['pageBlocks']} />
   
-      {/* <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white">
-        <div className="relative overflow-hidden bg-white py-16">
-          
-          <section className="relative lg:px-8">
-            <div className="mx-auto max-w-prose text-lg">
-              <h1 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-6 last:mb-0 uppercase">
-                Text Component <span style={{ "color": "red"}}>V2</span>
-              </h1>
-              <p className="mt-8 text-xl leading-8 text-gray-500">Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend egestas fringilla sapien.</p>
-              <p className="mt-8 text-xl leading-8 text-gray-500">Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend egestas fringilla sapien.</p>
-            
-            </div>
-            
-          </section>
-        </div>
-      </Bounded> */}
       <Advert />
       <CTA />
     </Layout>

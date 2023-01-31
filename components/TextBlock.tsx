@@ -9,7 +9,7 @@ interface ITextBlock {
 }
 
 export const TextBlock = ({ textTitle, textBoldTitle, textContent, displayBorderImage, selectBorderDisplay }:ITextBlock) => {
-    console.log(textTitle)
+    
     return(
         <Bounded collapsible={true} as="section" className="bg-white">
             <div className="relative overflow-hidden bg-white py-16">

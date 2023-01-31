@@ -10,6 +10,7 @@ import { Expertise } from './Expertise';
 import { Faqs } from './Faq/Faqs';
 import { Video } from './Video';
 import { TextBlock } from './TextBlock';
+import { VideoComponent } from './VideoComponent';
 // import { Signup } from './Signup';
 // import IBlocks from './../interfaces/IBlocks'
 
@@ -36,14 +37,13 @@ function renderContent(content: IBlocks[]) {
             case 'expertise':
                 return <Expertise key={block[1]['uid']}  />;
             case 'video':
-                return (<Video 
+                return (<VideoComponent 
                     key={block[1]['uid']} 
                     videoTitle={blockContent['videoTitle']}
                     videoEmbedCode={blockContent['videoEmbedCode']} 
                 />
                 );
             case 'textBlock':
-                console.log('textbox')
                 return(
                     <TextBlock 
                         key={block[1]['uid']}
