@@ -43,12 +43,13 @@ function renderContent(content: IBlocks[]) {
                 />
                 );
             case 'textBlock':
+                console.log('textbox')
                 return(
                     <TextBlock 
                         key={block[1]['uid']}
-                        textTitle={block['textTitle']}
-                        textBoldTitle={block['textBoldTitle']}
-                        textContent={block['textContent']}
+                        textTitle={blockContent['textTitle']}
+                        textBoldTitle={blockContent['textBoldTitle']}
+                        textContent={blockContent['textContent']}
                     />
                 );
             case 'carousel':

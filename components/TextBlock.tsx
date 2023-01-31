@@ -3,7 +3,7 @@ import { Bounded } from "./Bounded"
 interface ITextBlock {
     textTitle?: string,
     textBoldTitle?: string,
-    textContent?: string,
+    textContent?: any,
     displayBorderImage?: boolean,
     selectBorderDisplay?: string
 }
@@ -37,18 +37,16 @@ export const TextBlock = ({ textTitle, textBoldTitle, textContent, displayBorder
             <section className="relative lg:px-8">
                 <div className="mx-auto max-w-prose text-lg">
                 <h1 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-6 last:mb-0 uppercase">
-                    {textTitle ? textTitle : "TEXT COMP"}{textBoldTitle ? <span style={{ "color": "red"}}>{textBoldTitle}</span> : null}
+                    {textTitle ? textTitle : "TEXT COMP"}{textBoldTitle ? <span style={{ "color": "red"}}> {textBoldTitle}</span> : null}
                 </h1>
-                {textContent ? 'Ass' : 'nope'}
-                <p className="mt-8 text-xl leading-8 text-gray-500">Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend egestas fringilla sapien.</p>
-                <p className="mt-8 text-xl leading-8 text-gray-500">Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend egestas fringilla sapien.</p>
                 
+                <p className="mt-8 text-xl leading-8 text-gray-500" dangerouslySetInnerHTML={{__html: textContent ? textContent.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "") : null}} />
                 </div>
                 
             </section>
             </div>
         </Bounded>
 
-    )
+    );
 
 }
