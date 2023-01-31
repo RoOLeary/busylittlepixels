@@ -46,6 +46,9 @@ function renderContent(content: IBlocks[]) {
                 return(
                     <TextBlock 
                         key={block[1]['uid']}
+                        textTitle={block['textTitle']}
+                        textBoldTitle={block['textBoldTitle']}
+                        textContent={block['textContent']}
                     />
                 )
             case 'carousel':
