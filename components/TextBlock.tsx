@@ -11,7 +11,7 @@ interface ITextBlock {
 export const TextBlock = ({ textTitle, textBoldTitle, textContent, displayBorderImage, selectBorderDisplay }:ITextBlock) => {
     
     return(
-        <section  className="bg-white px-6 pt-20 bg-white">
+        <section  className="bg-white px-6 md:pt-20">
             <div className="relative overflow-hidden bg-white py-16">
             <div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">
                 <div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
