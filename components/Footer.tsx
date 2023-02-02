@@ -47,9 +47,7 @@ export const Footer = () => {
       <div className="grid grid-cols-1 justify-items-center gap-20 md:gap-24">
         {/* <SignUpForm /> */}
         <div className="mx-auto w-full max-w-3xl text-center text-xs font-semibold tracking-tight">
-          © 2023 busy<span className="rd_txt">little</span>pixels. Made with <span className="rd_txt">&hearts;</span> in Amsterdam. Published using{" "}
-          
-            <a href="https://nextjs.org/">NextJS.</a> 
+          © 2023 busy<span className="rd_txt">little</span>pixels. Made with <span className="rd_txt">&hearts;</span> in Amsterdam.
         </div>
       </div>
     </Bounded>
