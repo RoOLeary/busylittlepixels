@@ -9,8 +9,8 @@ const NewsletterSignUp = () => {
         className="grid w-full max-w-xl grid-cols-1 gap-6"
       >
         <div className="text-center tracking-tight text-slate-300">
-        <h3 className="text-center font-black tracking-tighter text-4xl md:text-6xl mb-4 text-white last:mb-0 uppercase">Sign up for our busy<span style={{ "color": "red"}}>little</span>updates</h3>
-        <p className="mb-4 last:mb-0">Something something snappy marketing copy yada yada yada blort blort blah</p>
+        <h3 className="text-center font-black tracking-tighter text-3xl md:text-6xl mb-4 text-white last:mb-0 uppercase">Sign up for our busy<span style={{ "color": "red"}}>little</span>updates</h3>
+        <p className="mb-4 last:mb-0">We promise we won't spam you, or do anything nefarious with your data. <br />It's just not how we roll. </p>
         </div>
     
         <div className="grid grid-cols-1 gap-2">
@@ -33,7 +33,7 @@ const NewsletterSignUp = () => {
               <span aria-hidden={true}>&rarr;</span>
             </button>
           </div>
-          <p className="text-center text-xs text-slate-400">By subscribing to our newsletter you accept to receive recurring emails about our product and our company</p>
+          <p className="text-center text-xs text-slate-400">By subscribing to our newsletter you accept to receive occasional, recurring emails about our products and company</p>
         </div>
       </form>
     </div>
@@ -42,7 +42,7 @@ const NewsletterSignUp = () => {
 
 export const CTA = () => {
   return (
-    <Bounded as="section" className="bg-black pb-12 text-slate-300 md:pb-12">
+    <Bounded as="section" className="bg-black pb-12 py-12 text-slate-300 md:pb-20">
       <div className="grid grid-cols-1 justify-items-center gap-20 md:gap-24">
         <NewsletterSignUp />
       </div>

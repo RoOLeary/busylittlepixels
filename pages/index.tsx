@@ -390,7 +390,7 @@ const Home = ({ page, preview }:any) => {
           </div>
         </div>
       </div> */}
-      <div className="bg-white pt-24 relative">
+      <div className="bg-white md:pt-24 relative">
         <div className="relative mt-24 -mb-24 bg-red-600 px-12 py-24 flex items-center">
             <div className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style={{ "height": "80px", "transform": "translateZ(0)"}}>
               <svg className="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
