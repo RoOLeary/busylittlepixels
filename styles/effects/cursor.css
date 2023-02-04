@@ -1,36 +1,68 @@
-
 .cursor {
-    width: 40px;
-    height: 40px;
-    border: 2px solid #f00;
-    border-radius: 100%;
-    position: fixed;
-    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
     pointer-events: none;
-    transition: all 150ms ease;
-    transition-property: background-color, opacity, transform, mix-blend-mode;
-    z-index: 9999;
-    mix-blend-mode: difference;
-    @media all and (max-width: 760px){
-        display: none;
     }
-}
-
-.cursor--hidden {
+    .cursor::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 2px solid blue;
+    border-radius: 50%;
+    opacity: .5;
+    top: -8px;
+    left: -8px;
+    }
+    @keyframes cursorAnim {
+    0% {
+    transform: scale(1);
+    }
+    50% {
+    transform: scale(5);
+    }
+    100% {
+    transform: scale(1);
     opacity: 0;
-}
+    }
+    }
+    .expand {
+    animation: cursorAnim .5s forwards;
+    }
 
-.cursor--link-hovered {
-    transform: translate(-50%, -50%) scale(1.25);
-    background-color: #fefefe;
-}
-
-.cursor--clicked {
-    transform: translate(-50%, -50%) scale(0.9);
-    background-color: #fefefe;
-}
-
-html *,
-body * {
-    cursor: none;
-}
+    :root {
+        --color-cursor: 220, 90, 90;
+        --cursor-outline-shade: 0.3;
+        --cursor-size: 10px;
+        --cursor-outline-size: 12px;
+      }
+      
+    
+    #cursor-dot,
+    #cursor-dot-outline {
+        z-index: 999;
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        opacity: 0;
+        transform: translate(-50%, -50%);
+        transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+    }
+    
+    #cursor-dot {
+        width: var(--cursor-size);
+        height: var(--cursor-size);
+        background-color: rgba(var(--color-cursor), 1);
+    }
+    
+    #cursor-dot-outline {
+        width: var(--cursor-outline-size);
+        height: var(--cursor-outline-size);
+        background-color: rgba(var(--color-cursor), var(--cursor-outline-shade));
+    }
+      
