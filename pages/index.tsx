@@ -16,7 +16,7 @@ const inter = Inter({ subsets: ['latin'] })
 const Home = ({ page, preview }:any) => {
 
   const control = useAnimation()
-  const [ref, inView] = useInView({triggerOnce: true});
+  const [ref, inView] = useInView({triggerOnce: false});
  
 
   let title = page ? page.data[0].homeTitle : null;
@@ -70,15 +70,6 @@ const Home = ({ page, preview }:any) => {
         scrollToSection(goto);
     }, 100);
   }
-
-  useEffect(() => {
-    if (inView) {
-      control.start("visible");
-      console.log('YES');
-    } else{
-      console.log('NOPE');
-    }
-  }, [control, inView]);
 
   return (
     <>
@@ -176,8 +167,8 @@ const Home = ({ page, preview }:any) => {
             <div 
               style={{ 
                 transform: inView ? "none" : "translateX(-200px)",
-                opacity: inView ? 1 : 0,
-                transition: "all 0.25s cubic-bezier(0.17, 0.55, 0.55, 1) 0.25s"}} 
+                // /ropacity: inView ? 1 : 0,
+                transition: "all 0.25s ease-out 0.25s"}} 
                 ref={ref}
                 className={'bg-red'}
               >
