@@ -1,7 +1,8 @@
 import type { AppProps, NextWebVitalsMetric } from 'next/app';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import Loader from '../components/Loader';
 import { Header } from '../components/Header';
+import Cursor from '../components/Cursor';
 import { useState, useEffect } from 'react';
 import NProgress from 'nprogress';
 import Router from 'next/router'
@@ -86,6 +87,7 @@ export default function App({ Component, pageProps }) {
         > 
         <>
         {isLoading && <Loader /> } 
+        <Cursor />
         <Component {...pageProps} />
         </>
         </AnimatePresence>
