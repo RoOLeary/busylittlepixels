@@ -29,7 +29,7 @@ const Articles = ({ page, preview }:any) => {
 
     let articles = Object.values(page.data);
 
-    console.log(articles);
+    // console.log(articles);
     return(
         <Layout>
           <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white override mb-12">
