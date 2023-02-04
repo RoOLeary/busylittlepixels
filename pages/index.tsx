@@ -126,21 +126,7 @@ const Home = ({ page, preview }:any) => {
             </div>
 
             
-            {/* <div className="mt-10">
-              <dl className="grid grid-cols-2 gap-x-4 gap-y-8">
-                
-                  <div className="border-t-2 border-gray-100 pt-6">
-                    <dt className="text-base font-medium text-gray-500">Founded</dt>
-                    <dd className="text-3xl font-bold tracking-tight text-gray-900">2021</dd>
-                  </div>
-                
-                  <div className="border-t-2 border-gray-100 pt-6">
-                    <dt className="text-base font-medium text-gray-500">Employees</dt>
-                    <dd className="text-3xl font-bold tracking-tight text-gray-900">5</dd>
-                  </div>
-                
-              </dl>
-            </div> */}
+       
           </div>
         </div>
       <CTA />
@@ -166,8 +152,8 @@ const Home = ({ page, preview }:any) => {
           <div className="w-full h-auto border-red bg-red flex justify-end motionImage_bg">
             <div 
               style={{ 
-                transform: inView ? "none" : "translateX(-200px)",
-                // /ropacity: inView ? 1 : 0,
+                transform: inView ? "translateX(0px)" : "translateX(-200px)",
+                // opacity: inView ? 1 : 0,
                 transition: "all 0.25s ease-out 0.25s"}} 
                 ref={ref}
                 className={'bg-red'}
