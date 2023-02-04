@@ -152,8 +152,8 @@ const Home = ({ page, preview }:any) => {
           <div className="w-full h-auto border-red bg-red flex justify-end motionImage_bg">
             <div 
               style={{ 
-                transform: inView ? "translateX(0px)" : "translateX(-200px)",
-                // opacity: inView ? 1 : 0,
+                transform: inView ? "none" : "translateX(-200px)",
+                opacity: inView ? 1 : 0,
                 transition: "all 0.25s ease-out 0.25s"}} 
                 ref={ref}
                 className={'bg-red'}
