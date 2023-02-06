@@ -89,7 +89,7 @@ export const ProjectSlider = ({ sliderTitle, sliderStage }:any) => {
                 clearInterval(interval);
             };
         }
-    }, [activeSlide, isAutoPlay, transitionSlide, length]);
+    }, [activeSlide, isAutoPlay, length]);
 
     return(
 
@@ -109,7 +109,8 @@ export const ProjectSlider = ({ sliderTitle, sliderStage }:any) => {
                             <p className="text__background font-serif">{sl.textBackground}</p>
                             </div>
                             <div className="flex__item flex__item--right"></div>
-                            <img className="project_slide_img hidden md:block" src={sl.slideImage}  />
+                            {/* @ts-ignore */}
+                            <Image className="project_slide_img hidden md:block" src={sl.slideImage} width="550" height="700" loader={imageLoader} />
                         </div>
                     )
                 })}

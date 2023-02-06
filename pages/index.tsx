@@ -119,7 +119,7 @@ const Home = ({ page, preview }:any) => {
           <div className="relative mx-auto max-w-md px-6 pb-10 sm:mb-8 sm:max-w-3xl lg:px-0">
            
             <div className="pt-12 sm:pt-16 lg:pt-20">
-              <h2 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl">Specialising in Technical Discovery, Digital and eCommerce strategy and <strong>modern</strong>, scalable web development.</h2>
+              <h2 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl">Specialising in: <br /> Technical Discovery. <br />Digital/Business strategy. <br /><strong>Modern</strong>, scalable web applications and solutions.</h2>
               <div className="mt-6 space-y-6 text-gray-500">
                 <p className="text-base leading-7">We develop modern, headless CMS websites and applications. Leveraging the latest in web technologies, we create performant, reliable and scaleable solutions, with trusted backend architecture.</p>
               </div>
@@ -128,11 +128,11 @@ const Home = ({ page, preview }:any) => {
             
        
           </div>
-        </div>
-        <CTA />
+      </div>
+      <CTA />
     
-     
-        <section className="text-black relative" id="contact">
+      {/* Contact */}
+      <section className="text-black relative" id="contact">
             <div className="absolute inset-0 bg-gray-300">
               <iframe width="100%" height="100%" frameBorder="0" marginHeight={0} marginWidth={0} title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77979.83662249324!2d4.833920986955999!3d52.35464494712458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam!5e0!3m2!1sen!2snl!4v1673131081468!5m2!1sen!2snl" style={{ "filter": "grayscale(1) contrast(1.2) opacity(0.4)" }} ></iframe>
             </div>

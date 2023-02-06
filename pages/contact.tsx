@@ -22,16 +22,18 @@ const Contact: NextPage = () => {
             email,
             message
         }
+        // @ts-ignore
+        const formData = new FormData(e.target);
 
-        const rawResponse = await fetch('/api/submit', {
-            method: 'POST',
+        const rawResponse = await fetch("https://getform.io/f/2eaf6034-246d-4ab5-8250-c468bffe71fb", {
+            method: "POST",
+            body: formData,
             headers: {
-                'Access-Control-Allow-Origin': '*',
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
+                "Accept": "application/json",
             },
-            body: JSON.stringify(form)
-        });
+        })
+
+
         const content = await rawResponse.json();
         // print to screen
         // console.log(content.data.tableRange)
@@ -69,7 +71,7 @@ const Contact: NextPage = () => {
                     <form className="py-4 space-y-4" onSubmit={handleSubmit}>
                         <div className="relative mb-4">
                             <label htmlFor="name" className="leading-7 text-sm text-black">Your Name</label>
-                            <input type="text" id="name" name="name" value={email} onChange={e => setName(e.target.value)} className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-white-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required />
+                            <input type="text" id="name" name="name" value={name} onChange={e => setName(e.target.value)} className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-white-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required />
                         </div>
                         <div className="relative mb-4">
                             <label htmlFor="email" className="leading-7 text-sm text-black">Email</label>

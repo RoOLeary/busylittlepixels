@@ -29,7 +29,7 @@ const Articles = ({ page, preview }:any) => {
 
     let articles = Object.values(page.data);
 
-    // console.log(articles);
+    console.log(articles);
     return(
         <Layout>
           <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white override mb-12">
@@ -45,12 +45,13 @@ const Articles = ({ page, preview }:any) => {
            
             return(
               <div key={i} className="grid grid-cols-2 gap-6 md:grid-cols-4">
-                <Image src={`assets/img/dodge.jpeg`} alt={'article featured image'} width={160} height={200} className="h-40 object-cover w-full col-span-1 bg-center" loading="lazy" loader={imageLoader} />
+                <Image src={`/${article.articleFeaturedImage}`} alt={'article featured image'} width={160} height={200} className="h-40 object-cover w-full col-span-1 bg-center" loading="lazy" loader={imageLoader} />
                 <div className="col-span-1 md:col-span-3">
                   <><p className="mb-2 -mt-1 text-sm font-normal text-gray-500"></p></>
                   <h1 className="mb-2 text-2xl md:text-3xl font-extrabold leading-snug text-gray-800">
                     <Link href={{ pathname: `articles/${article.slug}` }} className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500">{article.articleTitle}</Link>
                   </h1>
+                  <p className="tmd:text-1xl">Published: {article.articleTypePostDate}</p>
                   <p className="mb-3 text-md font-normal text-gray-500 allArticles_excerpt leading-8" dangerouslySetInnerHTML={{__html: article.articleExcerpt}} />
                   
                   <Link href={`/articles/${article.slug}`} className="hidden md:visible btn btn-light btn-sm">Read More</Link>

@@ -105,7 +105,7 @@ const Studio = ({ page, preview }:any) => {
                     <div className="pt-20 grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-y-20 gap-x-20">
                         <div className="inline-flex flex-col">
                             <div>
-                                <h2 className="text-2xl font-semibold text-gray-700 dark:text-gray-200">Contact</h2>
+                                <h2 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase mb-4">Contact</h2>
                                 <p className="studio_intro">For any sort of enquiry, shoot a <a href="mailto:busylittlepixels@gmail.com" className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300">mail</a> and I'll get back. I swear.</p>
                             </div>
                         </div>
@@ -172,8 +172,8 @@ const Studio = ({ page, preview }:any) => {
                                 <dd className="mt-2 text-sm text-gray-500">Solid walnut base with rare earth magnets and powder coated steel card cover</dd>
                             </div>
                             <div className="border-t border-gray-200 pt-4">
-                                <dt className="font-medium text-gray-900">Devops/Infrastucture</dt>
-                                <dd className="mt-2 text-sm text-gray-500">6.25" x 3.55" x 1.15"</dd>
+                                <dt className="font-medium text-gray-900">Team Development</dt>
+                                <dd className="mt-2 text-sm text-gray-500">We're like "The A Team" - but for digital products and web teams.</dd>
                             </div>
 
                             <div className="border-t border-gray-200 pt-4">
