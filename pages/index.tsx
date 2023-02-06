@@ -129,74 +129,41 @@ const Home = ({ page, preview }:any) => {
        
           </div>
         </div>
-      <CTA />
+        <CTA />
     
-      <div className="bg-white md:pt-24 relative">
-        <div className="relative mt-24 -mb-24 bg-red-600 px-12 py-24 flex items-center">
-            <div className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style={{ "height": "80px", "transform": "translateZ(0)"}}>
-              <svg className="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
-                <polygon className="fill-red-600" points="2560 0 2560 100 0 100"></polygon>
-              </svg>
-            </div>
-          <div className="hidden md:block w-3/12"></div>
-            <div className="flex-1 relative">
-              <div className="text-white text-base md:text-xl max-w-2xl leading-tight pb-12">
-                <h2 className="text-white font-black tracking-tightest text-3xl pb-4">Oh! One More Thing...</h2>
-                <p className="mt-3 text-lg text-white">We develop modern, headless CMS websites and applications. Leveraging the latest in web technologies, we create performant, reliable and scaleable solutions, with trusted backend architecture. </p>
-              </div>
-              <span className="absolute top-0 left-0 w-4 h-full bg-white -ml-20"></span>
-            </div>
-          </div>
-          <br />
-          <br/>
-          <div className="w-full h-auto border-red bg-red flex justify-end motionImage_bg">
-            <div 
-              style={{ 
-                transform: inView ? "none" : "translateY(200px)",
-                opacity: inView ? 1 : 0,
-                transition: "all 0.25s ease-out 0.25s"}} 
-                ref={ref}
-                className={'bg-red'}
-              >
-            <img src="/assets/img/canals.png" className="relative block w-full h-25 object-contain -mt-12" />
-            </div>
-            <div className="w-64 bg-red-600"></div>
-          </div>
-        </div>
+     
         <section className="text-black relative" id="contact">
-              <div className="absolute inset-0 bg-gray-300">
-                      <iframe width="100%" height="100%" frameBorder="0" marginHeight={0} marginWidth={0} title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77979.83662249324!2d4.833920986955999!3d52.35464494712458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam!5e0!3m2!1sen!2snl!4v1673131081468!5m2!1sen!2snl" style={{ "filter": "grayscale(1) contrast(1.2) opacity(0.4)" }} ></iframe>
-                  </div>
-                  <div className="container px-5 py-24 mx-auto flex">
-                      <div className="lg:w-1/3 md:w-2/3 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
-                      
-                      {result ? result : 
-                      <>
-                      <h2 className="text-black text-lg mb-1 font-black uppercase">Contact <span style={{ "color": "red"}}> US</span></h2>
-                      <p className="leading-relaxed mb-5 text-black">To contact us, please add your email address and message below.</p>
-                      <form className="py-4 space-y-4" onSubmit={handleSubmit}>
-                          <div className="relative mb-4">
-                              <label htmlFor="name" className="leading-7 text-sm text-black">Your Name</label>
-                              <input type="text" id="name" name="name" value={email} onChange={e => setName(e.target.value)} className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-white-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required />
-                          </div>
-                          <div className="relative mb-4">
-                              <label htmlFor="email" className="leading-7 text-sm text-black">Email</label>
-                              <input type="email" id="email" name="email" value={email} onChange={e => setEmail(e.target.value)} className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-white-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required />
-                          </div>
-                          <div className="relative mb-4">
-                              <label htmlFor="message" className="leading-7 text-sm text-black">Message</label>
-                              <textarea value={message} onChange={e => setMessage(e.target.value)} id="message" name="message" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-white-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" required></textarea>
-                          </div>
-                          <button className="w-full btn btn-red btn-lg md:w-auto">SUBMIT</button>
-                          <p className="text-xs text-white-500 mt-3">We will not pass your data to third parties.</p>
-                      </form>
-                      </>
-                      }
-                  </div>
-              </div>
-        </section>
-        
-
+            <div className="absolute inset-0 bg-gray-300">
+              <iframe width="100%" height="100%" frameBorder="0" marginHeight={0} marginWidth={0} title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77979.83662249324!2d4.833920986955999!3d52.35464494712458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam!5e0!3m2!1sen!2snl!4v1673131081468!5m2!1sen!2snl" style={{ "filter": "grayscale(1) contrast(1.2) opacity(0.4)" }} ></iframe>
+            </div>
+            <div className="container px-5 py-24 mx-auto flex">
+                <div className="lg:w-1/3 md:w-2/3 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+                
+                {result ? result : 
+                <>
+                <h2 className="text-black text-lg mb-1 font-black uppercase">Contact <span style={{ "color": "red"}}> US</span></h2>
+                <p className="leading-relaxed mb-5 text-black">To contact us, please add your email address and message below.</p>
+                <form className="py-4 space-y-4" onSubmit={handleSubmit}>
+                    <div className="relative mb-4">
+                        <label htmlFor="name" className="leading-7 text-sm text-black">Your Name</label>
+                        <input type="text" id="name" name="name" value={email} onChange={e => setName(e.target.value)} className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-white-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required />
+                    </div>
+                    <div className="relative mb-4">
+                        <label htmlFor="email" className="leading-7 text-sm text-black">Email</label>
+                        <input type="email" id="email" name="email" value={email} onChange={e => setEmail(e.target.value)} className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-white-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required />
+                    </div>
+                    <div className="relative mb-4">
+                        <label htmlFor="message" className="leading-7 text-sm text-black">Message</label>
+                        <textarea value={message} onChange={e => setMessage(e.target.value)} id="message" name="message" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-white-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" required></textarea>
+                    </div>
+                    <button className="w-full btn btn-red btn-lg md:w-auto">SUBMIT</button>
+                    <p className="text-xs text-white-500 mt-3">We will not pass your data to third parties.</p>
+                </form>
+                </>
+                }
+            </div>
+        </div>
+      </section>
     </Layout>
     </>
   )

@@ -82,7 +82,7 @@ const Studio = ({ page, preview }:any) => {
 
                 <div className="mt-8 flex gap-x-4 justify-start md:justify-center">
                     {/* @ts-ignore */}
-                    <a href="#moreinfo" className="inline-block rounded-md bg-red-600 px-4 py-1.5 text-base font-bold leading-7 text-white shadow-sm ring-1 ring-red-600 hover:bg-red-400 hover:ring-red-400" data-scrollto="moreinfo" scrollto="moreinfo" onClick={onScrollClick}>Tell me more</a>
+                    <a href="#moreinfo" className="inline-block rounded-md bg-red-600 px-4 py-1.5 text-base font-bold leading-7 text-white shadow-sm ring-1 ring-red-600 hover:bg-red-400 hover:ring-red-400" data-scrollto="moreinfo" scrollto="moreinfo" onClick={onScrollClick}>Hmmm...go on</a>
                 </div>
                 </motion.div>   
             </section>
@@ -94,18 +94,34 @@ const Studio = ({ page, preview }:any) => {
                         <h2 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-6 last:mb-0 uppercase">A bit <span style={{ "color": "red"}}>more </span>{page.data[0].studioMoreAbout}</h2>
                     </div>
                 </div>
-                <div className="py-8 flex flex-col md:flex-row">
-                    <div className="mx-auto w-full max-w-3xl border-b">
+                <div className="pt-8 flex flex-col md:flex-row">
+                    <div className="mx-auto w-full max-w-3xl shadow-sm">
                         <div className="leading-relaxed">
                             <p className="studio_intro">{page.data[0].studioMoreAboutText.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "")}.</p>
                         </div>
-                        <section className="text-gray-600 body-font">
-                            <div className="container pt-4 pb-12 mx-auto"></div>
-                        </section>
+                    </div>
+                </div>
+                <div className="flex mx-auto w-full max-w-7xl md:px-8">
+                    <div className="pt-20 grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-y-20 gap-x-20">
+                        <div className="inline-flex flex-col">
+                            <div>
+                                <h2 className="text-2xl font-semibold text-gray-700 dark:text-gray-200">Contact</h2>
+                                <p className="studio_intro">For any sort of enquiry, shoot a <a href="mailto:busylittlepixels@gmail.com" className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300">mail</a> and I'll get back. I swear.</p>
+                            </div>
+                        </div>
+                        <div className="col-span-1 md:col-span-2">
+                            <p className="studio_intro">Collectively, we've been developing full-stack applications for almost 20 years. Although, at the time, I didn't know what full-stack meant at that time because the term was still the ubiqutous "web designer" back then. </p>
+                            <br />
+                            <p className="studio_intro">After learning HTML, PHP, JS and CSS, I came up with a brilliant idea of using Tailwind so that I don't have to style everything by myself and - for obvious reasons - if you know Tailwind, you're all cool by me.</p>
+                            <br />
+                            <p className="studio_intro">But now, I'm a legend. I've been coding in React, Vue, Node.js, PHP, MySQL, Tailwind, Next.js, Craft CMS, WordPress, Laravel...to name a few. Although I barely know the syntax (Psst, Stack overflow!). Which is what I would say if I were a total douche.</p>
+                        </div>
                     </div>
                 </div>
             </section>
             
+
+                    
             <section className="px-6 md:py-20 bg-white pb-0 md:pb-0">
                 <div className="container pt-20 mx-auto w-full max-w-7xl md:px-8">
                     <div className="flex flex-wrap w-full mb-20">
@@ -113,7 +129,7 @@ const Studio = ({ page, preview }:any) => {
                             <h1 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">{page.data[0].studioIndustryExpTitle} <span style={{ "color": "red"}}>Experience</span></h1>
                             <div className="header__underline"></div>
                         </div>
-                        <p className="lg:w-1/2 w-full leading-relaxed md:px-2 studio_intro">{page.data[0].studioIndustryExpIntro.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "")}</p>
+                        <p className="lg:w-1/2 w-full studio_intro">{page.data[0].studioIndustryExpIntro.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "")}</p>
                     </div>
                     <div className="flex flex-wrap -m-4">
                         {page.data[0].studioIndustryExpPanels.map((panel: 
@@ -143,15 +159,15 @@ const Studio = ({ page, preview }:any) => {
                     <div>
                         <h2 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">Technical <span style={{ "color": "red"}}>Expertise</span></h2>
                         <div className="header__underline"></div>
-                        <p className="mt-4 text-gray-500 studio_intro">You know who's into dragons, Morty? Nerds who refuse to admit they're Christian. I couldn't hear you over my own screaming. We've talked about this! 5 more minute of this and I'm going to get mad! You know my name, that's disarming. Not today bitch! You look it up, you don't- you don't even know what it means.</p>
+                        {/* <p className="mt-4 text-gray-500 studio_intro">You know who's into dragons, Morty? Nerds who refuse to admit they're Christian. I couldn't hear you over my own screaming. We've talked about this! 5 more minute of this and I'm going to get mad! You know my name, that's disarming. Not today bitch! You look it up, you don't- you don't even know what it means.</p> */}
 
                         <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
-                            <div className="border-t border-gray-200 pt-4">
+                            <div className="pt-4">
                                 <dt className="font-medium text-gray-900">Planning/Strategy</dt>
                                 <dd className="mt-2 text-sm text-gray-500">Designed by Good Goods, Inc.</dd>
                             </div>
 
-                            <div className="border-t border-gray-200 pt-4">
+                            <div className="pt-4">
                                 <dt className="font-medium text-gray-900">End-to-End Application Development</dt>
                                 <dd className="mt-2 text-sm text-gray-500">Solid walnut base with rare earth magnets and powder coated steel card cover</dd>
                             </div>

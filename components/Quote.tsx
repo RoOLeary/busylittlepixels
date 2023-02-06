@@ -14,7 +14,7 @@ interface IQuote {
 export const Quote = ({ quoteBackgroundColor, quoteTitle, quoteImageUrl, quoter, company }:IQuote) => {
     
     return (
-        <div className="bg-white pt-16 lg:py-24">
+        <div className="bg-white pt-16 lg:py-32 mb-4">
             {/* @ts-ignore */}
             <div className={`bg-${quoteBackgroundColor['value']}-600 pb-16 lg:relative lg:z-10 lg:pb-0`}>
                 <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8">

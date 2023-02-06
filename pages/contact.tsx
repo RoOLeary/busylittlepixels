@@ -44,11 +44,12 @@ const Contact: NextPage = () => {
    
     return(
         <Layout>
-            
+           {/* / We're a team of enthusiastic and well rounded experts, technologist, developers, strategists, team-builders and futurists. Founded by former CTO of The Next Web, Ronan O'Leary, and current CTO of X, Paddy Ryan; Busy Little Pixels is more than a Digital Development and [] company. We have the experience and know how to steer your digital fortunes to the horizon. */}
             
             <Bounded collapsible={true} as="section" className="override">
-                <h1 className="pb-8 font-black text-4xl md:text-6xl mb-6 last:mb-0 border-b border-gray-200 uppercase">WE <span style={{ "color": "red"}}>:heart:</span> HEARING FROM <span style={{ "color": "red"}}>YOU</span></h1>
-                <p className="contact_intro">WE HEART HEARING FROM YOU</p>
+                <h1 className="pb-8 font-black text-4xl md:text-6xl mb-6 last:mb-0 border-b border-gray-200 uppercase">WE <span style={{ "color": "red"}}>heart</span> HEARING FROM <span style={{ "color": "red"}}>YOU</span></h1>
+                <p className="contact_intro">We're always happy to hear from you - feedback, comments, questions or the odd SOS. That's our game, that's how we roll.</p>
+                <p className="contact_intro">Below is a list of our most frequently asked questions, please check to see if we've already mentioned your query here, or feel free to get in contact anyway.</p>
             </Bounded>
             <Bounded collapsible={true} as="section" className="override">
                 <Faqs />
