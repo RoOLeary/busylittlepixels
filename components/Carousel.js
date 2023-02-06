@@ -34,7 +34,7 @@ export const CarouselContainer = ({ title, items }) => {
   const carouselPanels = items ? items.map((item, index) => {
     return (
         <div className={'mr-2'} key={index}>
-          <Image src={item.carouselImageUrl} height={300} width={450} loader={imageLoader} alt={item.carouselTitle} />
+          <Image src={item.carouselImageUrl} height={300} width={450} loader={imageLoader} unoptimized={true} alt={item.carouselTitle} />
         </div>
       )
   }) : null;

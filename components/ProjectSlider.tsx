@@ -110,7 +110,7 @@ export const ProjectSlider = ({ sliderTitle, sliderStage }:any) => {
                             </div>
                             <div className="flex__item flex__item--right"></div>
                             {/* @ts-ignore */}
-                            <Image className="project_slide_img hidden md:block" src={sl.slideImage} width="550" height="700" loader={imageLoader} />
+                            <Image className="project_slide_img hidden md:block" src={sl.slideImage} width="550" height="700" loader={imageLoader} alt={`${sl.textHeading} image`} />
                         </div>
                     )
                 })}
