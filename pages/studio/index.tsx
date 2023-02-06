@@ -21,7 +21,7 @@ const Studio = ({ page, preview }:any) => {
 
     // console.log(page.data[0]);
     const router = useRouter(); 
-    const { word } = useTypingText(['WEB, ', 'APPS, ', 'MEDIA, '], 250, 20);
+    const { word } = useTypingText(['WEBSITES, ', 'APPS, ', 'MEDIA, ', 'TEAMS, ', 'STRATEGIES'], 250, 20);
 
     const scrollToSection = (id:any) => {
         window.scrollTo({
