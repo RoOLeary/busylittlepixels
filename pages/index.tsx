@@ -120,7 +120,7 @@ const Home = ({ page, preview }:any) => {
             <div className="pt-12 sm:pt-16 lg:pt-20">
               <h2 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl">Specialising in: <br /> Technical Discovery. <br />Digital/Business strategy. <br /><strong>Modern</strong>, scalable, headless web applications.</h2>
               <div className="mt-6 space-y-6 text-gray-500">
-                <p className="text-base leading-7">We develop modern, headless CMS websites and applications. Leveraging the latest in web technologies, we create performant, reliable and scaleable solutions, with trusted backend architecture.</p>
+                <p className="article_text leading-7">We develop modern, headless CMS websites and applications. Leveraging the latest in web technologies, we create performant, reliable and scaleable solutions, with trusted backend architecture.</p>
               </div>
             </div>
 
