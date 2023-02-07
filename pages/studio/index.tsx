@@ -19,7 +19,6 @@ const inter = Inter({ subsets: ['latin'] })
 
 const Studio = ({ page, preview }:any) => {
 
-    // console.log(page.data[0]);
     const router = useRouter(); 
     const { word } = useTypingText(['SITES, ', 'APPS, ', 'MEDIA, ', 'TEAMS', 'PLANS'], 250, 20);
 
@@ -92,8 +91,8 @@ const Studio = ({ page, preview }:any) => {
                 </motion.div>   
             </section>
 
-            <span id={"moreinfo"} className={'mt-8'}></span>
-            <section className="px-6 md:py-32 bg-white pb-0 md:pb-0">
+            <span  className={'mt-8'}></span>
+            <section className="px-6 md:py-32 bg-white pb-0 md:pb-0" id={"moreinfo"}>
                 <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6">
                     <div className="max-full text-center leading-relaxed mb-2">
                         <h2 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-6 last:mb-0 uppercase">A LITTLE BIT <span style={{ "color": "red"}}>MORE </span>{page.data[0].studioMoreAbout}</h2>
@@ -115,11 +114,11 @@ const Studio = ({ page, preview }:any) => {
                             </div>
                         </div>
                         <div className="col-span-1 md:col-span-2">
-                            <p className="studio_intro">Collectively, we've been developing full-stack applications for almost 20 years. Although, at the time, I didn't know what full-stack meant at that time because the term was still the ubiqutous "web designer" back then. </p>
+                            <p className="studio_intro">Collectively, we've been developing full-stack applications for almost 20 years. Although, way back then, we didn't know what full-stack meant; the term was still the ubiqutous "web designer". </p>
                             <br />
                             <p className="studio_intro">After learning HTML, PHP, JS and CSS, I came up with a brilliant idea of using Tailwind so that I don't have to style everything by myself and - for obvious reasons - if you know Tailwind, you're all cool by me.</p>
                             <br />
-                            <p className="studio_intro">But now, I'm a legend. I've been coding in React, Vue, Node.js, PHP, MySQL, Tailwind, Next.js, Craft CMS, WordPress, Laravel...to name a few. Although I barely know the syntax (Psst, Stack overflow!). Which is what I would say if I were a total douche.</p>
+                            {/* <p className="studio_intro">But now, I'm a legend. I've been coding in React, Vue, Node.js, PHP, MySQL, Tailwind, Next.js, Craft CMS, WordPress, Laravel...to name a few. Although I barely know the syntax (Psst, Stack overflow!). Which is what I would say if I were a total douche.</p> */}
                         </div>
                     </div>
                 </div>

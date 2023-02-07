@@ -23,7 +23,7 @@ const Article = () => {
     return(
 
         <Layout>
-          <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white pb-0 md:pb-0">
+          <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32  bg-white pb-0 md:pb-0">
           <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6">
             <div className="max-full text-center leading-relaxed mb-2">
               <h1 className="composedHeading">ARTICLE TITLE</h1>

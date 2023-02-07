@@ -20,9 +20,10 @@ const Articles = ({ page, preview }:any) => {
     return(
         <Layout>
           {preview ? <div className={'text-center uppercase bg-red-500 text-white py-6 fixed bottom-0 w-full z-10'}><h3>You are in Preview Mode</h3></div> : null} 
-          <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white override mb-12">
-            <h1 className="font-black tracking-tight text-4xl md:text-[4rem] mb-6 md:pb-8 last:mb-0 text-left">busy<span style={{ "color": "red"}}>little:</span>articles</h1>
-            <div className="flex flex-col md:flex-row md:gap-8">
+          <Bounded collapsible={true} as="section" className="px-6 py-20 md:py-32  bg-white override mb-12">
+            <h1 className="font-black tracking-tight text-4xl md:text-[4rem] mb-6 md:pb-2 last:mb-0 text-left">busy<span style={{ "color": "red"}}>little:</span>articles</h1>
+            <div className='header__underline'></div>
+            <div className="flex flex-col md:flex-row md:gap-8 mt-8">
               <div className="w-full  flex flex-col space-y-16">
               
                 {articles.map((article:any, i:number) => {
