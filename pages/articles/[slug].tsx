@@ -28,9 +28,9 @@ const Article = ({ article, preview }:any) => {
             <div className="max-full text-center leading-relaxed mb-2">
               <h1 className="composedHeading">{article ? article.articleTitle : ''}</h1>
             </div>
-            <div className="max-full text-center leading-relaxed mb-8">
+            {/* <div className="max-full text-center leading-relaxed mb-8">
               <p className="font-semibold tracking-tighter">By <a href="#">Ronan O'Leary</a> | Category: Tech, CMS | Published: </p>
-            </div>
+            </div> */}
           </div>
           <motion.div
             initial={{ opacity: 0 }}
