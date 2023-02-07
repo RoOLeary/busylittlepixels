@@ -145,7 +145,7 @@ const Studio = ({ page, preview }:any) => {
                             }):any => {
                             
                             return(
-                                <div key={panel.subTitle} className="xl:w-1/4 md:w-1/2 p-2">
+                                <div key={panel.subTitle} className="xl:w-1/4 md:w-1/2 p-2 flex flex-1">
                                     <div className="bg-gray-100 p-6 rounded-lg shadow-md">
                                         <h3 className="tracking-widest text-red-500 text-xs font-bold title-font">{panel.subTitle}</h3>
                                         <h2 className="text-lg text-gray-900 font-medium title-font mb-4">{panel.industryTitle}</h2>
