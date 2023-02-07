@@ -75,7 +75,7 @@ const Studio = ({ page, preview }:any) => {
                 <p className="studio_intro">
                     {page ? page.data[0].studioIntro.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "") : null}
                 </p>
-                <div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
+                <div className="hidden md:block relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
                     <svg className="absolute bottom-24 left-full translate-x-32 transform" width="200" height="485" fill="none" viewBox="0 0 200 485">
                         <defs>
                         <pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
