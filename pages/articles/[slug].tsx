@@ -45,7 +45,7 @@ const Article = ({ article, preview }:any) => {
                   {article ? <p style={{ "lineHeight": "2.5rem", "fontSize": "20px", "display": "flex", "fontWeight": "bold", "textAlign": "justify" }} className="article_text text-md leading-8">{article.articleExcerpt.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "")}</p>: '' }
                 </div>
 
-                <div dangerouslySetInnerHTML={{__html: article ? article.articleContent : null }} className={'mt-4 article_text leading-8'} />
+                <div dangerouslySetInnerHTML={{__html: article ? article.articleContent : null }} className={'article_text mt-8 flex-col'} />
                 
             </div>
           </div>
