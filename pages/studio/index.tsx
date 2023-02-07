@@ -91,7 +91,7 @@ const Studio = ({ page, preview }:any) => {
             <section className="px-6 md:py-32 bg-white pb-0 md:pb-0">
                 <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6">
                     <div className="max-full text-center leading-relaxed mb-2">
-                        <h2 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-6 last:mb-0 uppercase">A bit <span style={{ "color": "red"}}>more </span>{page.data[0].studioMoreAbout}</h2>
+                        <h2 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-6 last:mb-0 uppercase">Not to brag...<span style={{ "color": "red"}}>BUT... </span>{page.data[0].studioMoreAbout}</h2>
                     </div>
                 </div>
                 <div className="pt-8 flex flex-col md:flex-row">
