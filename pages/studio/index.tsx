@@ -59,6 +59,7 @@ const Studio = ({ page, preview }:any) => {
                         </defs>
                         </svg>
                     </div>
+                    
                 </div>
                 <motion.div initial="hidden" animate="visible" variants={{
                     hidden: {
@@ -79,7 +80,16 @@ const Studio = ({ page, preview }:any) => {
                 <p className="studio_intro">
                     {page ? page.data[0].studioIntro.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "") : null}
                 </p>
-
+                <div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
+                    <svg className="absolute bottom-12 left-full translate-x-32 transform" width="400" height="384" fill="none" viewBox="0 0 400 384">
+                        <defs>
+                        <pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor" />
+                        </pattern>
+                        </defs>
+                        <rect width="400" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
+                    </svg>
+                </div>
                 <div className="mt-8 flex gap-x-4 justify-start md:justify-center">
                     {/* @ts-ignore */}
                     <a href="#moreinfo" className="inline-block rounded-md bg-red-600 px-4 py-1.5 text-base font-bold leading-7 text-white shadow-sm ring-1 ring-red-600 hover:bg-red-400 hover:ring-red-400" data-scrollto="moreinfo" scrollto="moreinfo" onClick={onScrollClick}>Hmmm...go on</a>
@@ -117,6 +127,16 @@ const Studio = ({ page, preview }:any) => {
                             <p className="studio_intro">But now, I'm a legend. I've been coding in React, Vue, Node.js, PHP, MySQL, Tailwind, Next.js, Craft CMS, WordPress, Laravel...to name a few. Although I barely know the syntax (Psst, Stack overflow!). Which is what I would say if I were a total douche.</p>
                         </div>
                     </div>
+                </div>
+                <div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
+                    <svg className="absolute bottom-12 right-full translate-y-32 transform" width="400" height="350" fill="none" viewBox="0 0 400 350">
+                        <defs>
+                        <pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor" />
+                        </pattern>
+                        </defs>
+                        <rect width="400" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
+                    </svg>
                 </div>
             </section>
             
