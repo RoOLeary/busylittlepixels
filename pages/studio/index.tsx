@@ -71,18 +71,18 @@ const Studio = ({ page, preview }:any) => {
                     },
                 }}>
                 <h1 className="font-black tracking-tight text-2xl md:text-[3rem] mb-6 md:pb-8 last:mb-0 text-left md:text-center">busy<span style={{ "color": "red" }}>little</span>pixels<span style={{ "color": "red"}}>:</span><span style={{ "color": "red" }}>studio</span></h1>
-                <h1 className="font-black tracking-tighter text-5xl md:text-[5rem] mb-6 last:mb-0 uppercase text-left md:text-center">{page.data[0].studioTitle} <span style={{ "color": "red"}}>{word}</span></h1>
+                <h1 className="font-black tracking-tighter text-5xl md:text-[5rem] mb-6 last:mb-0 uppercase text-left md:text-center relative z-10">{page.data[0].studioTitle} <span style={{ "color": "red"}}>{word}</span></h1>
                 <p className="studio_intro">
                     {page ? page.data[0].studioIntro.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "") : null}
                 </p>
                 <div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
-                    <svg className="absolute bottom-12 left-full translate-x-32 transform" width="200" height="485" fill="none" viewBox="0 0 200 485">
+                    <svg className="absolute bottom-24 left-full translate-x-32 transform" width="200" height="485" fill="none" viewBox="0 0 200 485">
                         <defs>
                         <pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
                             <rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor" />
                         </pattern>
                         </defs>
-                        <rect width="200" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
+                        <rect width="200" height="485" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
                     </svg>
                 </div>
                 <div className="mt-8 flex gap-x-4 justify-start md:justify-center">
@@ -170,12 +170,12 @@ const Studio = ({ page, preview }:any) => {
                     </div>
                 </div>
             </section>
-            <section className="px-3 container pt-20 mx-auto w-full max-w-7xl md:px-8 bg-white">
-                <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 py-24 px-4 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
+            <section className="flex mx-auto w-full max-w-7xl md:px-8 bg-white">
+                <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 py-24 px-4 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:mt-24">
                     <div>
                         <h2 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">Technical <span style={{ "color": "red"}}>Expertise</span></h2>
                         <div className="header__underline"></div>
-                        <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+                        <dl className="mt-4 md:mt-8 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
                             <div className="pt-4">
                                 <dt className="font-medium text-gray-900">Planning/Strategy</dt>
                                 <dd className="mt-2 text-sm text-gray-500">Designed by Good Goods, Inc.</dd>

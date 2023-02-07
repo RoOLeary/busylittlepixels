@@ -10,7 +10,7 @@ const SignUpForm = () => {
       >
         <div className="text-center tracking-tight text-slate-300">
           <h3 className="text-center font-black tracking-tighter text-3xl md:text-6xl mb-4 text-white last:mb-0 uppercase">Sign up for our busy<span style={{ "color": "red"}}>little</span>updates</h3>
-          <p className="mb-4 last:mb-0">We promise we won't spam you, or do anything nefarious with your data. <br />It's just not how we roll. </p>
+          <p className="mb-4 last:mb-0">We promise we won't spam you, or do anything nefarious or shifty with your data. <br />Frankly, that's just not how we roll. </p>
         </div>
     
         <div className="grid grid-cols-1 gap-2">
