@@ -21,13 +21,13 @@ const Article = ({ article, preview }:any) => {
 
         <Layout>
           {preview ? <div className={'text-center uppercase bg-red-500 text-white py-6 fixed bottom-0 w-full z-10'}><h3>You are in Preview Mode</h3></div> : null} 
-          <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32 py-20 md:py-32 bg-white pb-0 md:pb-0">
+          <Bounded collapsible={false} as="section" className="px-6 py-20 md:py-32 bg-white pb-0 md:pb-0">
           <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-6">
             <div className="max-full text-center leading-relaxed mb-2">
               <h1 className="composedHeading">{article ? article.articleTitle : ''}</h1>
             </div>
             <div className="max-full text-center leading-relaxed mb-8">
-              <p className="font-semibold tracking-tighter">Category: Tech | Published: <Date dateString={article.articleTypePostDate} /></p>
+              <p className="font-semibold tracking-tighter">Category: Tech | Published: {article ? <Date dateString={article.articleTypePostDate} /> : null}</p>
             </div>
           </div>
           <motion.div

@@ -42,10 +42,7 @@ const Studio = ({ page, preview }:any) => {
     return(
 
         <Layout>
-            
-            
-
-           
+            {preview ? <div className={'text-center uppercase bg-red-500 text-white py-6 fixed bottom-0 w-full z-10'}><h3>You are in Preview Mode</h3></div> : null} 
             <section className="px-6 py-24 md:py-32">
                 <div className="isolate bg-white">
                     <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
@@ -59,7 +56,6 @@ const Studio = ({ page, preview }:any) => {
                         </defs>
                         </svg>
                     </div>
-                    
                 </div>
                 <motion.div initial="hidden" animate="visible" variants={{
                     hidden: {
@@ -74,9 +70,8 @@ const Studio = ({ page, preview }:any) => {
                         }
                     },
                 }}>
-                    <h1 className="font-black tracking-tight text-2xl md:text-[3rem] mb-6 md:pb-8 last:mb-0 text-left md:text-center">busy<span style={{ "color": "red" }}>little</span>pixels<span style={{ "color": "red"}}>:</span><span style={{ "color": "red" }}>studio</span></h1>
-                    <h1 className="font-black tracking-tighter text-5xl md:text-[5rem] mb-6 last:mb-0 uppercase text-left md:text-center">{page.data[0].studioTitle} <span style={{ "color": "red"}}>{word}</span></h1>
-                       
+                <h1 className="font-black tracking-tight text-2xl md:text-[3rem] mb-6 md:pb-8 last:mb-0 text-left md:text-center">busy<span style={{ "color": "red" }}>little</span>pixels<span style={{ "color": "red"}}>:</span><span style={{ "color": "red" }}>studio</span></h1>
+                <h1 className="font-black tracking-tighter text-5xl md:text-[5rem] mb-6 last:mb-0 uppercase text-left md:text-center">{page.data[0].studioTitle} <span style={{ "color": "red"}}>{word}</span></h1>
                 <p className="studio_intro">
                     {page ? page.data[0].studioIntro.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "") : null}
                 </p>
@@ -180,8 +175,6 @@ const Studio = ({ page, preview }:any) => {
                     <div>
                         <h2 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">Technical <span style={{ "color": "red"}}>Expertise</span></h2>
                         <div className="header__underline"></div>
-                        {/* <p className="mt-4 text-gray-500 studio_intro">You know who's into dragons, Morty? Nerds who refuse to admit they're Christian. I couldn't hear you over my own screaming. We've talked about this! 5 more minute of this and I'm going to get mad! You know my name, that's disarming. Not today bitch! You look it up, you don't- you don't even know what it means.</p> */}
-
                         <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
                             <div className="pt-4">
                                 <dt className="font-medium text-gray-900">Planning/Strategy</dt>
