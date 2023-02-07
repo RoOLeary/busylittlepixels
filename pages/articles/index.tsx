@@ -49,12 +49,12 @@ const Articles = ({ page, preview }:any) => {
                 <div className="col-span-1 md:col-span-3">
                   <><p className="mb-2 -mt-1 text-sm font-normal text-gray-500"></p></>
                   <h1 className="mb-2 text-2xl md:text-3xl font-extrabold leading-snug text-gray-800">
-                    <Link href={{ pathname: `articles/${article.slug}` }} className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500">{article.articleTitle}</Link>
+                    <Link href={{ pathname: `blog/${article.slug}` }} className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500">{article.articleTitle}</Link>
                   </h1>
                   <p className="tmd:text-1xl">Published: {article.articleTypePostDate}</p>
                   <p className="mb-3 text-md font-normal text-gray-500 allArticles_excerpt leading-8" dangerouslySetInnerHTML={{__html: article.articleExcerpt}} />
                   
-                  <Link href={`/articles/${article.slug}`} className="hidden md:visible btn btn-light btn-sm">Read More</Link>
+                  <Link href={`/blog/${article.slug}`} className="hidden md:visible btn btn-light btn-sm">Read More</Link>
                 </div>
               </div>
             )

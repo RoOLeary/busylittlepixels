@@ -91,13 +91,11 @@ const Home = ({ page, preview }:any) => {
               </svg>
             </div>
             <div className="relative mx-auto max-w-md px-6 sm:max-w-3xl lg:max-w-none lg:px-0 lg:py-20">
-              
               <div className="relative overflow-hidden rounded-2xl pt-64 pb-10 shadow-xl">
                 <img className="absolute inset-0 h-full w-full object-cover" src="/assets/img/doggo.jpeg" alt="" />
                 <div className="absolute inset-0 bg-red-500 mix-blend-multiply"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-red-600 via-red-600 opacity-90"></div>
-                <div className="relative px-8">
-                  
+                <div className="relative px-8">              
                   <blockquote className="mt-8">
                     <div className="relative text-lg font-medium text-white md:flex-grow">
                       <svg className="absolute top-0 left-0 h-8 w-8 -translate-x-3 -translate-y-2 transform text-red-600" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
@@ -105,7 +103,6 @@ const Home = ({ page, preview }:any) => {
                       </svg>
                       <p className="relative">Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium in volutpat, diam. Montes, magna cursus nulla feugiat dignissim id lobortis amet.</p>
                     </div>
-
                     <footer className="mt-4">
                       <p className="text-base font-semibold text-rose-200">Doggo, CEO at Doggo</p>
                     </footer>
@@ -114,18 +111,13 @@ const Home = ({ page, preview }:any) => {
               </div>
             </div>
           </div>
-
           <div className="relative mx-auto max-w-md px-6 pb-10 sm:mb-8 sm:max-w-3xl lg:px-0">
-           
             <div className="pt-12 sm:pt-16 lg:pt-20">
-              <h2 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl">Specialising in: <br /> Technical Discovery. <br />Digital/Business strategy. <br /><strong>Modern</strong>, scalable, headless web applications.</h2>
+              <h2 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl">Specialising in: <br /> Technical Discovery. <br /><strong>Modern</strong>, scalable, headless web and mobile applications.<br />Digital/Business strategy.</h2>
               <div className="mt-6 space-y-6 text-gray-500">
                 <p className="article_text leading-7">We develop modern, headless CMS websites and applications. Leveraging the latest in web technologies, we create performant, reliable and scaleable solutions, with trusted backend architecture.</p>
               </div>
-            </div>
-
-            
-       
+            </div>       
           </div>
       </div>
       <CTA />
@@ -136,8 +128,7 @@ const Home = ({ page, preview }:any) => {
               <iframe width="100%" height="100%" frameBorder="0" marginHeight={0} marginWidth={0} title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77979.83662249324!2d4.833920986955999!3d52.35464494712458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam!5e0!3m2!1sen!2snl!4v1673131081468!5m2!1sen!2snl" style={{ "filter": "grayscale(1) contrast(1.2) opacity(0.4)" }} ></iframe>
             </div>
             <div className="container px-5 py-24 mx-auto flex">
-                <div className="lg:w-1/3 md:w-2/3 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
-                
+                <div className="lg:w-1/3 md:w-2/3 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">          
                 {result ? result : 
                 <>
                 <h2 className="text-black text-lg mb-1 font-black uppercase">Contact <span style={{ "color": "red"}}> US</span></h2>
