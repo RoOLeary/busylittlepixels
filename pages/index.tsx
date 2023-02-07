@@ -120,8 +120,7 @@ const Home = ({ page, preview }:any) => {
             </div>       
           </div>
       </div>
-      <CTA />
-    
+      
       {/* Contact */}
       <section className="text-black relative" id="contact">
             <div className="absolute inset-0 bg-gray-300">
