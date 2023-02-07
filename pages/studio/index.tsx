@@ -81,13 +81,13 @@ const Studio = ({ page, preview }:any) => {
                     {page ? page.data[0].studioIntro.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "") : null}
                 </p>
                 <div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
-                    <svg className="absolute bottom-12 left-full translate-x-32 transform" width="400" height="384" fill="none" viewBox="0 0 400 384">
+                    <svg className="absolute bottom-12 left-full translate-x-32 transform" width="200" height="485" fill="none" viewBox="0 0 200 485">
                         <defs>
                         <pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
                             <rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor" />
                         </pattern>
                         </defs>
-                        <rect width="400" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
+                        <rect width="200" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
                     </svg>
                 </div>
                 <div className="mt-8 flex gap-x-4 justify-start md:justify-center">
@@ -104,15 +104,15 @@ const Studio = ({ page, preview }:any) => {
                         <h2 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-6 last:mb-0 uppercase">A LITTLE BIT <span style={{ "color": "red"}}>MORE </span>{page.data[0].studioMoreAbout}</h2>
                     </div>
                 </div>
-                <div className="pt-8 flex flex-col md:flex-row">
+                {/* <div className="pt-8 flex flex-col md:flex-row">
                     <div className="mx-auto w-full max-w-3xl shadow-sm">
                         <div className="leading-relaxed">
                             <p className="studio_intro">{page.data[0].studioMoreAboutText.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "")}.</p>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <div className="flex mx-auto w-full max-w-7xl md:px-8">
-                    <div className="pt-20 grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-y-20 gap-x-20">
+                    <div className="pt-20 grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-y-10 gap-x-20">
                         <div className="inline-flex flex-col">
                             <div>
                                 <h1 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">SKILL AND <span style={{ "color": "red"}}>Experience</span></h1>
@@ -128,16 +128,7 @@ const Studio = ({ page, preview }:any) => {
                         </div>
                     </div>
                 </div>
-                <div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
-                    <svg className="absolute bottom-12 right-full translate-y-32 transform" width="400" height="350" fill="none" viewBox="0 0 400 350">
-                        <defs>
-                        <pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                            <rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor" />
-                        </pattern>
-                        </defs>
-                        <rect width="400" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
-                    </svg>
-                </div>
+                
             </section>
             
 
@@ -151,7 +142,7 @@ const Studio = ({ page, preview }:any) => {
                         </div>
                         <p className="lg:w-1/2 w-full studio_intro">{page.data[0].studioIndustryExpIntro.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "")}</p>
                     </div>
-                    <div className="flex flex-wrap -m-4">
+                    <div className="flex flex-wrap -m-4 relative z-10">
                         {page.data[0].studioIndustryExpPanels.map((panel: 
                             { 
                                 subTitle: Key | null | undefined, 
@@ -161,7 +152,7 @@ const Studio = ({ page, preview }:any) => {
                             
                             return(
                                 <div key={panel.subTitle} className="xl:w-1/4 md:w-1/2 p-2">
-                                    <div className="bg-gray-100 p-6 rounded-lg">
+                                    <div className="bg-gray-100 p-6 rounded-lg shadow-md">
                                         <h3 className="tracking-widest text-red-500 text-xs font-bold title-font">{panel.subTitle}</h3>
                                         <h2 className="text-lg text-gray-900 font-medium title-font mb-4">{panel.industryTitle}</h2>
                                         {/* @ts-ignore */}
@@ -171,6 +162,16 @@ const Studio = ({ page, preview }:any) => {
                             )
                         })}
                         
+                    </div>
+                    <div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
+                        <svg className="absolute bottom-12 right-full translate-y-32 transform" width="300" height="485" fill="none" viewBox="0 0 300 350">
+                            <defs>
+                            <pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                                <rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor" />
+                            </pattern>
+                            </defs>
+                            <rect width="300" height="485" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
+                        </svg>
                     </div>
                 </div>
             </section>

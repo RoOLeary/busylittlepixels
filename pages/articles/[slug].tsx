@@ -9,16 +9,14 @@ import { Bounded } from "../../components/Bounded";
 import { Video } from "../../components/Video";
 import imageLoader from '../../imageLoader';
 import { ParsedUrlQuery } from 'querystring'
+import Date from '../../lib/utils';
 import { GetStaticPaths, GetStaticProps } from 'next'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
 const Article = ({ article, preview }:any) => {
    
-    // let splitContent = article.articleContent.split("\n\n");
-    
-    // console.log(splitContent);
-
     return(
 
         <Layout>
@@ -28,9 +26,9 @@ const Article = ({ article, preview }:any) => {
             <div className="max-full text-center leading-relaxed mb-2">
               <h1 className="composedHeading">{article ? article.articleTitle : ''}</h1>
             </div>
-            {/* <div className="max-full text-center leading-relaxed mb-8">
-              <p className="font-semibold tracking-tighter">By <a href="#">Ronan O'Leary</a> | Category: Tech, CMS | Published: </p>
-            </div> */}
+            <div className="max-full text-center leading-relaxed mb-8">
+              <p className="font-semibold tracking-tighter">Category: Tech | Published: <Date dateString={article.articleTypePostDate} /></p>
+            </div>
           </div>
           <motion.div
             initial={{ opacity: 0 }}
@@ -86,7 +84,7 @@ const Article = ({ article, preview }:any) => {
               </section> */}
           <Bounded collapsible={false} as="section" className="bg-slate-100">
             <div className="grid grid-cols-1 items-end gap-10 md:grid-cols-1 md:gap-10 lg:gap-28">
-              <h1 className='text-center'>[ADVERTISEMENT]</h1>
+              <h1 className='text-center'>[AUTHOR BLOCK / ADVERTISEMENT]</h1>
             </div>
           </Bounded>
 

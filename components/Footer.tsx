@@ -43,7 +43,7 @@ const SignUpForm = () => {
 export const Footer = () => {
   return (
     <Bounded as="footer" className="bg-black pb-12 text-slate-300 md:pb-12 footer">
-      <div className="grid grid-cols-1 justify-items-center gap-10 md:gap-10">
+      <div className="grid grid-cols-1 justify-items-center gap-10 md:gap-20">
         <SignUpForm />
 
         <div className="mx-auto w-full max-w-3xl text-center text-xs font-semibold tracking-tight">
