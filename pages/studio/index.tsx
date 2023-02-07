@@ -105,8 +105,8 @@ const Studio = ({ page, preview }:any) => {
                     <div className="pt-20 grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-y-20 gap-x-20">
                         <div className="inline-flex flex-col">
                             <div>
-                                <h2 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase mb-4">Contact</h2>
-                                <p className="studio_intro">For any sort of enquiry, shoot a <a href="mailto:busylittlepixels@gmail.com" className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300">mail</a> and I'll get back. I swear.</p>
+                                <h1 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">SKILL AND <span style={{ "color": "red"}}>Experience</span></h1>
+                                <div className="header__underline"></div>
                             </div>
                         </div>
                         <div className="col-span-1 md:col-span-2">
