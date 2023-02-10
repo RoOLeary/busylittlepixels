@@ -1,29 +1,20 @@
 import { FaqComponent } from "./FaqComponent";
 import styles from "../../styles/index.module.css";
-export const Faqs = () => {
 
-    const faqs = [
-        {
-            key: 0,
-            question: "How many team members can I invite?",
-            answer: "You can invite as many team members as you like"
-        },
-        {
-            key: 1,
-            question: "What is the maximum file upload size?",
-            answer: "No more than 2GB. All files in your account must fit your alloted storage space"
-        },
-        {
-            key: 2,
-            question: "How do I reset my password?",
-            answer: "You can use the reset password function from the settings menu"
-        },
-        {key: 2, question: "Can I cancel my subscription?", answer: "You can, but there is no money-back guarantee"},
-        {key: 2, question: "Do you provide additional support?", answer: "Yes, please get in touch via e-mail!"},
-    ];
+interface Ifaqs {
+    items: {
+        question?: string,
+        answer?: string
+    }
+}
 
-    const faqComponents = faqs.map((faq, i) => {
-        return <FaqComponent key={i} question={faq.question} answer={faq.answer}/>
+
+export const Faqs = ({ items }:Ifaqs) => {
+
+
+    // @ts-ignore
+    const faqComponents = items.map((item, i) => {
+        return <FaqComponent key={i} question={item.question} answer={item.answer}/>
     });
 
     return <div className={`mx-auto flex items-center`}>

@@ -172,36 +172,36 @@ const Studio = ({ page, preview }:any) => {
             <section className="flex mx-auto w-full max-w-7xl md:px-8 bg-white">
                 <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 py-24 px-4 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:mt-24">
                     <div>
-                        <h2 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">Technical <span style={{ "color": "red"}}>Expertise</span></h2>
+                        <h2 className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl uppercase">Stack and <span style={{ "color": "red"}}>Tools</span></h2>
                         <div className="header__underline"></div>
                         <dl className="mt-4 md:mt-8 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
                             <div className="pt-4">
-                                <dt className="font-medium text-gray-900">Planning/Strategy</dt>
-                                <dd className="mt-2 text-sm text-gray-500">Designed by Good Goods, Inc.</dd>
+                                <dt className="font-medium text-gray-900">Craft CMS</dt>
+                                <dd className="mt-2 text-sm text-gray-500">We've worked with all sorts, but platform weapon of choice is Craft CMS.</dd>
                             </div>
 
                             <div className="pt-4">
-                                <dt className="font-medium text-gray-900">End-to-End Application Development</dt>
-                                <dd className="mt-2 text-sm text-gray-500">Solid walnut base with rare earth magnets and powder coated steel card cover</dd>
+                                <dt className="font-medium text-gray-900">NextJS/React</dt>
+                                <dd className="mt-2 text-sm text-gray-500">We develop decoupled - headless - CMS applications with modern frontends built on top of NextJS</dd>
                             </div>
                             <div className="border-t border-gray-200 pt-4">
-                                <dt className="font-medium text-gray-900">Team Development</dt>
-                                <dd className="mt-2 text-sm text-gray-500">We're like "The A Team" - but for digital products and web teams.</dd>
-                            </div>
-
-                            <div className="border-t border-gray-200 pt-4">
-                                <dt className="font-medium text-gray-900">Data/Web Migrations</dt>
-                                <dd className="mt-2 text-sm text-gray-500">Hand sanded and finished with natural oil</dd>
+                                <dt className="font-medium text-gray-900">Tailwind/SCSS</dt>
+                                <dd className="mt-2 text-sm text-gray-500">Some time ago, humans invented the wheel. Tailwind/SCSS are tools which help us not reinvent it</dd>
                             </div>
 
                             <div className="border-t border-gray-200 pt-4">
-                                <dt className="font-medium text-gray-900">Solution Architecture</dt>
-                                <dd className="mt-2 text-sm text-gray-500">Wood card tray and 3 refill packs</dd>
+                                <dt className="font-medium text-gray-900">Web Migrations</dt>
+                                <dd className="mt-2 text-sm text-gray-500">Moving sites, migrating multiple separate instances into a headless multisite...y'know some people consider that fun.</dd>
                             </div>
 
                             <div className="border-t border-gray-200 pt-4">
-                                <dt className="font-medium text-gray-900">Strategic Partnership</dt>
-                                <dd className="mt-2 text-sm text-gray-500">Made from natural materials. Grain and color vary with each item.</dd>
+                                <dt className="font-medium text-gray-900">Fortabbit</dt>
+                                <dd className="mt-2 text-sm text-gray-500">Exceptional, reliable, dedicated hosting for PHP applicationss</dd>
+                            </div>
+
+                            <div className="border-t border-gray-200 pt-4">
+                                <dt className="font-medium text-gray-900">Coffee</dt>
+                                <dd className="mt-2 text-sm text-gray-500">We make excellent coffee, the raw components used to make Typescript etc...</dd>
                             </div>
                         </dl>
                     </div>
