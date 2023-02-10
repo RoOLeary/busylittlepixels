@@ -117,6 +117,8 @@ const Home = ({ page, preview }:any) => {
               <div className="mt-6 space-y-6 text-gray-500">
                 <p className="article_text leading-7">We develop modern, headless CMS websites and applications. Leveraging the latest in web technologies, we create performant, reliable and scaleable solutions, with trusted backend architecture.</p>
               </div>
+              {/* @ts-ignore */}
+              <div className="mt-8 flex gap-x-4 justify-start"><Link href={"/studio"} className="inline-block rounded-md bg-red-600 px-4 py-1.5 text-base font-bold leading-7 text-white shadow-sm ring-1 ring-red-600 hover:bg-red-400 hover:ring-red-400" data-scrollto="moreinfo" scrollto="moreinfo" style={{"cursor": "none"}}>What tools?</Link></div>
             </div>       
           </div>
       </div>
