@@ -47,7 +47,7 @@ export const Footer = () => {
         <SignUpForm />
 
         <div className="mx-auto w-full max-w-3xl text-center text-xs font-semibold tracking-tight">
-          © 2023 busy<span className="rd_txt">little</span>pixels. Made with <span className="rd_txt">&hearts;</span> in Amsterdam, by <a href="https://ronan-oleary.com">Ro</a>
+          © 2023 busy<span className="rd_txt">little</span>pixels. Made with <span className="rd_txt">&hearts;</span> in Amsterdam, by <a href="https://ronan-oleary.com"><span className="rd_txt">Ro</span></a>
         </div>
       </div>
     </Bounded>
