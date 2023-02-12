@@ -17,7 +17,7 @@ export const ProjectSlider = ({ sliderTitle, sliderStage }:any) => {
     const divElement: any = elementRef.current;
 
     const [activeSlide, setActiveSlide] = useState(initialState.activeSlide);
-    const [isAutoPlay, setAutoPlay] = useState(initialState.isAutoPlay);
+    const isAutoPlay = useState(initialState.isAutoPlay);
 
     const transitionSlide = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
         e.preventDefault(); 
